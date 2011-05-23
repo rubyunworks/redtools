@@ -1,0 +1,23 @@
+---
+name : redtools
+title: RedTools
+
+summary: Easy access to Ruby project tools.
+
+contact: trans <transfire@gmail.com>
+
+authors:
+  - Thomas Sawyer
+
+requires:
+  - ratch
+  - reap    (build)
+  - redline (build)
+
+organization: RubyWorks
+
+licenses:
+  - Apache 2.0
+
+copyright: Copyright (c) 2011 Thomas Sawyer
+

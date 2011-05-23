@@ -1,0 +1,42 @@
+= RedTools
+
+
+== RESOURCES
+
+* home: http://rubyworks.github.com/redtools
+* code: http://github.com/rubyworks/redtools
+
+
+== DESCRIPTION
+
+RedTools is a uniform collection of interfaces to common Ruby project
+development tools.
+
+
+== USAGE
+
+RedTools can be used as a function module:
+
+  RedTools::Rdoc.document
+
+Or included in another namespace.
+
+  module MyStuff
+    include RedTools
+
+    Rdoc.document
+  end
+
+WARNING: Do not include RedTools at the TOPLEVEL. That RedTools class
+names may conflict with the library names that they utilize. For example,
+the <code>RedTools::RDoc</code> class would conflict with the +RDoc+ module
+from the rdoc gem.
+
+
+== LICENSE
+
+(Apache 2.0)
+
+Copyright (c) 2011 Thomas Sawyer
+
+See NOTICE.rdoc and APACHE2.txt for details.

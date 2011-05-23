@@ -1,0 +1,10 @@
+= RELEASE HISTORY
+
+== 0.1.0 | 2011-05-23 | Birthday
+
+This is the initialize release of RedTools, which have been spun off
+from the Redline build tool.
+
+Changes:
+
+* Happy Birthday (Mom)
