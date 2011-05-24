@@ -10,10 +10,10 @@ KO.case RedTools::Testrb do
     RedTools.Testrb()
   end
 
-  test "run a testrb tool" do
+  test "run Testrb tool" do
     #TODO: silently do
-      @testrb = RedTools.Testrb()
-      @testrb.run
+      testrb = RedTools.Testrb()
+      testrb.run
     #end
   end
 
