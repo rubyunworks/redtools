@@ -11,7 +11,7 @@ module RedTools
     # The .gemspec filename (default looks-up `.gemspec` or `name.gemspec` file).
     attr_accessor :gemspec
 
-    # True or false whether to write gemspec from project metadata (default is `true`).
+    # True or false whether to write gemspec from project metadata (default is `false`).
     attr_accessor :autospec
 
     # Package directory (defaults to `pkg`).
@@ -53,7 +53,7 @@ module RedTools
 
     #
     def initialize_defaults
-      @autospec  = true if @autospec.nil?
+      @autospec  = false
       @pkgdir  ||= project.pkg
       @gemspec ||= lookup_gemspec
 
@@ -74,6 +74,7 @@ module RedTools
         f << yaml
       end
       status File.basename(file) + " updated."
+      return file
     end
 
     # Lookup gemspec file. If not found returns default path.
