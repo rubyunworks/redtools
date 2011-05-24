@@ -33,6 +33,21 @@ the <code>RedTools::RDoc</code> class would conflict with the +RDoc+ module
 from the rdoc gem.
 
 
+== REQUIREMENTS
+
+To utilize all of the built-in tools the following gems need to be installed:
+
+* rubygems
+* rdoc
+* yard
+* turn
+* rspec
+* grancher
+
+There is no need to depend-on or install a library if you don't plan to use
+a particular tool that requires it.
+
+
 == LICENSE
 
 (Apache 2.0)
