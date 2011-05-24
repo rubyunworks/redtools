@@ -1,0 +1,7 @@
+--title "Redtools"
+--output-dir site/doc
+--private
+lib/**/*.rb -
+README.rdoc
+NOTICE.rdoc
+HISTORY.rdoc

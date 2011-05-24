@@ -1,0 +1,97 @@
+---
+gem:
+  service: Gem
+  active : true
+
+dnote:
+  service  : DNote
+  loadpath : ~
+  labels   : ~
+  output   : log/
+  formats  : [rdoc]
+  active   : true
+
+dnote-site:
+  service  : DNote
+  loadpath : ~
+  labels   : ~
+  output   : site/log/dnote/
+  formats  : [index]  # index!!!
+  active   : true
+
+# TODO: how to get stats.txt in separate location?
+stats:
+  service  : Stats
+  title    : ~
+  loadpath : ~
+  exclude  : ~
+  output   : site/log/stats/
+  active   : true
+
+#rdoc:
+#  service : rdoc
+#  format  : redfish
+#  exclude : [Redfile, Profile, MANIFEST, Version]
+#  output  : site/doc
+
+yard:
+  service : Custom
+  track   : site
+  document: |
+    system "yard"
+
+ri:
+  service: RI
+  include: ~
+  exclude: ~
+  output : .ri
+  active : false
+
+qedoc:
+  service: custom
+  cycle: main
+  document: |
+    puts `qedoc -o site/docs/qed -t "Redtools" qed`
+  active: false
+
+testrb:
+  service  : testrb
+  tests    : ~
+  exclude  : ~
+  loadpath : ~
+  requires : ~
+  live     : false   
+  active   : false
+
+grancher:
+  service: Grancher
+  active: true
+  #sitemap:
+  #  - site
+  #  - [doc/rdoc, rdoc]
+  #  - [doc/qedoc, qedoc]
+
+gemcutter:
+  active: true
+
+email:
+  service : Email
+  file    : ~
+  subject : ~
+  mailto  : ruby-talk@ruby-lang.org
+#  from    : transfire@gmail.com
+#  server  : <%= ENV['EMAIL_SERVER'] %>
+#  port    : <%= ENV['EMAIL_PORT'] %>
+#  account : <%= ENV['EMAIL_ACCOUNT'] %>
+#  domain  : <%= ENV['EMAIL_DOMAIN'] %>
+#  login   : <%= ENV['EMAIL_LOGIN'] %>
+#  secure  : <%= ENV['EMAIL_SECURE'] %>
+  active  : true
+
+#vclog:
+#  service  : VClog
+#  format   : html   # xml, txt
+#  layout   : rel    # gnu
+#  typed    : false
+#  output   : ~
+#  active   : false
