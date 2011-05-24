@@ -2,7 +2,7 @@
 
 == 0.1.0 | 2011-05-23 | Birthday
 
-This is the initialize release of RedTools, which have been spun off
+This is the initial release of RedTools, which has been spun-off
 from the Redline build tool.
 
 Changes:
