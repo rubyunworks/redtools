@@ -29,6 +29,9 @@ module RedTools
     # Test against live install (i.e. Don't use loadpath option).
     attr_accessor :live
 
+    # Either a log file name or +true+/+false+.
+    attr_accessor :log
+
     # Special writer to ensure the value is a list.
     def loadpath=(val)
       @loadpath = val.to_list
@@ -47,7 +50,22 @@ module RedTools
     # In case you forget the 's'.
     alias_method :require=, :requires=
 
-  private
+    #
+    def logfile
+      case log
+      when String
+        project.log + log
+      else
+        project.log + 'turn.log'
+      end
+    end
+
+    #
+    def run
+      run_tests
+    end
+
+    private
 
     # Setup default attribute values.
     def initialize_defaults
@@ -77,8 +95,6 @@ module RedTools
     #  return options
     #end
 
-  public
-
     # Run unit tests. Unlike test-solo and test-cross this loads
     # all tests and runs them together in a single process.
     #
@@ -86,7 +102,7 @@ module RedTools
     #
     # TODO: Generate a test log entry?
     #
-    def runtests
+    def run_tests
       tests    = self.tests
       exclude  = self.exclude
       loadpath = self.loadpath
@@ -112,33 +128,40 @@ module RedTools
         return
       end
 
-      # TODO: Use a subdirectory for log. Also html or xml format possible?
+      filelist = files.select{|file| !File.directory?(file) }
 
-      filelist = files.select{|file| !File.directory?(file) }.join(' ')
-      logfile  = project.log + 'turn.log'
+      argv = []
 
-      # TODO: Does tee work on Windows? Hmmm... I rather add a logging option to turn itself.
-      # TODO: Also, turn needs to return a failing exist code if tests fail.
-
-      if live
-        #command = %[turn -D #{filelist} 2>&1 | tee -a #{logfile}]
-        command = %[turn -D --log #{logfile} #{filelist}]
-      else
-        #command = %[turn -D -I#{loadpath.join(':')} #{filelist} 2>&1 | tee -a #{logfile}]
-        command = %[turn -D --log #{logfile} -I#{loadpath.join(':')} #{filelist}]
+      if !live
+        argv.concat ['-I', loadpath.join(':')]
       end
 
+      # TODO: Use a subdirectory for log?
+      # TODO: Does turn logging work?
+      if log
+        argv.concat ['--log', logfile]
+      end
+
+      argv.concat filelist
+
+      command = "turn " + argv.join(' ')
+
+      trace command
+
+      # TODO: Make sure turn returns a failing exist code if tests fail.
       success = sh(command) #, :show=>true)
 
-      abort "Tests failed." unless success
-
-      #if log && !trial?
-      #  command = %[testrb -I#{loadpath} #{filelist} > #{logfile} 2>&1]  # /dev/null 2>&1
-      #  system command
-      #  puts "Updated #{logfile}"
+      # TODO: Why can't we do this? It just says 'No tests'.
+      #begin
+      #  success = ::Turn::Command.main(*argv)
+      #rescue SystemExit => err
       #end
     end
 
+    #
+    def initialize_requires
+      #require 'turn/command'
+    end
   end
 
 end
