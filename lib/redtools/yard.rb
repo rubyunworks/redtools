@@ -30,12 +30,16 @@ module RedTools
     DEFAULT_EXTRA        = ''
 
     #
-    #DEFAULT_FILES        = '[A-Z]*;lib/**/*;bin/*'
+    #DEFAULT_FILES        = 'lib/**/*;bin/*'
+
+    #
+    #DEFAULT_TOPFILES     = '[A-Z]*'
 
     #
     def initialize_defaults
       @title    = metadata.title
-      @files    = metadata.loadpath + ['[A-Z]*', 'bin'] # DEFAULT_FILES
+      @files    = metadata.loadpath + ['bin'] # DEFAULT_FILES
+      @topfiles = ['[A-Z]*']
 
       @output   = Dir[DEFAULT_OUTPUT_MATCH].first || DEFAULT_OUTPUT
       @readme   = DEFAULT_README
@@ -62,11 +66,14 @@ module RedTools
     # Main file.  This can be file pattern. (README{,.txt})
     attr_accessor :readme
 
-    # Which files to document.
+    # Which library files to document.
     attr_accessor :files
 
     # Alias for +files+.
     alias_accessor :include, :files
+
+    # Which project top-files to document.
+    attr_accessor :topfiles
 
     # Paths to specifically exclude.
     attr_accessor :exclude
@@ -92,17 +99,23 @@ module RedTools
 
       readme = Dir.glob(readme, File::FNM_CASEFOLD).first
 
+      # TODO: Is this true?
       # YARD SUCKS --THIS DOESN'T WORK ON YARD LINE, WE MUST DO IT OURSELVES!!!
       exclude = exclude.to_list
       exclude = exclude.collect{ |g| Dir.glob(File.join(g, '**/*')) }.flatten
+
+      topfiles = topfiles.to_list
+      topfiles = topfiles.map{ |g| Dir.glob(g) }.flatten
+      topfiles = topfiles.map{ |f| File.directory?(f) ? File.join(f,'**','*') : f }
+      topfiles = topfiles.map{ |g| Dir.glob(g) }.flatten  # need this to remove unwanted toplevel files
+      topfiles = topfiles.reject{ |f| File.directory?(f) }
+      topfiles = topfiles - Dir.glob('rakefile{,.rb}', File::FNM_CASEFOLD)
 
       files = files.to_list
       files = files.map{ |g| Dir.glob(g) }.flatten
       files = files.map{ |f| File.directory?(f) ? File.join(f,'**','*') : f }
       files = files.map{ |g| Dir.glob(g) }.flatten  # need this to remove unwanted toplevel files
       files = files.reject{ |f| File.directory?(f) }
-
-      files = files - Dir.glob('rakefile{,.rb}', File::FNM_CASEFOLD)
 
       mfile = project.manifest.file
       mfile = project.manifest.file.basename if mfile
@@ -121,15 +134,18 @@ module RedTools
         #target_main   = File.expand_path(target_main) if target_main
         #target_output = File.expand_path(File.join(output, subdir))
         #target_output = File.join(output, subdir)
+        
+        argv = []
+        argv.concat(String === extra ? extra.split(/\s+/) : extra)
+        argv.concat ['--output-dir', output] if output
+        argv.concat ['--readme', readme] if readme
+        argv.concat ['--template', template] if template
+        argv.concat ['--title', title] if title
+        #argv.concat ['exclude', exclude]
+        argv.concat input
+        argv.concat ['--', *topfiles]
 
-        cmdopts = {}
-        cmdopts['output-dir'] = output
-        cmdopts['readme']     = readme if readme
-        cmdopts['template']   = template
-        cmdopts['title']      = title
-        #cmdopts['exclude']   = exclude
-
-        yard_target(output, input, cmdopts)
+        yard_target(output, argv)
         #rdoc_insert_ads(output, adfile)
 
         touch(output)
@@ -152,23 +168,23 @@ module RedTools
   private
 
     # Generate yardocs for input targets.
-    def yard_target(output, input, options={})
+    def yard_target(output, argv=[])
       # remove old yardocs
       #rm_r(output) if exist?(output) and safe?(output)
+      #options['output-dir'] = output
+      #args = "#{extra} " + [input, options].to_console
+      #argv = args.split(/\s+/)
 
-      options['output-dir'] = output
-
-      args = "#{extra} " + [input, options].to_console
-      argv = args.split(/\s+/)
+      args = argv.join(' ')
       cmd  = "yardoc " + args
 
       if trial?
         puts cmd
       else
         if verbose?
-          put cmd
+          puts cmd
         end
-        YARD::CLI::Yardoc.run(*ARGV)
+        YARD::CLI::Yardoc.run(*argv)
       end
     end
 

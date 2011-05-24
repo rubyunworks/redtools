@@ -1,13 +1,17 @@
+require 'redtools/core_ext'
+
 module RedTools
   extend self
 
   # Tool is the base class for all RedTools.
   class Tool
-    require 'redtools/tool/shell_access'
-    require 'redtools/tool/project_access'
+    require 'redtools/tool/shell_utils'
+    require 'redtools/tool/project_utils'
+    require 'redtools/tool/email_utils'
 
-    include ShellAccess
-    include ProjectAccess
+    include ShellUtils
+    include ProjectUtils
+    include EmailUtils
 
     private
 
@@ -19,6 +23,8 @@ module RedTools
       options.each do |k, v|
         send("#{k}=", v) unless v.nil? #if respond_to?("#{k}=") && !v.nil?
       end
+
+      super() if defined?(super)
     end
 
     #

@@ -78,10 +78,14 @@ module RedTools
         puts "\n#{list.size} Syntax Errors"
 
         log_syntax_errors(list) if log
+
+        list.size == 0 ? true : false
       else
         puts "Syntax check is up to date."
       end
     end
+
+    private
 
     #
     def syntax_check_file(file, max=nil)

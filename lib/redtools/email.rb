@@ -15,6 +15,8 @@ module RedTools
   # Fully custom messages can also be sent by setting the message field,
   # and or by using a message file.
   class Email < Tool
+    #
+    #include Ratch::EmailUtils
 
     # Message file to send.
     attr_accessor :file

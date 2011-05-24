@@ -3,7 +3,7 @@ require 'pom'
 module RedTools
 
   #
-  module Tool::ProjectAccess
+  module ProjectUtils
 
     # Common access to project.
     def self.project(path=Dir.pwd)
@@ -17,7 +17,7 @@ module RedTools
 
     #
     def project(path=Dir.pwd)
-      @project ||= Tool::ProjectAccess.project(path)
+      @project ||= ProjectUtils.project(path)
     end
 
     #

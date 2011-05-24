@@ -75,7 +75,7 @@ module RedTools
     def document(options=nil)
       options ||= {}
 
-      require_rdoc
+      #require_rdoc
 
       title    = options['title']    || self.title
       output   = options['output']   || self.output
@@ -130,10 +130,12 @@ module RedTools
 
         argv = argv + filelist #include_files
 
-        rdoc_target(output, include_files, argv)
+        rdoc_target(output, argv)
         rdoc_insert_ads(output, adfile)
 
         touch(output)
+
+        output
       else
         status "RDocs are current (#{output})"
       end
@@ -182,7 +184,7 @@ module RedTools
     end
 
     # Generate rdocs for input targets.
-    def rdoc_target(output, input, argv=[])
+    def rdoc_target(output, argv=[])
       rm_r(output) if exist?(output) and safe?(output)  # remove old rdocs
 
       #rdocopt['op'] = output
@@ -197,9 +199,8 @@ module RedTools
 
       if trial?
         puts "rdoc " + argv.join(" ")
-        #sh(cmd) #shell(cmd)
       else
-        puts "rdoc " + argv.join(" ") if trace? or verbose?
+        trace "rdoc " + argv.join(" ") #if trace? or verbose?
         rdoc = ::RDoc::RDoc.new
         rdoc.document(argv)
         #silently do
@@ -243,6 +244,11 @@ module RedTools
       end
       #require 'rdoc'
       require 'rdoc/rdoc'
+    end
+
+    #
+    def initialize_requires
+      require_rdoc
     end
 
   end

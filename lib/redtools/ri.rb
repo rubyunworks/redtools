@@ -1,6 +1,6 @@
 module RedTools
 
-  #
+  # Create new RI tool with specified +options+.
   def RI(options={})
     RI.new(options)
   end
@@ -13,16 +13,15 @@ module RedTools
   # directory, in which case the ri documentation will be
   # stored there.
   #
-  # NOTE: Currently this tool shells out to the command line.
   class RI < Tool
 
     # Default location to store ri documentation files.
-    DEFAULT_OUTPUT       = "doc/ri"
+    DEFAULT_OUTPUT       = ".rdoc"
 
     # Locations to check for existance in deciding where to store ri documentation.
-    DEFAULT_OUTPUT_MATCH = "{doc/ri,ri}"
+    DEFAULT_OUTPUT_MATCH = "{.rdoc,.ri,ri,doc/ri}"
 
-    # Deafult extra options to add to rdoc call.
+    # Default extra options to add to rdoc call.
     DEFAULT_EXTRA        = ''
 
     #
@@ -63,13 +62,18 @@ module RedTools
       if outofdate?(output, *filelist) or force?
         status "Generating #{output}"
 
-        cmdopts = {}
-        cmdopts['op']      = output
-        cmdopts['exclude'] = exclude
+        argv = ['--ri']
+        argv.concat(extra.split(/\s+/))
+        argv.concat ['--output', output]
+        #argv.concat ['--exclude', exclude] unless exclude.empty?
 
-        ridoc_target(output, include_files, cmdopts)
+        argv = argv + filelist
+
+        dir = ri_target(output, argv)
 
         touch(output)
+
+        output
       else
         status "RI docs are current (#{output})"
       end
@@ -92,26 +96,43 @@ module RedTools
       end
     end
 
-  private
+    private
 
     # Generate ri docs for input targets.
     #
     # TODO: Use RDoc programmatically rather than via shell.
     #
-    def ridoc_target(output, input, rdocopt={})
+    def ri_target(output, argv=[])
       rm_r(output) if exist?(output) and safe?(output)  # remove old ri docs
 
-      rdocopt['op'] = output
-
-      cmd = "rdoc --ri -a #{extra} " + [input, rdocopt].to_console
-
-      if verbose? or trial?
-        sh(cmd)
+      if trial?
+        puts "rdoc " + argv.join(" ")
       else
-        silently do
-          sh(cmd)
-        end
+        puts "rdoc " + argv.join(" ") #if trace? or verbose?
+        #silently do
+        rdoc = ::RDoc::RDoc.new
+        rdoc.document(argv)
+        #end
       end
+    end
+
+    #
+    def require_rdoc
+      # NOTE: Due to a bug in RDoc this needs to be done for now
+      # so that alternate templates can be used.
+      begin
+        require 'rubygems'
+        gem('rdoc')
+      rescue LoadError
+        $stderr.puts "Oh no! No modern rdoc!"
+      end
+      #require 'rdoc'
+      require 'rdoc/rdoc'
+    end
+
+    #
+    def initialize_requires
+      require_rdoc
     end
 
   end
