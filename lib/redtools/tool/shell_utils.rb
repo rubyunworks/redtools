@@ -6,8 +6,9 @@ module RedTools
   #
   module ShellUtils
 
+    #
     def initialize
-      extend fileutils
+      extend(fileutils)
       super() if defined?(super)
     end
 
