@@ -17,14 +17,14 @@ development tools.
 
 RedTools can be used as a function module:
 
-  RedTools::Rdoc.document
+  RedTools::RDoc.document
 
 Or included in another namespace.
 
   module MyStuff
     include RedTools
 
-    Rdoc.document
+    RDoc.document
   end
 
 WARNING: Do not include RedTools at the TOPLEVEL. That RedTools class
