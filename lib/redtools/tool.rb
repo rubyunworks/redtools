@@ -5,9 +5,9 @@ module RedTools
 
   # Tool is the base class for all RedTools.
   class Tool
-    require 'redtools/tool/shell_utils'
-    require 'redtools/tool/project_utils'
-    require 'redtools/tool/email_utils'
+    require 'redtools/utils/shell_utils'
+    require 'redtools/utils/project_utils'
+    require 'redtools/utils/email_utils'
 
     include ShellUtils
     include ProjectUtils
