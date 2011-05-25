@@ -1,8 +1,8 @@
 module RedTools
 
   #
-  def Email(options={})
-    Email.new(options)
+  def Announce(options={})
+    Announce.new(options)
   end
 
   # The Email tool is used to send out project annoucements to a set of
@@ -14,7 +14,7 @@ module RedTools
   #
   # Fully custom messages can also be sent by setting the message field,
   # and or by using a message file.
-  class Email < Tool
+  class Announce < Tool
     #
     #include Ratch::EmailUtils
 
