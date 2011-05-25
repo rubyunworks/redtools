@@ -49,11 +49,44 @@ module RedTools
       create_gemspec(file)
     end
 
+    # Push gem package to RubyGems.org.
+    # TODO: Do this programatically instead of shelling out.
+    def push
+      pkgs = Pathname.new(pkgdir).glob("*-#{version}.gem")
+      if pkgs.empty?
+        report "No .gem packages found for version {version} at #{pkgdir}."
+      else
+        pkgs.each do |file|
+          sh "gem push #{file}"
+        end
+      end
+    end
+
+    # Mark package file as outdated.
+    #def reset
+    #end
+
+    # Remove package file.
+    #--
+    # TODO: Should we bother with this?
+    #
+    # TODO: This is a little loose. Can we be more specific about which
+    # gem file to remove?
+    #++
+    def clean
+      pkgs = Pathname.new(pkgdir).glob("*-#{version}.gem")
+      if pkgs.empty?
+        pkgs.each{ |f| rm(f) }
+      end
+    end
+
+
     private
 
     #
     def initialize_defaults
       @autospec  = false
+
       @pkgdir  ||= project.pkg
       @gemspec ||= lookup_gemspec
 
