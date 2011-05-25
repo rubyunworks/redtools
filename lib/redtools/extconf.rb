@@ -1,17 +1,17 @@
 module RedTools
 
   #
-  def Make(options={})
-    Make.new(options)
+  def ExtConf(options={})
+    ExtConf.new(options)
   end
 
-  # The Make tool utilizes the Autotools standard Makefile along with
-  # extconf.rb to compile native extensions.
+  # The ExtConf tool utilizes extconf.rb script and Autotools standard Makefile
+  # to compile native extensions.
   #
   # NOTE: By neccessity this tool shells out to the command line.
   #
   # TODO: win32 cross-compile ?
-  class Make < Tool
+  class ExtConf < Tool
 
     #available do |project|
     #  # check for make tools
