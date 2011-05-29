@@ -1,9 +1,11 @@
-#require 'ratch/shell'
 require 'redtools/core_ext/shell_extensions'
 
 module RedTools
 
-  #
+  # ShellUtils provides the whole slew of FileUtils,
+  # FileTest and File class methods in a single module
+  # and modifies methods according to noop? and verbose?
+  # options.
   module ShellUtils
 
     #
