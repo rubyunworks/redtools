@@ -98,6 +98,9 @@ module RedTools
       end
     end
 
+    #
+    alias_method :promote, :announce
+
     # Confirm announcement
     def mail_confirm?
       if mailto
