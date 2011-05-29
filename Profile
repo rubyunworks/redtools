@@ -11,6 +11,7 @@ authors:
 
 requires:
   - facets
+  - qed     (test)
   - reap    (build)
   - redline (build)
 
