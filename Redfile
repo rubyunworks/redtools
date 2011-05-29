@@ -28,17 +28,17 @@ stats:
   output   : site/log/stats/
   active   : true
 
+yard:
+  service  : Yard
+  tracks   : site
+  yardopts : true
+  active   : true
+
 #rdoc:
 #  service : rdoc
 #  format  : redfish
 #  exclude : [Redfile, Profile, MANIFEST, Version]
 #  output  : site/doc
-
-yard:
-  service : Custom
-  track   : site
-  document: |
-    system "yard"
 
 ri:
   service: RI
@@ -54,38 +54,38 @@ qedoc:
     puts `qedoc -o site/docs/qed -t "Redtools" qed`
   active: false
 
-testrb:
-  service  : testrb
-  tests    : ~
-  exclude  : ~
-  loadpath : ~
-  requires : ~
-  live     : false   
-  active   : false
+# TODO: Add a KO Redtool and service
+#ko:
+#  service  : KO
+#  tests    : ~
+#  exclude  : ~
+#  loadpath : ~
+#  requires : ~
+#  live     : false   
+#  active   : false
 
 grancher:
   service: Grancher
-  active: true
+  active:  true
   #sitemap:
   #  - site
   #  - [doc/rdoc, rdoc]
   #  - [doc/qedoc, qedoc]
 
-gemcutter:
-  active: true
-
-email:
-  service : Email
+announce:
+  service : Announce
   file    : ~
   subject : ~
-  mailto  : ruby-talk@ruby-lang.org
-#  from    : transfire@gmail.com
-#  server  : <%= ENV['EMAIL_SERVER'] %>
-#  port    : <%= ENV['EMAIL_PORT'] %>
-#  account : <%= ENV['EMAIL_ACCOUNT'] %>
-#  domain  : <%= ENV['EMAIL_DOMAIN'] %>
-#  login   : <%= ENV['EMAIL_LOGIN'] %>
-#  secure  : <%= ENV['EMAIL_SECURE'] %>
+  mailto  : 
+    - ruby-talk@ruby-lang.org
+    - rubyworks-mailinglist@googlegroups.com
+  #from    : transfire@gmail.com
+  #server  : <%= ENV['EMAIL_SERVER'] %>
+  #port    : <%= ENV['EMAIL_PORT'] %>
+  #account : <%= ENV['EMAIL_ACCOUNT'] %>
+  #domain  : <%= ENV['EMAIL_DOMAIN'] %>
+  #login   : <%= ENV['EMAIL_LOGIN'] %>
+  #secure  : <%= ENV['EMAIL_SECURE'] %>
   active  : true
 
 #vclog:
