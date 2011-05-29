@@ -21,7 +21,7 @@ maintainers: []
 requires: 
 - group: []
 
-  name: ratch
+  name: facets
   version: 0+
 - group: 
   - build
@@ -32,7 +32,7 @@ requires:
   name: redline
   version: 0+
 manifest: MANIFEST.txt
-version: 0.2.0
+version: 0.2.1
 licenses: 
 - GPL3
 copyright: Copyright (c) 2011 Thomas Sawyer

@@ -1,13 +1,13 @@
 --- !ruby/object:Gem::Specification 
 name: redtools
 version: !ruby/object:Gem::Version 
-  hash: 23
+  hash: 21
   prerelease: 
   segments: 
   - 0
   - 2
-  - 0
-  version: 0.2.0
+  - 1
+  version: 0.2.1
 platform: ruby
 authors: 
 - Thomas Sawyer
@@ -18,7 +18,7 @@ cert_chain: []
 date: 2011-05-29 00:00:00 Z
 dependencies: 
 - !ruby/object:Gem::Dependency 
-  name: ratch
+  name: facets
   prerelease: false
   requirement: &id001 !ruby/object:Gem::Requirement 
     none: false
