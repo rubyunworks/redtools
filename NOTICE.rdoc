@@ -1,7 +1,0 @@
-= COPYRIGHT NOTICES
-
-== Redtools
-
-Copyright (c) 2011 Thomas Sawyer
-
-
