@@ -10,7 +10,7 @@ authors:
   - Thomas Sawyer
 
 requires:
-  - ratch
+  - facets
   - reap    (build)
   - redline (build)
 
