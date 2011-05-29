@@ -14,10 +14,14 @@ requires:
   - reap    (build)
   - redline (build)
 
+resources:
+  home: http://rubyworks.github.com/redtools
+  code: http://github.com/rubyworks/redtools
+
 organization: RubyWorks
 
 licenses:
-  - Apache 2.0
+  - GPL3
 
 copyright: Copyright (c) 2011 Thomas Sawyer
 

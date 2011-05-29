@@ -1,6 +1,5 @@
 = RedTools
 
-
 == RESOURCES
 
 * home: http://rubyworks.github.com/redtools
@@ -50,8 +49,8 @@ a particular tool that requires it.
 
 == LICENSE
 
-(Apache 2.0)
+(GPL v3)
 
 Copyright (c) 2011 Thomas Sawyer
 
-See NOTICE.rdoc and APACHE2.txt for details.
+See COPYING.rdoc and GPL3.txt for details.

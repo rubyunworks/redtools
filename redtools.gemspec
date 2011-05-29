@@ -1,13 +1,13 @@
 --- !ruby/object:Gem::Specification 
 name: redtools
 version: !ruby/object:Gem::Version 
-  hash: 27
+  hash: 23
   prerelease: 
   segments: 
   - 0
-  - 1
+  - 2
   - 0
-  version: 0.1.0
+  version: 0.2.0
 platform: ruby
 authors: 
 - Thomas Sawyer
@@ -15,7 +15,7 @@ autorequire:
 bindir: bin
 cert_chain: []
 
-date: 2011-05-24 00:00:00 Z
+date: 2011-05-29 00:00:00 Z
 dependencies: 
 - !ruby/object:Gem::Dependency 
   name: ratch
@@ -70,6 +70,7 @@ extensions: []
 extra_rdoc_files: 
 - README.rdoc
 files: 
+- lib/redtools/announce.rb
 - lib/redtools/core_ext/facets.rb
 - lib/redtools/core_ext/filetest.rb
 - lib/redtools/core_ext/shell_extensions.rb
@@ -79,20 +80,20 @@ files:
 - lib/redtools/core_ext/to_yamlfrag.rb
 - lib/redtools/core_ext/unfold_paragraphs.rb
 - lib/redtools/core_ext.rb
-- lib/redtools/email.rb
+- lib/redtools/dnote.rb
+- lib/redtools/extconf.rb
 - lib/redtools/gem.rb
 - lib/redtools/grancher.rb
-- lib/redtools/make.rb
 - lib/redtools/rdoc.rb
 - lib/redtools/ri.rb
 - lib/redtools/rspec.rb
 - lib/redtools/syntax.rb
 - lib/redtools/testrb.rb
-- lib/redtools/tool/email_utils.rb
-- lib/redtools/tool/project_utils.rb
-- lib/redtools/tool/shell_utils.rb
 - lib/redtools/tool.rb
 - lib/redtools/turn.rb
+- lib/redtools/utils/email_utils.rb
+- lib/redtools/utils/project_utils.rb
+- lib/redtools/utils/shell_utils.rb
 - lib/redtools/yard.rb
 - lib/redtools.rb
 - test/case_gem.rb
@@ -111,10 +112,11 @@ files:
 - test/fixtures/test/example_test.rb
 - HISTORY.rdoc
 - README.rdoc
-- NOTICE.rdoc
+- GPL3.txt
+- COPYING.rdoc
 homepage: http://rubyworks.github.com/redtools
 licenses: 
-- Apache 2.0
+- GPL3
 post_install_message: 
 rdoc_options: 
 - --title

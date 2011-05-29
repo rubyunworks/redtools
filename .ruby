@@ -32,9 +32,9 @@ requires:
   name: redline
   version: 0+
 manifest: MANIFEST.txt
-version: 0.1.0
+version: 0.2.0
 licenses: 
-- Apache 2.0
+- GPL3
 copyright: Copyright (c) 2011 Thomas Sawyer
 authors: 
 - Thomas Sawyer

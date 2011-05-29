@@ -1,4 +1,5 @@
 #!mast lib test [A-Z][A-Z]*
+lib/redtools/announce.rb
 lib/redtools/core_ext/facets.rb
 lib/redtools/core_ext/filetest.rb
 lib/redtools/core_ext/shell_extensions.rb
@@ -8,20 +9,20 @@ lib/redtools/core_ext/to_list.rb
 lib/redtools/core_ext/to_yamlfrag.rb
 lib/redtools/core_ext/unfold_paragraphs.rb
 lib/redtools/core_ext.rb
-lib/redtools/email.rb
+lib/redtools/dnote.rb
+lib/redtools/extconf.rb
 lib/redtools/gem.rb
 lib/redtools/grancher.rb
-lib/redtools/make.rb
 lib/redtools/rdoc.rb
 lib/redtools/ri.rb
 lib/redtools/rspec.rb
 lib/redtools/syntax.rb
 lib/redtools/testrb.rb
-lib/redtools/tool/email_utils.rb
-lib/redtools/tool/project_utils.rb
-lib/redtools/tool/shell_utils.rb
 lib/redtools/tool.rb
 lib/redtools/turn.rb
+lib/redtools/utils/email_utils.rb
+lib/redtools/utils/project_utils.rb
+lib/redtools/utils/shell_utils.rb
 lib/redtools/yard.rb
 lib/redtools.rb
 test/case_gem.rb
@@ -40,4 +41,5 @@ test/fixtures/test/example2_test.rb
 test/fixtures/test/example_test.rb
 HISTORY.rdoc
 README.rdoc
-NOTICE.rdoc
+GPL3.txt
+COPYING.rdoc
