@@ -1,0 +1,252 @@
+<html>
+<head>
+  <title></title>
+  <style>
+    body { margin: 0; padding: 0; font-size: 0.8em; }
+    .main {
+      width: 800px;
+      margin: 0 auto;
+      border: 0px solid #ccc;
+      padding: 0 20px 20px 20px;
+    }
+    h1 { margin: 25px 0; font-size: 3em; }
+    h2,h3,h4 { margin: 5px 0; padding: 0; color: #444; }
+    h2 { letter-spacing: 2px; border-top: 4px solid #ddd; padding: 5px 0; }
+    ul { margin: 0; padding: 0; text-align: left; }
+    li { margin: 0; padding: 0; text-align: left; }
+     a { color: #4488ff; }
+   sup { font-size: 0.8em; }
+  </style>
+  <link rel="stylesheet" href="notes.css" type="text/css">
+</head>
+<body>
+<div class="main">
+  <h1></h1>
+  <div class="notes">
+    <h2 class="FIXME">FIXME</h2>
+    <ol class="set fixme">
+      <li><h3><a href="lib/redtools/syntax.rb">lib/redtools/syntax.rb</a></h3><ol class="file" href="lib/redtools/syntax.rb">
+        <li class="note fixme" ref="164">
+          This isn&apos;t routing output to dev/null as expected ? <sup><a href="lib/redtools/syntax.rb">164</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="lib/redtools/grancher.rb">lib/redtools/grancher.rb</a></h3><ol class="file" href="lib/redtools/grancher.rb">
+        <li class="note fixme" ref="80">
+          had to pause so grancher will not bomb! <sup><a href="lib/redtools/grancher.rb">80</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="lib/redtools/utils/email_utils.rb">lib/redtools/utils/email_utils.rb</a></h3><ol class="file" href="lib/redtools/utils/email_utils.rb">
+        <li class="note fixme" ref="182">
+          Does not hide password. <sup><a href="lib/redtools/utils/email_utils.rb">182</a></sup>
+        </li>
+      </ol></li>
+    </ol>
+    <h2 class="DEPRECATE">DEPRECATE</h2>
+    <ol class="set deprecate">
+      <li><h3><a href="lib/redtools/core_ext/shell_extensions.rb">lib/redtools/core_ext/shell_extensions.rb</a></h3><ol class="file" href="lib/redtools/core_ext/shell_extensions.rb">
+        <li class="note deprecate" ref="5">
+          when new #glob is working. <sup><a href="lib/redtools/core_ext/shell_extensions.rb">5</a></sup>
+        </li>
+      </ol></li>
+    </ol>
+    <h2 class="TODO">TODO</h2>
+    <ol class="set todo">
+      <li><h3><a href="lib/redtools/yard.rb">lib/redtools/yard.rb</a></h3><ol class="file" href="lib/redtools/yard.rb">
+        <li class="note todo" ref="97">
+          Is this true?
+YARD SUCKS --THIS DOESN&apos;T WORK ON YARD LINE, WE MUST DO IT OURSELVES!!! <sup><a href="lib/redtools/yard.rb">97</a></sup>
+        </li>
+        <li class="note todo" ref="165">
+          remove .yardoc ? <sup><a href="lib/redtools/yard.rb">165</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="lib/redtools/tool.rb">lib/redtools/tool.rb</a></h3><ol class="file" href="lib/redtools/tool.rb">
+        <li class="note todo" ref="36">
+          It would be best if an error were raised if an option is not
+supported, however for now only a warning will be issued, b/c of 
+subclassing makes things more complicated. <sup><a href="lib/redtools/tool.rb">36</a></sup>
+        </li>
+        <li class="note todo" ref="86">
+          Is naming_policy really useful? <sup><a href="lib/redtools/tool.rb">86</a></sup>
+        </li>
+        <li class="note todo" ref="87">
+          How to set this in a more universal manner? <sup><a href="lib/redtools/tool.rb">87</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="lib/redtools/rdoc.rb">lib/redtools/rdoc.rb</a></h3><ol class="file" href="lib/redtools/rdoc.rb">
+        <li class="note todo" ref="17">
+          IMPROVE
+available do |project|
+!project.metadata.loadpath.empty?
+end <sup><a href="lib/redtools/rdoc.rb">17</a></sup>
+        </li>
+        <li class="note todo" ref="98">
+          I think base name should retun a string? <sup><a href="lib/redtools/rdoc.rb">98</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="lib/redtools/core_ext/to_console.rb">lib/redtools/core_ext/to_console.rb</a></h3><ol class="file" href="lib/redtools/core_ext/to_console.rb">
+        <li class="note todo" ref="1">
+          Improve the naming scheme of these methods. <sup><a href="lib/redtools/core_ext/to_console.rb">1</a></sup>
+        </li>
+        <li class="note todo" ref="17">
+          DEPRECATE <sup><a href="lib/redtools/core_ext/to_console.rb">17</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="test/case_testrb.rb">test/case_testrb.rb</a></h3><ol class="file" href="test/case_testrb.rb">
+        <li class="note todo" ref="14">
+          silently do <sup><a href="test/case_testrb.rb">14</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="test/case_ri.rb">test/case_ri.rb</a></h3><ol class="file" href="test/case_ri.rb">
+        <li class="note todo" ref="14">
+          silently do <sup><a href="test/case_ri.rb">14</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="lib/redtools/testrb.rb">lib/redtools/testrb.rb</a></h3><ol class="file" href="lib/redtools/testrb.rb">
+        <li class="note todo" ref="10">
+          IMPORTANT! How do we retrun test success? <sup><a href="lib/redtools/testrb.rb">10</a></sup>
+        </li>
+        <li class="note todo" ref="68">
+          Should we use a subdirectory for testrb log? <sup><a href="lib/redtools/testrb.rb">68</a></sup>
+        </li>
+        <li class="note todo" ref="70">
+          apply_naming_policy(&apos;test&apos;, &apos;log&apos;) ? <sup><a href="lib/redtools/testrb.rb">70</a></sup>
+        </li>
+        <li class="note todo" ref="88">
+          Do not use `tee` to log. Perhaps popen can help? <sup><a href="lib/redtools/testrb.rb">88</a></sup>
+        </li>
+        <li class="note todo" ref="127">
+          Does tee work on Windows? <sup><a href="lib/redtools/testrb.rb">127</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="lib/redtools/gem.rb">lib/redtools/gem.rb</a></h3><ol class="file" href="lib/redtools/gem.rb">
+        <li class="note todo" ref="54">
+          Do this programatically instead of shelling out. <sup><a href="lib/redtools/gem.rb">54</a></sup>
+        </li>
+        <li class="note todo" ref="79">
+          This is a little loose. Can we be more specific about which
+gem file(s) to remove? <sup><a href="lib/redtools/gem.rb">79</a></sup>
+        </li>
+        <li class="note todo" ref="153">
+          Should we be rescuing this? <sup><a href="lib/redtools/gem.rb">153</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="test/case_gem.rb">test/case_gem.rb</a></h3><ol class="file" href="test/case_gem.rb">
+        <li class="note todo" ref="14">
+          silently do <sup><a href="test/case_gem.rb">14</a></sup>
+        </li>
+        <li class="note todo" ref="21">
+          silently do <sup><a href="test/case_gem.rb">21</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="lib/redtools/utils/shell_utils.rb">lib/redtools/utils/shell_utils.rb</a></h3><ol class="file" href="lib/redtools/utils/shell_utils.rb">
+        <li class="note todo" ref="82">
+          deprecate in favor of #report ? <sup><a href="lib/redtools/utils/shell_utils.rb">82</a></sup>
+        </li>
+        <li class="note todo" ref="91">
+          rename to #warn ? <sup><a href="lib/redtools/utils/shell_utils.rb">91</a></sup>
+        </li>
+        <li class="note todo" ref="104">
+          Until we have better support for getting input across
+platforms, we are using #ask for passwords too. <sup><a href="lib/redtools/utils/shell_utils.rb">104</a></sup>
+        </li>
+        <li class="note todo" ref="133">
+          Ultimately merge #glob and #multiglob. <sup><a href="lib/redtools/utils/shell_utils.rb">133</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="lib/redtools/grancher.rb">lib/redtools/grancher.rb</a></h3><ol class="file" href="lib/redtools/grancher.rb">
+        <li class="note todo" ref="95">
+          Does the POM Project provide the site directory? <sup><a href="lib/redtools/grancher.rb">95</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="lib/redtools/dnote.rb">lib/redtools/dnote.rb</a></h3><ol class="file" href="lib/redtools/dnote.rb">
+        <li class="note todo" ref="73">
+          Is #trial? correct? <sup><a href="lib/redtools/dnote.rb">73</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="lib/redtools/announce.rb">lib/redtools/announce.rb</a></h3><ol class="file" href="lib/redtools/announce.rb">
+        <li class="note todo" ref="177">
+          should this universal? <sup><a href="lib/redtools/announce.rb">177</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="test/case_turn.rb">test/case_turn.rb</a></h3><ol class="file" href="test/case_turn.rb">
+        <li class="note todo" ref="14">
+          silently do <sup><a href="test/case_turn.rb">14</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="test/case_yard.rb">test/case_yard.rb</a></h3><ol class="file" href="test/case_yard.rb">
+        <li class="note todo" ref="14">
+          silently do <sup><a href="test/case_yard.rb">14</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="test/case_syntax.rb">test/case_syntax.rb</a></h3><ol class="file" href="test/case_syntax.rb">
+        <li class="note todo" ref="14">
+          silently do <sup><a href="test/case_syntax.rb">14</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="test/case_rspec.rb">test/case_rspec.rb</a></h3><ol class="file" href="test/case_rspec.rb">
+        <li class="note todo" ref="14">
+          silently do <sup><a href="test/case_rspec.rb">14</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="lib/redtools/ri.rb">lib/redtools/ri.rb</a></h3><ol class="file" href="lib/redtools/ri.rb">
+        <li class="note todo" ref="107">
+          Use RDoc programmatically rather than via shell. <sup><a href="lib/redtools/ri.rb">107</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="work/consider/rubyprof.rb">work/consider/rubyprof.rb</a></h3><ol class="file" href="work/consider/rubyprof.rb">
+        <li class="note todo" ref="37">
+          Need to create an index.html file to link to all the others. <sup><a href="work/consider/rubyprof.rb">37</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="test/case_rdoc.rb">test/case_rdoc.rb</a></h3><ol class="file" href="test/case_rdoc.rb">
+        <li class="note todo" ref="14">
+          silently do <sup><a href="test/case_rdoc.rb">14</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="lib/redtools/turn.rb">lib/redtools/turn.rb</a></h3><ol class="file" href="lib/redtools/turn.rb">
+        <li class="note todo" ref="103">
+          Generate a test log entry? <sup><a href="lib/redtools/turn.rb">103</a></sup>
+        </li>
+        <li class="note todo" ref="139">
+          Use a subdirectory for log? <sup><a href="lib/redtools/turn.rb">139</a></sup>
+        </li>
+        <li class="note todo" ref="140">
+          Does turn logging work? <sup><a href="lib/redtools/turn.rb">140</a></sup>
+        </li>
+        <li class="note todo" ref="151">
+          Make sure turn returns a failing exist code if tests fail. <sup><a href="lib/redtools/turn.rb">151</a></sup>
+        </li>
+        <li class="note todo" ref="154">
+          Why can&apos;t we do this? It just says &apos;No tests&apos;.
+begin
+success = ::Turn::Command.main(*argv)
+rescue SystemExit =&gt; err
+end <sup><a href="lib/redtools/turn.rb">154</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="work/consider/rcov.rb">work/consider/rcov.rb</a></h3><ol class="file" href="work/consider/rcov.rb">
+        <li class="note todo" ref="29">
+          Default scripts must be improved. How? <sup><a href="work/consider/rcov.rb">29</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="lib/redtools/extconf.rb">lib/redtools/extconf.rb</a></h3><ol class="file" href="lib/redtools/extconf.rb">
+        <li class="note todo" ref="13">
+          win32 cross-compile ? <sup><a href="lib/redtools/extconf.rb">13</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="lib/redtools/core_ext/unfold_paragraphs.rb">lib/redtools/core_ext/unfold_paragraphs.rb</a></h3><ol class="file" href="lib/redtools/core_ext/unfold_paragraphs.rb">
+        <li class="note todo" ref="1">
+          Replace with facets/string/unfold <sup><a href="lib/redtools/core_ext/unfold_paragraphs.rb">1</a></sup>
+        </li>
+      </ol></li>
+      <li><h3><a href="lib/redtools/core_ext/filetest.rb">lib/redtools/core_ext/filetest.rb</a></h3><ol class="file" href="lib/redtools/core_ext/filetest.rb">
+        <li class="note todo" ref="11">
+          Make more robust. Probably needs to be fixed for Windows. <sup><a href="lib/redtools/core_ext/filetest.rb">11</a></sup>
+        </li>
+      </ol></li>
+    </ol>
+  </div>
+</div>
+</body>
+</html>

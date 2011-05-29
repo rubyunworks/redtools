@@ -1,0 +1,1031 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>Class: RedTools::Turn</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '..';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (T)</a> &raquo; 
+    <span class='title'><span class='object_link'><a href="../RedTools.html" title="RedTools (module)">RedTools</a></span></span>
+     &raquo; 
+    <span class="title">Turn</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
+
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Class: RedTools::Turn
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName"><span class='object_link'><a href="Tool.html" title="RedTools::Tool (class)">Tool</a></span></span>
+      
+        <ul class="fullTree">
+          <li><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></li>
+          
+            <li class="next"><span class='object_link'><a href="Tool.html" title="RedTools::Tool (class)">Tool</a></span></li>
+          
+            <li class="next">RedTools::Turn</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/redtools/turn.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>The Turn tool your TestUnit or MiniTest unit tests using Turn.</p>
+
+<p>NOTE: This tool currently shells out to the command line.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div>
+  <h2>Constant Summary</h2>
+  
+    <dl class="constants">
+      
+        <dt id="DEFAULT_TESTS-constant" class="">DEFAULT_TESTS =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>Default test file patterns.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div>
+        </dt>
+        <dd><pre class="code"><span class='lbrack token'>[</span><span class='string val'>&quot;test/**/test_*.rb&quot;</span><span class='comma token'>,</span> <span class='string val'>&quot;test/**/*_test.rb&quot;</span> <span class='rbrack token'>]</span>
+</pre></dd>
+      
+    </dl>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h2>Instance Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#exclude-instance_method" title="#exclude (instance method)">- (Object) <strong>exclude</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Test file patterns to specially exclude.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#live-instance_method" title="#live (instance method)">- (Object) <strong>live</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Test against live install (i.e. Don’t use loadpath option).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#loadpath-instance_method" title="#loadpath (instance method)">- (Object) <strong>loadpath</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Add these folders to the $LOAD_PATH.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#log-instance_method" title="#log (instance method)">- (Object) <strong>log</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Either a log file name or <tt>true</tt>/<tt>false</tt>.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#requires-instance_method" title="#requires (instance method)">- (Object) <strong>requires</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Libs to require when running tests.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tests-instance_method" title="#tests (instance method)">- (Object) <strong>tests</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>File glob pattern of tests to run.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#initialize_defaults-instance_method" title="#initialize_defaults (instance method)">- (Object) <strong>initialize_defaults</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Setup default attribute values.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#initialize_requires-instance_method" title="#initialize_requires (instance method)">- (Object) <strong>initialize_requires</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#logfile-instance_method" title="#logfile (instance method)">- (Object) <strong>logfile</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#run-instance_method" title="#run (instance method)">- (Object) <strong>run</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#run_tests-instance_method" title="#run_tests (instance method)">- (Object) <strong>run_tests</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Run unit tests.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="Tool.html" title="RedTools::Tool (class)">Tool</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Tool.html#initialize-instance_method" title="RedTools::Tool#initialize (method)">#initialize</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="EmailUtils.html" title="RedTools::EmailUtils (module)">EmailUtils</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="EmailUtils.html#email-instance_method" title="RedTools::EmailUtils#email (method)">#email</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="ProjectUtils.html" title="RedTools::ProjectUtils (module)">ProjectUtils</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="ProjectUtils.html#metadata-instance_method" title="RedTools::ProjectUtils#metadata (method)">#metadata</a></span>, <span class='object_link'><a href="ProjectUtils.html#project-class_method" title="RedTools::ProjectUtils.project (method)">project</a></span>, <span class='object_link'><a href="ProjectUtils.html#project-instance_method" title="RedTools::ProjectUtils#project (method)">#project</a></span>, <span class='object_link'><a href="ProjectUtils.html#root-instance_method" title="RedTools::ProjectUtils#root (method)">#root</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="ShellUtils.html" title="RedTools::ShellUtils (module)">ShellUtils</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="ShellUtils.html#absolute%3F-instance_method" title="RedTools::ShellUtils#absolute? (method)">#absolute?</a></span>, <span class='object_link'><a href="ShellUtils.html#append-instance_method" title="RedTools::ShellUtils#append (method)">#append</a></span>, <span class='object_link'><a href="ShellUtils.html#ask-instance_method" title="RedTools::ShellUtils#ask (method)">#ask</a></span>, <span class='object_link'><a href="ShellUtils.html#blockdev%3F-instance_method" title="RedTools::ShellUtils#blockdev? (method)">#blockdev?</a></span>, <span class='object_link'><a href="ShellUtils.html#chardev%3F-instance_method" title="RedTools::ShellUtils#chardev? (method)">#chardev?</a></span>, <span class='object_link'><a href="ShellUtils.html#debug%3F-instance_method" title="RedTools::ShellUtils#debug? (method)">#debug?</a></span>, <span class='object_link'><a href="ShellUtils.html#directory%3F-instance_method" title="RedTools::ShellUtils#directory? (method)">#directory?</a></span>, <span class='object_link'><a href="ShellUtils.html#dryrun%3F-instance_method" title="RedTools::ShellUtils#dryrun? (method)">#dryrun?</a></span>, <span class='object_link'><a href="ShellUtils.html#executable%3F-instance_method" title="RedTools::ShellUtils#executable? (method)">#executable?</a></span>, <span class='object_link'><a href="ShellUtils.html#executable_real%3F-instance_method" title="RedTools::ShellUtils#executable_real? (method)">#executable_real?</a></span>, <span class='object_link'><a href="ShellUtils.html#exist%3F-instance_method" title="RedTools::ShellUtils#exist? (method)">#exist?</a></span>, <span class='object_link'><a href="ShellUtils.html#exists%3F-instance_method" title="RedTools::ShellUtils#exists? (method)">#exists?</a></span>, <span class='object_link'><a href="ShellUtils.html#file%3F-instance_method" title="RedTools::ShellUtils#file? (method)">#file?</a></span>, <span class='object_link'><a href="ShellUtils.html#fileutils-instance_method" title="RedTools::ShellUtils#fileutils (method)">#fileutils</a></span>, <span class='object_link'><a href="ShellUtils.html#force%3F-instance_method" title="RedTools::ShellUtils#force? (method)">#force?</a></span>, <span class='object_link'><a href="ShellUtils.html#grpowned%3F-instance_method" title="RedTools::ShellUtils#grpowned? (method)">#grpowned?</a></span>, <span class='object_link'><a href="ShellUtils.html#identical%3F-instance_method" title="RedTools::ShellUtils#identical? (method)">#identical?</a></span>, <span class='object_link'><a href="ShellUtils.html#initialize-instance_method" title="RedTools::ShellUtils#initialize (method)">#initialize</a></span>, <span class='object_link'><a href="ShellUtils.html#multiglob-instance_method" title="RedTools::ShellUtils#multiglob (method)">#multiglob</a></span>, <span class='object_link'><a href="ShellUtils.html#multiglob_r-instance_method" title="RedTools::ShellUtils#multiglob_r (method)">#multiglob_r</a></span>, <span class='object_link'><a href="ShellUtils.html#noop%3F-instance_method" title="RedTools::ShellUtils#noop? (method)">#noop?</a></span>, <span class='object_link'><a href="ShellUtils.html#owned%3F-instance_method" title="RedTools::ShellUtils#owned? (method)">#owned?</a></span>, <span class='object_link'><a href="ShellUtils.html#password-instance_method" title="RedTools::ShellUtils#password (method)">#password</a></span>, <span class='object_link'><a href="ShellUtils.html#path-instance_method" title="RedTools::ShellUtils#path (method)">#path</a></span>, <span class='object_link'><a href="ShellUtils.html#path%3D-instance_method" title="RedTools::ShellUtils#path= (method)">#path=</a></span>, <span class='object_link'><a href="ShellUtils.html#pipe%3F-instance_method" title="RedTools::ShellUtils#pipe? (method)">#pipe?</a></span>, <span class='object_link'><a href="ShellUtils.html#print-instance_method" title="RedTools::ShellUtils#print (method)">#print</a></span>, <span class='object_link'><a href="ShellUtils.html#puts-instance_method" title="RedTools::ShellUtils#puts (method)">#puts</a></span>, <span class='object_link'><a href="ShellUtils.html#quiet%3F-instance_method" title="RedTools::ShellUtils#quiet? (method)">#quiet?</a></span>, <span class='object_link'><a href="ShellUtils.html#read-instance_method" title="RedTools::ShellUtils#read (method)">#read</a></span>, <span class='object_link'><a href="ShellUtils.html#readable%3F-instance_method" title="RedTools::ShellUtils#readable? (method)">#readable?</a></span>, <span class='object_link'><a href="ShellUtils.html#readable_real%3F-instance_method" title="RedTools::ShellUtils#readable_real? (method)">#readable_real?</a></span>, <span class='object_link'><a href="ShellUtils.html#relative%3F-instance_method" title="RedTools::ShellUtils#relative? (method)">#relative?</a></span>, <span class='object_link'><a href="ShellUtils.html#safe%3F-instance_method" title="RedTools::ShellUtils#safe? (method)">#safe?</a></span>, <span class='object_link'><a href="ShellUtils.html#setgid%3F-instance_method" title="RedTools::ShellUtils#setgid? (method)">#setgid?</a></span>, <span class='object_link'><a href="ShellUtils.html#setuid%3F-instance_method" title="RedTools::ShellUtils#setuid? (method)">#setuid?</a></span>, <span class='object_link'><a href="ShellUtils.html#sh-instance_method" title="RedTools::ShellUtils#sh (method)">#sh</a></span>, <span class='object_link'><a href="ShellUtils.html#size-instance_method" title="RedTools::ShellUtils#size (method)">#size</a></span>, <span class='object_link'><a href="ShellUtils.html#size%3F-instance_method" title="RedTools::ShellUtils#size? (method)">#size?</a></span>, <span class='object_link'><a href="ShellUtils.html#socket%3F-instance_method" title="RedTools::ShellUtils#socket? (method)">#socket?</a></span>, <span class='object_link'><a href="ShellUtils.html#status-instance_method" title="RedTools::ShellUtils#status (method)">#status</a></span>, <span class='object_link'><a href="ShellUtils.html#sticky%3F-instance_method" title="RedTools::ShellUtils#sticky? (method)">#sticky?</a></span>, <span class='object_link'><a href="ShellUtils.html#symlink%3F-instance_method" title="RedTools::ShellUtils#symlink? (method)">#symlink?</a></span>, <span class='object_link'><a href="ShellUtils.html#trace%3F-instance_method" title="RedTools::ShellUtils#trace? (method)">#trace?</a></span>, <span class='object_link'><a href="ShellUtils.html#trial%3F-instance_method" title="RedTools::ShellUtils#trial? (method)">#trial?</a></span>, <span class='object_link'><a href="ShellUtils.html#verbose%3F-instance_method" title="RedTools::ShellUtils#verbose? (method)">#verbose?</a></span>, <span class='object_link'><a href="ShellUtils.html#writable%3F-instance_method" title="RedTools::ShellUtils#writable? (method)">#writable?</a></span>, <span class='object_link'><a href="ShellUtils.html#writable_real%3F-instance_method" title="RedTools::ShellUtils#writable_real? (method)">#writable_real?</a></span>, <span class='object_link'><a href="ShellUtils.html#write-instance_method" title="RedTools::ShellUtils#write (method)">#write</a></span>, <span class='object_link'><a href="ShellUtils.html#zero%3F-instance_method" title="RedTools::ShellUtils#zero? (method)">#zero?</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <p class="notice">This class inherits a constructor from <span class='object_link'><a href="Tool.html#initialize-instance_method" title="RedTools::Tool#initialize (method)">RedTools::Tool</a></span></p>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="exclude=-instance_method"></span>
+      <span id="exclude-instance_method"></span>
+      <div class="method_details first">
+  <p class="signature first" id="exclude-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>exclude</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Test file patterns to specially exclude.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+21
+22
+23</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/turn.rb', line 21</span>
+
+<span class='def def kw'>def</span> <span class='exclude identifier id'>exclude</span>
+  <span class='@exclude ivar id'>@exclude</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="live=-instance_method"></span>
+      <span id="live-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="live-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>live</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Test against live install (i.e. Don’t use loadpath option).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+30
+31
+32</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/turn.rb', line 30</span>
+
+<span class='def def kw'>def</span> <span class='live identifier id'>live</span>
+  <span class='@live ivar id'>@live</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="loadpath=-instance_method"></span>
+      <span id="loadpath-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="loadpath-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>loadpath</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Add these folders to the $LOAD_PATH.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+24
+25
+26</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/turn.rb', line 24</span>
+
+<span class='def def kw'>def</span> <span class='loadpath identifier id'>loadpath</span>
+  <span class='@loadpath ivar id'>@loadpath</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="log=-instance_method"></span>
+      <span id="log-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="log-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>log</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Either a log file name or <tt>true</tt>/<tt>false</tt>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+33
+34
+35</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/turn.rb', line 33</span>
+
+<span class='def def kw'>def</span> <span class='log identifier id'>log</span>
+  <span class='@log ivar id'>@log</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="requires=-instance_method"></span>
+      <span id="requires-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="requires-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>requires</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Libs to require when running tests.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+27
+28
+29</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/turn.rb', line 27</span>
+
+<span class='def def kw'>def</span> <span class='requires identifier id'>requires</span>
+  <span class='@requires ivar id'>@requires</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="tests=-instance_method"></span>
+      <span id="tests-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="tests-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>tests</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>File glob pattern of tests to run.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+18
+19
+20</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/turn.rb', line 18</span>
+
+<span class='def def kw'>def</span> <span class='tests identifier id'>tests</span>
+  <span class='@tests ivar id'>@tests</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="initialize_defaults-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>initialize_defaults</strong>  <span class="extras">(private)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Setup default attribute values.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+71
+72
+73
+74
+75
+76
+77</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/turn.rb', line 71</span>
+
+<span class='def def kw'>def</span> <span class='initialize_defaults identifier id'>initialize_defaults</span>
+  <span class='@loadpath ivar id'>@loadpath</span> <span class='assign token'>=</span> <span class='metadata identifier id'>metadata</span><span class='dot token'>.</span><span class='loadpath identifier id'>loadpath</span>
+  <span class='@tests ivar id'>@tests</span>    <span class='assign token'>=</span> <span class='DEFAULT_TESTS constant id'>DEFAULT_TESTS</span>
+  <span class='@exclude ivar id'>@exclude</span>  <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span>
+  <span class='@reqiures ivar id'>@reqiures</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span>
+  <span class='@live ivar id'>@live</span>     <span class='assign token'>=</span> <span class='false false kw'>false</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="initialize_requires-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>initialize_requires</strong>  <span class="extras">(private)</span>
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+162
+163
+164</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/turn.rb', line 162</span>
+
+<span class='def def kw'>def</span> <span class='initialize_requires identifier id'>initialize_requires</span>
+  <span class='comment val'>#require 'turn/command'</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="logfile-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>logfile</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+54
+55
+56
+57
+58
+59
+60
+61</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/turn.rb', line 54</span>
+
+<span class='def def kw'>def</span> <span class='logfile identifier id'>logfile</span>
+  <span class='case case kw'>case</span> <span class='log identifier id'>log</span>
+  <span class='when when kw'>when</span> <span class='String constant id'>String</span>
+    <span class='project identifier id'>project</span><span class='dot token'>.</span><span class='log identifier id'>log</span> <span class='plus op'>+</span> <span class='log identifier id'>log</span>
+  <span class='else else kw'>else</span>
+    <span class='project identifier id'>project</span><span class='dot token'>.</span><span class='log identifier id'>log</span> <span class='plus op'>+</span> <span class='string val'>'turn.log'</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="run-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>run</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+64
+65
+66</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/turn.rb', line 64</span>
+
+<span class='def def kw'>def</span> <span class='run identifier id'>run</span>
+  <span class='run_tests identifier id'>run_tests</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="run_tests-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>run_tests</strong>  <span class="extras">(private)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Run unit tests. Unlike test-solo and test-cross this loads all tests and
+runs them together in a single process.</p>
+
+<p>Note that this shells out to the testrb program.</p>
+
+<p>TODO: Generate a test log entry?</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/turn.rb', line 105</span>
+
+<span class='def def kw'>def</span> <span class='run_tests identifier id'>run_tests</span>
+  <span class='tests identifier id'>tests</span>    <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='tests identifier id'>tests</span>
+  <span class='exclude identifier id'>exclude</span>  <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='exclude identifier id'>exclude</span>
+  <span class='loadpath identifier id'>loadpath</span> <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='loadpath identifier id'>loadpath</span>
+  <span class='requires identifier id'>requires</span> <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='requires identifier id'>requires</span>
+  <span class='live identifier id'>live</span>     <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='live identifier id'>live</span>
+
+  <span class='comment val'>#log      = options['log'] != false</span>
+  <span class='comment val'>#logfile  = File.join('log', apply_naming_policy('test', 'log'))</span>
+
+  <span class='comment val'># what about arguments for selecting specific tests?</span>
+  <span class='comment val'>#tests = EVN['TESTS'] if ENV['TESTS']</span>
+
+  <span class='comment val'>#unless live</span>
+  <span class='comment val'>#  loadpath.each do |lp|</span>
+  <span class='comment val'>#    $LOAD_PATH.unshift(File.expand_path(lp))</span>
+  <span class='comment val'>#  end</span>
+  <span class='comment val'>#end</span>
+
+  <span class='files identifier id'>files</span> <span class='assign token'>=</span> <span class='multiglob_r identifier id'>multiglob_r</span><span class='lparen token'>(</span><span class='mult op'>*</span><span class='tests identifier id'>tests</span><span class='rparen token'>)</span> <span class='minus op'>-</span> <span class='multiglob_r identifier id'>multiglob_r</span><span class='lparen token'>(</span><span class='mult op'>*</span><span class='exclude identifier id'>exclude</span><span class='rparen token'>)</span>
+
+  <span class='if if kw'>if</span> <span class='files identifier id'>files</span><span class='dot token'>.</span><span class='empty? fid id'>empty?</span>
+    <span class='report identifier id'>report</span> <span class='string val'>&quot;WARNING: NO TESTS TO RUN&quot;</span>
+    <span class='return return kw'>return</span>
+  <span class='end end kw'>end</span>
+
+  <span class='filelist identifier id'>filelist</span> <span class='assign token'>=</span> <span class='files identifier id'>files</span><span class='dot token'>.</span><span class='select identifier id'>select</span><span class='lbrace token'>{</span><span class='bitor op'>|</span><span class='file identifier id'>file</span><span class='bitor op'>|</span> <span class='notop op'>!</span><span class='File constant id'>File</span><span class='dot token'>.</span><span class='directory? fid id'>directory?</span><span class='lparen token'>(</span><span class='file identifier id'>file</span><span class='rparen token'>)</span> <span class='rbrace token'>}</span>
+
+  <span class='argv identifier id'>argv</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span>
+
+  <span class='if if kw'>if</span> <span class='notop op'>!</span><span class='live identifier id'>live</span>
+    <span class='argv identifier id'>argv</span><span class='dot token'>.</span><span class='concat identifier id'>concat</span> <span class='lbrack token'>[</span><span class='string val'>'-I'</span><span class='comma token'>,</span> <span class='loadpath identifier id'>loadpath</span><span class='dot token'>.</span><span class='join identifier id'>join</span><span class='lparen token'>(</span><span class='string val'>':'</span><span class='rparen token'>)</span><span class='rbrack token'>]</span>
+  <span class='end end kw'>end</span>
+
+  <span class='comment val'># TODO: Use a subdirectory for log?</span>
+  <span class='comment val'># TODO: Does turn logging work?</span>
+  <span class='if if kw'>if</span> <span class='log identifier id'>log</span>
+    <span class='argv identifier id'>argv</span><span class='dot token'>.</span><span class='concat identifier id'>concat</span> <span class='lbrack token'>[</span><span class='string val'>'--log'</span><span class='comma token'>,</span> <span class='logfile identifier id'>logfile</span><span class='rbrack token'>]</span>
+  <span class='end end kw'>end</span>
+
+  <span class='argv identifier id'>argv</span><span class='dot token'>.</span><span class='concat identifier id'>concat</span> <span class='filelist identifier id'>filelist</span>
+
+  <span class='command identifier id'>command</span> <span class='assign token'>=</span> <span class='string val'>&quot;turn &quot;</span> <span class='plus op'>+</span> <span class='argv identifier id'>argv</span><span class='dot token'>.</span><span class='join identifier id'>join</span><span class='lparen token'>(</span><span class='string val'>' '</span><span class='rparen token'>)</span>
+
+  <span class='trace identifier id'>trace</span> <span class='command identifier id'>command</span>
+
+  <span class='comment val'># TODO: Make sure turn returns a failing exist code if tests fail.</span>
+  <span class='success identifier id'>success</span> <span class='assign token'>=</span> <span class='sh identifier id'>sh</span><span class='lparen token'>(</span><span class='command identifier id'>command</span><span class='rparen token'>)</span> <span class='comment val'>#, :show=&gt;true)</span>
+
+  <span class='comment val'># TODO: Why can't we do this? It just says 'No tests'.</span>
+  <span class='comment val'>#begin</span>
+  <span class='comment val'>#  success = ::Turn::Command.main(*argv)</span>
+  <span class='comment val'>#rescue SystemExit =&gt; err</span>
+  <span class='comment val'>#end</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Tue May 24 07:37:15 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.6.7 (ruby-1.8.7).
+</div>
+
+  </body>
+</html>

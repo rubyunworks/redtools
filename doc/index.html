@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>File: README</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html" title="Index">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
+
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><div id='filecontents'>
+<h1>RedTools</h1>
+
+<h2>RESOURCES</h2>
+<ul><li>
+<p>home: <a
+href="http://rubyworks.github.com/redtools">rubyworks.github.com/redtools</a></p>
+</li><li>
+<p>code: <a
+href="http://github.com/rubyworks/redtools">github.com/rubyworks/redtools</a></p>
+</li></ul>
+
+<h2>DESCRIPTION</h2>
+
+<p>RedTools is a uniform collection of interfaces to common Ruby project
+development tools.</p>
+
+<h2>USAGE</h2>
+
+<p>RedTools can be used as a function module:</p>
+
+<pre class="code"><span class='RedTools constant id'>RedTools</span><span class='colon2 op'>::</span><span class='Rdoc constant id'>Rdoc</span><span class='dot token'>.</span><span class='document identifier id'>document</span>
+</pre>
+
+<p>Or included in another namespace.</p>
+
+<pre class="code"><span class='module module kw'>module</span> <span class='MyStuff constant id'>MyStuff</span>
+  <span class='include identifier id'>include</span> <span class='RedTools constant id'>RedTools</span>
+
+  <span class='Rdoc constant id'>Rdoc</span><span class='dot token'>.</span><span class='document identifier id'>document</span>
+<span class='end end kw'>end</span>
+</pre>
+
+<p>WARNING: Do not include RedTools at the TOPLEVEL. That RedTools class names
+may conflict with the library names that they utilize. For example, the
+<tt>RedTools::RDoc</tt> class would conflict with the <tt>RDoc</tt> module
+from the rdoc gem.</p>
+
+<h2>REQUIREMENTS</h2>
+
+<p>To utilize all of the built-in tools the following gems need to be
+installed:</p>
+<ul><li>
+<p>rubygems</p>
+</li><li>
+<p>rdoc</p>
+</li><li>
+<p>yard</p>
+</li><li>
+<p>turn</p>
+</li><li>
+<p>rspec</p>
+</li><li>
+<p>grancher</p>
+</li></ul>
+
+<p>There is no need to depend-on or install a library if you don’t plan to
+use a particular tool that requires it.</p>
+
+<h2>LICENSE</h2>
+
+<p>(Apache 2.0)</p>
+
+<p>Copyright © 2011 Thomas Sawyer</p>
+
+<p>See NOTICE.rdoc and APACHE2.txt for details.</p>
+</div></div>
+    
+    <div id="footer">
+  Generated on Tue May 24 07:37:08 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.6.7 (ruby-1.8.7).
+</div>
+
+  </body>
+</html>

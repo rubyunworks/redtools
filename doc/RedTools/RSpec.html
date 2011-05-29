@@ -1,0 +1,1040 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>Class: RedTools::RSpec</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '..';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (R)</a> &raquo; 
+    <span class='title'><span class='object_link'><a href="../RedTools.html" title="RedTools (module)">RedTools</a></span></span>
+     &raquo; 
+    <span class="title">RSpec</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
+
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Class: RedTools::RSpec
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName"><span class='object_link'><a href="Tool.html" title="RedTools::Tool (class)">Tool</a></span></span>
+      
+        <ul class="fullTree">
+          <li><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></li>
+          
+            <li class="next"><span class='object_link'><a href="Tool.html" title="RedTools::Tool (class)">Tool</a></span></li>
+          
+            <li class="next">RedTools::RSpec</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/redtools/rspec.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>The RSpec tool is used to run project specifications written with RSpec.
+Specifications are expected to found in the standard `spec/` directory
+unless otherwise specified in the tools options.</p>
+
+<p>Options:</p>
+
+<pre class="code"><span class='specs identifier id'>specs</span>     <span class='File constant id'>File</span> <span class='glob identifier id'>glob</span><span class='lparen token'>(</span><span class='s identifier id'>s</span><span class='rparen token'>)</span> <span class='of identifier id'>of</span> <span class='spec identifier id'>spec</span> <span class='files identifier id'>files</span><span class='dot token'>.</span> <span class='Defaults constant id'>Defaults</span> <span class='to identifier id'>to</span> <span class='lbrack token'>[</span><span class='string val'>'spec/**/*_spec.rb'</span><span class='comma token'>,</span> <span class='string val'>'spec/**/spec_*.rb'</span><span class='rbrack token'>]</span><span class='dot token'>.</span>
+<span class='loadpath identifier id'>loadpath</span>  <span class='Paths constant id'>Paths</span> <span class='to identifier id'>to</span> <span class='add identifier id'>add</span> <span class='$LOAD_PATH gvar id'>$LOAD_PATH</span><span class='dot token'>.</span> <span class='Defaults constant id'>Defaults</span> <span class='to identifier id'>to</span> <span class='lbrack token'>[</span><span class='string val'>'lib'</span><span class='rbrack token'>]</span><span class='dot token'>.</span>
+<span class='live identifier id'>live</span>      <span class='Ignore constant id'>Ignore</span> <span class='loadpath identifier id'>loadpath</span><span class='comma token'>,</span> <span class='use identifier id'>use</span> <span class='installed identifier id'>installed</span> <span class='libraries identifier id'>libraries</span> <span class='instead identifier id'>instead</span><span class='dot token'>.</span> <span class='Default constant id'>Default</span> <span class='is identifier id'>is</span> <span class='false false kw'>false</span><span class='dot token'>.</span>
+<span class='require identifier id'>require</span>   <span class='Lib constant id'>Lib</span><span class='lparen token'>(</span><span class='s identifier id'>s</span><span class='rparen token'>)</span> <span class='to identifier id'>to</span> <span class='require identifier id'>require</span> <span class='before identifier id'>before</span> <span class='excuting identifier id'>excuting</span> <span class='specifications identifier id'>specifications</span><span class='dot token'>.</span>
+<span class='warning identifier id'>warning</span>   <span class='Whether constant id'>Whether</span> <span class='to identifier id'>to</span> <span class='show identifier id'>show</span> <span class='warnings identifier id'>warnings</span> <span class='or or kw'>or</span> <span class='not not kw'>not</span><span class='dot token'>.</span> <span class='Default constant id'>Default</span> <span class='is identifier id'>is</span> <span class='false false kw'>false</span><span class='dot token'>.</span>
+<span class='format identifier id'>format</span>    <span class='Format constant id'>Format</span> <span class='of identifier id'>of</span> <span class='RSpec constant id'>RSpec</span> <span class='output identifier id'>output</span><span class='dot token'>.</span>
+<span class='extra identifier id'>extra</span>     <span class='Additional constant id'>Additional</span> <span class='commandl identifier id'>commandl</span> <span class='ine identifier id'>ine</span> <span class='options identifier id'>options</span> <span class='for for kw'>for</span> <span class='spec identifier id'>spec</span> <span class='command identifier id'>command</span><span class='dot token'>.</span>
+</pre>
+
+<p>NOTE: This tool currently shells out to the command line.</p>
+
+<p>– RCOV suppot?</p>
+
+<pre class="code"><span class='ruby identifier id'>ruby</span> <span class='lbrack token'>[</span><span class='ruby_opts identifier id'>ruby_opts</span><span class='rbrack token'>]</span> <span class='minus op'>-</span><span class='Ilib constant id'>Ilib</span> <span class='minus op'>-</span><span class='S constant id'>S</span> <span class='rcov identifier id'>rcov</span> <span class='lbrack token'>[</span><span class='rcov_opts identifier id'>rcov_opts</span><span class='rbrack token'>]</span> <span class='bin identifier id'>bin</span><span class='div op'>/</span><span class='spec identifier id'>spec</span> <span class='minus op'>-</span><span class='minus op'>-</span> <span class='examples identifier id'>examples</span> <span class='lbrack token'>[</span><span class='spec_opts identifier id'>spec_opts</span><span class='rbrack token'>]</span>
+</pre>
+
+<p>++</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h2>Instance Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#extra-instance_method" title="#extra (instance method)">- (Object) <strong>extra</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Additional command line options for rspec.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#format-instance_method" title="#format (instance method)">- (Object) <strong>format</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Format of RSpec output.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#loadpath-instance_method" title="#loadpath (instance method)">- (Object) <strong>loadpath</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Paths to add $LOAD_PATH.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#requires-instance_method" title="#requires (instance method)">- (Object) <strong>requires</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Scripts to require before excuting specifications.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#specs-instance_method" title="#specs (instance method)">- (Object) <strong>specs</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>File glob(s) of spec files.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#warning-instance_method" title="#warning (instance method)">- (Object) <strong>warning</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Whether to show warnings or not.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#document-instance_method" title="#document (instance method)">- (Object) <strong>document</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Run all specs with documentation output.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize_defaults-instance_method" title="#initialize_defaults (instance method)">- (Object) <strong>initialize_defaults</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#initialize_requires-instance_method" title="#initialize_requires (instance method)">- (Object) <strong>initialize_requires</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#run-instance_method" title="#run (instance method)">- (Object) <strong>run</strong> </a>
+    
+
+    
+      (also: #test)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Run all specs.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#run_specs-instance_method" title="#run_specs (instance method)">- (Object) <strong>run_specs</strong>(format = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Run rspecs.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#spec_options-instance_method" title="#spec_options (instance method)">- (Object) <strong>spec_options</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="Tool.html" title="RedTools::Tool (class)">Tool</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Tool.html#initialize-instance_method" title="RedTools::Tool#initialize (method)">#initialize</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="EmailUtils.html" title="RedTools::EmailUtils (module)">EmailUtils</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="EmailUtils.html#email-instance_method" title="RedTools::EmailUtils#email (method)">#email</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="ProjectUtils.html" title="RedTools::ProjectUtils (module)">ProjectUtils</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="ProjectUtils.html#metadata-instance_method" title="RedTools::ProjectUtils#metadata (method)">#metadata</a></span>, <span class='object_link'><a href="ProjectUtils.html#project-class_method" title="RedTools::ProjectUtils.project (method)">project</a></span>, <span class='object_link'><a href="ProjectUtils.html#project-instance_method" title="RedTools::ProjectUtils#project (method)">#project</a></span>, <span class='object_link'><a href="ProjectUtils.html#root-instance_method" title="RedTools::ProjectUtils#root (method)">#root</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="ShellUtils.html" title="RedTools::ShellUtils (module)">ShellUtils</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="ShellUtils.html#absolute%3F-instance_method" title="RedTools::ShellUtils#absolute? (method)">#absolute?</a></span>, <span class='object_link'><a href="ShellUtils.html#append-instance_method" title="RedTools::ShellUtils#append (method)">#append</a></span>, <span class='object_link'><a href="ShellUtils.html#ask-instance_method" title="RedTools::ShellUtils#ask (method)">#ask</a></span>, <span class='object_link'><a href="ShellUtils.html#blockdev%3F-instance_method" title="RedTools::ShellUtils#blockdev? (method)">#blockdev?</a></span>, <span class='object_link'><a href="ShellUtils.html#chardev%3F-instance_method" title="RedTools::ShellUtils#chardev? (method)">#chardev?</a></span>, <span class='object_link'><a href="ShellUtils.html#debug%3F-instance_method" title="RedTools::ShellUtils#debug? (method)">#debug?</a></span>, <span class='object_link'><a href="ShellUtils.html#directory%3F-instance_method" title="RedTools::ShellUtils#directory? (method)">#directory?</a></span>, <span class='object_link'><a href="ShellUtils.html#dryrun%3F-instance_method" title="RedTools::ShellUtils#dryrun? (method)">#dryrun?</a></span>, <span class='object_link'><a href="ShellUtils.html#executable%3F-instance_method" title="RedTools::ShellUtils#executable? (method)">#executable?</a></span>, <span class='object_link'><a href="ShellUtils.html#executable_real%3F-instance_method" title="RedTools::ShellUtils#executable_real? (method)">#executable_real?</a></span>, <span class='object_link'><a href="ShellUtils.html#exist%3F-instance_method" title="RedTools::ShellUtils#exist? (method)">#exist?</a></span>, <span class='object_link'><a href="ShellUtils.html#exists%3F-instance_method" title="RedTools::ShellUtils#exists? (method)">#exists?</a></span>, <span class='object_link'><a href="ShellUtils.html#file%3F-instance_method" title="RedTools::ShellUtils#file? (method)">#file?</a></span>, <span class='object_link'><a href="ShellUtils.html#fileutils-instance_method" title="RedTools::ShellUtils#fileutils (method)">#fileutils</a></span>, <span class='object_link'><a href="ShellUtils.html#force%3F-instance_method" title="RedTools::ShellUtils#force? (method)">#force?</a></span>, <span class='object_link'><a href="ShellUtils.html#grpowned%3F-instance_method" title="RedTools::ShellUtils#grpowned? (method)">#grpowned?</a></span>, <span class='object_link'><a href="ShellUtils.html#identical%3F-instance_method" title="RedTools::ShellUtils#identical? (method)">#identical?</a></span>, <span class='object_link'><a href="ShellUtils.html#initialize-instance_method" title="RedTools::ShellUtils#initialize (method)">#initialize</a></span>, <span class='object_link'><a href="ShellUtils.html#multiglob-instance_method" title="RedTools::ShellUtils#multiglob (method)">#multiglob</a></span>, <span class='object_link'><a href="ShellUtils.html#multiglob_r-instance_method" title="RedTools::ShellUtils#multiglob_r (method)">#multiglob_r</a></span>, <span class='object_link'><a href="ShellUtils.html#noop%3F-instance_method" title="RedTools::ShellUtils#noop? (method)">#noop?</a></span>, <span class='object_link'><a href="ShellUtils.html#owned%3F-instance_method" title="RedTools::ShellUtils#owned? (method)">#owned?</a></span>, <span class='object_link'><a href="ShellUtils.html#password-instance_method" title="RedTools::ShellUtils#password (method)">#password</a></span>, <span class='object_link'><a href="ShellUtils.html#path-instance_method" title="RedTools::ShellUtils#path (method)">#path</a></span>, <span class='object_link'><a href="ShellUtils.html#path%3D-instance_method" title="RedTools::ShellUtils#path= (method)">#path=</a></span>, <span class='object_link'><a href="ShellUtils.html#pipe%3F-instance_method" title="RedTools::ShellUtils#pipe? (method)">#pipe?</a></span>, <span class='object_link'><a href="ShellUtils.html#print-instance_method" title="RedTools::ShellUtils#print (method)">#print</a></span>, <span class='object_link'><a href="ShellUtils.html#puts-instance_method" title="RedTools::ShellUtils#puts (method)">#puts</a></span>, <span class='object_link'><a href="ShellUtils.html#quiet%3F-instance_method" title="RedTools::ShellUtils#quiet? (method)">#quiet?</a></span>, <span class='object_link'><a href="ShellUtils.html#read-instance_method" title="RedTools::ShellUtils#read (method)">#read</a></span>, <span class='object_link'><a href="ShellUtils.html#readable%3F-instance_method" title="RedTools::ShellUtils#readable? (method)">#readable?</a></span>, <span class='object_link'><a href="ShellUtils.html#readable_real%3F-instance_method" title="RedTools::ShellUtils#readable_real? (method)">#readable_real?</a></span>, <span class='object_link'><a href="ShellUtils.html#relative%3F-instance_method" title="RedTools::ShellUtils#relative? (method)">#relative?</a></span>, <span class='object_link'><a href="ShellUtils.html#safe%3F-instance_method" title="RedTools::ShellUtils#safe? (method)">#safe?</a></span>, <span class='object_link'><a href="ShellUtils.html#setgid%3F-instance_method" title="RedTools::ShellUtils#setgid? (method)">#setgid?</a></span>, <span class='object_link'><a href="ShellUtils.html#setuid%3F-instance_method" title="RedTools::ShellUtils#setuid? (method)">#setuid?</a></span>, <span class='object_link'><a href="ShellUtils.html#sh-instance_method" title="RedTools::ShellUtils#sh (method)">#sh</a></span>, <span class='object_link'><a href="ShellUtils.html#size-instance_method" title="RedTools::ShellUtils#size (method)">#size</a></span>, <span class='object_link'><a href="ShellUtils.html#size%3F-instance_method" title="RedTools::ShellUtils#size? (method)">#size?</a></span>, <span class='object_link'><a href="ShellUtils.html#socket%3F-instance_method" title="RedTools::ShellUtils#socket? (method)">#socket?</a></span>, <span class='object_link'><a href="ShellUtils.html#status-instance_method" title="RedTools::ShellUtils#status (method)">#status</a></span>, <span class='object_link'><a href="ShellUtils.html#sticky%3F-instance_method" title="RedTools::ShellUtils#sticky? (method)">#sticky?</a></span>, <span class='object_link'><a href="ShellUtils.html#symlink%3F-instance_method" title="RedTools::ShellUtils#symlink? (method)">#symlink?</a></span>, <span class='object_link'><a href="ShellUtils.html#trace%3F-instance_method" title="RedTools::ShellUtils#trace? (method)">#trace?</a></span>, <span class='object_link'><a href="ShellUtils.html#trial%3F-instance_method" title="RedTools::ShellUtils#trial? (method)">#trial?</a></span>, <span class='object_link'><a href="ShellUtils.html#verbose%3F-instance_method" title="RedTools::ShellUtils#verbose? (method)">#verbose?</a></span>, <span class='object_link'><a href="ShellUtils.html#writable%3F-instance_method" title="RedTools::ShellUtils#writable? (method)">#writable?</a></span>, <span class='object_link'><a href="ShellUtils.html#writable_real%3F-instance_method" title="RedTools::ShellUtils#writable_real? (method)">#writable_real?</a></span>, <span class='object_link'><a href="ShellUtils.html#write-instance_method" title="RedTools::ShellUtils#write (method)">#write</a></span>, <span class='object_link'><a href="ShellUtils.html#zero%3F-instance_method" title="RedTools::ShellUtils#zero? (method)">#zero?</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <p class="notice">This class inherits a constructor from <span class='object_link'><a href="Tool.html#initialize-instance_method" title="RedTools::Tool#initialize (method)">RedTools::Tool</a></span></p>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="extra=-instance_method"></span>
+      <span id="extra-instance_method"></span>
+      <div class="method_details first">
+  <p class="signature first" id="extra-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>extra</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Additional command line options for rspec.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+50
+51
+52</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 50</span>
+
+<span class='def def kw'>def</span> <span class='extra identifier id'>extra</span>
+  <span class='@extra ivar id'>@extra</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="format=-instance_method"></span>
+      <span id="format-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="format-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>format</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Format of RSpec output.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+47
+48
+49</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 47</span>
+
+<span class='def def kw'>def</span> <span class='format identifier id'>format</span>
+  <span class='@format ivar id'>@format</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="loadpath=-instance_method"></span>
+      <span id="loadpath-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="loadpath-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>loadpath</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Paths to add $LOAD_PATH. Defaults to [‘lib’].</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+35
+36
+37</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 35</span>
+
+<span class='def def kw'>def</span> <span class='loadpath identifier id'>loadpath</span>
+  <span class='@loadpath ivar id'>@loadpath</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="requires=-instance_method"></span>
+      <span id="requires-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="requires-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>requires</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Scripts to require before excuting specifications.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+41
+42
+43</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 41</span>
+
+<span class='def def kw'>def</span> <span class='requires identifier id'>requires</span>
+  <span class='@requires ivar id'>@requires</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="specs=-instance_method"></span>
+      <span id="specs-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="specs-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>specs</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>File glob(s) of spec files. Defaults to [‘spec/**/*_spec.rb’,
+‘spec/*<b>/spec_</b>.rb’].</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+32
+33
+34</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 32</span>
+
+<span class='def def kw'>def</span> <span class='specs identifier id'>specs</span>
+  <span class='@specs ivar id'>@specs</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="warning=-instance_method"></span>
+      <span id="warning-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="warning-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>warning</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Whether to show warnings or not. Default is false.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+44
+45
+46</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 44</span>
+
+<span class='def def kw'>def</span> <span class='warning identifier id'>warning</span>
+  <span class='@warning ivar id'>@warning</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="document-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>document</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Run all specs with documentation output.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+72
+73
+74</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 72</span>
+
+<span class='def def kw'>def</span> <span class='document identifier id'>document</span>
+  <span class='run_specs identifier id'>run_specs</span><span class='lparen token'>(</span><span class='string val'>'documentation'</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="initialize_defaults-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>initialize_defaults</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+53
+54
+55
+56
+57
+58
+59</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 53</span>
+
+<span class='def def kw'>def</span> <span class='initialize_defaults identifier id'>initialize_defaults</span>
+  <span class='@loadpath ivar id'>@loadpath</span> <span class='assign token'>=</span> <span class='metadata identifier id'>metadata</span><span class='dot token'>.</span><span class='loadpath identifier id'>loadpath</span>
+
+  <span class='@specs ivar id'>@specs</span>    <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='string val'>'spec/**/*_spec.rb'</span><span class='comma token'>,</span> <span class='string val'>'spec/**/spec_*.rb'</span><span class='rbrack token'>]</span>
+  <span class='@requires ivar id'>@requires</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span>
+  <span class='@warning ivar id'>@warning</span>  <span class='assign token'>=</span> <span class='false false kw'>false</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="initialize_requires-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>initialize_requires</strong>  <span class="extras">(private)</span>
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+119
+120
+121</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 119</span>
+
+<span class='def def kw'>def</span> <span class='initialize_requires identifier id'>initialize_requires</span>
+  <span class='require identifier id'>require</span> <span class='string val'>'rspec/core'</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="run-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>run</strong> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='test-instance_method'>test</span></span>
+    </span>
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Run all specs.</p>
+
+<p>Returns <tt>false</tt> if any tests failed, otherwise <tt>true</tt>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+64
+65
+66</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 64</span>
+
+<span class='def def kw'>def</span> <span class='run identifier id'>run</span>
+  <span class='run_specs identifier id'>run_specs</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="run_specs-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>run_specs</strong>(format = nil)  <span class="extras">(private)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Run rspecs.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 79</span>
+
+<span class='def def kw'>def</span> <span class='run_specs identifier id'>run_specs</span><span class='lparen token'>(</span><span class='format identifier id'>format</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='rparen token'>)</span>
+  <span class='format identifier id'>format</span>   <span class='assign token'>=</span> <span class='format identifier id'>format</span> <span class='orop op'>||</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='format identifier id'>format</span>
+  <span class='specs identifier id'>specs</span>    <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='specs identifier id'>specs</span><span class='dot token'>.</span><span class='to_list identifier id'>to_list</span>
+  <span class='loadpath identifier id'>loadpath</span> <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='loadpath identifier id'>loadpath</span><span class='dot token'>.</span><span class='to_list identifier id'>to_list</span>
+  <span class='requires identifier id'>requires</span> <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='requires identifier id'>requires</span><span class='dot token'>.</span><span class='to_list identifier id'>to_list</span>
+
+  <span class='files identifier id'>files</span> <span class='assign token'>=</span> <span class='multiglob identifier id'>multiglob</span><span class='lparen token'>(</span><span class='mult op'>*</span><span class='specs identifier id'>specs</span><span class='rparen token'>)</span>
+
+  <span class='if if kw'>if</span> <span class='files identifier id'>files</span><span class='dot token'>.</span><span class='empty? fid id'>empty?</span>
+    <span class='puts identifier id'>puts</span> <span class='string val'>&quot;No specifications.&quot;</span>
+  <span class='else else kw'>else</span>
+    <span class='comment val'># ruby [ruby_opts] -Ilib bin/spec examples [spec_opts]</span>
+    <span class='argv identifier id'>argv</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span>
+    <span class='argv identifier id'>argv</span> <span class='lshft op'>&lt;&lt;</span> <span class='string val'>&quot;-w&quot;</span> <span class='if if_mod kw'>if</span> <span class='warning identifier id'>warning</span>
+    <span class='argv identifier id'>argv</span> <span class='lshft op'>&lt;&lt;</span> <span class='dstring node'>%[-I&quot;#{loadpath.join(':')}&quot;]</span> <span class='unless unless_mod kw'>unless</span> <span class='loadpath identifier id'>loadpath</span><span class='dot token'>.</span><span class='empty? fid id'>empty?</span>
+    <span class='argv identifier id'>argv</span> <span class='lshft op'>&lt;&lt;</span> <span class='dstring node'>%[-r&quot;#{requires.join(':')}&quot;]</span> <span class='unless unless_mod kw'>unless</span> <span class='requires identifier id'>requires</span><span class='dot token'>.</span><span class='empty? fid id'>empty?</span>
+    <span class='argv identifier id'>argv</span> <span class='lshft op'>&lt;&lt;</span> <span class='files identifier id'>files</span>
+    <span class='argv identifier id'>argv</span> <span class='lshft op'>&lt;&lt;</span> <span class='spec_options identifier id'>spec_options</span>
+    <span class='argv identifier id'>argv</span> <span class='lshft op'>&lt;&lt;</span> <span class='lbrack token'>[</span><span class='string val'>'--format'</span><span class='comma token'>,</span> <span class='dstring node'>&quot;#{format}&quot;</span><span class='rbrack token'>]</span> <span class='if if_mod kw'>if</span> <span class='format identifier id'>format</span>
+    <span class='argv identifier id'>argv</span> <span class='assign token'>=</span> <span class='argv identifier id'>argv</span><span class='dot token'>.</span><span class='flatten identifier id'>flatten</span>
+
+    <span class='trace identifier id'>trace</span> <span class='string val'>&quot;rspec &quot;</span> <span class='plus op'>+</span> <span class='argv identifier id'>argv</span><span class='dot token'>.</span><span class='join identifier id'>join</span><span class='lparen token'>(</span><span class='string val'>' '</span><span class='rparen token'>)</span>
+
+    <span class='success identifier id'>success</span> <span class='assign token'>=</span> <span class='colon3 op'>::</span><span class='RSpec constant id'>RSpec</span><span class='colon2 op'>::</span><span class='Core constant id'>Core</span><span class='colon2 op'>::</span><span class='Runner constant id'>Runner</span><span class='dot token'>.</span><span class='run identifier id'>run</span><span class='lparen token'>(</span><span class='argv identifier id'>argv</span><span class='rparen token'>)</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="spec_options-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>spec_options</strong>  <span class="extras">(private)</span>
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 107</span>
+
+<span class='def def kw'>def</span> <span class='spec_options identifier id'>spec_options</span>
+  <span class='case case kw'>case</span> <span class='extra identifier id'>extra</span>
+  <span class='when when kw'>when</span> <span class='String constant id'>String</span>
+    <span class='extra identifier id'>extra</span><span class='dot token'>.</span><span class='split identifier id'>split</span><span class='lparen token'>(</span><span class='regexp val'>/\s+/</span><span class='rparen token'>)</span>
+  <span class='when when kw'>when</span> <span class='Array constant id'>Array</span>
+    <span class='extra identifier id'>extra</span>
+  <span class='else else kw'>else</span>
+    <span class='lbrack token'>[</span><span class='rbrack token'>]</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Tue May 24 07:37:17 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.6.7 (ruby-1.8.7).
+</div>
+
+  </body>
+</html>

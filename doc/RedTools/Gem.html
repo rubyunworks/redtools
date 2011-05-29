@@ -1,0 +1,1245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>Class: RedTools::Gem</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '..';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (G)</a> &raquo; 
+    <span class='title'><span class='object_link'><a href="../RedTools.html" title="RedTools (module)">RedTools</a></span></span>
+     &raquo; 
+    <span class="title">Gem</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
+
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Class: RedTools::Gem
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName"><span class='object_link'><a href="Tool.html" title="RedTools::Tool (class)">Tool</a></span></span>
+      
+        <ul class="fullTree">
+          <li><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></li>
+          
+            <li class="next"><span class='object_link'><a href="Tool.html" title="RedTools::Tool (class)">Tool</a></span></li>
+          
+            <li class="next">RedTools::Gem</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/redtools/gem.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>The Gem tool is used to generate gemspec and gem packages.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h2>Instance Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#autospec-instance_method" title="#autospec (instance method)">- (Object) <strong>autospec</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>True or false whether to write gemspec from project metadata (default is
+`false`).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#gemspec-instance_method" title="#gemspec (instance method)">- (Object) <strong>gemspec</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The .gemspec filename (default looks-up `.gemspec` or `name.gemspec` file).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#pkgdir-instance_method" title="#pkgdir (instance method)">- (Object) <strong>pkgdir</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Package directory (defaults to `pkg`).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#version-instance_method" title="#version (instance method)">- (Object) <strong>version</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title readonly">readonly</span>
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Version to release.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#build-instance_method" title="#build (instance method)">- (Object) <strong>build</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create a gem package.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#create_gemspec-instance_method" title="#create_gemspec (instance method)">- (Object) <strong>create_gemspec</strong>(file = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create a gemspec file from project metadata.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#initialize_defaults-instance_method" title="#initialize_defaults (instance method)">- (Object) <strong>initialize_defaults</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#initialize_requires-instance_method" title="#initialize_requires (instance method)">- (Object) <strong>initialize_requires</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>TODO: Should we be rescuing this?.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#load_gemspec-instance_method" title="#load_gemspec (instance method)">- (Object) <strong>load_gemspec</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Load gemspec file.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#lookup_gemspec-instance_method" title="#lookup_gemspec (instance method)">- (Object) <strong>lookup_gemspec</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Lookup gemspec file.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#package-instance_method" title="#package (instance method)">- (Object) <strong>package</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Write gemspec if <tt>autospec</tt> is <tt>true</tt> and then build the gem.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#prepackage-instance_method" title="#prepackage (instance method)">- (Object) <strong>prepackage</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create gemspec if <tt>autospec</tt> is <tt>true</tt>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#release-instance_method" title="#release (instance method)">- (Object) <strong>release</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Release a la Gemcutter.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#spec-instance_method" title="#spec (instance method)">- (Object) <strong>spec</strong>(file = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Convert metadata to a gemspec and write to <tt>file</tt>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#yaml%3F-instance_method" title="#yaml? (instance method)">- (Boolean) <strong>yaml?</strong>(file) </a>
+    
+
+    
+  </span>
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>If the gemspec a YAML gemspec?.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="Tool.html" title="RedTools::Tool (class)">Tool</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Tool.html#initialize-instance_method" title="RedTools::Tool#initialize (method)">#initialize</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="EmailUtils.html" title="RedTools::EmailUtils (module)">EmailUtils</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="EmailUtils.html#email-instance_method" title="RedTools::EmailUtils#email (method)">#email</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="ProjectUtils.html" title="RedTools::ProjectUtils (module)">ProjectUtils</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="ProjectUtils.html#metadata-instance_method" title="RedTools::ProjectUtils#metadata (method)">#metadata</a></span>, <span class='object_link'><a href="ProjectUtils.html#project-class_method" title="RedTools::ProjectUtils.project (method)">project</a></span>, <span class='object_link'><a href="ProjectUtils.html#project-instance_method" title="RedTools::ProjectUtils#project (method)">#project</a></span>, <span class='object_link'><a href="ProjectUtils.html#root-instance_method" title="RedTools::ProjectUtils#root (method)">#root</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="ShellUtils.html" title="RedTools::ShellUtils (module)">ShellUtils</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="ShellUtils.html#absolute%3F-instance_method" title="RedTools::ShellUtils#absolute? (method)">#absolute?</a></span>, <span class='object_link'><a href="ShellUtils.html#append-instance_method" title="RedTools::ShellUtils#append (method)">#append</a></span>, <span class='object_link'><a href="ShellUtils.html#ask-instance_method" title="RedTools::ShellUtils#ask (method)">#ask</a></span>, <span class='object_link'><a href="ShellUtils.html#blockdev%3F-instance_method" title="RedTools::ShellUtils#blockdev? (method)">#blockdev?</a></span>, <span class='object_link'><a href="ShellUtils.html#chardev%3F-instance_method" title="RedTools::ShellUtils#chardev? (method)">#chardev?</a></span>, <span class='object_link'><a href="ShellUtils.html#debug%3F-instance_method" title="RedTools::ShellUtils#debug? (method)">#debug?</a></span>, <span class='object_link'><a href="ShellUtils.html#directory%3F-instance_method" title="RedTools::ShellUtils#directory? (method)">#directory?</a></span>, <span class='object_link'><a href="ShellUtils.html#dryrun%3F-instance_method" title="RedTools::ShellUtils#dryrun? (method)">#dryrun?</a></span>, <span class='object_link'><a href="ShellUtils.html#executable%3F-instance_method" title="RedTools::ShellUtils#executable? (method)">#executable?</a></span>, <span class='object_link'><a href="ShellUtils.html#executable_real%3F-instance_method" title="RedTools::ShellUtils#executable_real? (method)">#executable_real?</a></span>, <span class='object_link'><a href="ShellUtils.html#exist%3F-instance_method" title="RedTools::ShellUtils#exist? (method)">#exist?</a></span>, <span class='object_link'><a href="ShellUtils.html#exists%3F-instance_method" title="RedTools::ShellUtils#exists? (method)">#exists?</a></span>, <span class='object_link'><a href="ShellUtils.html#file%3F-instance_method" title="RedTools::ShellUtils#file? (method)">#file?</a></span>, <span class='object_link'><a href="ShellUtils.html#fileutils-instance_method" title="RedTools::ShellUtils#fileutils (method)">#fileutils</a></span>, <span class='object_link'><a href="ShellUtils.html#force%3F-instance_method" title="RedTools::ShellUtils#force? (method)">#force?</a></span>, <span class='object_link'><a href="ShellUtils.html#grpowned%3F-instance_method" title="RedTools::ShellUtils#grpowned? (method)">#grpowned?</a></span>, <span class='object_link'><a href="ShellUtils.html#identical%3F-instance_method" title="RedTools::ShellUtils#identical? (method)">#identical?</a></span>, <span class='object_link'><a href="ShellUtils.html#initialize-instance_method" title="RedTools::ShellUtils#initialize (method)">#initialize</a></span>, <span class='object_link'><a href="ShellUtils.html#multiglob-instance_method" title="RedTools::ShellUtils#multiglob (method)">#multiglob</a></span>, <span class='object_link'><a href="ShellUtils.html#multiglob_r-instance_method" title="RedTools::ShellUtils#multiglob_r (method)">#multiglob_r</a></span>, <span class='object_link'><a href="ShellUtils.html#noop%3F-instance_method" title="RedTools::ShellUtils#noop? (method)">#noop?</a></span>, <span class='object_link'><a href="ShellUtils.html#owned%3F-instance_method" title="RedTools::ShellUtils#owned? (method)">#owned?</a></span>, <span class='object_link'><a href="ShellUtils.html#password-instance_method" title="RedTools::ShellUtils#password (method)">#password</a></span>, <span class='object_link'><a href="ShellUtils.html#path-instance_method" title="RedTools::ShellUtils#path (method)">#path</a></span>, <span class='object_link'><a href="ShellUtils.html#path%3D-instance_method" title="RedTools::ShellUtils#path= (method)">#path=</a></span>, <span class='object_link'><a href="ShellUtils.html#pipe%3F-instance_method" title="RedTools::ShellUtils#pipe? (method)">#pipe?</a></span>, <span class='object_link'><a href="ShellUtils.html#print-instance_method" title="RedTools::ShellUtils#print (method)">#print</a></span>, <span class='object_link'><a href="ShellUtils.html#puts-instance_method" title="RedTools::ShellUtils#puts (method)">#puts</a></span>, <span class='object_link'><a href="ShellUtils.html#quiet%3F-instance_method" title="RedTools::ShellUtils#quiet? (method)">#quiet?</a></span>, <span class='object_link'><a href="ShellUtils.html#read-instance_method" title="RedTools::ShellUtils#read (method)">#read</a></span>, <span class='object_link'><a href="ShellUtils.html#readable%3F-instance_method" title="RedTools::ShellUtils#readable? (method)">#readable?</a></span>, <span class='object_link'><a href="ShellUtils.html#readable_real%3F-instance_method" title="RedTools::ShellUtils#readable_real? (method)">#readable_real?</a></span>, <span class='object_link'><a href="ShellUtils.html#relative%3F-instance_method" title="RedTools::ShellUtils#relative? (method)">#relative?</a></span>, <span class='object_link'><a href="ShellUtils.html#safe%3F-instance_method" title="RedTools::ShellUtils#safe? (method)">#safe?</a></span>, <span class='object_link'><a href="ShellUtils.html#setgid%3F-instance_method" title="RedTools::ShellUtils#setgid? (method)">#setgid?</a></span>, <span class='object_link'><a href="ShellUtils.html#setuid%3F-instance_method" title="RedTools::ShellUtils#setuid? (method)">#setuid?</a></span>, <span class='object_link'><a href="ShellUtils.html#sh-instance_method" title="RedTools::ShellUtils#sh (method)">#sh</a></span>, <span class='object_link'><a href="ShellUtils.html#size-instance_method" title="RedTools::ShellUtils#size (method)">#size</a></span>, <span class='object_link'><a href="ShellUtils.html#size%3F-instance_method" title="RedTools::ShellUtils#size? (method)">#size?</a></span>, <span class='object_link'><a href="ShellUtils.html#socket%3F-instance_method" title="RedTools::ShellUtils#socket? (method)">#socket?</a></span>, <span class='object_link'><a href="ShellUtils.html#status-instance_method" title="RedTools::ShellUtils#status (method)">#status</a></span>, <span class='object_link'><a href="ShellUtils.html#sticky%3F-instance_method" title="RedTools::ShellUtils#sticky? (method)">#sticky?</a></span>, <span class='object_link'><a href="ShellUtils.html#symlink%3F-instance_method" title="RedTools::ShellUtils#symlink? (method)">#symlink?</a></span>, <span class='object_link'><a href="ShellUtils.html#trace%3F-instance_method" title="RedTools::ShellUtils#trace? (method)">#trace?</a></span>, <span class='object_link'><a href="ShellUtils.html#trial%3F-instance_method" title="RedTools::ShellUtils#trial? (method)">#trial?</a></span>, <span class='object_link'><a href="ShellUtils.html#verbose%3F-instance_method" title="RedTools::ShellUtils#verbose? (method)">#verbose?</a></span>, <span class='object_link'><a href="ShellUtils.html#writable%3F-instance_method" title="RedTools::ShellUtils#writable? (method)">#writable?</a></span>, <span class='object_link'><a href="ShellUtils.html#writable_real%3F-instance_method" title="RedTools::ShellUtils#writable_real? (method)">#writable_real?</a></span>, <span class='object_link'><a href="ShellUtils.html#write-instance_method" title="RedTools::ShellUtils#write (method)">#write</a></span>, <span class='object_link'><a href="ShellUtils.html#zero%3F-instance_method" title="RedTools::ShellUtils#zero? (method)">#zero?</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <p class="notice">This class inherits a constructor from <span class='object_link'><a href="Tool.html#initialize-instance_method" title="RedTools::Tool#initialize (method)">RedTools::Tool</a></span></p>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="autospec=-instance_method"></span>
+      <span id="autospec-instance_method"></span>
+      <div class="method_details first">
+  <p class="signature first" id="autospec-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>autospec</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>True or false whether to write gemspec from project metadata (default is
+`false`).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/gem.rb', line 15</span>
+
+<span class='def def kw'>def</span> <span class='autospec identifier id'>autospec</span>
+  <span class='@autospec ivar id'>@autospec</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="gemspec=-instance_method"></span>
+      <span id="gemspec-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="gemspec-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>gemspec</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>The .gemspec filename (default looks-up `.gemspec` or `name.gemspec` file).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+12
+13
+14</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/gem.rb', line 12</span>
+
+<span class='def def kw'>def</span> <span class='gemspec identifier id'>gemspec</span>
+  <span class='@gemspec ivar id'>@gemspec</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="pkgdir=-instance_method"></span>
+      <span id="pkgdir-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="pkgdir-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>pkgdir</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Package directory (defaults to `pkg`). Location of packages. This defaults
+to Project#pkg.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+19
+20
+21</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/gem.rb', line 19</span>
+
+<span class='def def kw'>def</span> <span class='pkgdir identifier id'>pkgdir</span>
+  <span class='@pkgdir ivar id'>@pkgdir</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <span id="version-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="version-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>version</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Version to release. Defaults to current version.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+22
+23
+24</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/gem.rb', line 22</span>
+
+<span class='def def kw'>def</span> <span class='version identifier id'>version</span>
+  <span class='@version ivar id'>@version</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="build-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>build</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a gem package.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+34
+35
+36
+37
+38
+39
+40
+41</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/gem.rb', line 34</span>
+
+<span class='def def kw'>def</span> <span class='build identifier id'>build</span>
+  <span class='trace identifier id'>trace</span> <span class='dstring node'>&quot;gem build #{gemspec}&quot;</span>
+  <span class='spec identifier id'>spec</span>    <span class='assign token'>=</span> <span class='load_gemspec identifier id'>load_gemspec</span>
+  <span class='builder identifier id'>builder</span> <span class='assign token'>=</span> <span class='colon3 op'>::</span><span class='Gem constant id'>Gem</span><span class='colon2 op'>::</span><span class='Builder constant id'>Builder</span><span class='dot token'>.</span><span class='new identifier id'>new</span><span class='lparen token'>(</span><span class='spec identifier id'>spec</span><span class='rparen token'>)</span>
+  <span class='package identifier id'>package</span> <span class='assign token'>=</span> <span class='builder identifier id'>builder</span><span class='dot token'>.</span><span class='build identifier id'>build</span>
+  <span class='mkdir_p identifier id'>mkdir_p</span><span class='lparen token'>(</span><span class='pkgdir identifier id'>pkgdir</span><span class='rparen token'>)</span>
+  <span class='mv identifier id'>mv</span><span class='lparen token'>(</span><span class='package identifier id'>package</span><span class='comma token'>,</span> <span class='pkgdir identifier id'>pkgdir</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="create_gemspec-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>create_gemspec</strong>(file = nil)  <span class="extras">(private)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a gemspec file from project metadata.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/gem.rb', line 69</span>
+
+<span class='def def kw'>def</span> <span class='create_gemspec identifier id'>create_gemspec</span><span class='lparen token'>(</span><span class='file identifier id'>file</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='rparen token'>)</span>
+  <span class='file identifier id'>file</span> <span class='assign token'>=</span> <span class='gemspec identifier id'>gemspec</span> <span class='if if_mod kw'>if</span> <span class='notop op'>!</span><span class='file identifier id'>file</span>
+  <span class='require identifier id'>require</span> <span class='string val'>'pom/gemspec'</span>
+  <span class='yaml identifier id'>yaml</span> <span class='assign token'>=</span> <span class='project identifier id'>project</span><span class='dot token'>.</span><span class='to_gemspec identifier id'>to_gemspec</span><span class='dot token'>.</span><span class='to_yaml identifier id'>to_yaml</span>
+  <span class='File constant id'>File</span><span class='dot token'>.</span><span class='open identifier id'>open</span><span class='lparen token'>(</span><span class='file identifier id'>file</span><span class='comma token'>,</span> <span class='string val'>'w'</span><span class='rparen token'>)</span> <span class='do do kw'>do</span> <span class='bitor op'>|</span><span class='f identifier id'>f</span><span class='bitor op'>|</span>
+    <span class='f identifier id'>f</span> <span class='lshft op'>&lt;&lt;</span> <span class='yaml identifier id'>yaml</span>
+  <span class='end end kw'>end</span>
+  <span class='status identifier id'>status</span> <span class='File constant id'>File</span><span class='dot token'>.</span><span class='basename identifier id'>basename</span><span class='lparen token'>(</span><span class='file identifier id'>file</span><span class='rparen token'>)</span> <span class='plus op'>+</span> <span class='string val'>&quot; updated.&quot;</span>
+  <span class='return return kw'>return</span> <span class='file identifier id'>file</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="initialize_defaults-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>initialize_defaults</strong>  <span class="extras">(private)</span>
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+55
+56
+57
+58
+59
+60
+61</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/gem.rb', line 55</span>
+
+<span class='def def kw'>def</span> <span class='initialize_defaults identifier id'>initialize_defaults</span>
+  <span class='@autospec ivar id'>@autospec</span>  <span class='assign token'>=</span> <span class='false false kw'>false</span>
+  <span class='@pkgdir ivar id'>@pkgdir</span>  <span class='opasgn op'>||=</span> <span class='project identifier id'>project</span><span class='dot token'>.</span><span class='pkg identifier id'>pkg</span>
+  <span class='@gemspec ivar id'>@gemspec</span> <span class='opasgn op'>||=</span> <span class='lookup_gemspec identifier id'>lookup_gemspec</span>
+
+  <span class='@version ivar id'>@version</span> <span class='assign token'>=</span> <span class='project identifier id'>project</span><span class='dot token'>.</span><span class='metadata identifier id'>metadata</span><span class='dot token'>.</span><span class='version identifier id'>version</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="initialize_requires-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>initialize_requires</strong>  <span class="extras">(private)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>TODO: Should we be rescuing this?</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+123
+124
+125
+126
+127
+128
+129
+130
+131</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/gem.rb', line 123</span>
+
+<span class='def def kw'>def</span> <span class='initialize_requires identifier id'>initialize_requires</span>
+  <span class='begin begin kw'>begin</span>
+    <span class='require identifier id'>require</span> <span class='string val'>'rubygems'</span>
+  <span class='rescue rescue kw'>rescue</span> <span class='LoadError constant id'>LoadError</span>
+    <span class='$stderr gvar id'>$stderr</span><span class='dot token'>.</span><span class='puts identifier id'>puts</span> <span class='string val'>&quot;Could not load `rubygems'.&quot;</span>
+  <span class='end end kw'>end</span>
+  <span class='comment val'># can't do this b/c options not set yet</span>
+  <span class='comment val'>#require 'pom/gemspec' if autospec</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="load_gemspec-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>load_gemspec</strong>  <span class="extras">(private)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Load gemspec file.</p>
+
+<p>Returns a ::Gem::Specification.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+95
+96
+97
+98
+99
+100
+101
+102</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/gem.rb', line 95</span>
+
+<span class='def def kw'>def</span> <span class='load_gemspec identifier id'>load_gemspec</span>
+  <span class='file identifier id'>file</span> <span class='assign token'>=</span> <span class='gemspec identifier id'>gemspec</span>
+  <span class='if if kw'>if</span> <span class='yaml? fid id'>yaml?</span><span class='lparen token'>(</span><span class='file identifier id'>file</span><span class='rparen token'>)</span>
+    <span class='colon3 op'>::</span><span class='Gem constant id'>Gem</span><span class='colon2 op'>::</span><span class='Specification constant id'>Specification</span><span class='dot token'>.</span><span class='from_yaml identifier id'>from_yaml</span><span class='lparen token'>(</span><span class='File constant id'>File</span><span class='dot token'>.</span><span class='new identifier id'>new</span><span class='lparen token'>(</span><span class='file identifier id'>file</span><span class='rparen token'>)</span><span class='rparen token'>)</span>
+  <span class='else else kw'>else</span>
+    <span class='colon3 op'>::</span><span class='Gem constant id'>Gem</span><span class='colon2 op'>::</span><span class='Specification constant id'>Specification</span><span class='dot token'>.</span><span class='load identifier id'>load</span><span class='lparen token'>(</span><span class='file identifier id'>file</span><span class='rparen token'>)</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="lookup_gemspec-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>lookup_gemspec</strong>  <span class="extras">(private)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Lookup gemspec file. If not found returns default path.</p>
+
+<p>Returns String of file path.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+83
+84
+85
+86
+87
+88
+89
+90</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/gem.rb', line 83</span>
+
+<span class='def def kw'>def</span> <span class='lookup_gemspec identifier id'>lookup_gemspec</span>
+  <span class='dot_gemspec identifier id'>dot_gemspec</span> <span class='assign token'>=</span> <span class='lparen token'>(</span><span class='project identifier id'>project</span><span class='dot token'>.</span><span class='root identifier id'>root</span> <span class='plus op'>+</span> <span class='string val'>'.gemspec'</span><span class='rparen token'>)</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span>
+  <span class='if if kw'>if</span> <span class='File constant id'>File</span><span class='dot token'>.</span><span class='exist? fid id'>exist?</span><span class='lparen token'>(</span><span class='dot_gemspec identifier id'>dot_gemspec</span><span class='rparen token'>)</span>
+    <span class='dot_gemspec identifier id'>dot_gemspec</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span>
+  <span class='else else kw'>else</span>
+    <span class='project identifier id'>project</span><span class='dot token'>.</span><span class='metadata identifier id'>metadata</span><span class='dot token'>.</span><span class='name identifier id'>name</span> <span class='plus op'>+</span> <span class='string val'>'.gemspec'</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="package-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>package</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Write gemspec if <tt>autospec</tt> is <tt>true</tt> and then build the gem.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+28
+29
+30
+31</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/gem.rb', line 28</span>
+
+<span class='def def kw'>def</span> <span class='package identifier id'>package</span>
+  <span class='create_gemspec identifier id'>create_gemspec</span> <span class='if if_mod kw'>if</span> <span class='autospec identifier id'>autospec</span>
+  <span class='build identifier id'>build</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="prepackage-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>prepackage</strong>  <span class="extras">(private)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Create gemspec if <tt>autospec</tt> is <tt>true</tt>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+64
+65
+66</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/gem.rb', line 64</span>
+
+<span class='def def kw'>def</span> <span class='prepackage identifier id'>prepackage</span>
+  <span class='create_gemspec identifier id'>create_gemspec</span> <span class='if if_mod kw'>if</span> <span class='autospec identifier id'>autospec</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="release-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>release</strong>  <span class="extras">(private)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Release a la Gemcutter.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/gem.rb', line 111</span>
+
+<span class='def def kw'>def</span> <span class='release identifier id'>release</span>
+  <span class='pkgs identifier id'>pkgs</span> <span class='assign token'>=</span> <span class='Pathname constant id'>Pathname</span><span class='dot token'>.</span><span class='new identifier id'>new</span><span class='lparen token'>(</span><span class='pkgdir identifier id'>pkgdir</span><span class='rparen token'>)</span><span class='dot token'>.</span><span class='glob identifier id'>glob</span><span class='lparen token'>(</span><span class='dstring node'>&quot;*-#{version}.gem&quot;</span><span class='rparen token'>)</span>
+  <span class='if if kw'>if</span> <span class='pkgs identifier id'>pkgs</span><span class='dot token'>.</span><span class='empty? fid id'>empty?</span>
+    <span class='report identifier id'>report</span> <span class='dstring node'>&quot;No .gem packages found for version {version} at #{pkgdir}.&quot;</span>
+  <span class='else else kw'>else</span>
+    <span class='pkgs identifier id'>pkgs</span><span class='dot token'>.</span><span class='each identifier id'>each</span> <span class='do do kw'>do</span> <span class='bitor op'>|</span><span class='file identifier id'>file</span><span class='bitor op'>|</span>
+      <span class='sh identifier id'>sh</span> <span class='dstring node'>&quot;gem push #{file}&quot;</span>
+    <span class='end end kw'>end</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="spec-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>spec</strong>(file = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Convert metadata to a gemspec and write to <tt>file</tt>.</p>
+
+<p>file - name of gemspec file (defaults to value of #gemspec).</p>
+
+<p>Returns [String] file name.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+48
+49
+50</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/gem.rb', line 48</span>
+
+<span class='def def kw'>def</span> <span class='spec identifier id'>spec</span><span class='lparen token'>(</span><span class='file identifier id'>file</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='rparen token'>)</span>
+  <span class='create_gemspec identifier id'>create_gemspec</span><span class='lparen token'>(</span><span class='file identifier id'>file</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="yaml?-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>yaml?</strong>(file)  <span class="extras">(private)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>If the gemspec a YAML gemspec?</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+105
+106
+107
+108</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/gem.rb', line 105</span>
+
+<span class='def def kw'>def</span> <span class='yaml? fid id'>yaml?</span><span class='lparen token'>(</span><span class='file identifier id'>file</span><span class='rparen token'>)</span>
+  <span class='line identifier id'>line</span> <span class='assign token'>=</span> <span class='open identifier id'>open</span><span class='lparen token'>(</span><span class='file identifier id'>file</span><span class='rparen token'>)</span> <span class='lbrace token'>{</span> <span class='bitor op'>|</span><span class='f identifier id'>f</span><span class='bitor op'>|</span> <span class='line identifier id'>line</span> <span class='assign token'>=</span> <span class='f identifier id'>f</span><span class='dot token'>.</span><span class='gets identifier id'>gets</span> <span class='rbrace token'>}</span>
+  <span class='line identifier id'>line</span><span class='dot token'>.</span><span class='index identifier id'>index</span> <span class='string val'>&quot;!ruby/object:Gem::Specification&quot;</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Tue May 24 07:37:11 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.6.7 (ruby-1.8.7).
+</div>
+
+  </body>
+</html>
