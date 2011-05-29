@@ -49,39 +49,44 @@ module RedTools
       create_gemspec(file)
     end
 
-    # Push gem package to RubyGems.org.
+    # Push gem package to RubyGems.org (a la Gemcutter).
+    #--
     # TODO: Do this programatically instead of shelling out.
+    #++
     def push
-      pkgs = Pathname.new(pkgdir).glob("*-#{version}.gem")
-      if pkgs.empty?
+      if package_files.empty?
         report "No .gem packages found for version {version} at #{pkgdir}."
       else
-        pkgs.each do |file|
+        package_files.each do |file|
           sh "gem push #{file}"
         end
       end
     end
 
-    # Mark package file as outdated.
-    #def reset
-    #end
-
-    # Remove package file.
-    #--
-    # TODO: Should we bother with this?
     #
-    # TODO: This is a little loose. Can we be more specific about which
-    # gem file to remove?
-    #++
-    def clean
-      pkgs = Pathname.new(pkgdir).glob("*-#{version}.gem")
-      if pkgs.empty?
-        pkgs.each{ |f| rm(f) }
+    alias_method :release, :push
+
+    # Mark package files as outdated.
+    def reset
+      package_files.each do |f|
+        utime(0 ,0, f) 
+        report "Reset #{f}"
       end
     end
 
+    # Remove package file(s).
+    #--
+    # TODO: This is a little loose. Can we be more specific about which
+    # gem file(s) to remove?
+    #++
+    def purge
+      package_files.each do |f|
+        rm(f)
+        report "Removed #{f}"
+      end
+    end
 
-    private
+  private
 
     #
     def initialize_defaults
@@ -91,6 +96,11 @@ module RedTools
       @gemspec ||= lookup_gemspec
 
       @version = project.metadata.version
+    end
+
+    #
+    def package_files
+      Pathname.new(pkgdir).glob("*-#{version}.gem")
     end
 
     # Create gemspec if +autospec+ is +true+.
@@ -138,18 +148,6 @@ module RedTools
     def yaml?(file)
       line = open(file) { |f| line = f.gets }
       line.index "!ruby/object:Gem::Specification"
-    end
-
-    # Release a la Gemcutter.
-    def release
-      pkgs = Pathname.new(pkgdir).glob("*-#{version}.gem")
-      if pkgs.empty?
-        report "No .gem packages found for version {version} at #{pkgdir}."
-      else
-        pkgs.each do |file|
-          sh "gem push #{file}"
-        end
-      end
     end
 
     # TODO: Should we be rescuing this?

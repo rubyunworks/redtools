@@ -60,8 +60,6 @@ module RedTools
       make 'clean'
     end
 
-    #alias_method :clean, :make_clean
-
     # Remove all compile products.
 
     def distclean
@@ -72,7 +70,7 @@ module RedTools
       end
     end
 
-    alias_method :clobber, :distclean
+    alias_method :purge, :distclean
 
     # Create Makefile(s).
 

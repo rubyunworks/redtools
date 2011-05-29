@@ -7,7 +7,16 @@ module RedTools
   module ShellUtils
 
     #
-    def initialize
+    def initialize_extension_defaults
+      @quiet = false
+      @trial = false
+      @noop  = false
+      @force = false
+      super() if defined?(super)
+    end
+
+    #
+    def initialize_extensions
       extend(fileutils)
       super() if defined?(super)
     end
@@ -44,7 +53,6 @@ module RedTools
     attr_writer :trace
     attr_writer :trial
     attr_writer :debug
-
     attr_writer :verbose
 
     def force?   ; @force   ; end
@@ -70,11 +78,13 @@ module RedTools
     end
 
     # TODO: deprecate in favor of #report ?
-    def status(message)
+    def report(message)
       stderr.puts message unless quiet?
     end
 
-    # Internal report. Only output if in verbose mode.
+    alias_method :status, :report
+
+    # Internal trace report. Only output if in verbose mode.
     #
     # TODO: rename to #warn ?
     def trace(message)
@@ -161,31 +171,31 @@ module RedTools
 
     # -- File Testing ---------------------------------------------------------
 
-    def size(path)        ; FileTest.size(path)       ; end
-    def size?(path)       ; FileTest.size?(path)      ; end
-    def directory?(path)  ; FileTest.directory?(path) ; end
-    def symlink?(path)    ; FileTest.symlink?(path)   ; end
-    def readable?(path)   ; FileTest.readable?(path)  ; end
-    def chardev?(path)    ; FileTest.chardev?(path)   ; end
-    def exist?(path)      ; FileTest.exist?(path)     ; end
-    def exists?(path)     ; FileTest.exists?(path)    ; end
-    def zero?(path)       ; FileTest.zero?(path)      ; end
-    def pipe?(path)       ; FileTest.pipe?(path)      ; end
-    def file?(path)       ; FileTest.file?(path)      ; end
-    def sticky?(path)     ; FileTest.sticky?(path)    ; end
-    def blockdev?(path)   ; FileTest.blockdev?(path)  ; end
-    def grpowned?(path)   ; FileTest.grpowned?(path)  ; end
-    def setgid?(path)     ; FileTest.setgid?(path)    ; end
-    def setuid?(path)     ; FileTest.setuid?(path)    ; end
-    def socket?(path)     ; FileTest.socket?(path)    ; end
-    def owned?(path)      ; FileTest.owned?(path)     ; end
-    def writable?(path)   ; FileTest.writable?(path)  ; end
-    def executable?(path) ; FileTest.executable?(path); end
+    def size(path)             ; FileTest.size(path)             ; end
+    def size?(path)            ; FileTest.size?(path)            ; end
+    def directory?(path)       ; FileTest.directory?(path)       ; end
+    def symlink?(path)         ; FileTest.symlink?(path)         ; end
+    def readable?(path)        ; FileTest.readable?(path)        ; end
+    def chardev?(path)         ; FileTest.chardev?(path)         ; end
+    def exist?(path)           ; FileTest.exist?(path)           ; end
+    def exists?(path)          ; FileTest.exists?(path)          ; end
+    def zero?(path)            ; FileTest.zero?(path)            ; end
+    def pipe?(path)            ; FileTest.pipe?(path)            ; end
+    def file?(path)            ; FileTest.file?(path)            ; end
+    def sticky?(path)          ; FileTest.sticky?(path)          ; end
+    def blockdev?(path)        ; FileTest.blockdev?(path)        ; end
+    def grpowned?(path)        ; FileTest.grpowned?(path)        ; end
+    def setgid?(path)          ; FileTest.setgid?(path)          ; end
+    def setuid?(path)          ; FileTest.setuid?(path)          ; end
+    def socket?(path)          ; FileTest.socket?(path)          ; end
+    def owned?(path)           ; FileTest.owned?(path)           ; end
+    def writable?(path)        ; FileTest.writable?(path)        ; end
+    def executable?(path)      ; FileTest.executable?(path)      ; end
 
-    def safe?(path)       ; FileTest.safe?(path)      ; end
+    def safe?(path)            ; FileTest.safe?(path)            ; end
 
-    def relative?(path)   ; FileTest.relative?(path)  ; end
-    def absolute?(path)   ; FileTest.absolute?(path)  ; end
+    def relative?(path)        ; FileTest.relative?(path)        ; end
+    def absolute?(path)        ; FileTest.absolute?(path)        ; end
 
     def writable_real?(path)   ; FileTest.writable_real?(path)   ; end
     def executable_real?(path) ; FileTest.executable_real?(path) ; end
@@ -195,6 +205,14 @@ module RedTools
       FileTest.identical?(path, other)
     end
     alias_method :compare_file, :identical?
+
+    # -- File Methods ---------------------------------------------------------
+
+    def atime(*args) ; File.ctime(*args) ; end
+    def ctime(*args) ; File.ctime(*args) ; end
+    def mtime(*args) ; File.mtime(*args) ; end
+
+    def utime(*args) ; File.utime(*args) unless noop? ; end
 
     private # -----------------------------------------------------------------
 

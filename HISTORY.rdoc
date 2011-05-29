@@ -1,5 +1,20 @@
 = RELEASE HISTORY
 
+== 0.2.0 | 2011-05-29
+
+This is a small release with a few fixes and improvements
+brought to bare by recent work on Relines project.
+
+Changes:
+
+* Rename #clean methods to #purge for some tools.
+* For now, only warn when a tool does not recognize an option. 
+* Add #platform method to Tool base class.
+* Add naming policy methods.
+* Add ctime, mtime and utime methods for ShellUtils.
+* Add #project= writer so project can be set externally.
+
+
 == 0.1.0 | 2011-05-23 | Birthday
 
 This is the initial release of RedTools, which has been spun-off

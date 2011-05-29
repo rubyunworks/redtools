@@ -88,11 +88,15 @@ module RedTools
       end
     end
 
-    # Remove ri products.
+    # A no-op, there are no residuals to remove.
     def clean
+    end
+
+    # Remove ri products.
+    def purge
       if File.directory?(output)
         rm_r(output)
-        status "Removed #{output}" #unless trial?
+        report "Removed #{output}" #unless trial?
       end
     end
 
@@ -108,7 +112,7 @@ module RedTools
       if trial?
         puts "rdoc " + argv.join(" ")
       else
-        puts "rdoc " + argv.join(" ") #if trace? or verbose?
+        trace "rdoc " + argv.join(" ") #if trace? or verbose?
         #silently do
         rdoc = ::RDoc::RDoc.new
         rdoc.document(argv)

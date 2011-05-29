@@ -47,11 +47,6 @@ module RedTools
       @template = ENV['YARD_TEMPLATE'] || DEFAULT_TEMPLATE
     end
 
-    #def main_document ; document ; end
-    #def site_document ; document ; end
-    #def main_clean    ; clean    ; end
-    #def site_clean    ; clean    ; end
-
   public
 
     # Title of documents. Defaults to general metadata title field.
@@ -85,17 +80,14 @@ module RedTools
     # same as the yardoc command's option, with two
     # exceptions: +inline+ for +inline-source+ and
     # +output+ for +op+.
-    #
-    def document(options=nil)
-      options ||= {}
-
-      title    = options['title']    || self.title
-      output   = options['output']   || self.output
-      readme   = options['readme']   || self.readme
-      template = options['template'] || self.template
-      files    = options['files']    || self.files
-      exclude  = options['exclude']  || self.exclude
-      extra    = options['extra']    || self.extra
+    def document
+      title    = self.title
+      output   = self.output
+      readme   = self.readme
+      template = self.template
+      files    = self.files
+      exclude  = self.exclude
+      extra    = self.extra
 
       readme = Dir.glob(readme, File::FNM_CASEFOLD).first
 
@@ -154,12 +146,21 @@ module RedTools
       end
     end
 
-    # Remove yardoc products.
+    # Mark the output directory as out of date.
+    def reset
+      if directory?(output)
+        utime(0, 0, output)
+        report "Reset #{output}" #unless trial?
+      end
+    end
 
-    def clean(options=nil)
-      output = options['output'] || self.output #|| 'doc/yard'
+    # TODO: remove .yardoc ?
+    def clean
+    end
 
-      if File.directory?(output)
+    # Remove yardoc output directory.
+    def purge
+      if directory?(output)
         rm_r(output)
         status "Removed #{output}" unless trial?
       end

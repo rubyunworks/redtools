@@ -84,7 +84,7 @@ module RedTools
     end
 
     #
-    def release
+    def publish
       require 'grancher'
       grancher.push
       report "Pushed site files to #{remote}."

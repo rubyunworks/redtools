@@ -20,6 +20,11 @@ module RedTools
       @project ||= ProjectUtils.project(path)
     end
 
+    # Set project manutally.
+    def project=(proj)
+      @project = proj
+    end
+
     #
     def metadata
       project.metadata

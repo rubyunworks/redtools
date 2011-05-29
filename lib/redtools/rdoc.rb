@@ -23,7 +23,7 @@ module RedTools
     DEFAULT_OUTPUT       = "doc/rdoc"
 
     # Locations to check for existance in deciding where to store rdoc documentation.
-    DEFAULT_OUTPUT_MATCH = "{doc/rdoc,rdoc}"
+    DEFAULT_OUTPUT_MATCH = "{site/rdoc,doc/rdoc,rdoc}"
 
     # Default main file.
     DEFAULT_MAIN         = "README{,.*}"
@@ -72,20 +72,16 @@ module RedTools
     # exceptions: +inline+ for +inline-source+ and
     # +output+ for +op+.
     #
-    def document(options=nil)
-      options ||= {}
-
-      #require_rdoc
-
-      title    = options['title']    || self.title
-      output   = options['output']   || self.output
-      main     = options['main']     || self.main
-      format   = options['format']   || self.format
-      template = options['template'] || self.template
-      files    = options['files']    || self.files
-      exclude  = options['exclude']  || self.exclude
-      adfile   = options['adfile']   || self.adfile
-      extra    = options['extra']    || self.extra
+    def document
+      title    = self.title
+      output   = self.output
+      main     = self.main
+      format   = self.format
+      template = self.template
+      files    = self.files
+      exclude  = self.exclude
+      adfile   = self.adfile
+      extra    = self.extra
 
       # you can specify more than one possibility, first match wins
       adfile = [adfile].flatten.compact.find do |f|
@@ -137,23 +133,27 @@ module RedTools
 
         output
       else
-        status "RDocs are current (#{output})"
+        report "RDocs are current (#{output})"
       end
     end
 
     # Reset output directory, marking it as out-of-date.
     def reset
-      if File.directory?(output)
-        File.utime(0,0,output)
-        report "reset #{output}" #unless trial?
+      if directory?(output)
+        utime(0, 0, output)
+        report "Reset #{output}"
       end
     end
 
-    # Remove rdocs products.
+    # A no-op. RDoc has no residuals to remove.
     def clean
-      if File.directory?(output)
+    end
+
+    # Remove rdoc output.
+    def purge
+      if directory?(output)
         rm_r(output)
-        report "removed #{output}" #unless trial?
+        report "Removed #{output}"
       end
     end
 
