@@ -49,6 +49,9 @@ module RedTools
 
   public
 
+    # If set to true, use `.yardopts` file and ignore other settings.
+    attr_accessor :yardopts
+
     # Title of documents. Defaults to general metadata title field.
     attr_accessor :title
 
@@ -126,19 +129,24 @@ module RedTools
         #target_main   = File.expand_path(target_main) if target_main
         #target_output = File.expand_path(File.join(output, subdir))
         #target_output = File.join(output, subdir)
-        
-        argv = []
-        argv.concat(String === extra ? extra.split(/\s+/) : extra)
-        argv.concat ['--output-dir', output] if output
-        argv.concat ['--readme', readme] if readme
-        argv.concat ['--template', template] if template
-        argv.concat ['--title', title] if title
-        #argv.concat ['exclude', exclude]
-        argv.concat input
-        argv.concat ['--', *topfiles]
+
+        if yardopts
+          argv = []
+        else
+          argv = []
+          argv.concat(String === extra ? extra.split(/\s+/) : extra)
+          argv.concat ['--output-dir', output] if output
+          argv.concat ['--readme', readme] if readme
+          argv.concat ['--template', template] if template
+          argv.concat ['--title', title] if title
+          #argv.concat ['--exclude', exclude]
+          argv.concat input
+          argv.concat ['--', *topfiles]
+        end
 
         yard_target(output, argv)
-        #rdoc_insert_ads(output, adfile)
+
+        #insert_ads(output, adfile)
 
         touch(output)
       else
