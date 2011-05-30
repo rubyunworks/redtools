@@ -2,17 +2,27 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
-<title>Module: RedTools::ShellUtils</title>
-<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
-<link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Module: RedTools::ShellUtils
+  
+    &mdash; Redtools
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
   relpath = '..';
   if (relpath != '') relpath += '/';
 </script>
-<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
-<script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
 
   </head>
   <body>
@@ -33,11 +43,14 @@
 </div>
 
       <div id="search">
-  <a id="class_list_link" href="#">Class List</a>
-  <a id="method_list_link" href="#">Method List</a>
-  <a id ="file_list_link" href="#">File List</a>
+  
+    <a id="class_list_link" href="#">Class List</a>
+  
+    <a id="method_list_link" href="#">Method List</a>
+  
+    <a id="file_list_link" href="#">File List</a>
+  
 </div>
-
       <div class="clear"></div>
     </div>
     
@@ -63,12 +76,25 @@
   
   
     <dt class="r2 last">Defined in:</dt>
-    <dd class="r2 last">lib/redtools/tool/shell_utils.rb</dd>
+    <dd class="r2 last">lib/redtools/utils/shell_utils.rb</dd>
   
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    <p>
+ShellUtils provides the whole slew of FileUtils, FileTest and File class
+methods in a single module and modifies methods according to noop? and
+verbose? options.
+</p>
 
+
+  </div>
+</div>
+<div class="tags">
+  
+</div>
 
   <h2>Instance Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
   <ul class="summary">
@@ -92,8 +118,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>Sets the attribute debug.</p>
+    <span class="summary_desc"><div class='inline'><p>
+Sets the attribute debug.
+</p>
 </div></span>
   
 </li>
@@ -118,8 +145,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>Sets the attribute force.</p>
+    <span class="summary_desc"><div class='inline'><p>
+Sets the attribute force.
+</p>
 </div></span>
   
 </li>
@@ -144,8 +172,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>Sets the attribute quiet.</p>
+    <span class="summary_desc"><div class='inline'><p>
+Sets the attribute quiet.
+</p>
 </div></span>
   
 </li>
@@ -242,8 +271,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>Internal report.</p>
+    <span class="summary_desc"><div class='inline'><p>
+Internal trace report.
+</p>
 </div></span>
   
 </li>
@@ -268,8 +298,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>Sets the attribute trial.</p>
+    <span class="summary_desc"><div class='inline'><p>
+Sets the attribute trial.
+</p>
 </div></span>
   
 </li>
@@ -294,14 +325,17 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>Sets the attribute verbose.</p>
+    <span class="summary_desc"><div class='inline'><p>
+Sets the attribute verbose.
+</p>
 </div></span>
   
 </li>
 
     
   </ul>
+
+
 
 
   
@@ -349,8 +383,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>Append to file.</p>
+    <span class="summary_desc"><div class='inline'><p>
+Append to file.
+</p>
 </div></span>
   
 </li>
@@ -372,8 +407,34 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>Convenient method to get simple console reply.</p>
+    <span class="summary_desc"><div class='inline'><p>
+Convenient method to get simple console reply.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#atime-instance_method" title="#atime (instance method)">- (Object) <strong>atime</strong>(*args) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+&#8212; File Methods
+--------------------------------------.
+</p>
 </div></span>
   
 </li>
@@ -404,6 +465,27 @@
   <span class="summary_signature">
     
       <a href="#chardev%3F-instance_method" title="#chardev? (instance method)">- (Boolean) <strong>chardev?</strong>(path) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ctime-instance_method" title="#ctime (instance method)">- (Object) <strong>ctime</strong>(*args) </a>
     
 
     
@@ -589,7 +671,7 @@
 </li>
 
       
-        <li class="public ">
+        <li class="private ">
   <span class="summary_signature">
     
       <a href="#fileutils-instance_method" title="#fileutils (instance method)">- (Object) <strong>fileutils</strong> </a>
@@ -599,14 +681,15 @@
   </span>
   
   
-  
+  <span class="note title private">private</span>
   
   
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>Returns FileUtils module based on mode.</p>
+    <span class="summary_desc"><div class='inline'><p>
+Returns FileUtils module based on mode.
+</p>
 </div></span>
   
 </li>
@@ -680,7 +763,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#initialize-instance_method" title="#initialize (instance method)">- (ShellUtils) <strong>initialize</strong> </a>
+      <a href="#initialize_extension_defaults-instance_method" title="#initialize_extension_defaults (instance method)">- (Object) <strong>initialize_extension_defaults</strong> </a>
     
 
     
@@ -693,9 +776,49 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>A new instance of ShellUtils.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize_extensions-instance_method" title="#initialize_extensions (instance method)">- (Object) <strong>initialize_extensions</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#mtime-instance_method" title="#mtime (instance method)">- (Object) <strong>mtime</strong>(*args) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
   
 </li>
 
@@ -716,8 +839,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>TODO: Ultimately merge #glob and #multiglob.</p>
+    <span class="summary_desc"><div class='inline'><p>
+TODO: Ultimately merge #glob and #multiglob.
+</p>
 </div></span>
   
 </li>
@@ -802,9 +926,10 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>TODO: Until we have better support for getting input across platforms, we
-are using #ask for passwords too.</p>
+    <span class="summary_desc"><div class='inline'><p>
+TODO: Until we have better support for getting input across platforms, we
+are using #ask for passwords too.
+</p>
 </div></span>
   
 </li>
@@ -826,8 +951,9 @@ are using #ask for passwords too.</p>
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>A path is required for shell methods to operate.</p>
+    <span class="summary_desc"><div class='inline'><p>
+A path is required for shell methods to operate.
+</p>
 </div></span>
   
 </li>
@@ -849,8 +975,9 @@ are using #ask for passwords too.</p>
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>Set shell path.</p>
+    <span class="summary_desc"><div class='inline'><p>
+Set shell path.
+</p>
 </div></span>
   
 </li>
@@ -956,8 +1083,9 @@ are using #ask for passwords too.</p>
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>Read file.</p>
+    <span class="summary_desc"><div class='inline'><p>
+Read file.
+</p>
 </div></span>
   
 </li>
@@ -1022,6 +1150,32 @@ are using #ask for passwords too.</p>
 
   
     <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#report-instance_method" title="#report (instance method)">- (Object) <strong>report</strong>(message) </a>
+    
+
+    
+      (also: #status)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+TODO: deprecate in favor of #report ?.
+</p>
+</div></span>
   
 </li>
 
@@ -1105,8 +1259,9 @@ are using #ask for passwords too.</p>
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>Shell runner.</p>
+    <span class="summary_desc"><div class='inline'><p>
+Shell runner.
+</p>
 </div></span>
   
 </li>
@@ -1128,8 +1283,10 @@ are using #ask for passwords too.</p>
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>– File Testing ———————————————————.</p>
+    <span class="summary_desc"><div class='inline'><p>
+&#8212; File Testing
+--------------------------------------.
+</p>
 </div></span>
   
 </li>
@@ -1173,29 +1330,6 @@ are using #ask for passwords too.</p>
 
   
     <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#status-instance_method" title="#status (instance method)">- (Object) <strong>status</strong>(message) </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>TODO: deprecate in favor of #report ?.</p>
-</div></span>
   
 </li>
 
@@ -1267,6 +1401,27 @@ are using #ask for passwords too.</p>
   <span class="summary_signature">
     
       <a href="#trial%3F-instance_method" title="#trial? (instance method)">- (Boolean) <strong>trial?</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#utime-instance_method" title="#utime (instance method)">- (Object) <strong>utime</strong>(*args) </a>
     
 
     
@@ -1363,8 +1518,9 @@ are using #ask for passwords too.</p>
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>Write file.</p>
+    <span class="summary_desc"><div class='inline'><p>
+Write file.
+</p>
 </div></span>
   
 </li>
@@ -1410,8 +1566,9 @@ are using #ask for passwords too.</p>
   
 </p><div class="docstring">
   <div class="discussion">
-    
-<p>Sets the attribute debug</p>
+    <p>
+Sets the attribute debug
+</p>
 
 
   </div>
@@ -1422,16 +1579,17 @@ are using #ask for passwords too.</p>
   
     <li>
       
-        <span class='type'></span>
-      
-      
         <span class='name'>value</span>
+      
+      
+        <span class='type'></span>
       
       
       
         &mdash;
-        <div class='inline'>
-<p>the value to set the attribute debug to.</p>
+        <div class='inline'><p>
+the value to set the attribute debug to.
+</p>
 </div>
       
     </li>
@@ -1444,17 +1602,16 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-46
-47
-48</pre>
+57
+58
+59</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 46</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 57</span>
 
-<span class='def def kw'>def</span> <span class='debug= identifier id'>debug=</span><span class='lparen token'>(</span><span class='value identifier id'>value</span><span class='rparen token'>)</span>
-  <span class='@debug ivar id'>@debug</span> <span class='assign token'>=</span> <span class='value identifier id'>value</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id debug='>debug=</span><span class='lparen'>(</span><span class='id value'>value</span><span class='rparen'>)</span>
+  <span class='ivar'>@debug</span> <span class='op'>=</span> <span class='id value'>value</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -1472,8 +1629,9 @@ are using #ask for passwords too.</p>
   
 </p><div class="docstring">
   <div class="discussion">
-    
-<p>Sets the attribute force</p>
+    <p>
+Sets the attribute force
+</p>
 
 
   </div>
@@ -1484,16 +1642,17 @@ are using #ask for passwords too.</p>
   
     <li>
       
-        <span class='type'></span>
-      
-      
         <span class='name'>value</span>
+      
+      
+        <span class='type'></span>
       
       
       
         &mdash;
-        <div class='inline'>
-<p>the value to set the attribute force to.</p>
+        <div class='inline'><p>
+the value to set the attribute force to.
+</p>
 </div>
       
     </li>
@@ -1506,17 +1665,16 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-42
-43
-44</pre>
+53
+54
+55</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 42</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 53</span>
 
-<span class='def def kw'>def</span> <span class='force= identifier id'>force=</span><span class='lparen token'>(</span><span class='value identifier id'>value</span><span class='rparen token'>)</span>
-  <span class='@force ivar id'>@force</span> <span class='assign token'>=</span> <span class='value identifier id'>value</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id force='>force=</span><span class='lparen'>(</span><span class='id value'>value</span><span class='rparen'>)</span>
+  <span class='ivar'>@force</span> <span class='op'>=</span> <span class='id value'>value</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -1534,8 +1692,9 @@ are using #ask for passwords too.</p>
   
 </p><div class="docstring">
   <div class="discussion">
-    
-<p>Sets the attribute quiet</p>
+    <p>
+Sets the attribute quiet
+</p>
 
 
   </div>
@@ -1546,16 +1705,17 @@ are using #ask for passwords too.</p>
   
     <li>
       
-        <span class='type'></span>
-      
-      
         <span class='name'>value</span>
+      
+      
+        <span class='type'></span>
       
       
       
         &mdash;
-        <div class='inline'>
-<p>the value to set the attribute quiet to.</p>
+        <div class='inline'><p>
+the value to set the attribute quiet to.
+</p>
 </div>
       
     </li>
@@ -1568,17 +1728,16 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-43
-44
-45</pre>
+54
+55
+56</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 43</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 54</span>
 
-<span class='def def kw'>def</span> <span class='quiet= identifier id'>quiet=</span><span class='lparen token'>(</span><span class='value identifier id'>value</span><span class='rparen token'>)</span>
-  <span class='@quiet ivar id'>@quiet</span> <span class='assign token'>=</span> <span class='value identifier id'>value</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id quiet='>quiet=</span><span class='lparen'>(</span><span class='id value'>value</span><span class='rparen'>)</span>
+  <span class='ivar'>@quiet</span> <span class='op'>=</span> <span class='id value'>value</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -1600,17 +1759,16 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-38
-39
-40</pre>
+49
+50
+51</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 38</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 49</span>
 
-<span class='def def kw'>def</span> <span class='stderr identifier id'>stderr</span>
-  <span class='@stdout ivar id'>@stdout</span> <span class='opasgn op'>||=</span> <span class='$stderr gvar id'>$stderr</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id stderr'>stderr</span>
+  <span class='ivar'>@stdout</span> <span class='op'>||=</span> <span class='gvar'>$stderr</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -1632,17 +1790,16 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-34
-35
-36</pre>
+45
+46
+47</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 34</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 45</span>
 
-<span class='def def kw'>def</span> <span class='stdin identifier id'>stdin</span>
-  <span class='@stdin ivar id'>@stdin</span> <span class='opasgn op'>||=</span> <span class='$stdin gvar id'>$stdin</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id stdin'>stdin</span>
+  <span class='ivar'>@stdin</span> <span class='op'>||=</span> <span class='gvar'>$stdin</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -1664,17 +1821,16 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-30
-31
-32</pre>
+41
+42
+43</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 41</span>
 
-<span class='def def kw'>def</span> <span class='stdout identifier id'>stdout</span>
-  <span class='@stdout ivar id'>@stdout</span> <span class='opasgn op'>||=</span> <span class='$stdout gvar id'>$stdout</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id stdout'>stdout</span>
+  <span class='ivar'>@stdout</span> <span class='op'>||=</span> <span class='gvar'>$stdout</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -1692,10 +1848,12 @@ are using #ask for passwords too.</p>
   
 </p><div class="docstring">
   <div class="discussion">
-    
-<p>Internal report. Only output if in verbose mode.</p>
-
-<p>TODO: rename to #warn ?</p>
+    <p>
+Internal trace report. Only output if in verbose mode.
+</p>
+<p>
+TODO: rename to #warn ?
+</p>
 
 
   </div>
@@ -1708,17 +1866,16 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-80
-81
-82</pre>
+92
+93
+94</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 80</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 92</span>
 
-<span class='def def kw'>def</span> <span class='trace identifier id'>trace</span><span class='lparen token'>(</span><span class='message identifier id'>message</span><span class='rparen token'>)</span>
-  <span class='stderr identifier id'>stderr</span><span class='dot token'>.</span><span class='puts identifier id'>puts</span> <span class='message identifier id'>message</span> <span class='if if_mod kw'>if</span> <span class='verbose? fid id'>verbose?</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id trace'>trace</span><span class='lparen'>(</span><span class='id message'>message</span><span class='rparen'>)</span>
+  <span class='id stderr'>stderr</span><span class='period'>.</span><span class='id puts'>puts</span> <span class='id message'>message</span> <span class='kw'>if</span> <span class='id verbose?'>verbose?</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -1736,8 +1893,9 @@ are using #ask for passwords too.</p>
   
 </p><div class="docstring">
   <div class="discussion">
-    
-<p>Sets the attribute trial</p>
+    <p>
+Sets the attribute trial
+</p>
 
 
   </div>
@@ -1748,16 +1906,17 @@ are using #ask for passwords too.</p>
   
     <li>
       
-        <span class='type'></span>
-      
-      
         <span class='name'>value</span>
+      
+      
+        <span class='type'></span>
       
       
       
         &mdash;
-        <div class='inline'>
-<p>the value to set the attribute trial to.</p>
+        <div class='inline'><p>
+the value to set the attribute trial to.
+</p>
 </div>
       
     </li>
@@ -1770,17 +1929,16 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-45
-46
-47</pre>
+56
+57
+58</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 45</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 56</span>
 
-<span class='def def kw'>def</span> <span class='trial= identifier id'>trial=</span><span class='lparen token'>(</span><span class='value identifier id'>value</span><span class='rparen token'>)</span>
-  <span class='@trial ivar id'>@trial</span> <span class='assign token'>=</span> <span class='value identifier id'>value</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id trial='>trial=</span><span class='lparen'>(</span><span class='id value'>value</span><span class='rparen'>)</span>
+  <span class='ivar'>@trial</span> <span class='op'>=</span> <span class='id value'>value</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -1798,8 +1956,9 @@ are using #ask for passwords too.</p>
   
 </p><div class="docstring">
   <div class="discussion">
-    
-<p>Sets the attribute verbose</p>
+    <p>
+Sets the attribute verbose
+</p>
 
 
   </div>
@@ -1810,16 +1969,17 @@ are using #ask for passwords too.</p>
   
     <li>
       
-        <span class='type'></span>
-      
-      
         <span class='name'>value</span>
+      
+      
+        <span class='type'></span>
       
       
       
         &mdash;
-        <div class='inline'>
-<p>the value to set the attribute verbose to.</p>
+        <div class='inline'><p>
+the value to set the attribute verbose to.
+</p>
 </div>
       
     </li>
@@ -1832,17 +1992,16 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-48
-49
-50</pre>
+58
+59
+60</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 48</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 58</span>
 
-<span class='def def kw'>def</span> <span class='verbose= identifier id'>verbose=</span><span class='lparen token'>(</span><span class='value identifier id'>value</span><span class='rparen token'>)</span>
-  <span class='@verbose ivar id'>@verbose</span> <span class='assign token'>=</span> <span class='value identifier id'>value</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id verbose='>verbose=</span><span class='lparen'>(</span><span class='id value'>value</span><span class='rparen'>)</span>
+  <span class='ivar'>@verbose</span> <span class='op'>=</span> <span class='id value'>value</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -1874,8 +2033,8 @@ are using #ask for passwords too.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -1889,13 +2048,12 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-188</pre>
+200</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 188</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 200</span>
 
-<span class='def def kw'>def</span> <span class='absolute? fid id'>absolute?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>   <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='absolute? fid id'>absolute?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>   <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id absolute?'>absolute?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>        <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id absolute?'>absolute?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>        <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -1910,8 +2068,9 @@ are using #ask for passwords too.</p>
   
 </p><div class="docstring">
   <div class="discussion">
-    
-<p>Append to file.</p>
+    <p>
+Append to file.
+</p>
 
 
   </div>
@@ -1924,19 +2083,18 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-157
-158
-159
-160</pre>
+169
+170
+171
+172</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 157</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 169</span>
 
-<span class='def def kw'>def</span> <span class='append identifier id'>append</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='comma token'>,</span> <span class='text identifier id'>text</span><span class='rparen token'>)</span>
-  <span class='$stderr gvar id'>$stderr</span><span class='dot token'>.</span><span class='puts identifier id'>puts</span> <span class='dstring node'>&quot;append #{path}&quot;</span> <span class='if if_mod kw'>if</span> <span class='trace? fid id'>trace?</span>
-  <span class='File constant id'>File</span><span class='dot token'>.</span><span class='open identifier id'>open</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='comma token'>,</span> <span class='string val'>'a'</span><span class='rparen token'>)</span><span class='lbrace token'>{</span> <span class='bitor op'>|</span><span class='f identifier id'>f</span><span class='bitor op'>|</span> <span class='f identifier id'>f</span> <span class='lshft op'>&lt;&lt;</span> <span class='text identifier id'>text</span> <span class='rbrace token'>}</span> <span class='unless unless_mod kw'>unless</span> <span class='noop? fid id'>noop?</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id append'>append</span><span class='lparen'>(</span><span class='id path'>path</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rparen'>)</span>
+  <span class='gvar'>$stderr</span><span class='period'>.</span><span class='id puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>append </span><span class='embexpr_beg'>#{</span><span class='id path'>path</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>if</span> <span class='id trace?'>trace?</span>
+  <span class='const'>File</span><span class='period'>.</span><span class='id open'>open</span><span class='lparen'>(</span><span class='id path'>path</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>a</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span><span class='lbrace'>{</span> <span class='op'>|</span><span class='id f'>f</span><span class='op'>|</span> <span class='id f'>f</span> <span class='op'>&lt;&lt;</span> <span class='id text'>text</span> <span class='rbrace'>}</span> <span class='kw'>unless</span> <span class='id noop?'>noop?</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -1951,8 +2109,9 @@ are using #ask for passwords too.</p>
   
 </p><div class="docstring">
   <div class="discussion">
-    
-<p>Convenient method to get simple console reply.</p>
+    <p>
+Convenient method to get simple console reply.
+</p>
 
 
   </div>
@@ -1965,23 +2124,58 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-85
-86
-87
-88
-89
-90</pre>
+97
+98
+99
+100
+101
+102</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 85</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 97</span>
 
-<span class='def def kw'>def</span> <span class='ask identifier id'>ask</span><span class='lparen token'>(</span><span class='question identifier id'>question</span><span class='rparen token'>)</span>
-  <span class='stdout identifier id'>stdout</span><span class='dot token'>.</span><span class='print identifier id'>print</span> <span class='dstring node'>&quot;#{question} &quot;</span>
-  <span class='stdout identifier id'>stdout</span><span class='dot token'>.</span><span class='flush identifier id'>flush</span>
-  <span class='input identifier id'>input</span> <span class='assign token'>=</span> <span class='stdin identifier id'>stdin</span><span class='dot token'>.</span><span class='gets identifier id'>gets</span> <span class='comment val'>#until inp = stdin.gets ; sleep 1 ; end</span>
-  <span class='input identifier id'>input</span><span class='dot token'>.</span><span class='strip identifier id'>strip</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id ask'>ask</span><span class='lparen'>(</span><span class='id question'>question</span><span class='rparen'>)</span>
+  <span class='id stdout'>stdout</span><span class='period'>.</span><span class='id print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id question'>question</span><span class='rbrace'>}</span><span class='tstring_content'> </span><span class='tstring_end'>&quot;</span></span>
+  <span class='id stdout'>stdout</span><span class='period'>.</span><span class='id flush'>flush</span>
+  <span class='id input'>input</span> <span class='op'>=</span> <span class='id stdin'>stdin</span><span class='period'>.</span><span class='id gets'>gets</span> <span class='comment'>#until inp = stdin.gets ; sleep 1 ; end
+</span>  <span class='id input'>input</span><span class='period'>.</span><span class='id strip'>strip</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="atime-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>atime</strong>(*args) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+&#8212; File Methods
+------------------------------------&#8212;
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+213</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 213</span>
+
+<span class='kw'>def</span> <span class='id atime'>atime</span><span class='lparen'>(</span><span class='op'>*</span><span class='id args'>args</span><span class='rparen'>)</span> <span class='semicolon'>;</span> <span class='const'>File</span><span class='period'>.</span><span class='id ctime'>ctime</span><span class='lparen'>(</span><span class='op'>*</span><span class='id args'>args</span><span class='rparen'>)</span> <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -2006,8 +2200,8 @@ are using #ask for passwords too.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -2021,13 +2215,12 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-176</pre>
+188</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 176</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 188</span>
 
-<span class='def def kw'>def</span> <span class='blockdev? fid id'>blockdev?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>   <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='blockdev? fid id'>blockdev?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>   <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id blockdev?'>blockdev?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>        <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id blockdev?'>blockdev?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>        <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -2052,8 +2245,8 @@ are using #ask for passwords too.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -2067,13 +2260,36 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-169</pre>
+181</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 169</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 181</span>
 
-<span class='def def kw'>def</span> <span class='chardev? fid id'>chardev?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>    <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='chardev? fid id'>chardev?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>    <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id chardev?'>chardev?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>         <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id chardev?'>chardev?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>         <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="ctime-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>ctime</strong>(*args) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+214</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 214</span>
+
+<span class='kw'>def</span> <span class='id ctime'>ctime</span><span class='lparen'>(</span><span class='op'>*</span><span class='id args'>args</span><span class='rparen'>)</span> <span class='semicolon'>;</span> <span class='const'>File</span><span class='period'>.</span><span class='id ctime'>ctime</span><span class='lparen'>(</span><span class='op'>*</span><span class='id args'>args</span><span class='rparen'>)</span> <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -2098,8 +2314,8 @@ are using #ask for passwords too.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -2113,13 +2329,12 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-56</pre>
+66</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 56</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 66</span>
 
-<span class='def def kw'>def</span> <span class='debug? fid id'>debug?</span>   <span class='semicolon token'>;</span> <span class='@debug ivar id'>@debug</span>    <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id debug?'>debug?</span>   <span class='semicolon'>;</span> <span class='ivar'>@debug</span>   <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -2144,8 +2359,8 @@ are using #ask for passwords too.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -2159,13 +2374,12 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-166</pre>
+178</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 166</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 178</span>
 
-<span class='def def kw'>def</span> <span class='directory? fid id'>directory?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>  <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='directory? fid id'>directory?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>  <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id directory?'>directory?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>       <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id directory?'>directory?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>       <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -2190,8 +2404,8 @@ are using #ask for passwords too.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -2205,13 +2419,12 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-60</pre>
+70</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 60</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 70</span>
 
-<span class='def def kw'>def</span> <span class='dryrun? fid id'>dryrun?</span>  <span class='semicolon token'>;</span> <span class='verbose? fid id'>verbose?</span> <span class='andop op'>&amp;&amp;</span> <span class='noop? fid id'>noop?</span>  <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id dryrun?'>dryrun?</span>  <span class='semicolon'>;</span> <span class='id verbose?'>verbose?</span> <span class='op'>&amp;&amp;</span> <span class='id noop?'>noop?</span> <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -2236,8 +2449,8 @@ are using #ask for passwords too.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -2251,13 +2464,12 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-183</pre>
+195</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 183</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 195</span>
 
-<span class='def def kw'>def</span> <span class='executable? fid id'>executable?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span> <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='executable? fid id'>executable?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span> <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id executable?'>executable?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>      <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id executable?'>executable?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>      <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -2282,8 +2494,8 @@ are using #ask for passwords too.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -2297,13 +2509,12 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-191</pre>
+203</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 191</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 203</span>
 
-<span class='def def kw'>def</span> <span class='executable_real? fid id'>executable_real?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span> <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='executable_real? fid id'>executable_real?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>  <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id executable_real?'>executable_real?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span> <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id executable_real?'>executable_real?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span> <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -2328,8 +2539,8 @@ are using #ask for passwords too.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -2343,13 +2554,12 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-170</pre>
+182</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 170</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 182</span>
 
-<span class='def def kw'>def</span> <span class='exist? fid id'>exist?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>      <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='exist? fid id'>exist?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>      <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id exist?'>exist?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>           <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id exist?'>exist?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>           <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -2374,8 +2584,8 @@ are using #ask for passwords too.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -2389,13 +2599,12 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-171</pre>
+183</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 171</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 183</span>
 
-<span class='def def kw'>def</span> <span class='exists? fid id'>exists?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>     <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='exists? fid id'>exists?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>     <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id exists?'>exists?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>          <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id exists?'>exists?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>          <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -2420,8 +2629,8 @@ are using #ask for passwords too.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -2435,13 +2644,12 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-174</pre>
+186</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 174</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 186</span>
 
-<span class='def def kw'>def</span> <span class='file? fid id'>file?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>       <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='file? fid id'>file?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>       <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id file?'>file?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>            <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id file?'>file?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>            <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -2450,14 +2658,15 @@ are using #ask for passwords too.</p>
       <div class="method_details ">
   <p class="signature " id="fileutils-instance_method">
   
-    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>fileutils</strong> 
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>fileutils</strong>  <span class="extras">(private)</span>
   
 
   
 </p><div class="docstring">
   <div class="discussion">
-    
-<p>Returns FileUtils module based on mode.</p>
+    <p>
+Returns FileUtils module based on mode.
+</p>
 
 
   </div>
@@ -2470,33 +2679,32 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-202
-203
-204
-205
-206
-207
-208
-209
-210
-211
-212</pre>
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 202</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 222</span>
 
-<span class='def def kw'>def</span> <span class='fileutils identifier id'>fileutils</span>
-  <span class='if if kw'>if</span> <span class='dryrun? fid id'>dryrun?</span>
-    <span class='colon3 op'>::</span><span class='FileUtils constant id'>FileUtils</span><span class='colon2 op'>::</span><span class='DryRun constant id'>DryRun</span>
-  <span class='elsif elsif kw'>elsif</span> <span class='noop? fid id'>noop?</span> <span class='or or kw'>or</span> <span class='trial? fid id'>trial?</span>
-    <span class='colon3 op'>::</span><span class='FileUtils constant id'>FileUtils</span><span class='colon2 op'>::</span><span class='Noop constant id'>Noop</span>
-  <span class='elsif elsif kw'>elsif</span> <span class='trace? fid id'>trace?</span>
-    <span class='colon3 op'>::</span><span class='FileUtils constant id'>FileUtils</span><span class='colon2 op'>::</span><span class='Verbose constant id'>Verbose</span>
-  <span class='else else kw'>else</span>
-    <span class='colon3 op'>::</span><span class='FileUtils constant id'>FileUtils</span>
-  <span class='end end kw'>end</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id fileutils'>fileutils</span>
+  <span class='kw'>if</span> <span class='id dryrun?'>dryrun?</span>
+    <span class='op'>::</span><span class='const'>FileUtils</span><span class='op'>::</span><span class='const'>DryRun</span>
+  <span class='kw'>elsif</span> <span class='id noop?'>noop?</span> <span class='kw'>or</span> <span class='id trial?'>trial?</span>
+    <span class='op'>::</span><span class='const'>FileUtils</span><span class='op'>::</span><span class='const'>Noop</span>
+  <span class='kw'>elsif</span> <span class='id trace?'>trace?</span>
+    <span class='op'>::</span><span class='const'>FileUtils</span><span class='op'>::</span><span class='const'>Verbose</span>
+  <span class='kw'>else</span>
+    <span class='op'>::</span><span class='const'>FileUtils</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -2521,8 +2729,8 @@ are using #ask for passwords too.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -2536,13 +2744,12 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-50</pre>
+60</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 50</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 60</span>
 
-<span class='def def kw'>def</span> <span class='force? fid id'>force?</span>   <span class='semicolon token'>;</span> <span class='@force ivar id'>@force</span>    <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id force?'>force?</span>   <span class='semicolon'>;</span> <span class='ivar'>@force</span>   <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -2567,8 +2774,8 @@ are using #ask for passwords too.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -2582,13 +2789,12 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-177</pre>
+189</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 177</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 189</span>
 
-<span class='def def kw'>def</span> <span class='grpowned? fid id'>grpowned?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>   <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='grpowned? fid id'>grpowned?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>   <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id grpowned?'>grpowned?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>        <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id grpowned?'>grpowned?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>        <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -2617,8 +2823,8 @@ are using #ask for passwords too.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -2632,58 +2838,106 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-194
-195
-196</pre>
+206
+207
+208</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 194</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 206</span>
 
-<span class='def def kw'>def</span> <span class='identical? fid id'>identical?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='comma token'>,</span> <span class='other identifier id'>other</span><span class='rparen token'>)</span>
-  <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='identical? fid id'>identical?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='comma token'>,</span> <span class='other identifier id'>other</span><span class='rparen token'>)</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id identical?'>identical?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='comma'>,</span> <span class='id other'>other</span><span class='rparen'>)</span>
+  <span class='const'>FileTest</span><span class='period'>.</span><span class='id identical?'>identical?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='comma'>,</span> <span class='id other'>other</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="initialize-instance_method">
+  <p class="signature " id="initialize_extension_defaults-instance_method">
   
-    - (<tt><span class='object_link'><a href="" title="RedTools::ShellUtils (module)">ShellUtils</a></span></tt>) <strong>initialize</strong> 
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>initialize_extension_defaults</strong> 
   
 
   
-</p><div class="docstring">
-  <div class="discussion">
-    
-<p>A new instance of ShellUtils</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-</div><table class="source_code">
+</p><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-10
-11
 12
-13</pre>
+13
+14
+15
+16
+17
+18</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 10</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 12</span>
 
-<span class='def def kw'>def</span> <span class='initialize identifier id'>initialize</span>
-  <span class='extend identifier id'>extend</span><span class='lparen token'>(</span><span class='fileutils identifier id'>fileutils</span><span class='rparen token'>)</span>
-  <span class='super super kw'>super</span><span class='lparen token'>(</span><span class='rparen token'>)</span> <span class='if if_mod kw'>if</span> <span class='defined? defined kw'>defined?</span><span class='lparen token'>(</span><span class='super super kw'>super</span><span class='rparen token'>)</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id initialize_extension_defaults'>initialize_extension_defaults</span>
+  <span class='ivar'>@quiet</span> <span class='op'>=</span> <span class='kw'>false</span>
+  <span class='ivar'>@trial</span> <span class='op'>=</span> <span class='kw'>false</span>
+  <span class='ivar'>@noop</span>  <span class='op'>=</span> <span class='kw'>false</span>
+  <span class='ivar'>@force</span> <span class='op'>=</span> <span class='kw'>false</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='kw'>defined?</span><span class='lparen'>(</span><span class='kw'>super</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="initialize_extensions-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>initialize_extensions</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+21
+22
+23
+24</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 21</span>
+
+<span class='kw'>def</span> <span class='id initialize_extensions'>initialize_extensions</span>
+  <span class='id extend'>extend</span><span class='lparen'>(</span><span class='id fileutils'>fileutils</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='kw'>defined?</span><span class='lparen'>(</span><span class='kw'>super</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="mtime-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>mtime</strong>(*args) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+215</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 215</span>
+
+<span class='kw'>def</span> <span class='id mtime'>mtime</span><span class='lparen'>(</span><span class='op'>*</span><span class='id args'>args</span><span class='rparen'>)</span> <span class='semicolon'>;</span> <span class='const'>File</span><span class='period'>.</span><span class='id mtime'>mtime</span><span class='lparen'>(</span><span class='op'>*</span><span class='id args'>args</span><span class='rparen'>)</span> <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -2698,8 +2952,9 @@ are using #ask for passwords too.</p>
   
 </p><div class="docstring">
   <div class="discussion">
-    
-<p>TODO: Ultimately merge #glob and #multiglob.</p>
+    <p>
+TODO: Ultimately merge #glob and #multiglob.
+</p>
 
 
   </div>
@@ -2712,17 +2967,16 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-122
-123
-124</pre>
+134
+135
+136</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 122</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 134</span>
 
-<span class='def def kw'>def</span> <span class='multiglob identifier id'>multiglob</span><span class='lparen token'>(</span><span class='mult op'>*</span><span class='args identifier id'>args</span><span class='comma token'>,</span> <span class='bitand op'>&amp;</span><span class='blk identifier id'>blk</span><span class='rparen token'>)</span>
-  <span class='Dir constant id'>Dir</span><span class='dot token'>.</span><span class='multiglob identifier id'>multiglob</span><span class='lparen token'>(</span><span class='mult op'>*</span><span class='args identifier id'>args</span><span class='comma token'>,</span> <span class='bitand op'>&amp;</span><span class='blk identifier id'>blk</span><span class='rparen token'>)</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id multiglob'>multiglob</span><span class='lparen'>(</span><span class='op'>*</span><span class='id args'>args</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id blk'>blk</span><span class='rparen'>)</span>
+  <span class='const'>Dir</span><span class='period'>.</span><span class='id multiglob'>multiglob</span><span class='lparen'>(</span><span class='op'>*</span><span class='id args'>args</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id blk'>blk</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -2741,17 +2995,16 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-126
-127
-128</pre>
+138
+139
+140</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 126</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 138</span>
 
-<span class='def def kw'>def</span> <span class='multiglob_r identifier id'>multiglob_r</span><span class='lparen token'>(</span><span class='mult op'>*</span><span class='args identifier id'>args</span><span class='comma token'>,</span> <span class='bitand op'>&amp;</span><span class='blk identifier id'>blk</span><span class='rparen token'>)</span>
-  <span class='Dir constant id'>Dir</span><span class='dot token'>.</span><span class='multiglob_r identifier id'>multiglob_r</span><span class='lparen token'>(</span><span class='mult op'>*</span><span class='args identifier id'>args</span><span class='comma token'>,</span> <span class='bitand op'>&amp;</span><span class='blk identifier id'>blk</span><span class='rparen token'>)</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id multiglob_r'>multiglob_r</span><span class='lparen'>(</span><span class='op'>*</span><span class='id args'>args</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id blk'>blk</span><span class='rparen'>)</span>
+  <span class='const'>Dir</span><span class='period'>.</span><span class='id multiglob_r'>multiglob_r</span><span class='lparen'>(</span><span class='op'>*</span><span class='id args'>args</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id blk'>blk</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -2776,8 +3029,8 @@ are using #ask for passwords too.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -2791,13 +3044,12 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-59</pre>
+69</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 59</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 69</span>
 
-<span class='def def kw'>def</span> <span class='noop? fid id'>noop?</span>    <span class='semicolon token'>;</span> <span class='@trial ivar id'>@trial</span>    <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id noop?'>noop?</span>    <span class='semicolon'>;</span> <span class='ivar'>@trial</span>   <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -2822,8 +3074,8 @@ are using #ask for passwords too.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -2837,13 +3089,12 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-181</pre>
+193</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 181</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 193</span>
 
-<span class='def def kw'>def</span> <span class='owned? fid id'>owned?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>      <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='owned? fid id'>owned?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>      <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id owned?'>owned?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>           <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id owned?'>owned?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>           <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -2858,9 +3109,10 @@ are using #ask for passwords too.</p>
   
 </p><div class="docstring">
   <div class="discussion">
-    
-<p>TODO: Until we have better support for getting input across platforms, we
-are using #ask for passwords too.</p>
+    <p>
+TODO: Until we have better support for getting input across platforms, we
+are using #ask for passwords too.
+</p>
 
 
   </div>
@@ -2873,19 +3125,18 @@ are using #ask for passwords too.</p>
       <pre class="lines">
 
 
-94
-95
-96
-97</pre>
+106
+107
+108
+109</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 94</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 106</span>
 
-<span class='def def kw'>def</span> <span class='password identifier id'>password</span><span class='lparen token'>(</span><span class='prompt identifier id'>prompt</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='rparen token'>)</span>
-  <span class='prompt identifier id'>prompt</span> <span class='opasgn op'>||=</span> <span class='string val'>&quot;Enter Password: &quot;</span>
-  <span class='ask identifier id'>ask</span><span class='lparen token'>(</span><span class='prompt identifier id'>prompt</span><span class='rparen token'>)</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id password'>password</span><span class='lparen'>(</span><span class='id prompt'>prompt</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id prompt'>prompt</span> <span class='op'>||=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Enter Password: </span><span class='tstring_end'>&quot;</span></span>
+  <span class='id ask'>ask</span><span class='lparen'>(</span><span class='id prompt'>prompt</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -2900,9 +3151,10 @@ are using #ask for passwords too.</p>
   
 </p><div class="docstring">
   <div class="discussion">
-    
-<p>A path is required for shell methods to operate. If no path is set than the
-current working path is used.</p>
+    <p>
+A path is required for shell methods to operate. If no path is set than the
+current working path is used.
+</p>
 
 
   </div>
@@ -2915,17 +3167,16 @@ current working path is used.</p>
       <pre class="lines">
 
 
-17
-18
-19</pre>
+28
+29
+30</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 17</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 28</span>
 
-<span class='def def kw'>def</span> <span class='path identifier id'>path</span>
-  <span class='@path ivar id'>@path</span> <span class='opasgn op'>||=</span> <span class='Dir constant id'>Dir</span><span class='dot token'>.</span><span class='pwd identifier id'>pwd</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id path'>path</span>
+  <span class='ivar'>@path</span> <span class='op'>||=</span> <span class='const'>Dir</span><span class='period'>.</span><span class='id pwd'>pwd</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -2940,8 +3191,9 @@ current working path is used.</p>
   
 </p><div class="docstring">
   <div class="discussion">
-    
-<p>Set shell path.</p>
+    <p>
+Set shell path.
+</p>
 
 
   </div>
@@ -2954,17 +3206,16 @@ current working path is used.</p>
       <pre class="lines">
 
 
-22
-23
-24</pre>
+33
+34
+35</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 22</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 33</span>
 
-<span class='def def kw'>def</span> <span class='path= identifier id'>path=</span><span class='lparen token'>(</span><span class='dir identifier id'>dir</span><span class='rparen token'>)</span>
-  <span class='@path ivar id'>@path</span> <span class='assign token'>=</span> <span class='dir identifier id'>dir</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id path='>path=</span><span class='lparen'>(</span><span class='id dir'>dir</span><span class='rparen'>)</span>
+  <span class='ivar'>@path</span> <span class='op'>=</span> <span class='id dir'>dir</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -2989,8 +3240,8 @@ current working path is used.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -3004,13 +3255,12 @@ current working path is used.</p>
       <pre class="lines">
 
 
-173</pre>
+185</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 173</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 185</span>
 
-<span class='def def kw'>def</span> <span class='pipe? fid id'>pipe?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>       <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='pipe? fid id'>pipe?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>       <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id pipe?'>pipe?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>            <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id pipe?'>pipe?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>            <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -3029,17 +3279,16 @@ current working path is used.</p>
       <pre class="lines">
 
 
-63
-64
-65</pre>
+73
+74
+75</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 63</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 73</span>
 
-<span class='def def kw'>def</span> <span class='print identifier id'>print</span><span class='lparen token'>(</span><span class='str identifier id'>str</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='rparen token'>)</span>
-  <span class='stdout identifier id'>stdout</span><span class='dot token'>.</span><span class='print identifier id'>print</span><span class='lparen token'>(</span><span class='str identifier id'>str</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span> <span class='unless unless_mod kw'>unless</span> <span class='quiet? fid id'>quiet?</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id print'>print</span><span class='lparen'>(</span><span class='id str'>str</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id stdout'>stdout</span><span class='period'>.</span><span class='id print'>print</span><span class='lparen'>(</span><span class='id str'>str</span><span class='period'>.</span><span class='id to_s'>to_s</span><span class='rparen'>)</span> <span class='kw'>unless</span> <span class='id quiet?'>quiet?</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -3058,17 +3307,16 @@ current working path is used.</p>
       <pre class="lines">
 
 
-68
-69
-70</pre>
+78
+79
+80</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 68</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 78</span>
 
-<span class='def def kw'>def</span> <span class='puts identifier id'>puts</span><span class='lparen token'>(</span><span class='str identifier id'>str</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='rparen token'>)</span>
-  <span class='stdout identifier id'>stdout</span><span class='dot token'>.</span><span class='puts identifier id'>puts</span><span class='lparen token'>(</span><span class='str identifier id'>str</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span> <span class='unless unless_mod kw'>unless</span> <span class='quiet? fid id'>quiet?</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id puts'>puts</span><span class='lparen'>(</span><span class='id str'>str</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id stdout'>stdout</span><span class='period'>.</span><span class='id puts'>puts</span><span class='lparen'>(</span><span class='id str'>str</span><span class='period'>.</span><span class='id to_s'>to_s</span><span class='rparen'>)</span> <span class='kw'>unless</span> <span class='id quiet?'>quiet?</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -3093,8 +3341,8 @@ current working path is used.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -3108,13 +3356,12 @@ current working path is used.</p>
       <pre class="lines">
 
 
-52</pre>
+62</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 52</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 62</span>
 
-<span class='def def kw'>def</span> <span class='quiet? fid id'>quiet?</span>   <span class='semicolon token'>;</span> <span class='@quiet ivar id'>@quiet</span>    <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id quiet?'>quiet?</span>   <span class='semicolon'>;</span> <span class='ivar'>@quiet</span>   <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -3129,8 +3376,9 @@ current working path is used.</p>
   
 </p><div class="docstring">
   <div class="discussion">
-    
-<p>Read file.</p>
+    <p>
+Read file.
+</p>
 
 
   </div>
@@ -3143,17 +3391,16 @@ current working path is used.</p>
       <pre class="lines">
 
 
-146
-147
-148</pre>
+158
+159
+160</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 146</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 158</span>
 
-<span class='def def kw'>def</span> <span class='read identifier id'>read</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>
-  <span class='File constant id'>File</span><span class='dot token'>.</span><span class='read identifier id'>read</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id read'>read</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>
+  <span class='const'>File</span><span class='period'>.</span><span class='id read'>read</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -3178,8 +3425,8 @@ current working path is used.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -3193,13 +3440,12 @@ current working path is used.</p>
       <pre class="lines">
 
 
-168</pre>
+180</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 168</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 180</span>
 
-<span class='def def kw'>def</span> <span class='readable? fid id'>readable?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>   <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='readable? fid id'>readable?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>   <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id readable?'>readable?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>        <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id readable?'>readable?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>        <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -3224,8 +3470,8 @@ current working path is used.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -3239,13 +3485,12 @@ current working path is used.</p>
       <pre class="lines">
 
 
-192</pre>
+204</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 192</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 204</span>
 
-<span class='def def kw'>def</span> <span class='readable_real? fid id'>readable_real?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>   <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='readable_real? fid id'>readable_real?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>    <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id readable_real?'>readable_real?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>   <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id readable_real?'>readable_real?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>   <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -3270,8 +3515,8 @@ current working path is used.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -3285,13 +3530,55 @@ current working path is used.</p>
       <pre class="lines">
 
 
-187</pre>
+199</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 187</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 199</span>
 
-<span class='def def kw'>def</span> <span class='relative? fid id'>relative?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>   <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='relative? fid id'>relative?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>   <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id relative?'>relative?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>        <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id relative?'>relative?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>        <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="report-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>report</strong>(message) 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='status-instance_method'>status</span></span>
+    </span>
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+TODO: deprecate in favor of #report ?
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+83
+84
+85</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 83</span>
+
+<span class='kw'>def</span> <span class='id report'>report</span><span class='lparen'>(</span><span class='id message'>message</span><span class='rparen'>)</span>
+  <span class='id stderr'>stderr</span><span class='period'>.</span><span class='id puts'>puts</span> <span class='id message'>message</span> <span class='kw'>unless</span> <span class='id quiet?'>quiet?</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -3316,8 +3603,8 @@ current working path is used.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -3331,13 +3618,12 @@ current working path is used.</p>
       <pre class="lines">
 
 
-185</pre>
+197</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 185</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 197</span>
 
-<span class='def def kw'>def</span> <span class='safe? fid id'>safe?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>       <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='safe? fid id'>safe?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>       <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id safe?'>safe?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>            <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id safe?'>safe?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>            <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -3362,8 +3648,8 @@ current working path is used.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -3377,13 +3663,12 @@ current working path is used.</p>
       <pre class="lines">
 
 
-178</pre>
+190</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 178</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 190</span>
 
-<span class='def def kw'>def</span> <span class='setgid? fid id'>setgid?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>     <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='setgid? fid id'>setgid?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>     <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id setgid?'>setgid?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>          <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id setgid?'>setgid?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>          <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -3408,8 +3693,8 @@ current working path is used.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -3423,13 +3708,12 @@ current working path is used.</p>
       <pre class="lines">
 
 
-179</pre>
+191</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 179</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 191</span>
 
-<span class='def def kw'>def</span> <span class='setuid? fid id'>setuid?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>     <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='setuid? fid id'>setuid?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>     <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id setuid?'>setuid?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>          <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id setuid?'>setuid?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>          <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -3444,8 +3728,9 @@ current working path is used.</p>
   
 </p><div class="docstring">
   <div class="discussion">
-    
-<p>Shell runner.</p>
+    <p>
+Shell runner.
+</p>
 
 
   </div>
@@ -3458,33 +3743,32 @@ current working path is used.</p>
       <pre class="lines">
 
 
-131
-132
-133
-134
-135
-136
-137
-138
-139
-140
-141</pre>
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 131</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 143</span>
 
-<span class='def def kw'>def</span> <span class='sh identifier id'>sh</span><span class='lparen token'>(</span><span class='cmd identifier id'>cmd</span><span class='rparen token'>)</span>
-  <span class='comment val'>#puts &quot;--&gt; system call: #{cmd}&quot; if trace?</span>
-  <span class='trace identifier id'>trace</span> <span class='cmd identifier id'>cmd</span> <span class='comment val'>#if trace?</span>
-  <span class='return return kw'>return</span> <span class='true true kw'>true</span> <span class='if if_mod kw'>if</span> <span class='noop? fid id'>noop?</span>
+<span class='kw'>def</span> <span class='id sh'>sh</span><span class='lparen'>(</span><span class='id cmd'>cmd</span><span class='rparen'>)</span>
+  <span class='comment'>#puts &quot;--&gt; system call: #{cmd}&quot; if trace?
+</span>  <span class='id trace'>trace</span> <span class='id cmd'>cmd</span> <span class='comment'>#if trace?
+</span>  <span class='kw'>return</span> <span class='kw'>true</span> <span class='kw'>if</span> <span class='id noop?'>noop?</span>
 
-  <span class='if if kw'>if</span> <span class='quiet? fid id'>quiet?</span>
-    <span class='silently identifier id'>silently</span><span class='lbrace token'>{</span> <span class='system identifier id'>system</span><span class='lparen token'>(</span><span class='cmd identifier id'>cmd</span><span class='rparen token'>)</span> <span class='rbrace token'>}</span>
-  <span class='else else kw'>else</span>
-    <span class='system identifier id'>system</span><span class='lparen token'>(</span><span class='cmd identifier id'>cmd</span><span class='rparen token'>)</span>
-  <span class='end end kw'>end</span>
-<span class='end end kw'>end</span>
-</pre>
+  <span class='kw'>if</span> <span class='id quiet?'>quiet?</span>
+    <span class='id silently'>silently</span><span class='lbrace'>{</span> <span class='id system'>system</span><span class='lparen'>(</span><span class='id cmd'>cmd</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
+  <span class='kw'>else</span>
+    <span class='id system'>system</span><span class='lparen'>(</span><span class='id cmd'>cmd</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -3499,8 +3783,10 @@ current working path is used.</p>
   
 </p><div class="docstring">
   <div class="discussion">
-    
-<p>– File Testing ———————————————————</p>
+    <p>
+&#8212; File Testing
+------------------------------------&#8212;
+</p>
 
 
   </div>
@@ -3513,13 +3799,12 @@ current working path is used.</p>
       <pre class="lines">
 
 
-164</pre>
+176</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 164</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 176</span>
 
-<span class='def def kw'>def</span> <span class='size identifier id'>size</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>        <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='size identifier id'>size</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>        <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id size'>size</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>             <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id size'>size</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>             <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -3544,8 +3829,8 @@ current working path is used.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -3559,13 +3844,12 @@ current working path is used.</p>
       <pre class="lines">
 
 
-165</pre>
+177</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 165</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 177</span>
 
-<span class='def def kw'>def</span> <span class='size? fid id'>size?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>       <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='size? fid id'>size?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>       <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id size?'>size?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>            <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id size?'>size?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>            <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -3590,8 +3874,8 @@ current working path is used.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -3605,52 +3889,12 @@ current working path is used.</p>
       <pre class="lines">
 
 
-180</pre>
+192</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 180</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 192</span>
 
-<span class='def def kw'>def</span> <span class='socket? fid id'>socket?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>     <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='socket? fid id'>socket?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>     <span class='end end kw'>end</span>
-</pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <p class="signature " id="status-instance_method">
-  
-    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>status</strong>(message) 
-  
-
-  
-</p><div class="docstring">
-  <div class="discussion">
-    
-<p>TODO: deprecate in favor of #report ?</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-73
-74
-75</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 73</span>
-
-<span class='def def kw'>def</span> <span class='status identifier id'>status</span><span class='lparen token'>(</span><span class='message identifier id'>message</span><span class='rparen token'>)</span>
-  <span class='stderr identifier id'>stderr</span><span class='dot token'>.</span><span class='puts identifier id'>puts</span> <span class='message identifier id'>message</span> <span class='unless unless_mod kw'>unless</span> <span class='quiet? fid id'>quiet?</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id socket?'>socket?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>          <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id socket?'>socket?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>          <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -3675,8 +3919,8 @@ current working path is used.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -3690,13 +3934,12 @@ current working path is used.</p>
       <pre class="lines">
 
 
-175</pre>
+187</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 175</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 187</span>
 
-<span class='def def kw'>def</span> <span class='sticky? fid id'>sticky?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>     <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='sticky? fid id'>sticky?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>     <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id sticky?'>sticky?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>          <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id sticky?'>sticky?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>          <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -3721,8 +3964,8 @@ current working path is used.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -3736,13 +3979,12 @@ current working path is used.</p>
       <pre class="lines">
 
 
-167</pre>
+179</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 167</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 179</span>
 
-<span class='def def kw'>def</span> <span class='symlink? fid id'>symlink?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>    <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='symlink? fid id'>symlink?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>    <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id symlink?'>symlink?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>         <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id symlink?'>symlink?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>         <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -3767,8 +4009,8 @@ current working path is used.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -3782,13 +4024,12 @@ current working path is used.</p>
       <pre class="lines">
 
 
-55</pre>
+65</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 55</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 65</span>
 
-<span class='def def kw'>def</span> <span class='trace? fid id'>trace?</span>   <span class='semicolon token'>;</span> <span class='@trace ivar id'>@trace</span>    <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id trace?'>trace?</span>   <span class='semicolon'>;</span> <span class='ivar'>@trace</span>   <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -3813,8 +4054,8 @@ current working path is used.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -3828,13 +4069,36 @@ current working path is used.</p>
       <pre class="lines">
 
 
-53</pre>
+63</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 53</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 63</span>
 
-<span class='def def kw'>def</span> <span class='trial? fid id'>trial?</span>   <span class='semicolon token'>;</span> <span class='@trial ivar id'>@trial</span>    <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id trial?'>trial?</span>   <span class='semicolon'>;</span> <span class='ivar'>@trial</span>   <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="utime-instance_method">
+  
+    - (<tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt>) <strong>utime</strong>(*args) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+217</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 217</span>
+
+<span class='kw'>def</span> <span class='id utime'>utime</span><span class='lparen'>(</span><span class='op'>*</span><span class='id args'>args</span><span class='rparen'>)</span> <span class='semicolon'>;</span> <span class='const'>File</span><span class='period'>.</span><span class='id utime'>utime</span><span class='lparen'>(</span><span class='op'>*</span><span class='id args'>args</span><span class='rparen'>)</span> <span class='kw'>unless</span> <span class='id noop?'>noop?</span> <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -3859,8 +4123,8 @@ current working path is used.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -3874,13 +4138,12 @@ current working path is used.</p>
       <pre class="lines">
 
 
-58</pre>
+68</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 58</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 68</span>
 
-<span class='def def kw'>def</span> <span class='verbose? fid id'>verbose?</span> <span class='semicolon token'>;</span> <span class='@verbose ivar id'>@verbose</span>  <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id verbose?'>verbose?</span> <span class='semicolon'>;</span> <span class='ivar'>@verbose</span> <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -3905,8 +4168,8 @@ current working path is used.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -3920,13 +4183,12 @@ current working path is used.</p>
       <pre class="lines">
 
 
-182</pre>
+194</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 182</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 194</span>
 
-<span class='def def kw'>def</span> <span class='writable? fid id'>writable?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>   <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='writable? fid id'>writable?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>   <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id writable?'>writable?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>        <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id writable?'>writable?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>        <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -3951,8 +4213,8 @@ current working path is used.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -3966,13 +4228,12 @@ current working path is used.</p>
       <pre class="lines">
 
 
-190</pre>
+202</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 190</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 202</span>
 
-<span class='def def kw'>def</span> <span class='writable_real? fid id'>writable_real?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>   <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='writable_real? fid id'>writable_real?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>    <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id writable_real?'>writable_real?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>   <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id writable_real?'>writable_real?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>   <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -3987,8 +4248,9 @@ current working path is used.</p>
   
 </p><div class="docstring">
   <div class="discussion">
-    
-<p>Write file.</p>
+    <p>
+Write file.
+</p>
 
 
   </div>
@@ -4001,19 +4263,18 @@ current working path is used.</p>
       <pre class="lines">
 
 
-151
-152
-153
-154</pre>
+163
+164
+165
+166</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 151</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 163</span>
 
-<span class='def def kw'>def</span> <span class='write identifier id'>write</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='comma token'>,</span> <span class='text identifier id'>text</span><span class='rparen token'>)</span>
-  <span class='$stderr gvar id'>$stderr</span><span class='dot token'>.</span><span class='puts identifier id'>puts</span> <span class='dstring node'>&quot;write #{path}&quot;</span> <span class='if if_mod kw'>if</span> <span class='trace? fid id'>trace?</span>
-  <span class='File constant id'>File</span><span class='dot token'>.</span><span class='open identifier id'>open</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='comma token'>,</span> <span class='string val'>'w'</span><span class='rparen token'>)</span><span class='lbrace token'>{</span> <span class='bitor op'>|</span><span class='f identifier id'>f</span><span class='bitor op'>|</span> <span class='f identifier id'>f</span> <span class='lshft op'>&lt;&lt;</span> <span class='text identifier id'>text</span> <span class='rbrace token'>}</span> <span class='unless unless_mod kw'>unless</span> <span class='noop? fid id'>noop?</span>
-<span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id write'>write</span><span class='lparen'>(</span><span class='id path'>path</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rparen'>)</span>
+  <span class='gvar'>$stderr</span><span class='period'>.</span><span class='id puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>write </span><span class='embexpr_beg'>#{</span><span class='id path'>path</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>if</span> <span class='id trace?'>trace?</span>
+  <span class='const'>File</span><span class='period'>.</span><span class='id open'>open</span><span class='lparen'>(</span><span class='id path'>path</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>w</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span><span class='lbrace'>{</span> <span class='op'>|</span><span class='id f'>f</span><span class='op'>|</span> <span class='id f'>f</span> <span class='op'>&lt;&lt;</span> <span class='id text'>text</span> <span class='rbrace'>}</span> <span class='kw'>unless</span> <span class='id noop?'>noop?</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -4038,8 +4299,8 @@ current working path is used.</p>
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -4053,13 +4314,12 @@ current working path is used.</p>
       <pre class="lines">
 
 
-172</pre>
+184</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/redtools/tool/shell_utils.rb', line 172</span>
+      <pre class="code"><span class="info file"># File 'lib/redtools/utils/shell_utils.rb', line 184</span>
 
-<span class='def def kw'>def</span> <span class='zero? fid id'>zero?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>       <span class='semicolon token'>;</span> <span class='FileTest constant id'>FileTest</span><span class='dot token'>.</span><span class='zero? fid id'>zero?</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>       <span class='end end kw'>end</span>
-</pre>
+<span class='kw'>def</span> <span class='id zero?'>zero?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>            <span class='semicolon'>;</span> <span class='const'>FileTest</span><span class='period'>.</span><span class='id zero?'>zero?</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>            <span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -4070,9 +4330,9 @@ current working path is used.</p>
 </div>
     
     <div id="footer">
-  Generated on Tue May 24 07:37:10 2011 by 
+  Generated on Sun May 29 22:49:09 2011 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.6.7 (ruby-1.8.7).
+  0.7.1 (ruby-1.9.2).
 </div>
 
   </body>

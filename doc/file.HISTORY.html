@@ -2,17 +2,27 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
-<title>File: HISTORY</title>
-<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
-<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+  File: HISTORY
+  
+    &mdash; Redtools
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
   relpath = '';
   if (relpath != '') relpath += '/';
 </script>
-<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
-<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
 
   </head>
   <body>
@@ -31,34 +41,74 @@
 </div>
 
       <div id="search">
-  <a id="class_list_link" href="#">Class List</a>
-  <a id="method_list_link" href="#">Method List</a>
-  <a id ="file_list_link" href="#">File List</a>
+  
+    <a id="class_list_link" href="#">Class List</a>
+  
+    <a id="method_list_link" href="#">Method List</a>
+  
+    <a id="file_list_link" href="#">File List</a>
+  
 </div>
-
       <div class="clear"></div>
     </div>
     
     <iframe id="search_frame"></iframe>
     
-    <div id="content"><div id='filecontents'>
-<h1>RELEASE HISTORY</h1>
-
+    <div id="content"><div id='filecontents'><h1>RELEASE HISTORY</h1>
+<h2>0.2.0 | 2011-05-29</h2>
+<p>
+This is a small release with a few fixes and improvements brought to bare
+by recent work on Relines project.
+</p>
+<p>
+Changes:
+</p>
+<ul>
+<li><p>
+Rename #clean methods to #purge for some tools.
+</p>
+</li>
+<li><p>
+For now, only warn when a tool does not recognize an option. 
+</p>
+</li>
+<li><p>
+Add #platform method to Tool base class.
+</p>
+</li>
+<li><p>
+Add naming policy methods.
+</p>
+</li>
+<li><p>
+Add ctime, mtime and utime methods for ShellUtils.
+</p>
+</li>
+<li><p>
+Add #project= writer so project can be set externally.
+</p>
+</li>
+</ul>
 <h2>0.1.0 | 2011-05-23 | Birthday</h2>
-
-<p>This is the initial release of RedTools, which has been spun-off from the
-Redline build tool.</p>
-
-<p>Changes:</p>
-<ul><li>
-<p>Happy Birthday (Mom)</p>
-</li></ul>
+<p>
+This is the initial release of RedTools, which has been spun-off from the
+Redline build tool.
+</p>
+<p>
+Changes:
+</p>
+<ul>
+<li><p>
+Happy Birthday (Mom)
+</p>
+</li>
+</ul>
 </div></div>
     
     <div id="footer">
-  Generated on Tue May 24 07:37:08 2011 by 
+  Generated on Sun May 29 22:49:04 2011 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.6.7 (ruby-1.8.7).
+  0.7.1 (ruby-1.9.2).
 </div>
 
   </body>
