@@ -2,27 +2,17 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>
-  Class: RedTools::RSpec
-  
-    &mdash; Redtools
-  
-</title>
-
-  <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
-
-  <link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>Class: RedTools::RSpec</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
   relpath = '..';
   if (relpath != '') relpath += '/';
 </script>
-
-  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
-
-  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
-
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
 
   </head>
   <body>
@@ -43,14 +33,11 @@
 </div>
 
       <div id="search">
-  
-    <a id="class_list_link" href="#">Class List</a>
-  
-    <a id="method_list_link" href="#">Method List</a>
-  
-    <a id="file_list_link" href="#">File List</a>
-  
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
 </div>
+
       <div class="clear"></div>
     </div>
     
@@ -96,35 +83,30 @@
 
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
-    <p>
-The RSpec tool is used to run project specifications written with RSpec.
+    
+<p>The RSpec tool is used to run project specifications written with RSpec.
 Specifications are expected to found in the standard `spec/` directory
-unless otherwise specified in the tools options.
-</p>
-<p>
-Options:
-</p>
-<pre class="code">
-  specs     File glob(s) of spec files. Defaults to ['spec/**/*_spec.rb', 'spec/**/spec_*.rb'].
-  loadpath  Paths to add $LOAD_PATH. Defaults to ['lib'].
-  live      Ignore loadpath, use installed libraries instead. Default is false.
-  require   Lib(s) to require before excuting specifications.
-  warning   Whether to show warnings or not. Default is false.
-  format    Format of RSpec output.
-  extra     Additional commandl ine options for spec command.
+unless otherwise specified in the tools options.</p>
+
+<p>Options:</p>
+
+<pre class="code"><span class='specs identifier id'>specs</span>     <span class='File constant id'>File</span> <span class='glob identifier id'>glob</span><span class='lparen token'>(</span><span class='s identifier id'>s</span><span class='rparen token'>)</span> <span class='of identifier id'>of</span> <span class='spec identifier id'>spec</span> <span class='files identifier id'>files</span><span class='dot token'>.</span> <span class='Defaults constant id'>Defaults</span> <span class='to identifier id'>to</span> <span class='lbrack token'>[</span><span class='string val'>'spec/**/*_spec.rb'</span><span class='comma token'>,</span> <span class='string val'>'spec/**/spec_*.rb'</span><span class='rbrack token'>]</span><span class='dot token'>.</span>
+<span class='loadpath identifier id'>loadpath</span>  <span class='Paths constant id'>Paths</span> <span class='to identifier id'>to</span> <span class='add identifier id'>add</span> <span class='$LOAD_PATH gvar id'>$LOAD_PATH</span><span class='dot token'>.</span> <span class='Defaults constant id'>Defaults</span> <span class='to identifier id'>to</span> <span class='lbrack token'>[</span><span class='string val'>'lib'</span><span class='rbrack token'>]</span><span class='dot token'>.</span>
+<span class='live identifier id'>live</span>      <span class='Ignore constant id'>Ignore</span> <span class='loadpath identifier id'>loadpath</span><span class='comma token'>,</span> <span class='use identifier id'>use</span> <span class='installed identifier id'>installed</span> <span class='libraries identifier id'>libraries</span> <span class='instead identifier id'>instead</span><span class='dot token'>.</span> <span class='Default constant id'>Default</span> <span class='is identifier id'>is</span> <span class='false false kw'>false</span><span class='dot token'>.</span>
+<span class='require identifier id'>require</span>   <span class='Lib constant id'>Lib</span><span class='lparen token'>(</span><span class='s identifier id'>s</span><span class='rparen token'>)</span> <span class='to identifier id'>to</span> <span class='require identifier id'>require</span> <span class='before identifier id'>before</span> <span class='excuting identifier id'>excuting</span> <span class='specifications identifier id'>specifications</span><span class='dot token'>.</span>
+<span class='warning identifier id'>warning</span>   <span class='Whether constant id'>Whether</span> <span class='to identifier id'>to</span> <span class='show identifier id'>show</span> <span class='warnings identifier id'>warnings</span> <span class='or or kw'>or</span> <span class='not not kw'>not</span><span class='dot token'>.</span> <span class='Default constant id'>Default</span> <span class='is identifier id'>is</span> <span class='false false kw'>false</span><span class='dot token'>.</span>
+<span class='format identifier id'>format</span>    <span class='Format constant id'>Format</span> <span class='of identifier id'>of</span> <span class='RSpec constant id'>RSpec</span> <span class='output identifier id'>output</span><span class='dot token'>.</span>
+<span class='extra identifier id'>extra</span>     <span class='Additional constant id'>Additional</span> <span class='commandl identifier id'>commandl</span> <span class='ine identifier id'>ine</span> <span class='options identifier id'>options</span> <span class='for for kw'>for</span> <span class='spec identifier id'>spec</span> <span class='command identifier id'>command</span><span class='dot token'>.</span>
 </pre>
-<p>
-NOTE: This tool currently shells out to the command line.
-</p>
-<p>
-&#8212; RCOV suppot?
-</p>
-<pre class="code">
-  ruby [ruby_opts] -Ilib -S rcov [rcov_opts] bin/spec -- examples [spec_opts]
+
+<p>NOTE: This tool currently shells out to the command line.</p>
+
+<p>– RCOV suppot?</p>
+
+<pre class="code"><span class='ruby identifier id'>ruby</span> <span class='lbrack token'>[</span><span class='ruby_opts identifier id'>ruby_opts</span><span class='rbrack token'>]</span> <span class='minus op'>-</span><span class='Ilib constant id'>Ilib</span> <span class='minus op'>-</span><span class='S constant id'>S</span> <span class='rcov identifier id'>rcov</span> <span class='lbrack token'>[</span><span class='rcov_opts identifier id'>rcov_opts</span><span class='rbrack token'>]</span> <span class='bin identifier id'>bin</span><span class='div op'>/</span><span class='spec identifier id'>spec</span> <span class='minus op'>-</span><span class='minus op'>-</span> <span class='examples identifier id'>examples</span> <span class='lbrack token'>[</span><span class='spec_opts identifier id'>spec_opts</span><span class='rbrack token'>]</span>
 </pre>
-<p>
-++
-</p>
+
+<p>++</p>
 
 
   </div>
@@ -171,9 +153,8 @@ NOTE: This tool currently shells out to the command line.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Additional command line options for rspec.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Additional command line options for rspec.</p>
 </div></span>
   
 </li>
@@ -198,9 +179,8 @@ Additional command line options for rspec.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Format of RSpec output.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Format of RSpec output.</p>
 </div></span>
   
 </li>
@@ -225,9 +205,8 @@ Format of RSpec output.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Paths to add $LOAD_PATH.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Paths to add $LOAD_PATH.</p>
 </div></span>
   
 </li>
@@ -252,9 +231,8 @@ Paths to add $LOAD_PATH.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Scripts to require before excuting specifications.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Scripts to require before excuting specifications.</p>
 </div></span>
   
 </li>
@@ -279,9 +257,8 @@ Scripts to require before excuting specifications.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-File glob(s) of spec files.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>File glob(s) of spec files.</p>
 </div></span>
   
 </li>
@@ -306,34 +283,14 @@ File glob(s) of spec files.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Whether to show warnings or not.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Whether to show warnings or not.</p>
 </div></span>
   
 </li>
 
     
   </ul>
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <h3 class="inherited">Attributes included from <span class='object_link'><a href="ShellUtils.html" title="RedTools::ShellUtils (module)">ShellUtils</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="ShellUtils.html#debug%3D-instance_method" title="RedTools::ShellUtils#debug= (method)">debug</a></span>, <span class='object_link'><a href="ShellUtils.html#force%3D-instance_method" title="RedTools::ShellUtils#force= (method)">force</a></span>, <span class='object_link'><a href="ShellUtils.html#quiet%3D-instance_method" title="RedTools::ShellUtils#quiet= (method)">quiet</a></span>, <span class='object_link'><a href="ShellUtils.html#stderr-instance_method" title="RedTools::ShellUtils#stderr (method)">stderr</a></span>, <span class='object_link'><a href="ShellUtils.html#stdin-instance_method" title="RedTools::ShellUtils#stdin (method)">stdin</a></span>, <span class='object_link'><a href="ShellUtils.html#stdout-instance_method" title="RedTools::ShellUtils#stdout (method)">stdout</a></span>, <span class='object_link'><a href="ShellUtils.html#trace-instance_method" title="RedTools::ShellUtils#trace (method)">trace</a></span>, <span class='object_link'><a href="ShellUtils.html#trial%3D-instance_method" title="RedTools::ShellUtils#trial= (method)">trial</a></span>, <span class='object_link'><a href="ShellUtils.html#verbose%3D-instance_method" title="RedTools::ShellUtils#verbose= (method)">verbose</a></span></p>
 
 
   
@@ -360,9 +317,8 @@ Whether to show warnings or not.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Run all specs with documentation output.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Run all specs with documentation output.</p>
 </div></span>
   
 </li>
@@ -428,9 +384,8 @@ Run all specs with documentation output.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Run all specs.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Run all specs.</p>
 </div></span>
   
 </li>
@@ -452,9 +407,8 @@ Run all specs.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Run rspecs.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Run rspecs.</p>
 </div></span>
   
 </li>
@@ -546,9 +500,8 @@ Run rspecs.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Additional command line options for rspec.
-</p>
+    
+<p>Additional command line options for rspec.</p>
 
 
   </div>
@@ -568,9 +521,10 @@ Additional command line options for rspec.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 50</span>
 
-<span class='kw'>def</span> <span class='id extra'>extra</span>
-  <span class='ivar'>@extra</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='extra identifier id'>extra</span>
+  <span class='@extra ivar id'>@extra</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -588,9 +542,8 @@ Additional command line options for rspec.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Format of RSpec output.
-</p>
+    
+<p>Format of RSpec output.</p>
 
 
   </div>
@@ -610,9 +563,10 @@ Format of RSpec output.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 47</span>
 
-<span class='kw'>def</span> <span class='id format'>format</span>
-  <span class='ivar'>@format</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='format identifier id'>format</span>
+  <span class='@format ivar id'>@format</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -630,9 +584,8 @@ Format of RSpec output.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Paths to add $LOAD_PATH. Defaults to [&#8216;lib&#8217;].
-</p>
+    
+<p>Paths to add $LOAD_PATH. Defaults to [‘lib’].</p>
 
 
   </div>
@@ -652,9 +605,10 @@ Paths to add $LOAD_PATH. Defaults to [&#8216;lib&#8217;].
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 35</span>
 
-<span class='kw'>def</span> <span class='id loadpath'>loadpath</span>
-  <span class='ivar'>@loadpath</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='loadpath identifier id'>loadpath</span>
+  <span class='@loadpath ivar id'>@loadpath</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -672,9 +626,8 @@ Paths to add $LOAD_PATH. Defaults to [&#8216;lib&#8217;].
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Scripts to require before excuting specifications.
-</p>
+    
+<p>Scripts to require before excuting specifications.</p>
 
 
   </div>
@@ -694,9 +647,10 @@ Scripts to require before excuting specifications.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 41</span>
 
-<span class='kw'>def</span> <span class='id requires'>requires</span>
-  <span class='ivar'>@requires</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='requires identifier id'>requires</span>
+  <span class='@requires ivar id'>@requires</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -714,10 +668,9 @@ Scripts to require before excuting specifications.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-File glob(s) of spec files. Defaults to [&#8216;spec/**/*_spec.rb&#8217;,
-&#8216;spec/*<b>/spec_</b>.rb&#8217;].
-</p>
+    
+<p>File glob(s) of spec files. Defaults to [‘spec/**/*_spec.rb’,
+‘spec/*<b>/spec_</b>.rb’].</p>
 
 
   </div>
@@ -737,9 +690,10 @@ File glob(s) of spec files. Defaults to [&#8216;spec/**/*_spec.rb&#8217;,
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 32</span>
 
-<span class='kw'>def</span> <span class='id specs'>specs</span>
-  <span class='ivar'>@specs</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='specs identifier id'>specs</span>
+  <span class='@specs ivar id'>@specs</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -757,9 +711,8 @@ File glob(s) of spec files. Defaults to [&#8216;spec/**/*_spec.rb&#8217;,
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Whether to show warnings or not. Default is false.
-</p>
+    
+<p>Whether to show warnings or not. Default is false.</p>
 
 
   </div>
@@ -779,9 +732,10 @@ Whether to show warnings or not. Default is false.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 44</span>
 
-<span class='kw'>def</span> <span class='id warning'>warning</span>
-  <span class='ivar'>@warning</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='warning identifier id'>warning</span>
+  <span class='@warning ivar id'>@warning</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -803,9 +757,8 @@ Whether to show warnings or not. Default is false.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Run all specs with documentation output.
-</p>
+    
+<p>Run all specs with documentation output.</p>
 
 
   </div>
@@ -825,9 +778,10 @@ Run all specs with documentation output.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 72</span>
 
-<span class='kw'>def</span> <span class='id document'>document</span>
-  <span class='id run_specs'>run_specs</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>documentation</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='document identifier id'>document</span>
+  <span class='run_specs identifier id'>run_specs</span><span class='lparen token'>(</span><span class='string val'>'documentation'</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -857,13 +811,14 @@ Run all specs with documentation output.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 53</span>
 
-<span class='kw'>def</span> <span class='id initialize_defaults'>initialize_defaults</span>
-  <span class='ivar'>@loadpath</span> <span class='op'>=</span> <span class='id metadata'>metadata</span><span class='period'>.</span><span class='id loadpath'>loadpath</span>
+<span class='def def kw'>def</span> <span class='initialize_defaults identifier id'>initialize_defaults</span>
+  <span class='@loadpath ivar id'>@loadpath</span> <span class='assign token'>=</span> <span class='metadata identifier id'>metadata</span><span class='dot token'>.</span><span class='loadpath identifier id'>loadpath</span>
 
-  <span class='ivar'>@specs</span>    <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>spec/**/*_spec.rb</span><span class='tstring_end'>'</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>spec/**/spec_*.rb</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span>
-  <span class='ivar'>@requires</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
-  <span class='ivar'>@warning</span>  <span class='op'>=</span> <span class='kw'>false</span>
-<span class='kw'>end</span></pre>
+  <span class='@specs ivar id'>@specs</span>    <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='string val'>'spec/**/*_spec.rb'</span><span class='comma token'>,</span> <span class='string val'>'spec/**/spec_*.rb'</span><span class='rbrack token'>]</span>
+  <span class='@requires ivar id'>@requires</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span>
+  <span class='@warning ivar id'>@warning</span>  <span class='assign token'>=</span> <span class='false false kw'>false</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -889,9 +844,10 @@ Run all specs with documentation output.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 119</span>
 
-<span class='kw'>def</span> <span class='id initialize_requires'>initialize_requires</span>
-  <span class='id require'>require</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>rspec/core</span><span class='tstring_end'>'</span></span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='initialize_requires identifier id'>initialize_requires</span>
+  <span class='require identifier id'>require</span> <span class='string val'>'rspec/core'</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -910,12 +866,10 @@ Run all specs with documentation output.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Run all specs.
-</p>
-<p>
-Returns <tt>false</tt> if any tests failed, otherwise <tt>true</tt>.
-</p>
+    
+<p>Run all specs.</p>
+
+<p>Returns <tt>false</tt> if any tests failed, otherwise <tt>true</tt>.</p>
 
 
   </div>
@@ -935,9 +889,10 @@ Returns <tt>false</tt> if any tests failed, otherwise <tt>true</tt>.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 64</span>
 
-<span class='kw'>def</span> <span class='id run'>run</span>
-  <span class='id run_specs'>run_specs</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='run identifier id'>run</span>
+  <span class='run_specs identifier id'>run_specs</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -952,9 +907,8 @@ Returns <tt>false</tt> if any tests failed, otherwise <tt>true</tt>.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Run rspecs.
-</p>
+    
+<p>Run rspecs.</p>
 
 
   </div>
@@ -997,32 +951,33 @@ Run rspecs.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 79</span>
 
-<span class='kw'>def</span> <span class='id run_specs'>run_specs</span><span class='lparen'>(</span><span class='id format'>format</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
-  <span class='id format'>format</span>   <span class='op'>=</span> <span class='id format'>format</span> <span class='op'>||</span> <span class='kw'>self</span><span class='period'>.</span><span class='id format'>format</span>
-  <span class='id specs'>specs</span>    <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id specs'>specs</span><span class='period'>.</span><span class='id to_list'>to_list</span>
-  <span class='id loadpath'>loadpath</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id loadpath'>loadpath</span><span class='period'>.</span><span class='id to_list'>to_list</span>
-  <span class='id requires'>requires</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id requires'>requires</span><span class='period'>.</span><span class='id to_list'>to_list</span>
+<span class='def def kw'>def</span> <span class='run_specs identifier id'>run_specs</span><span class='lparen token'>(</span><span class='format identifier id'>format</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='rparen token'>)</span>
+  <span class='format identifier id'>format</span>   <span class='assign token'>=</span> <span class='format identifier id'>format</span> <span class='orop op'>||</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='format identifier id'>format</span>
+  <span class='specs identifier id'>specs</span>    <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='specs identifier id'>specs</span><span class='dot token'>.</span><span class='to_list identifier id'>to_list</span>
+  <span class='loadpath identifier id'>loadpath</span> <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='loadpath identifier id'>loadpath</span><span class='dot token'>.</span><span class='to_list identifier id'>to_list</span>
+  <span class='requires identifier id'>requires</span> <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='requires identifier id'>requires</span><span class='dot token'>.</span><span class='to_list identifier id'>to_list</span>
 
-  <span class='id files'>files</span> <span class='op'>=</span> <span class='id multiglob'>multiglob</span><span class='lparen'>(</span><span class='op'>*</span><span class='id specs'>specs</span><span class='rparen'>)</span>
+  <span class='files identifier id'>files</span> <span class='assign token'>=</span> <span class='multiglob identifier id'>multiglob</span><span class='lparen token'>(</span><span class='mult op'>*</span><span class='specs identifier id'>specs</span><span class='rparen token'>)</span>
 
-  <span class='kw'>if</span> <span class='id files'>files</span><span class='period'>.</span><span class='id empty?'>empty?</span>
-    <span class='id puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>No specifications.</span><span class='tstring_end'>&quot;</span></span>
-  <span class='kw'>else</span>
-    <span class='comment'># ruby [ruby_opts] -Ilib bin/spec examples [spec_opts]
-</span>    <span class='id argv'>argv</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
-    <span class='id argv'>argv</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-w</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>if</span> <span class='id warning'>warning</span>
-    <span class='id argv'>argv</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>%[</span><span class='tstring_content'>-I&quot;</span><span class='embexpr_beg'>#{</span><span class='id loadpath'>loadpath</span><span class='period'>.</span><span class='id join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>:</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='tstring_content'>&quot;</span><span class='tstring_end'>]</span></span> <span class='kw'>unless</span> <span class='id loadpath'>loadpath</span><span class='period'>.</span><span class='id empty?'>empty?</span>
-    <span class='id argv'>argv</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>%[</span><span class='tstring_content'>-r&quot;</span><span class='embexpr_beg'>#{</span><span class='id requires'>requires</span><span class='period'>.</span><span class='id join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>:</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='tstring_content'>&quot;</span><span class='tstring_end'>]</span></span> <span class='kw'>unless</span> <span class='id requires'>requires</span><span class='period'>.</span><span class='id empty?'>empty?</span>
-    <span class='id argv'>argv</span> <span class='op'>&lt;&lt;</span> <span class='id files'>files</span>
-    <span class='id argv'>argv</span> <span class='op'>&lt;&lt;</span> <span class='id spec_options'>spec_options</span>
-    <span class='id argv'>argv</span> <span class='op'>&lt;&lt;</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>--format</span><span class='tstring_end'>'</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id format'>format</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='kw'>if</span> <span class='id format'>format</span>
-    <span class='id argv'>argv</span> <span class='op'>=</span> <span class='id argv'>argv</span><span class='period'>.</span><span class='id flatten'>flatten</span>
+  <span class='if if kw'>if</span> <span class='files identifier id'>files</span><span class='dot token'>.</span><span class='empty? fid id'>empty?</span>
+    <span class='puts identifier id'>puts</span> <span class='string val'>&quot;No specifications.&quot;</span>
+  <span class='else else kw'>else</span>
+    <span class='comment val'># ruby [ruby_opts] -Ilib bin/spec examples [spec_opts]</span>
+    <span class='argv identifier id'>argv</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span>
+    <span class='argv identifier id'>argv</span> <span class='lshft op'>&lt;&lt;</span> <span class='string val'>&quot;-w&quot;</span> <span class='if if_mod kw'>if</span> <span class='warning identifier id'>warning</span>
+    <span class='argv identifier id'>argv</span> <span class='lshft op'>&lt;&lt;</span> <span class='dstring node'>%[-I&quot;#{loadpath.join(':')}&quot;]</span> <span class='unless unless_mod kw'>unless</span> <span class='loadpath identifier id'>loadpath</span><span class='dot token'>.</span><span class='empty? fid id'>empty?</span>
+    <span class='argv identifier id'>argv</span> <span class='lshft op'>&lt;&lt;</span> <span class='dstring node'>%[-r&quot;#{requires.join(':')}&quot;]</span> <span class='unless unless_mod kw'>unless</span> <span class='requires identifier id'>requires</span><span class='dot token'>.</span><span class='empty? fid id'>empty?</span>
+    <span class='argv identifier id'>argv</span> <span class='lshft op'>&lt;&lt;</span> <span class='files identifier id'>files</span>
+    <span class='argv identifier id'>argv</span> <span class='lshft op'>&lt;&lt;</span> <span class='spec_options identifier id'>spec_options</span>
+    <span class='argv identifier id'>argv</span> <span class='lshft op'>&lt;&lt;</span> <span class='lbrack token'>[</span><span class='string val'>'--format'</span><span class='comma token'>,</span> <span class='dstring node'>&quot;#{format}&quot;</span><span class='rbrack token'>]</span> <span class='if if_mod kw'>if</span> <span class='format identifier id'>format</span>
+    <span class='argv identifier id'>argv</span> <span class='assign token'>=</span> <span class='argv identifier id'>argv</span><span class='dot token'>.</span><span class='flatten identifier id'>flatten</span>
 
-    <span class='id trace'>trace</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>rspec </span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id argv'>argv</span><span class='period'>.</span><span class='id join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'> </span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
+    <span class='trace identifier id'>trace</span> <span class='string val'>&quot;rspec &quot;</span> <span class='plus op'>+</span> <span class='argv identifier id'>argv</span><span class='dot token'>.</span><span class='join identifier id'>join</span><span class='lparen token'>(</span><span class='string val'>' '</span><span class='rparen token'>)</span>
 
-    <span class='id success'>success</span> <span class='op'>=</span> <span class='op'>::</span><span class='const'>RSpec</span><span class='op'>::</span><span class='const'>Core</span><span class='op'>::</span><span class='const'>Runner</span><span class='period'>.</span><span class='id run'>run</span><span class='lparen'>(</span><span class='id argv'>argv</span><span class='rparen'>)</span>
-  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+    <span class='success identifier id'>success</span> <span class='assign token'>=</span> <span class='colon3 op'>::</span><span class='RSpec constant id'>RSpec</span><span class='colon2 op'>::</span><span class='Core constant id'>Core</span><span class='colon2 op'>::</span><span class='Runner constant id'>Runner</span><span class='dot token'>.</span><span class='run identifier id'>run</span><span class='lparen token'>(</span><span class='argv identifier id'>argv</span><span class='rparen token'>)</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1055,16 +1010,17 @@ Run rspecs.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/rspec.rb', line 107</span>
 
-<span class='kw'>def</span> <span class='id spec_options'>spec_options</span>
-  <span class='kw'>case</span> <span class='id extra'>extra</span>
-  <span class='kw'>when</span> <span class='const'>String</span>
-    <span class='id extra'>extra</span><span class='period'>.</span><span class='id split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\s+</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span>
-  <span class='kw'>when</span> <span class='const'>Array</span>
-    <span class='id extra'>extra</span>
-  <span class='kw'>else</span>
-    <span class='lbracket'>[</span><span class='rbracket'>]</span>
-  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='spec_options identifier id'>spec_options</span>
+  <span class='case case kw'>case</span> <span class='extra identifier id'>extra</span>
+  <span class='when when kw'>when</span> <span class='String constant id'>String</span>
+    <span class='extra identifier id'>extra</span><span class='dot token'>.</span><span class='split identifier id'>split</span><span class='lparen token'>(</span><span class='regexp val'>/\s+/</span><span class='rparen token'>)</span>
+  <span class='when when kw'>when</span> <span class='Array constant id'>Array</span>
+    <span class='extra identifier id'>extra</span>
+  <span class='else else kw'>else</span>
+    <span class='lbrack token'>[</span><span class='rbrack token'>]</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1075,9 +1031,9 @@ Run rspecs.
 </div>
     
     <div id="footer">
-  Generated on Sun May 29 22:49:07 2011 by 
+  Generated on Sun May 29 23:02:25 2011 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.7.1 (ruby-1.9.2).
+  0.6.7 (ruby-1.8.7).
 </div>
 
   </body>

@@ -2,27 +2,17 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>
-  Class: RedTools::ExtConf
-  
-    &mdash; Redtools
-  
-</title>
-
-  <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
-
-  <link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>Class: RedTools::ExtConf</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
   relpath = '..';
   if (relpath != '') relpath += '/';
 </script>
-
-  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
-
-  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
-
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
 
   </head>
   <body>
@@ -43,14 +33,11 @@
 </div>
 
       <div id="search">
-  
-    <a id="class_list_link" href="#">Class List</a>
-  
-    <a id="method_list_link" href="#">Method List</a>
-  
-    <a id="file_list_link" href="#">File List</a>
-  
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
 </div>
+
       <div class="clear"></div>
     </div>
     
@@ -96,16 +83,13 @@
 
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
-    <p>
-The ExtConf tool utilizes extconf.rb script and Autotools standard Makefile
-to compile native extensions.
-</p>
-<p>
-NOTE: By neccessity this tool shells out to the command line.
-</p>
-<p>
-TODO: win32 cross-compile ?
-</p>
+    
+<p>The ExtConf tool utilizes extconf.rb script and Autotools standard Makefile
+to compile native extensions.</p>
+
+<p>NOTE: By neccessity this tool shells out to the command line.</p>
+
+<p>TODO: win32 cross-compile ?</p>
 
 
   </div>
@@ -120,7 +104,8 @@ TODO: win32 cross-compile ?
         <dt id="MAKE_COMMAND-constant" class="">MAKE_COMMAND =
           
         </dt>
-        <dd><pre class="code"><span class='const'>ENV</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>make</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lparen'>(</span><span class='const'>RUBY_PLATFORM</span> <span class='op'>=~</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>(win|w)32$</span><span class='regexp_end'>/</span></span> <span class='op'>?</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>nmake</span><span class='tstring_end'>'</span></span> <span class='op'>:</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>make</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span></pre></dd>
+        <dd><pre class="code"><span class='ENV constant id'>ENV</span><span class='lbrack token'>[</span><span class='string val'>'make'</span><span class='rbrack token'>]</span> <span class='orop op'>||</span> <span class='lparen token'>(</span><span class='RUBY_PLATFORM constant id'>RUBY_PLATFORM</span> <span class='match op'>=~</span> <span class='regexp val'>/(win|w)32$/</span> <span class='question op'>?</span> <span class='string val'>'nmake'</span> <span class='colon op'>:</span> <span class='string val'>'make'</span><span class='rparen token'>)</span>
+</pre></dd>
       
     </dl>
   
@@ -164,34 +149,14 @@ TODO: win32 cross-compile ?
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Compile statically? Applies only to compile method.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Compile statically? Applies only to compile method.</p>
 </div></span>
   
 </li>
 
     
   </ul>
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <h3 class="inherited">Attributes included from <span class='object_link'><a href="ShellUtils.html" title="RedTools::ShellUtils (module)">ShellUtils</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="ShellUtils.html#debug%3D-instance_method" title="RedTools::ShellUtils#debug= (method)">debug</a></span>, <span class='object_link'><a href="ShellUtils.html#force%3D-instance_method" title="RedTools::ShellUtils#force= (method)">force</a></span>, <span class='object_link'><a href="ShellUtils.html#quiet%3D-instance_method" title="RedTools::ShellUtils#quiet= (method)">quiet</a></span>, <span class='object_link'><a href="ShellUtils.html#stderr-instance_method" title="RedTools::ShellUtils#stderr (method)">stderr</a></span>, <span class='object_link'><a href="ShellUtils.html#stdin-instance_method" title="RedTools::ShellUtils#stdin (method)">stdin</a></span>, <span class='object_link'><a href="ShellUtils.html#stdout-instance_method" title="RedTools::ShellUtils#stdout (method)">stdout</a></span>, <span class='object_link'><a href="ShellUtils.html#trace-instance_method" title="RedTools::ShellUtils#trace (method)">trace</a></span>, <span class='object_link'><a href="ShellUtils.html#trial%3D-instance_method" title="RedTools::ShellUtils#trial= (method)">trial</a></span>, <span class='object_link'><a href="ShellUtils.html#verbose%3D-instance_method" title="RedTools::ShellUtils#verbose= (method)">verbose</a></span></p>
 
 
   
@@ -218,9 +183,8 @@ Compile statically? Applies only to compile method.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Remove enough compile products for a clean compile.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Remove enough compile products for a clean compile.</p>
 </div></span>
   
 </li>
@@ -242,9 +206,8 @@ Remove enough compile products for a clean compile.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Compile extensions.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Compile extensions.</p>
 </div></span>
   
 </li>
@@ -266,9 +229,8 @@ Compile extensions.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Check to see if this project has extensions that need to be compiled.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Check to see if this project has extensions that need to be compiled.</p>
 </div></span>
   
 </li>
@@ -290,9 +252,8 @@ Check to see if this project has extensions that need to be compiled.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Create Makefile(s).
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Create Makefile(s).</p>
 </div></span>
   
 </li>
@@ -316,9 +277,8 @@ Create Makefile(s).
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Remove all compile products.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Remove all compile products.</p>
 </div></span>
   
 </li>
@@ -340,9 +300,8 @@ Remove all compile products.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Extension directories.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Extension directories.</p>
 </div></span>
   
 </li>
@@ -455,9 +414,8 @@ Extension directories.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Compile statically? Applies only to compile method. (false)
-</p>
+    
+<p>Compile statically? Applies only to compile method. (false)</p>
 
 
   </div>
@@ -477,9 +435,10 @@ Compile statically? Applies only to compile method. (false)
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/extconf.rb', line 24</span>
 
-<span class='kw'>def</span> <span class='id static'>static</span>
-  <span class='ivar'>@static</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='static identifier id'>static</span>
+  <span class='@static ivar id'>@static</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -501,9 +460,8 @@ Compile statically? Applies only to compile method. (false)
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Remove enough compile products for a clean compile.
-</p>
+    
+<p>Remove enough compile products for a clean compile.</p>
 
 
   </div>
@@ -523,9 +481,10 @@ Remove enough compile products for a clean compile.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/extconf.rb', line 59</span>
 
-<span class='kw'>def</span> <span class='id clean'>clean</span>
-  <span class='id make'>make</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>clean</span><span class='tstring_end'>'</span></span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='clean identifier id'>clean</span>
+  <span class='make identifier id'>make</span> <span class='string val'>'clean'</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -540,9 +499,8 @@ Remove enough compile products for a clean compile.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Compile extensions.
-</p>
+    
+<p>Compile extensions.</p>
 
 
   </div>
@@ -567,14 +525,15 @@ Compile extensions.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/extconf.rb', line 48</span>
 
-<span class='kw'>def</span> <span class='id compile'>compile</span>
-  <span class='id configure'>configure</span>
-  <span class='kw'>if</span> <span class='id static'>static</span>
-    <span class='id make'>make</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>static</span><span class='tstring_end'>'</span></span>
-  <span class='kw'>else</span>
-    <span class='id make'>make</span>
-  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='compile identifier id'>compile</span>
+  <span class='configure identifier id'>configure</span>
+  <span class='if if kw'>if</span> <span class='static identifier id'>static</span>
+    <span class='make identifier id'>make</span> <span class='string val'>'static'</span>
+  <span class='else else kw'>else</span>
+    <span class='make identifier id'>make</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -589,9 +548,8 @@ Compile extensions.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Check to see if this project has extensions that need to be compiled.
-</p>
+    
+<p>Check to see if this project has extensions that need to be compiled.</p>
 
 
   </div>
@@ -602,8 +560,8 @@ Check to see if this project has extensions that need to be compiled.
   
     <li>
       
-      
         <span class='type'>(<tt>Boolean</tt>)</span>
+      
       
       
       
@@ -624,9 +582,10 @@ Check to see if this project has extensions that need to be compiled.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/extconf.rb', line 33</span>
 
-<span class='kw'>def</span> <span class='id compiles?'>compiles?</span>
-  <span class='op'>!</span><span class='id extensions'>extensions</span><span class='period'>.</span><span class='id empty?'>empty?</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='compiles? fid id'>compiles?</span>
+  <span class='notop op'>!</span><span class='extensions identifier id'>extensions</span><span class='dot token'>.</span><span class='empty? fid id'>empty?</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -641,9 +600,8 @@ Check to see if this project has extensions that need to be compiled.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Create Makefile(s).
-</p>
+    
+<p>Create Makefile(s).</p>
 
 
   </div>
@@ -669,15 +627,16 @@ Create Makefile(s).
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/extconf.rb', line 77</span>
 
-<span class='kw'>def</span> <span class='id configure'>configure</span>
-  <span class='id extensions'>extensions</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id directory'>directory</span><span class='op'>|</span>
-    <span class='kw'>next</span> <span class='kw'>if</span> <span class='const'>File</span><span class='period'>.</span><span class='id exist?'>exist?</span><span class='lparen'>(</span><span class='const'>File</span><span class='period'>.</span><span class='id join'>join</span><span class='lparen'>(</span><span class='id directory'>directory</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>Makefile</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
-    <span class='id report'>report</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>configuring </span><span class='embexpr_beg'>#{</span><span class='id directory'>directory</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
-    <span class='id cd'>cd</span><span class='lparen'>(</span><span class='id directory'>directory</span><span class='rparen'>)</span> <span class='kw'>do</span>
-      <span class='id sh'>sh</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ruby extconf.rb</span><span class='tstring_end'>&quot;</span></span>
-    <span class='kw'>end</span>
-  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='configure identifier id'>configure</span>
+  <span class='extensions identifier id'>extensions</span><span class='dot token'>.</span><span class='each identifier id'>each</span> <span class='do do kw'>do</span> <span class='bitor op'>|</span><span class='directory identifier id'>directory</span><span class='bitor op'>|</span>
+    <span class='next next kw'>next</span> <span class='if if_mod kw'>if</span> <span class='File constant id'>File</span><span class='dot token'>.</span><span class='exist? fid id'>exist?</span><span class='lparen token'>(</span><span class='File constant id'>File</span><span class='dot token'>.</span><span class='join identifier id'>join</span><span class='lparen token'>(</span><span class='directory identifier id'>directory</span><span class='comma token'>,</span> <span class='string val'>'Makefile'</span><span class='rparen token'>)</span><span class='rparen token'>)</span>
+    <span class='report identifier id'>report</span> <span class='dstring node'>&quot;configuring #{directory}&quot;</span>
+    <span class='cd identifier id'>cd</span><span class='lparen token'>(</span><span class='directory identifier id'>directory</span><span class='rparen token'>)</span> <span class='do do kw'>do</span>
+      <span class='sh identifier id'>sh</span> <span class='string val'>&quot;ruby extconf.rb&quot;</span>
+    <span class='end end kw'>end</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -696,9 +655,8 @@ Create Makefile(s).
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Remove all compile products.
-</p>
+    
+<p>Remove all compile products.</p>
 
 
   </div>
@@ -722,13 +680,14 @@ Remove all compile products.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/extconf.rb', line 65</span>
 
-<span class='kw'>def</span> <span class='id distclean'>distclean</span>
-  <span class='id make'>make</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>distclean</span><span class='tstring_end'>'</span></span>
-  <span class='id extensions'>extensions</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id directory'>directory</span><span class='op'>|</span>
-    <span class='id makefile'>makefile</span> <span class='op'>=</span> <span class='const'>File</span><span class='period'>.</span><span class='id join'>join</span><span class='lparen'>(</span><span class='id directory'>directory</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>Makefile</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
-    <span class='id rm'>rm</span><span class='lparen'>(</span><span class='id makefile'>makefile</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='const'>File</span><span class='period'>.</span><span class='id exist?'>exist?</span><span class='lparen'>(</span><span class='id makefile'>makefile</span><span class='rparen'>)</span>
-  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='distclean identifier id'>distclean</span>
+  <span class='make identifier id'>make</span> <span class='string val'>'distclean'</span>
+  <span class='extensions identifier id'>extensions</span><span class='dot token'>.</span><span class='each identifier id'>each</span> <span class='do do kw'>do</span> <span class='bitor op'>|</span><span class='directory identifier id'>directory</span><span class='bitor op'>|</span>
+    <span class='makefile identifier id'>makefile</span> <span class='assign token'>=</span> <span class='File constant id'>File</span><span class='dot token'>.</span><span class='join identifier id'>join</span><span class='lparen token'>(</span><span class='directory identifier id'>directory</span><span class='comma token'>,</span> <span class='string val'>'Makefile'</span><span class='rparen token'>)</span>
+    <span class='rm identifier id'>rm</span><span class='lparen token'>(</span><span class='makefile identifier id'>makefile</span><span class='rparen token'>)</span> <span class='if if_mod kw'>if</span> <span class='File constant id'>File</span><span class='dot token'>.</span><span class='exist? fid id'>exist?</span><span class='lparen token'>(</span><span class='makefile identifier id'>makefile</span><span class='rparen token'>)</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -743,12 +702,11 @@ Remove all compile products.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Extension directories. Often this will simply be &#8216;ext&#8217;. but
-sometimes more then one extension is needed and are kept in separate
-directories. This works by looking for ext/*<b>/</b>.c files, where ever
-they are is considered an extension directory.
-</p>
+    
+<p>Extension directories. Often this will simply be ‘ext’. but sometimes
+more then one extension is needed and are kept in separate directories.
+This works by looking for ext/*<b>/</b>.c files, where ever they are is
+considered an extension directory.</p>
 
 
   </div>
@@ -768,9 +726,10 @@ they are is considered an extension directory.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/extconf.rb', line 42</span>
 
-<span class='kw'>def</span> <span class='id extensions'>extensions</span>
-  <span class='ivar'>@extensions</span> <span class='op'>||=</span> <span class='const'>Dir</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>ext/**/*.c</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id collect'>collect</span><span class='lbrace'>{</span> <span class='op'>|</span><span class='id file'>file</span><span class='op'>|</span> <span class='const'>File</span><span class='period'>.</span><span class='id dirname'>dirname</span><span class='lparen'>(</span><span class='id file'>file</span><span class='rparen'>)</span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id uniq'>uniq</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='extensions identifier id'>extensions</span>
+  <span class='@extensions ivar id'>@extensions</span> <span class='opasgn op'>||=</span> <span class='Dir constant id'>Dir</span><span class='lbrack token'>[</span><span class='string val'>'ext/**/*.c'</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='collect identifier id'>collect</span><span class='lbrace token'>{</span> <span class='bitor op'>|</span><span class='file identifier id'>file</span><span class='bitor op'>|</span> <span class='File constant id'>File</span><span class='dot token'>.</span><span class='dirname identifier id'>dirname</span><span class='lparen token'>(</span><span class='file identifier id'>file</span><span class='rparen token'>)</span> <span class='rbrace token'>}</span><span class='dot token'>.</span><span class='uniq identifier id'>uniq</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -796,9 +755,10 @@ they are is considered an extension directory.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/extconf.rb', line 27</span>
 
-<span class='kw'>def</span> <span class='id initialize_defaults'>initialize_defaults</span>
-  <span class='ivar'>@static</span> <span class='op'>=</span> <span class='kw'>false</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='initialize_defaults identifier id'>initialize_defaults</span>
+  <span class='@static ivar id'>@static</span> <span class='assign token'>=</span> <span class='false false kw'>false</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -829,14 +789,15 @@ they are is considered an extension directory.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/extconf.rb', line 89</span>
 
-<span class='kw'>def</span> <span class='id make'>make</span><span class='lparen'>(</span><span class='id target'>target</span><span class='op'>=</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
-  <span class='id extensions'>extensions</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id directory'>directory</span><span class='op'>|</span>
-    <span class='id report'>report</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>compiling </span><span class='embexpr_beg'>#{</span><span class='id directory'>directory</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
-    <span class='id cd'>cd</span><span class='lparen'>(</span><span class='id directory'>directory</span><span class='rparen'>)</span> <span class='kw'>do</span>
-      <span class='id shell'>shell</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'>MAKE_COMMAND</span><span class='rbrace'>}</span><span class='tstring_content'> </span><span class='embexpr_beg'>#{</span><span class='id target'>target</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
-    <span class='kw'>end</span>
-  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='make identifier id'>make</span><span class='lparen token'>(</span><span class='target identifier id'>target</span><span class='assign token'>=</span><span class='string val'>''</span><span class='rparen token'>)</span>
+  <span class='extensions identifier id'>extensions</span><span class='dot token'>.</span><span class='each identifier id'>each</span> <span class='do do kw'>do</span> <span class='bitor op'>|</span><span class='directory identifier id'>directory</span><span class='bitor op'>|</span>
+    <span class='report identifier id'>report</span> <span class='dstring node'>&quot;compiling #{directory}&quot;</span>
+    <span class='cd identifier id'>cd</span><span class='lparen token'>(</span><span class='directory identifier id'>directory</span><span class='rparen token'>)</span> <span class='do do kw'>do</span>
+      <span class='shell identifier id'>shell</span> <span class='dstring node'>&quot;#{MAKE_COMMAND} #{target}&quot;</span>
+    <span class='end end kw'>end</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -847,9 +808,9 @@ they are is considered an extension directory.
 </div>
     
     <div id="footer">
-  Generated on Sun May 29 22:49:08 2011 by 
+  Generated on Sun May 29 23:02:14 2011 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.7.1 (ruby-1.9.2).
+  0.6.7 (ruby-1.8.7).
 </div>
 
   </body>

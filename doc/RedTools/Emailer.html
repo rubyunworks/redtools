@@ -2,27 +2,17 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>
-  Class: RedTools::Emailer
-  
-    &mdash; Redtools
-  
-</title>
-
-  <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
-
-  <link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>Class: RedTools::Emailer</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
   relpath = '..';
   if (relpath != '') relpath += '/';
 </script>
-
-  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
-
-  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
-
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
 
   </head>
   <body>
@@ -43,14 +33,11 @@
 </div>
 
       <div id="search">
-  
-    <a id="class_list_link" href="#">Class List</a>
-  
-    <a id="method_list_link" href="#">Method List</a>
-  
-    <a id="file_list_link" href="#">File List</a>
-  
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
 </div>
+
       <div class="clear"></div>
     </div>
     
@@ -94,26 +81,25 @@
 
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
-    <p>
-Emailer class makes it easy send out an email.
-</p>
-<p>
-Settings:
-</p>
-<pre class="code">
-    subject      Subject of email message.
-    from         Message FROM address [email].
-    to           Email address to send announcemnt.
-    server       Email server to route message.
-    port         Email server's port.
-    port_secure  Email server's port.
-    domain       Email server's domain name.
-    account      Email account name if needed.
-    password     Password for login..
-    login        Login type: plain, cram_md5 or login [plain].
-    secure       Uses TLS security, true or false? [false]
-    message      Mesage to send -or-
-    file         File that contains message.</pre>
+    
+<p>Emailer class makes it easy send out an email.</p>
+
+<p>Settings:</p>
+
+<pre class="code"><span class='subject identifier id'>subject</span>      <span class='Subject constant id'>Subject</span> <span class='of identifier id'>of</span> <span class='email identifier id'>email</span> <span class='message identifier id'>message</span><span class='dot token'>.</span>
+<span class='from identifier id'>from</span>         <span class='Message constant id'>Message</span> <span class='FROM constant id'>FROM</span> <span class='address identifier id'>address</span> <span class='lbrack token'>[</span><span class='email identifier id'>email</span><span class='rbrack token'>]</span><span class='dot token'>.</span>
+<span class='to identifier id'>to</span>           <span class='Email constant id'>Email</span> <span class='address identifier id'>address</span> <span class='to identifier id'>to</span> <span class='send identifier id'>send</span> <span class='announcemnt identifier id'>announcemnt</span><span class='dot token'>.</span>
+<span class='server identifier id'>server</span>       <span class='Email constant id'>Email</span> <span class='server identifier id'>server</span> <span class='to identifier id'>to</span> <span class='route identifier id'>route</span> <span class='message identifier id'>message</span><span class='dot token'>.</span>
+<span class='port identifier id'>port</span>         <span class='Email constant id'>Email</span> <span class='server identifier id'>server</span><span class='string val'>'s port.
+port_secure  Email server'</span><span class='s identifier id'>s</span> <span class='port identifier id'>port</span><span class='dot token'>.</span>
+<span class='domain identifier id'>domain</span>       <span class='Email constant id'>Email</span> <span class='server identifier id'>server</span><span class='string val'>'s domain name.
+account      Email account name if needed.
+password     Password for login..
+login        Login type: plain, cram_md5 or login [plain].
+secure       Uses TLS security, true or false? [false]
+message      Mesage to send -or-
+file         File that contains message.
+</span></pre>
 
 
   </div>
@@ -144,9 +130,8 @@ Settings:
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Used for caching password between usages.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Used for caching password between usages.</p>
 </div></span>
   
 </li>
@@ -176,9 +161,8 @@ Used for caching password between usages.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Returns the value of attribute account.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute account.</p>
 </div></span>
   
 </li>
@@ -203,9 +187,8 @@ Returns the value of attribute account.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Returns the value of attribute domain.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute domain.</p>
 </div></span>
   
 </li>
@@ -230,9 +213,8 @@ Returns the value of attribute domain.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Returns the value of attribute from.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute from.</p>
 </div></span>
   
 </li>
@@ -257,9 +239,8 @@ Returns the value of attribute from.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Returns the value of attribute login.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute login.</p>
 </div></span>
   
 </li>
@@ -284,9 +265,8 @@ Returns the value of attribute login.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Returns the value of attribute mailto.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute mailto.</p>
 </div></span>
   
 </li>
@@ -311,9 +291,8 @@ Returns the value of attribute mailto.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Returns the value of attribute message.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute message.</p>
 </div></span>
   
 </li>
@@ -338,9 +317,8 @@ Returns the value of attribute message.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Returns the value of attribute passwd.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute passwd.</p>
 </div></span>
   
 </li>
@@ -365,9 +343,8 @@ Returns the value of attribute passwd.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Returns the value of attribute port.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute port.</p>
 </div></span>
   
 </li>
@@ -392,9 +369,8 @@ Returns the value of attribute port.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Returns the value of attribute secure.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute secure.</p>
 </div></span>
   
 </li>
@@ -419,9 +395,8 @@ Returns the value of attribute secure.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Returns the value of attribute server.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute server.</p>
 </div></span>
   
 </li>
@@ -446,17 +421,14 @@ Returns the value of attribute server.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Returns the value of attribute subject.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute subject.</p>
 </div></span>
   
 </li>
 
     
   </ul>
-
-
 
 
   
@@ -557,9 +529,8 @@ Returns the value of attribute subject.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-A new instance of Emailer.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of Emailer.</p>
 </div></span>
   
 </li>
@@ -581,9 +552,8 @@ A new instance of Emailer.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Ask for a password.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Ask for a password.</p>
 </div></span>
   
 </li>
@@ -625,9 +595,8 @@ Ask for a password.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-A new instance of Emailer
-</p>
+    
+<p>A new instance of Emailer</p>
 
 
   </div>
@@ -681,43 +650,44 @@ A new instance of Emailer
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/email_utils.rb', line 95</span>
 
-<span class='kw'>def</span> <span class='id initialize'>initialize</span><span class='lparen'>(</span><span class='id options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
-  <span class='id require_smtp'>require_smtp</span>
+<span class='def def kw'>def</span> <span class='initialize identifier id'>initialize</span><span class='lparen token'>(</span><span class='options identifier id'>options</span><span class='assign token'>=</span><span class='lbrace token'>{</span><span class='rbrace token'>}</span><span class='rparen token'>)</span>
+  <span class='require_smtp identifier id'>require_smtp</span>
 
-  <span class='id options'>options</span> <span class='op'>=</span> <span class='id options'>options</span><span class='period'>.</span><span class='id rekey'>rekey</span>
+  <span class='options identifier id'>options</span> <span class='assign token'>=</span> <span class='options identifier id'>options</span><span class='dot token'>.</span><span class='rekey identifier id'>rekey</span>
 
-  <span class='kw'>if</span> <span class='kw'>not</span> <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:server</span><span class='rbracket'>]</span>
-    <span class='id options'>options</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id class'>class</span><span class='period'>.</span><span class='id environment_options'>environment_options</span><span class='period'>.</span><span class='id merge'>merge</span><span class='lparen'>(</span><span class='id options'>options</span><span class='rparen'>)</span>
-  <span class='kw'>end</span>
+  <span class='if if kw'>if</span> <span class='not not kw'>not</span> <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:server</span><span class='rbrack token'>]</span>
+    <span class='options identifier id'>options</span> <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='class identifier id'>class</span><span class='dot token'>.</span><span class='environment_options identifier id'>environment_options</span><span class='dot token'>.</span><span class='merge identifier id'>merge</span><span class='lparen token'>(</span><span class='options identifier id'>options</span><span class='rparen token'>)</span>
+  <span class='end end kw'>end</span>
 
-  <span class='ivar'>@mailto</span>    <span class='op'>=</span> <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:to</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:mailto</span><span class='rbracket'>]</span>
+  <span class='@mailto ivar id'>@mailto</span>    <span class='assign token'>=</span> <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:to</span><span class='rbrack token'>]</span> <span class='orop op'>||</span> <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:mailto</span><span class='rbrack token'>]</span>
 
-  <span class='ivar'>@from</span>      <span class='op'>=</span> <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:from</span><span class='rbracket'>]</span>
-  <span class='ivar'>@message</span>   <span class='op'>=</span> <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:message</span><span class='rbracket'>]</span>
-  <span class='ivar'>@subject</span>   <span class='op'>=</span> <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:subject</span><span class='rbracket'>]</span>
-  <span class='ivar'>@server</span>    <span class='op'>=</span> <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:server</span><span class='rbracket'>]</span>
-  <span class='ivar'>@account</span>   <span class='op'>=</span> <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:account</span><span class='rbracket'>]</span>
-  <span class='ivar'>@passwd</span>    <span class='op'>=</span> <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:password</span><span class='rbracket'>]</span>
-  <span class='ivar'>@login</span>     <span class='op'>=</span> <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:login</span><span class='rbracket'>]</span>
-  <span class='ivar'>@secure</span>    <span class='op'>=</span> <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:secure</span><span class='rbracket'>]</span> <span class='comment'>#.to_b
-</span>  <span class='ivar'>@domain</span>    <span class='op'>=</span> <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:domain</span><span class='rbracket'>]</span>
-  <span class='ivar'>@port</span>      <span class='op'>=</span> <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:port</span><span class='rbracket'>]</span>
+  <span class='@from ivar id'>@from</span>      <span class='assign token'>=</span> <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:from</span><span class='rbrack token'>]</span>
+  <span class='@message ivar id'>@message</span>   <span class='assign token'>=</span> <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:message</span><span class='rbrack token'>]</span>
+  <span class='@subject ivar id'>@subject</span>   <span class='assign token'>=</span> <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:subject</span><span class='rbrack token'>]</span>
+  <span class='@server ivar id'>@server</span>    <span class='assign token'>=</span> <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:server</span><span class='rbrack token'>]</span>
+  <span class='@account ivar id'>@account</span>   <span class='assign token'>=</span> <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:account</span><span class='rbrack token'>]</span>
+  <span class='@passwd ivar id'>@passwd</span>    <span class='assign token'>=</span> <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:password</span><span class='rbrack token'>]</span>
+  <span class='@login ivar id'>@login</span>     <span class='assign token'>=</span> <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:login</span><span class='rbrack token'>]</span>
+  <span class='@secure ivar id'>@secure</span>    <span class='assign token'>=</span> <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:secure</span><span class='rbrack token'>]</span> <span class='comment val'>#.to_b</span>
+  <span class='@domain ivar id'>@domain</span>    <span class='assign token'>=</span> <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:domain</span><span class='rbrack token'>]</span>
+  <span class='@port ivar id'>@port</span>      <span class='assign token'>=</span> <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:port</span><span class='rbrack token'>]</span>
 
-  <span class='ivar'>@port</span>    <span class='op'>||=</span> <span class='id secure'>secure</span> <span class='op'>?</span> <span class='int'>465</span> <span class='op'>:</span> <span class='int'>25</span>
-  <span class='ivar'>@port</span> <span class='op'>=</span> <span class='ivar'>@port</span><span class='period'>.</span><span class='id to_i'>to_i</span>
+  <span class='@port ivar id'>@port</span>    <span class='opasgn op'>||=</span> <span class='secure identifier id'>secure</span> <span class='integer val'>? </span><span class='integer val'>465</span> <span class='colon op'>:</span> <span class='integer val'>25</span>
+  <span class='@port ivar id'>@port</span> <span class='assign token'>=</span> <span class='@port ivar id'>@port</span><span class='dot token'>.</span><span class='to_i identifier id'>to_i</span>
 
-  <span class='ivar'>@account</span> <span class='op'>||=</span> <span class='ivar'>@from</span>
+  <span class='@account ivar id'>@account</span> <span class='opasgn op'>||=</span> <span class='@from ivar id'>@from</span>
 
-  <span class='ivar'>@login</span>   <span class='op'>||=</span> <span class='symbol'>:plain</span>
-  <span class='ivar'>@login</span> <span class='op'>=</span> <span class='ivar'>@login</span><span class='period'>.</span><span class='id to_sym'>to_sym</span>
+  <span class='@login ivar id'>@login</span>   <span class='opasgn op'>||=</span> <span class='symbol val'>:plain</span>
+  <span class='@login ivar id'>@login</span> <span class='assign token'>=</span> <span class='@login ivar id'>@login</span><span class='dot token'>.</span><span class='to_sym identifier id'>to_sym</span>
 
-  <span class='ivar'>@passwd</span> <span class='op'>||=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id class'>class</span><span class='period'>.</span><span class='id password'>password</span>
+  <span class='@passwd ivar id'>@passwd</span> <span class='opasgn op'>||=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='class identifier id'>class</span><span class='dot token'>.</span><span class='password identifier id'>password</span>
 
-  <span class='ivar'>@domain</span> <span class='op'>||=</span> <span class='ivar'>@server</span>
+  <span class='@domain ivar id'>@domain</span> <span class='opasgn op'>||=</span> <span class='@server ivar id'>@server</span>
 
-  <span class='comment'># save the password for later use
-</span>  <span class='kw'>self</span><span class='period'>.</span><span class='id class'>class</span><span class='period'>.</span><span class='id password'>password</span> <span class='op'>=</span> <span class='ivar'>@passwd</span>
-<span class='kw'>end</span></pre>
+  <span class='comment val'># save the password for later use</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='class identifier id'>class</span><span class='dot token'>.</span><span class='password identifier id'>password</span> <span class='assign token'>=</span> <span class='@passwd ivar id'>@passwd</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -740,9 +710,8 @@ A new instance of Emailer
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Used for caching password between usages.
-</p>
+    
+<p>Used for caching password between usages.</p>
 
 
   </div>
@@ -762,9 +731,10 @@ Used for caching password between usages.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/email_utils.rb', line 58</span>
 
-<span class='kw'>def</span> <span class='id password'>password</span>
-  <span class='ivar'>@password</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='password identifier id'>password</span>
+  <span class='@password ivar id'>@password</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -787,9 +757,8 @@ Used for caching password between usages.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Returns the value of attribute account
-</p>
+    
+<p>Returns the value of attribute account</p>
 
 
   </div>
@@ -809,9 +778,10 @@ Returns the value of attribute account
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/email_utils.rb', line 82</span>
 
-<span class='kw'>def</span> <span class='id account'>account</span>
-  <span class='ivar'>@account</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='account identifier id'>account</span>
+  <span class='@account ivar id'>@account</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -829,9 +799,8 @@ Returns the value of attribute account
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Returns the value of attribute domain
-</p>
+    
+<p>Returns the value of attribute domain</p>
 
 
   </div>
@@ -851,9 +820,10 @@ Returns the value of attribute domain
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/email_utils.rb', line 86</span>
 
-<span class='kw'>def</span> <span class='id domain'>domain</span>
-  <span class='ivar'>@domain</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='domain identifier id'>domain</span>
+  <span class='@domain ivar id'>@domain</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -871,9 +841,8 @@ Returns the value of attribute domain
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Returns the value of attribute from
-</p>
+    
+<p>Returns the value of attribute from</p>
 
 
   </div>
@@ -893,9 +862,10 @@ Returns the value of attribute from
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/email_utils.rb', line 87</span>
 
-<span class='kw'>def</span> <span class='id from'>from</span>
-  <span class='ivar'>@from</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='from identifier id'>from</span>
+  <span class='@from ivar id'>@from</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -913,9 +883,8 @@ Returns the value of attribute from
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Returns the value of attribute login
-</p>
+    
+<p>Returns the value of attribute login</p>
 
 
   </div>
@@ -935,9 +904,10 @@ Returns the value of attribute login
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/email_utils.rb', line 84</span>
 
-<span class='kw'>def</span> <span class='id login'>login</span>
-  <span class='ivar'>@login</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='login identifier id'>login</span>
+  <span class='@login ivar id'>@login</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -955,9 +925,8 @@ Returns the value of attribute login
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Returns the value of attribute mailto
-</p>
+    
+<p>Returns the value of attribute mailto</p>
 
 
   </div>
@@ -977,9 +946,10 @@ Returns the value of attribute mailto
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/email_utils.rb', line 88</span>
 
-<span class='kw'>def</span> <span class='id mailto'>mailto</span>
-  <span class='ivar'>@mailto</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='mailto identifier id'>mailto</span>
+  <span class='@mailto ivar id'>@mailto</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -997,9 +967,8 @@ Returns the value of attribute mailto
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Returns the value of attribute message
-</p>
+    
+<p>Returns the value of attribute message</p>
 
 
   </div>
@@ -1019,9 +988,10 @@ Returns the value of attribute message
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/email_utils.rb', line 90</span>
 
-<span class='kw'>def</span> <span class='id message'>message</span>
-  <span class='ivar'>@message</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='message identifier id'>message</span>
+  <span class='@message ivar id'>@message</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1039,9 +1009,8 @@ Returns the value of attribute message
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Returns the value of attribute passwd
-</p>
+    
+<p>Returns the value of attribute passwd</p>
 
 
   </div>
@@ -1061,9 +1030,10 @@ Returns the value of attribute passwd
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/email_utils.rb', line 83</span>
 
-<span class='kw'>def</span> <span class='id passwd'>passwd</span>
-  <span class='ivar'>@passwd</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='passwd identifier id'>passwd</span>
+  <span class='@passwd ivar id'>@passwd</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1081,9 +1051,8 @@ Returns the value of attribute passwd
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Returns the value of attribute port
-</p>
+    
+<p>Returns the value of attribute port</p>
 
 
   </div>
@@ -1103,9 +1072,10 @@ Returns the value of attribute port
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/email_utils.rb', line 81</span>
 
-<span class='kw'>def</span> <span class='id port'>port</span>
-  <span class='ivar'>@port</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='port identifier id'>port</span>
+  <span class='@port ivar id'>@port</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1123,9 +1093,8 @@ Returns the value of attribute port
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Returns the value of attribute secure
-</p>
+    
+<p>Returns the value of attribute secure</p>
 
 
   </div>
@@ -1145,9 +1114,10 @@ Returns the value of attribute secure
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/email_utils.rb', line 85</span>
 
-<span class='kw'>def</span> <span class='id secure'>secure</span>
-  <span class='ivar'>@secure</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='secure identifier id'>secure</span>
+  <span class='@secure ivar id'>@secure</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1165,9 +1135,8 @@ Returns the value of attribute secure
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Returns the value of attribute server
-</p>
+    
+<p>Returns the value of attribute server</p>
 
 
   </div>
@@ -1187,9 +1156,10 @@ Returns the value of attribute server
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/email_utils.rb', line 80</span>
 
-<span class='kw'>def</span> <span class='id server'>server</span>
-  <span class='ivar'>@server</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='server identifier id'>server</span>
+  <span class='@server ivar id'>@server</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1207,9 +1177,8 @@ Returns the value of attribute server
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Returns the value of attribute subject
-</p>
+    
+<p>Returns the value of attribute subject</p>
 
 
   </div>
@@ -1229,9 +1198,10 @@ Returns the value of attribute subject
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/email_utils.rb', line 89</span>
 
-<span class='kw'>def</span> <span class='id subject'>subject</span>
-  <span class='ivar'>@subject</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='subject identifier id'>subject</span>
+  <span class='@subject ivar id'>@subject</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1273,18 +1243,19 @@ Returns the value of attribute subject
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/email_utils.rb', line 61</span>
 
-<span class='kw'>def</span> <span class='id environment_options'>environment_options</span>
-  <span class='id options'>options</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
-  <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:server</span><span class='rbracket'>]</span>   <span class='op'>=</span> <span class='const'>ENV</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>EMAIL_SERVER</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span>
-  <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:from</span><span class='rbracket'>]</span>     <span class='op'>=</span> <span class='const'>ENV</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>EMAIL_FROM</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span>
-  <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:account</span><span class='rbracket'>]</span>  <span class='op'>=</span> <span class='const'>ENV</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>EMAIL_ACCOUNT</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='const'>ENV</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>EMAIL_FROM</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span>
-  <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:password</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='const'>ENV</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>EMAIL_PASSWORD</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span>
-  <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:port</span><span class='rbracket'>]</span>     <span class='op'>=</span> <span class='const'>ENV</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>EMAIL_PORT</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span>
-  <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:domain</span><span class='rbracket'>]</span>   <span class='op'>=</span> <span class='const'>ENV</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>EMAIL_DOMAIN</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span>
-  <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:login</span><span class='rbracket'>]</span>    <span class='op'>=</span> <span class='const'>ENV</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>EMAIL_LOGIN</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span>
-  <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:secure</span><span class='rbracket'>]</span>   <span class='op'>=</span> <span class='const'>ENV</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>EMAIL_SECURE</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span>
-  <span class='id options'>options</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='environment_options identifier id'>environment_options</span>
+  <span class='options identifier id'>options</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span><span class='rbrace token'>}</span>
+  <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:server</span><span class='rbrack token'>]</span>   <span class='assign token'>=</span> <span class='ENV constant id'>ENV</span><span class='lbrack token'>[</span><span class='string val'>'EMAIL_SERVER'</span><span class='rbrack token'>]</span>
+  <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:from</span><span class='rbrack token'>]</span>     <span class='assign token'>=</span> <span class='ENV constant id'>ENV</span><span class='lbrack token'>[</span><span class='string val'>'EMAIL_FROM'</span><span class='rbrack token'>]</span>
+  <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:account</span><span class='rbrack token'>]</span>  <span class='assign token'>=</span> <span class='ENV constant id'>ENV</span><span class='lbrack token'>[</span><span class='string val'>'EMAIL_ACCOUNT'</span><span class='rbrack token'>]</span> <span class='orop op'>||</span> <span class='ENV constant id'>ENV</span><span class='lbrack token'>[</span><span class='string val'>'EMAIL_FROM'</span><span class='rbrack token'>]</span>
+  <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:password</span><span class='rbrack token'>]</span> <span class='assign token'>=</span> <span class='ENV constant id'>ENV</span><span class='lbrack token'>[</span><span class='string val'>'EMAIL_PASSWORD'</span><span class='rbrack token'>]</span>
+  <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:port</span><span class='rbrack token'>]</span>     <span class='assign token'>=</span> <span class='ENV constant id'>ENV</span><span class='lbrack token'>[</span><span class='string val'>'EMAIL_PORT'</span><span class='rbrack token'>]</span>
+  <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:domain</span><span class='rbrack token'>]</span>   <span class='assign token'>=</span> <span class='ENV constant id'>ENV</span><span class='lbrack token'>[</span><span class='string val'>'EMAIL_DOMAIN'</span><span class='rbrack token'>]</span>
+  <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:login</span><span class='rbrack token'>]</span>    <span class='assign token'>=</span> <span class='ENV constant id'>ENV</span><span class='lbrack token'>[</span><span class='string val'>'EMAIL_LOGIN'</span><span class='rbrack token'>]</span>
+  <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:secure</span><span class='rbrack token'>]</span>   <span class='assign token'>=</span> <span class='ENV constant id'>ENV</span><span class='lbrack token'>[</span><span class='string val'>'EMAIL_SECURE'</span><span class='rbrack token'>]</span>
+  <span class='options identifier id'>options</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1311,10 +1282,11 @@ Returns the value of attribute subject
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/email_utils.rb', line 74</span>
 
-<span class='kw'>def</span> <span class='id new_with_environment'>new_with_environment</span><span class='lparen'>(</span><span class='id options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
-  <span class='id environment_options'>environment_options</span><span class='period'>.</span><span class='id merge'>merge</span><span class='lparen'>(</span><span class='id options'>options</span><span class='period'>.</span><span class='id rekey'>rekey</span><span class='rparen'>)</span>
-  <span class='id new'>new</span><span class='lparen'>(</span><span class='id options'>options</span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='new_with_environment identifier id'>new_with_environment</span><span class='lparen token'>(</span><span class='options identifier id'>options</span><span class='assign token'>=</span><span class='lbrace token'>{</span><span class='rbrace token'>}</span><span class='rparen token'>)</span>
+  <span class='environment_options identifier id'>environment_options</span><span class='dot token'>.</span><span class='merge identifier id'>merge</span><span class='lparen token'>(</span><span class='options identifier id'>options</span><span class='dot token'>.</span><span class='rekey identifier id'>rekey</span><span class='rparen token'>)</span>
+  <span class='new identifier id'>new</span><span class='lparen token'>(</span><span class='options identifier id'>options</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1345,8 +1317,8 @@ Returns the value of attribute subject
   
     <li>
       
-      
         <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
       
       
       
@@ -1408,50 +1380,51 @@ Returns the value of attribute subject
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/email_utils.rb', line 135</span>
 
-<span class='kw'>def</span> <span class='id email'>email</span><span class='lparen'>(</span><span class='id options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
-  <span class='id options'>options</span><span class='period'>.</span><span class='id rekey'>rekey</span>
+<span class='def def kw'>def</span> <span class='email identifier id'>email</span><span class='lparen token'>(</span><span class='options identifier id'>options</span><span class='assign token'>=</span><span class='lbrace token'>{</span><span class='rbrace token'>}</span><span class='rparen token'>)</span>
+  <span class='options identifier id'>options</span><span class='dot token'>.</span><span class='rekey identifier id'>rekey</span>
 
-  <span class='id message'>message</span> <span class='op'>=</span> <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:message</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='kw'>self</span><span class='period'>.</span><span class='id message'>message</span>
-  <span class='id subject'>subject</span> <span class='op'>=</span> <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:subject</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='kw'>self</span><span class='period'>.</span><span class='id subject'>subject</span>
-  <span class='id from'>from</span>    <span class='op'>=</span> <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:from</span><span class='rbracket'>]</span>    <span class='op'>||</span> <span class='kw'>self</span><span class='period'>.</span><span class='id from'>from</span>
-  <span class='id mailto'>mailto</span>  <span class='op'>=</span> <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:mailto</span><span class='rbracket'>]</span>  <span class='op'>||</span> <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:to</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='kw'>self</span><span class='period'>.</span><span class='id mailto'>mailto</span>
+  <span class='message identifier id'>message</span> <span class='assign token'>=</span> <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:message</span><span class='rbrack token'>]</span> <span class='orop op'>||</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='message identifier id'>message</span>
+  <span class='subject identifier id'>subject</span> <span class='assign token'>=</span> <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:subject</span><span class='rbrack token'>]</span> <span class='orop op'>||</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='subject identifier id'>subject</span>
+  <span class='from identifier id'>from</span>    <span class='assign token'>=</span> <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:from</span><span class='rbrack token'>]</span>    <span class='orop op'>||</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='from identifier id'>from</span>
+  <span class='mailto identifier id'>mailto</span>  <span class='assign token'>=</span> <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:mailto</span><span class='rbrack token'>]</span>  <span class='orop op'>||</span> <span class='options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:to</span><span class='rbrack token'>]</span> <span class='orop op'>||</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='mailto identifier id'>mailto</span>
 
-  <span class='id raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>missing email field -- server</span><span class='tstring_end'>&quot;</span></span>  <span class='kw'>unless</span> <span class='id server'>server</span>
-  <span class='id raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>missing email field -- account</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id account'>account</span>
+  <span class='raise identifier id'>raise</span> <span class='ArgumentError constant id'>ArgumentError</span><span class='comma token'>,</span> <span class='string val'>&quot;missing email field -- server&quot;</span>  <span class='unless unless_mod kw'>unless</span> <span class='server identifier id'>server</span>
+  <span class='raise identifier id'>raise</span> <span class='ArgumentError constant id'>ArgumentError</span><span class='comma token'>,</span> <span class='string val'>&quot;missing email field -- account&quot;</span> <span class='unless unless_mod kw'>unless</span> <span class='account identifier id'>account</span>
 
-  <span class='id raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>missing email field -- from</span><span class='tstring_end'>&quot;</span></span>    <span class='kw'>unless</span> <span class='id from'>from</span>
-  <span class='id raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>missing email field -- mailto</span><span class='tstring_end'>&quot;</span></span>  <span class='kw'>unless</span> <span class='id mailto'>mailto</span>
-  <span class='id raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>missing email field -- subject</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id subject'>subject</span>
+  <span class='raise identifier id'>raise</span> <span class='ArgumentError constant id'>ArgumentError</span><span class='comma token'>,</span> <span class='string val'>&quot;missing email field -- from&quot;</span>    <span class='unless unless_mod kw'>unless</span> <span class='from identifier id'>from</span>
+  <span class='raise identifier id'>raise</span> <span class='ArgumentError constant id'>ArgumentError</span><span class='comma token'>,</span> <span class='string val'>&quot;missing email field -- mailto&quot;</span>  <span class='unless unless_mod kw'>unless</span> <span class='mailto identifier id'>mailto</span>
+  <span class='raise identifier id'>raise</span> <span class='ArgumentError constant id'>ArgumentError</span><span class='comma token'>,</span> <span class='string val'>&quot;missing email field -- subject&quot;</span> <span class='unless unless_mod kw'>unless</span> <span class='subject identifier id'>subject</span>
 
-  <span class='id passwd'>passwd</span> <span class='op'>||=</span> <span class='id password'>password</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id account'>account</span><span class='rbrace'>}</span><span class='tstring_content'> password:</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+  <span class='passwd identifier id'>passwd</span> <span class='opasgn op'>||=</span> <span class='password identifier id'>password</span><span class='lparen token'>(</span><span class='dstring node'>&quot;#{account} password:&quot;</span><span class='rparen token'>)</span>
 
-  <span class='id mailto'>mailto</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='id mailto'>mailto</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id flatten'>flatten</span><span class='period'>.</span><span class='id compact'>compact</span>
+  <span class='mailto identifier id'>mailto</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='mailto identifier id'>mailto</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='flatten identifier id'>flatten</span><span class='dot token'>.</span><span class='compact identifier id'>compact</span>
 
-  <span class='id msg'>msg</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span>
-  <span class='id msg'>msg</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>From: </span><span class='embexpr_beg'>#{</span><span class='id from'>from</span><span class='rbrace'>}</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span>
-  <span class='id msg'>msg</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>To: </span><span class='embexpr_beg'>#{</span><span class='id mailto'>mailto</span><span class='period'>.</span><span class='id join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>;</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span>
-  <span class='id msg'>msg</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Subject: </span><span class='embexpr_beg'>#{</span><span class='id subject'>subject</span><span class='rbrace'>}</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span>
-  <span class='id msg'>msg</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span>
-  <span class='id msg'>msg</span> <span class='op'>&lt;&lt;</span> <span class='id message'>message</span>
+  <span class='msg identifier id'>msg</span> <span class='assign token'>=</span> <span class='string val'>&quot;&quot;</span>
+  <span class='msg identifier id'>msg</span> <span class='lshft op'>&lt;&lt;</span> <span class='dstring node'>&quot;From: #{from}\n&quot;</span>
+  <span class='msg identifier id'>msg</span> <span class='lshft op'>&lt;&lt;</span> <span class='dstring node'>&quot;To: #{mailto.join(';')}\n&quot;</span>
+  <span class='msg identifier id'>msg</span> <span class='lshft op'>&lt;&lt;</span> <span class='dstring node'>&quot;Subject: #{subject}\n&quot;</span>
+  <span class='msg identifier id'>msg</span> <span class='lshft op'>&lt;&lt;</span> <span class='string val'>&quot;&quot;</span>
+  <span class='msg identifier id'>msg</span> <span class='lshft op'>&lt;&lt;</span> <span class='message identifier id'>message</span>
 
-  <span class='comment'>#p server, port, domain, account, passwd, login, secure if verbose?
-</span>
-  <span class='kw'>begin</span>
-    <span class='kw'>if</span> <span class='const'>Net</span><span class='op'>::</span><span class='const'>SMTP</span><span class='period'>.</span><span class='id respond_to?'>respond_to?</span><span class='lparen'>(</span><span class='symbol'>:enable_tls</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='id secure'>secure</span>
-      <span class='const'>Net</span><span class='op'>::</span><span class='const'>SMTP</span><span class='period'>.</span><span class='id enable_tls'>enable_tls</span>
-      <span class='const'>Net</span><span class='op'>::</span><span class='const'>SMTP</span><span class='period'>.</span><span class='id start'>start</span><span class='lparen'>(</span><span class='id server'>server</span><span class='comma'>,</span> <span class='id port'>port</span><span class='comma'>,</span> <span class='id domain'>domain</span><span class='comma'>,</span> <span class='id account'>account</span><span class='comma'>,</span> <span class='id passwd'>passwd</span><span class='comma'>,</span> <span class='id login'>login</span><span class='comma'>,</span> <span class='id secure'>secure</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id smtp'>smtp</span><span class='op'>|</span>
-        <span class='id smtp'>smtp</span><span class='period'>.</span><span class='id send_message'>send_message</span><span class='lparen'>(</span><span class='id msg'>msg</span><span class='comma'>,</span> <span class='id from'>from</span><span class='comma'>,</span> <span class='id mailto'>mailto</span><span class='rparen'>)</span>
-      <span class='kw'>end</span>
-    <span class='kw'>else</span>
-      <span class='const'>Net</span><span class='op'>::</span><span class='const'>SMTP</span><span class='period'>.</span><span class='id start'>start</span><span class='lparen'>(</span><span class='id server'>server</span><span class='comma'>,</span> <span class='id port'>port</span><span class='comma'>,</span> <span class='id domain'>domain</span><span class='comma'>,</span> <span class='id account'>account</span><span class='comma'>,</span> <span class='id passwd'>passwd</span><span class='comma'>,</span> <span class='id login'>login</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id smtp'>smtp</span><span class='op'>|</span>
-        <span class='id smtp'>smtp</span><span class='period'>.</span><span class='id send_message'>send_message</span><span class='lparen'>(</span><span class='id msg'>msg</span><span class='comma'>,</span> <span class='id from'>from</span><span class='comma'>,</span> <span class='id mailto'>mailto</span><span class='rparen'>)</span>
-      <span class='kw'>end</span>
-    <span class='kw'>end</span>
-    <span class='kw'>return</span> <span class='id mailto'>mailto</span>
-  <span class='kw'>rescue</span> <span class='const'>Exception</span> <span class='op'>=&gt;</span> <span class='id e'>e</span>
-    <span class='kw'>return</span> <span class='id e'>e</span>
-  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+  <span class='comment val'>#p server, port, domain, account, passwd, login, secure if verbose?</span>
+
+  <span class='begin begin kw'>begin</span>
+    <span class='if if kw'>if</span> <span class='Net constant id'>Net</span><span class='colon2 op'>::</span><span class='SMTP constant id'>SMTP</span><span class='dot token'>.</span><span class='respond_to? fid id'>respond_to?</span><span class='lparen token'>(</span><span class='symbol val'>:enable_tls</span><span class='rparen token'>)</span> <span class='andop op'>&amp;&amp;</span> <span class='secure identifier id'>secure</span>
+      <span class='Net constant id'>Net</span><span class='colon2 op'>::</span><span class='SMTP constant id'>SMTP</span><span class='dot token'>.</span><span class='enable_tls identifier id'>enable_tls</span>
+      <span class='Net constant id'>Net</span><span class='colon2 op'>::</span><span class='SMTP constant id'>SMTP</span><span class='dot token'>.</span><span class='start identifier id'>start</span><span class='lparen token'>(</span><span class='server identifier id'>server</span><span class='comma token'>,</span> <span class='port identifier id'>port</span><span class='comma token'>,</span> <span class='domain identifier id'>domain</span><span class='comma token'>,</span> <span class='account identifier id'>account</span><span class='comma token'>,</span> <span class='passwd identifier id'>passwd</span><span class='comma token'>,</span> <span class='login identifier id'>login</span><span class='comma token'>,</span> <span class='secure identifier id'>secure</span><span class='rparen token'>)</span> <span class='do do kw'>do</span> <span class='bitor op'>|</span><span class='smtp identifier id'>smtp</span><span class='bitor op'>|</span>
+        <span class='smtp identifier id'>smtp</span><span class='dot token'>.</span><span class='send_message identifier id'>send_message</span><span class='lparen token'>(</span><span class='msg identifier id'>msg</span><span class='comma token'>,</span> <span class='from identifier id'>from</span><span class='comma token'>,</span> <span class='mailto identifier id'>mailto</span><span class='rparen token'>)</span>
+      <span class='end end kw'>end</span>
+    <span class='else else kw'>else</span>
+      <span class='Net constant id'>Net</span><span class='colon2 op'>::</span><span class='SMTP constant id'>SMTP</span><span class='dot token'>.</span><span class='start identifier id'>start</span><span class='lparen token'>(</span><span class='server identifier id'>server</span><span class='comma token'>,</span> <span class='port identifier id'>port</span><span class='comma token'>,</span> <span class='domain identifier id'>domain</span><span class='comma token'>,</span> <span class='account identifier id'>account</span><span class='comma token'>,</span> <span class='passwd identifier id'>passwd</span><span class='comma token'>,</span> <span class='login identifier id'>login</span><span class='rparen token'>)</span> <span class='do do kw'>do</span> <span class='bitor op'>|</span><span class='smtp identifier id'>smtp</span><span class='bitor op'>|</span>
+        <span class='smtp identifier id'>smtp</span><span class='dot token'>.</span><span class='send_message identifier id'>send_message</span><span class='lparen token'>(</span><span class='msg identifier id'>msg</span><span class='comma token'>,</span> <span class='from identifier id'>from</span><span class='comma token'>,</span> <span class='mailto identifier id'>mailto</span><span class='rparen token'>)</span>
+      <span class='end end kw'>end</span>
+    <span class='end end kw'>end</span>
+    <span class='return return kw'>return</span> <span class='mailto identifier id'>mailto</span>
+  <span class='rescue rescue kw'>rescue</span> <span class='Exception constant id'>Exception</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='e identifier id'>e</span>
+    <span class='return return kw'>return</span> <span class='e identifier id'>e</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1466,12 +1439,10 @@ Returns the value of attribute subject
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Ask for a password.
-</p>
-<p>
-FIXME: Does not hide password.
-</p>
+    
+<p>Ask for a password.</p>
+
+<p>FIXME: Does not hide password.</p>
 
 
   </div>
@@ -1505,23 +1476,24 @@ FIXME: Does not hide password.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/email_utils.rb', line 184</span>
 
-<span class='kw'>def</span> <span class='id password'>password</span><span class='lparen'>(</span><span class='id msg'>msg</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
-  <span class='id msg'>msg</span> <span class='op'>||=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Enter Password: </span><span class='tstring_end'>&quot;</span></span>
-  <span class='id inp'>inp</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span>
+<span class='def def kw'>def</span> <span class='password identifier id'>password</span><span class='lparen token'>(</span><span class='msg identifier id'>msg</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span> <span class='opasgn op'>||=</span> <span class='string val'>&quot;Enter Password: &quot;</span>
+  <span class='inp identifier id'>inp</span> <span class='assign token'>=</span> <span class='string val'>''</span>
 
-  <span class='gvar'>$stdout</span> <span class='op'>&lt;&lt;</span> <span class='id msg'>msg</span>
+  <span class='$stdout gvar id'>$stdout</span> <span class='lshft op'>&lt;&lt;</span> <span class='msg identifier id'>msg</span>
 
-  <span class='id inp'>inp</span> <span class='op'>=</span> <span class='const'>STDIN</span><span class='period'>.</span><span class='id gets'>gets</span><span class='period'>.</span><span class='id chomp'>chomp</span>
+  <span class='inp identifier id'>inp</span> <span class='assign token'>=</span> <span class='STDIN constant id'>STDIN</span><span class='dot token'>.</span><span class='gets identifier id'>gets</span><span class='dot token'>.</span><span class='chomp identifier id'>chomp</span>
 
-  <span class='comment'>#begin
-</span>  <span class='comment'>#  system &quot;stty -echo&quot;
-</span>  <span class='comment'>#  inp = gets.chomp
-</span>  <span class='comment'>#ensure
-</span>  <span class='comment'>#  system &quot;stty echo&quot;
-</span>  <span class='comment'>#end
-</span>
-  <span class='kw'>return</span> <span class='id inp'>inp</span>
-<span class='kw'>end</span></pre>
+  <span class='comment val'>#begin</span>
+  <span class='comment val'>#  system &quot;stty -echo&quot;</span>
+  <span class='comment val'>#  inp = gets.chomp</span>
+  <span class='comment val'>#ensure</span>
+  <span class='comment val'>#  system &quot;stty echo&quot;</span>
+  <span class='comment val'>#end</span>
+
+  <span class='return return kw'>return</span> <span class='inp identifier id'>inp</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1551,13 +1523,14 @@ FIXME: Does not hide password.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/email_utils.rb', line 203</span>
 
-<span class='kw'>def</span> <span class='id require_smtp'>require_smtp</span>
-  <span class='kw'>begin</span>
-    <span class='id require'>require</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>facets/net/smtp_tls</span><span class='tstring_end'>'</span></span>
-  <span class='kw'>rescue</span> <span class='const'>LoadError</span>
-    <span class='id require'>require</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>net/smtp</span><span class='tstring_end'>'</span></span>
-  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='require_smtp identifier id'>require_smtp</span>
+  <span class='begin begin kw'>begin</span>
+    <span class='require identifier id'>require</span> <span class='string val'>'facets/net/smtp_tls'</span>
+  <span class='rescue rescue kw'>rescue</span> <span class='LoadError constant id'>LoadError</span>
+    <span class='require identifier id'>require</span> <span class='string val'>'net/smtp'</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1568,9 +1541,9 @@ FIXME: Does not hide password.
 </div>
     
     <div id="footer">
-  Generated on Sun May 29 22:49:09 2011 by 
+  Generated on Sun May 29 23:02:18 2011 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.7.1 (ruby-1.9.2).
+  0.6.7 (ruby-1.8.7).
 </div>
 
   </body>

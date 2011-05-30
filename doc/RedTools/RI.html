@@ -2,27 +2,17 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>
-  Class: RedTools::RI
-  
-    &mdash; Redtools
-  
-</title>
-
-  <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
-
-  <link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>Class: RedTools::RI</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
   relpath = '..';
   if (relpath != '') relpath += '/';
 </script>
-
-  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
-
-  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
-
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
 
   </head>
   <body>
@@ -43,14 +33,11 @@
 </div>
 
       <div id="search">
-  
-    <a id="class_list_link" href="#">Class List</a>
-  
-    <a id="method_list_link" href="#">Method List</a>
-  
-    <a id="file_list_link" href="#">File List</a>
-  
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
 </div>
+
       <div class="clear"></div>
     </div>
     
@@ -96,15 +83,13 @@
 
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
-    <p>
-The ri documentation tool provides services for generating ri
-documentation.
-</p>
-<p>
-By default it generates the ri documentaiton at doc/ri, unless an
-&#8216;ri&#8217; directory exists in the project&#8217;s root directory, in
-which case the ri documentation will be stored there.
-</p>
+    
+<p>The ri documentation tool provides services for generating ri
+documentation.</p>
+
+<p>By default it generates the ri documentaiton at doc/ri, unless an ‘ri’
+directory exists in the project’s root directory, in which case the ri
+documentation will be stored there.</p>
 
 
   </div>
@@ -119,9 +104,8 @@ which case the ri documentation will be stored there.
         <dt id="DEFAULT_OUTPUT-constant" class="">DEFAULT_OUTPUT =
           <div class="docstring">
   <div class="discussion">
-    <p>
-Default location to store ri documentation files.
-</p>
+    
+<p>Default location to store ri documentation files.</p>
 
 
   </div>
@@ -130,15 +114,15 @@ Default location to store ri documentation files.
   
 </div>
         </dt>
-        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>.rdoc</span><span class='tstring_end'>&quot;</span></span></pre></dd>
+        <dd><pre class="code"><span class='string val'>&quot;.rdoc&quot;</span>
+</pre></dd>
       
         <dt id="DEFAULT_OUTPUT_MATCH-constant" class="">DEFAULT_OUTPUT_MATCH =
           <div class="docstring">
   <div class="discussion">
-    <p>
-Locations to check for existance in deciding where to store ri
-documentation.
-</p>
+    
+<p>Locations to check for existance in deciding where to store ri
+documentation.</p>
 
 
   </div>
@@ -147,14 +131,14 @@ documentation.
   
 </div>
         </dt>
-        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>{.rdoc,.ri,ri,doc/ri}</span><span class='tstring_end'>&quot;</span></span></pre></dd>
+        <dd><pre class="code"><span class='string val'>&quot;{.rdoc,.ri,ri,doc/ri}&quot;</span>
+</pre></dd>
       
         <dt id="DEFAULT_EXTRA-constant" class="">DEFAULT_EXTRA =
           <div class="docstring">
   <div class="discussion">
-    <p>
-Default extra options to add to rdoc call.
-</p>
+    
+<p>Default extra options to add to rdoc call.</p>
 
 
   </div>
@@ -163,7 +147,8 @@ Default extra options to add to rdoc call.
   
 </div>
         </dt>
-        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span></pre></dd>
+        <dd><pre class="code"><span class='string val'>''</span>
+</pre></dd>
       
     </dl>
   
@@ -207,9 +192,8 @@ Default extra options to add to rdoc call.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Paths to specifically exclude.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Paths to specifically exclude.</p>
 </div></span>
   
 </li>
@@ -234,9 +218,8 @@ Paths to specifically exclude.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Additional options passed to the rdoc command.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Additional options passed to the rdoc command.</p>
 </div></span>
   
 </li>
@@ -261,9 +244,8 @@ Additional options passed to the rdoc command.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Which files to include.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Which files to include.</p>
 </div></span>
   
 </li>
@@ -288,34 +270,14 @@ Which files to include.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Where to save rdoc files (doc/rdoc).
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Where to save rdoc files (doc/rdoc).</p>
 </div></span>
   
 </li>
 
     
   </ul>
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <h3 class="inherited">Attributes included from <span class='object_link'><a href="ShellUtils.html" title="RedTools::ShellUtils (module)">ShellUtils</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="ShellUtils.html#debug%3D-instance_method" title="RedTools::ShellUtils#debug= (method)">debug</a></span>, <span class='object_link'><a href="ShellUtils.html#force%3D-instance_method" title="RedTools::ShellUtils#force= (method)">force</a></span>, <span class='object_link'><a href="ShellUtils.html#quiet%3D-instance_method" title="RedTools::ShellUtils#quiet= (method)">quiet</a></span>, <span class='object_link'><a href="ShellUtils.html#stderr-instance_method" title="RedTools::ShellUtils#stderr (method)">stderr</a></span>, <span class='object_link'><a href="ShellUtils.html#stdin-instance_method" title="RedTools::ShellUtils#stdin (method)">stdin</a></span>, <span class='object_link'><a href="ShellUtils.html#stdout-instance_method" title="RedTools::ShellUtils#stdout (method)">stdout</a></span>, <span class='object_link'><a href="ShellUtils.html#trace-instance_method" title="RedTools::ShellUtils#trace (method)">trace</a></span>, <span class='object_link'><a href="ShellUtils.html#trial%3D-instance_method" title="RedTools::ShellUtils#trial= (method)">trial</a></span>, <span class='object_link'><a href="ShellUtils.html#verbose%3D-instance_method" title="RedTools::ShellUtils#verbose= (method)">verbose</a></span></p>
 
 
   
@@ -342,9 +304,8 @@ Where to save rdoc files (doc/rdoc).
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-A no-op, there are no residuals to remove.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>A no-op, there are no residuals to remove.</p>
 </div></span>
   
 </li>
@@ -366,9 +327,8 @@ A no-op, there are no residuals to remove.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Generate ri documentation.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Generate ri documentation.</p>
 </div></span>
   
 </li>
@@ -432,9 +392,8 @@ Generate ri documentation.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Remove ri products.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Remove ri products.</p>
 </div></span>
   
 </li>
@@ -477,9 +436,8 @@ Remove ri products.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Set the output directory&#8217;s mtime to furthest time in past.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Set the output directory’s mtime to furthest time in past.</p>
 </div></span>
   
 </li>
@@ -501,9 +459,8 @@ Set the output directory&#8217;s mtime to furthest time in past.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Generate ri docs for input targets.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Generate ri docs for input targets.</p>
 </div></span>
   
 </li>
@@ -574,9 +531,8 @@ Generate ri docs for input targets.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Paths to specifically exclude.
-</p>
+    
+<p>Paths to specifically exclude.</p>
 
 
   </div>
@@ -596,9 +552,10 @@ Paths to specifically exclude.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/ri.rb', line 44</span>
 
-<span class='kw'>def</span> <span class='id exclude'>exclude</span>
-  <span class='ivar'>@exclude</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='exclude identifier id'>exclude</span>
+  <span class='@exclude ivar id'>@exclude</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -616,9 +573,8 @@ Paths to specifically exclude.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Additional options passed to the rdoc command.
-</p>
+    
+<p>Additional options passed to the rdoc command.</p>
 
 
   </div>
@@ -638,9 +594,10 @@ Additional options passed to the rdoc command.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/ri.rb', line 47</span>
 
-<span class='kw'>def</span> <span class='id extra'>extra</span>
-  <span class='ivar'>@extra</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='extra identifier id'>extra</span>
+  <span class='@extra ivar id'>@extra</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -658,9 +615,8 @@ Additional options passed to the rdoc command.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Which files to include.
-</p>
+    
+<p>Which files to include.</p>
 
 
   </div>
@@ -680,9 +636,10 @@ Which files to include.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/ri.rb', line 38</span>
 
-<span class='kw'>def</span> <span class='id files'>files</span>
-  <span class='ivar'>@files</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='files identifier id'>files</span>
+  <span class='@files ivar id'>@files</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -700,9 +657,8 @@ Which files to include.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Where to save rdoc files (doc/rdoc).
-</p>
+    
+<p>Where to save rdoc files (doc/rdoc).</p>
 
 
   </div>
@@ -722,9 +678,10 @@ Where to save rdoc files (doc/rdoc).
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/ri.rb', line 35</span>
 
-<span class='kw'>def</span> <span class='id output'>output</span>
-  <span class='ivar'>@output</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='output identifier id'>output</span>
+  <span class='@output ivar id'>@output</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -746,9 +703,8 @@ Where to save rdoc files (doc/rdoc).
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-A no-op, there are no residuals to remove.
-</p>
+    
+<p>A no-op, there are no residuals to remove.</p>
 
 
   </div>
@@ -767,8 +723,9 @@ A no-op, there are no residuals to remove.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/ri.rb', line 92</span>
 
-<span class='kw'>def</span> <span class='id clean'>clean</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='clean identifier id'>clean</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -783,10 +740,9 @@ A no-op, there are no residuals to remove.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Generate ri documentation. This utilizes rdoc to produce the appropriate
-files.
-</p>
+    
+<p>Generate ri documentation. This utilizes rdoc to produce the appropriate
+files.</p>
 
 
   </div>
@@ -832,35 +788,36 @@ files.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/ri.rb', line 52</span>
 
-<span class='kw'>def</span> <span class='id document'>document</span>
-  <span class='id output'>output</span>  <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id output'>output</span>
-  <span class='id input'>input</span>   <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id files'>files</span>
-  <span class='id exclude'>exclude</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id exclude'>exclude</span>
+<span class='def def kw'>def</span> <span class='document identifier id'>document</span>
+  <span class='output identifier id'>output</span>  <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='output identifier id'>output</span>
+  <span class='input identifier id'>input</span>   <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='files identifier id'>files</span>
+  <span class='exclude identifier id'>exclude</span> <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='exclude identifier id'>exclude</span>
 
-  <span class='id include_files'>include_files</span> <span class='op'>=</span> <span class='id files'>files</span><span class='period'>.</span><span class='id to_list'>to_list</span><span class='period'>.</span><span class='id uniq'>uniq</span>
-  <span class='id exclude_files'>exclude_files</span> <span class='op'>=</span> <span class='id exclude'>exclude</span><span class='period'>.</span><span class='id to_list'>to_list</span><span class='period'>.</span><span class='id uniq'>uniq</span>
+  <span class='include_files identifier id'>include_files</span> <span class='assign token'>=</span> <span class='files identifier id'>files</span><span class='dot token'>.</span><span class='to_list identifier id'>to_list</span><span class='dot token'>.</span><span class='uniq identifier id'>uniq</span>
+  <span class='exclude_files identifier id'>exclude_files</span> <span class='assign token'>=</span> <span class='exclude identifier id'>exclude</span><span class='dot token'>.</span><span class='to_list identifier id'>to_list</span><span class='dot token'>.</span><span class='uniq identifier id'>uniq</span>
 
-  <span class='id filelist'>filelist</span> <span class='op'>=</span> <span class='id amass'>amass</span><span class='lparen'>(</span><span class='id include_files'>include_files</span><span class='comma'>,</span> <span class='id exclude_files'>exclude_files</span><span class='rparen'>)</span>
+  <span class='filelist identifier id'>filelist</span> <span class='assign token'>=</span> <span class='amass identifier id'>amass</span><span class='lparen token'>(</span><span class='include_files identifier id'>include_files</span><span class='comma token'>,</span> <span class='exclude_files identifier id'>exclude_files</span><span class='rparen token'>)</span>
 
-  <span class='kw'>if</span> <span class='id outofdate?'>outofdate?</span><span class='lparen'>(</span><span class='id output'>output</span><span class='comma'>,</span> <span class='op'>*</span><span class='id filelist'>filelist</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id force?'>force?</span>
-    <span class='id status'>status</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Generating </span><span class='embexpr_beg'>#{</span><span class='id output'>output</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='if if kw'>if</span> <span class='outofdate? fid id'>outofdate?</span><span class='lparen token'>(</span><span class='output identifier id'>output</span><span class='comma token'>,</span> <span class='mult op'>*</span><span class='filelist identifier id'>filelist</span><span class='rparen token'>)</span> <span class='or or kw'>or</span> <span class='force? fid id'>force?</span>
+    <span class='status identifier id'>status</span> <span class='dstring node'>&quot;Generating #{output}&quot;</span>
 
-    <span class='id argv'>argv</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>--ri</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span>
-    <span class='id argv'>argv</span><span class='period'>.</span><span class='id concat'>concat</span><span class='lparen'>(</span><span class='id extra'>extra</span><span class='period'>.</span><span class='id split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\s+</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
-    <span class='id argv'>argv</span><span class='period'>.</span><span class='id concat'>concat</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>--output</span><span class='tstring_end'>'</span></span><span class='comma'>,</span> <span class='id output'>output</span><span class='rbracket'>]</span>
-    <span class='comment'>#argv.concat ['--exclude', exclude] unless exclude.empty?
-</span>
-    <span class='id argv'>argv</span> <span class='op'>=</span> <span class='id argv'>argv</span> <span class='op'>+</span> <span class='id filelist'>filelist</span>
+    <span class='argv identifier id'>argv</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='string val'>'--ri'</span><span class='rbrack token'>]</span>
+    <span class='argv identifier id'>argv</span><span class='dot token'>.</span><span class='concat identifier id'>concat</span><span class='lparen token'>(</span><span class='extra identifier id'>extra</span><span class='dot token'>.</span><span class='split identifier id'>split</span><span class='lparen token'>(</span><span class='regexp val'>/\s+/</span><span class='rparen token'>)</span><span class='rparen token'>)</span>
+    <span class='argv identifier id'>argv</span><span class='dot token'>.</span><span class='concat identifier id'>concat</span> <span class='lbrack token'>[</span><span class='string val'>'--output'</span><span class='comma token'>,</span> <span class='output identifier id'>output</span><span class='rbrack token'>]</span>
+    <span class='comment val'>#argv.concat ['--exclude', exclude] unless exclude.empty?</span>
 
-    <span class='id dir'>dir</span> <span class='op'>=</span> <span class='id ri_target'>ri_target</span><span class='lparen'>(</span><span class='id output'>output</span><span class='comma'>,</span> <span class='id argv'>argv</span><span class='rparen'>)</span>
+    <span class='argv identifier id'>argv</span> <span class='assign token'>=</span> <span class='argv identifier id'>argv</span> <span class='plus op'>+</span> <span class='filelist identifier id'>filelist</span>
 
-    <span class='id touch'>touch</span><span class='lparen'>(</span><span class='id output'>output</span><span class='rparen'>)</span>
+    <span class='dir identifier id'>dir</span> <span class='assign token'>=</span> <span class='ri_target identifier id'>ri_target</span><span class='lparen token'>(</span><span class='output identifier id'>output</span><span class='comma token'>,</span> <span class='argv identifier id'>argv</span><span class='rparen token'>)</span>
 
-    <span class='id output'>output</span>
-  <span class='kw'>else</span>
-    <span class='id status'>status</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>RI docs are current (</span><span class='embexpr_beg'>#{</span><span class='id output'>output</span><span class='rbrace'>}</span><span class='tstring_content'>)</span><span class='tstring_end'>&quot;</span></span>
-  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+    <span class='touch identifier id'>touch</span><span class='lparen token'>(</span><span class='output identifier id'>output</span><span class='rparen token'>)</span>
+
+    <span class='output identifier id'>output</span>
+  <span class='else else kw'>else</span>
+    <span class='status identifier id'>status</span> <span class='dstring node'>&quot;RI docs are current (#{output})&quot;</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -888,11 +845,12 @@ files.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/ri.rb', line 28</span>
 
-<span class='kw'>def</span> <span class='id initialize_defaults'>initialize_defaults</span>
-  <span class='ivar'>@files</span>  <span class='op'>=</span> <span class='id metadata'>metadata</span><span class='period'>.</span><span class='id loadpath'>loadpath</span>
-  <span class='ivar'>@output</span> <span class='op'>=</span> <span class='const'>Dir</span><span class='lbracket'>[</span><span class='const'>DEFAULT_OUTPUT_MATCH</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id first'>first</span> <span class='op'>||</span> <span class='const'>DEFAULT_OUTPUT</span>
-  <span class='ivar'>@extra</span>  <span class='op'>=</span> <span class='const'>DEFAULT_EXTRA</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='initialize_defaults identifier id'>initialize_defaults</span>
+  <span class='@files ivar id'>@files</span>  <span class='assign token'>=</span> <span class='metadata identifier id'>metadata</span><span class='dot token'>.</span><span class='loadpath identifier id'>loadpath</span>
+  <span class='@output ivar id'>@output</span> <span class='assign token'>=</span> <span class='Dir constant id'>Dir</span><span class='lbrack token'>[</span><span class='DEFAULT_OUTPUT_MATCH constant id'>DEFAULT_OUTPUT_MATCH</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='first identifier id'>first</span> <span class='orop op'>||</span> <span class='DEFAULT_OUTPUT constant id'>DEFAULT_OUTPUT</span>
+  <span class='@extra ivar id'>@extra</span>  <span class='assign token'>=</span> <span class='DEFAULT_EXTRA constant id'>DEFAULT_EXTRA</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -918,9 +876,10 @@ files.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/ri.rb', line 138</span>
 
-<span class='kw'>def</span> <span class='id initialize_requires'>initialize_requires</span>
-  <span class='id require_rdoc'>require_rdoc</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='initialize_requires identifier id'>initialize_requires</span>
+  <span class='require_rdoc identifier id'>require_rdoc</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -935,9 +894,8 @@ files.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Remove ri products.
-</p>
+    
+<p>Remove ri products.</p>
 
 
   </div>
@@ -960,12 +918,13 @@ Remove ri products.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/ri.rb', line 96</span>
 
-<span class='kw'>def</span> <span class='id purge'>purge</span>
-  <span class='kw'>if</span> <span class='const'>File</span><span class='period'>.</span><span class='id directory?'>directory?</span><span class='lparen'>(</span><span class='id output'>output</span><span class='rparen'>)</span>
-    <span class='id rm_r'>rm_r</span><span class='lparen'>(</span><span class='id output'>output</span><span class='rparen'>)</span>
-    <span class='id report'>report</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Removed </span><span class='embexpr_beg'>#{</span><span class='id output'>output</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span> <span class='comment'>#unless trial?
-</span>  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='purge identifier id'>purge</span>
+  <span class='if if kw'>if</span> <span class='File constant id'>File</span><span class='dot token'>.</span><span class='directory? fid id'>directory?</span><span class='lparen token'>(</span><span class='output identifier id'>output</span><span class='rparen token'>)</span>
+    <span class='rm_r identifier id'>rm_r</span><span class='lparen token'>(</span><span class='output identifier id'>output</span><span class='rparen token'>)</span>
+    <span class='report identifier id'>report</span> <span class='dstring node'>&quot;Removed #{output}&quot;</span> <span class='comment val'>#unless trial?</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1000,18 +959,19 @@ Remove ri products.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/ri.rb', line 124</span>
 
-<span class='kw'>def</span> <span class='id require_rdoc'>require_rdoc</span>
-  <span class='comment'># NOTE: Due to a bug in RDoc this needs to be done for now
-</span>  <span class='comment'># so that alternate templates can be used.
-</span>  <span class='kw'>begin</span>
-    <span class='id require'>require</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>rubygems</span><span class='tstring_end'>'</span></span>
-    <span class='id gem'>gem</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>rdoc</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
-  <span class='kw'>rescue</span> <span class='const'>LoadError</span>
-    <span class='gvar'>$stderr</span><span class='period'>.</span><span class='id puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Oh no! No modern rdoc!</span><span class='tstring_end'>&quot;</span></span>
-  <span class='kw'>end</span>
-  <span class='comment'>#require 'rdoc'
-</span>  <span class='id require'>require</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>rdoc/rdoc</span><span class='tstring_end'>'</span></span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='require_rdoc identifier id'>require_rdoc</span>
+  <span class='comment val'># NOTE: Due to a bug in RDoc this needs to be done for now</span>
+  <span class='comment val'># so that alternate templates can be used.</span>
+  <span class='begin begin kw'>begin</span>
+    <span class='require identifier id'>require</span> <span class='string val'>'rubygems'</span>
+    <span class='gem identifier id'>gem</span><span class='lparen token'>(</span><span class='string val'>'rdoc'</span><span class='rparen token'>)</span>
+  <span class='rescue rescue kw'>rescue</span> <span class='LoadError constant id'>LoadError</span>
+    <span class='$stderr gvar id'>$stderr</span><span class='dot token'>.</span><span class='puts identifier id'>puts</span> <span class='string val'>&quot;Oh no! No modern rdoc!&quot;</span>
+  <span class='end end kw'>end</span>
+  <span class='comment val'>#require 'rdoc'</span>
+  <span class='require identifier id'>require</span> <span class='string val'>'rdoc/rdoc'</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1026,10 +986,9 @@ Remove ri products.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Set the output directory&#8217;s mtime to furthest time in past. This
-&#8220;marks&#8221; the documentation as out-of-date.
-</p>
+    
+<p>Set the output directory’s mtime to furthest time in past. This
+“marks” the documentation as out-of-date.</p>
 
 
   </div>
@@ -1052,12 +1011,13 @@ Set the output directory&#8217;s mtime to furthest time in past. This
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/ri.rb', line 84</span>
 
-<span class='kw'>def</span> <span class='id reset'>reset</span>
-  <span class='kw'>if</span> <span class='const'>File</span><span class='period'>.</span><span class='id directory?'>directory?</span><span class='lparen'>(</span><span class='id output'>output</span><span class='rparen'>)</span>
-    <span class='const'>File</span><span class='period'>.</span><span class='id utime'>utime</span><span class='lparen'>(</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='kw'>self</span><span class='period'>.</span><span class='id output'>output</span><span class='rparen'>)</span>
-    <span class='id report'>report</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>reset </span><span class='embexpr_beg'>#{</span><span class='id output'>output</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
-  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='reset identifier id'>reset</span>
+  <span class='if if kw'>if</span> <span class='File constant id'>File</span><span class='dot token'>.</span><span class='directory? fid id'>directory?</span><span class='lparen token'>(</span><span class='output identifier id'>output</span><span class='rparen token'>)</span>
+    <span class='File constant id'>File</span><span class='dot token'>.</span><span class='utime identifier id'>utime</span><span class='lparen token'>(</span><span class='integer val'>0</span><span class='comma token'>,</span><span class='integer val'>0</span><span class='comma token'>,</span><span class='self self kw'>self</span><span class='dot token'>.</span><span class='output identifier id'>output</span><span class='rparen token'>)</span>
+    <span class='report identifier id'>report</span> <span class='dstring node'>&quot;reset #{output}&quot;</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1072,12 +1032,10 @@ Set the output directory&#8217;s mtime to furthest time in past. This
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Generate ri docs for input targets.
-</p>
-<p>
-TODO: Use RDoc programmatically rather than via shell.
-</p>
+    
+<p>Generate ri docs for input targets.</p>
+
+<p>TODO: Use RDoc programmatically rather than via shell.</p>
 
 
   </div>
@@ -1107,19 +1065,20 @@ TODO: Use RDoc programmatically rather than via shell.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/ri.rb', line 109</span>
 
-<span class='kw'>def</span> <span class='id ri_target'>ri_target</span><span class='lparen'>(</span><span class='id output'>output</span><span class='comma'>,</span> <span class='id argv'>argv</span><span class='op'>=</span><span class='lbracket'>[</span><span class='rbracket'>]</span><span class='rparen'>)</span>
-  <span class='id rm_r'>rm_r</span><span class='lparen'>(</span><span class='id output'>output</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id exist?'>exist?</span><span class='lparen'>(</span><span class='id output'>output</span><span class='rparen'>)</span> <span class='kw'>and</span> <span class='id safe?'>safe?</span><span class='lparen'>(</span><span class='id output'>output</span><span class='rparen'>)</span>  <span class='comment'># remove old ri docs
-</span>
-  <span class='kw'>if</span> <span class='id trial?'>trial?</span>
-    <span class='id puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>rdoc </span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id argv'>argv</span><span class='period'>.</span><span class='id join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> </span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
-  <span class='kw'>else</span>
-    <span class='id trace'>trace</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>rdoc </span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id argv'>argv</span><span class='period'>.</span><span class='id join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> </span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='comment'>#if trace? or verbose?
-</span>    <span class='comment'>#silently do
-</span>    <span class='id rdoc'>rdoc</span> <span class='op'>=</span> <span class='op'>::</span><span class='const'>RDoc</span><span class='op'>::</span><span class='const'>RDoc</span><span class='period'>.</span><span class='id new'>new</span>
-    <span class='id rdoc'>rdoc</span><span class='period'>.</span><span class='id document'>document</span><span class='lparen'>(</span><span class='id argv'>argv</span><span class='rparen'>)</span>
-    <span class='comment'>#end
-</span>  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='ri_target identifier id'>ri_target</span><span class='lparen token'>(</span><span class='output identifier id'>output</span><span class='comma token'>,</span> <span class='argv identifier id'>argv</span><span class='assign token'>=</span><span class='lbrack token'>[</span><span class='rbrack token'>]</span><span class='rparen token'>)</span>
+  <span class='rm_r identifier id'>rm_r</span><span class='lparen token'>(</span><span class='output identifier id'>output</span><span class='rparen token'>)</span> <span class='if if_mod kw'>if</span> <span class='exist? fid id'>exist?</span><span class='lparen token'>(</span><span class='output identifier id'>output</span><span class='rparen token'>)</span> <span class='and and kw'>and</span> <span class='safe? fid id'>safe?</span><span class='lparen token'>(</span><span class='output identifier id'>output</span><span class='rparen token'>)</span>  <span class='comment val'># remove old ri docs</span>
+
+  <span class='if if kw'>if</span> <span class='trial? fid id'>trial?</span>
+    <span class='puts identifier id'>puts</span> <span class='string val'>&quot;rdoc &quot;</span> <span class='plus op'>+</span> <span class='argv identifier id'>argv</span><span class='dot token'>.</span><span class='join identifier id'>join</span><span class='lparen token'>(</span><span class='string val'>&quot; &quot;</span><span class='rparen token'>)</span>
+  <span class='else else kw'>else</span>
+    <span class='trace identifier id'>trace</span> <span class='string val'>&quot;rdoc &quot;</span> <span class='plus op'>+</span> <span class='argv identifier id'>argv</span><span class='dot token'>.</span><span class='join identifier id'>join</span><span class='lparen token'>(</span><span class='string val'>&quot; &quot;</span><span class='rparen token'>)</span> <span class='comment val'>#if trace? or verbose?</span>
+    <span class='comment val'>#silently do</span>
+    <span class='rdoc identifier id'>rdoc</span> <span class='assign token'>=</span> <span class='colon3 op'>::</span><span class='RDoc constant id'>RDoc</span><span class='colon2 op'>::</span><span class='RDoc constant id'>RDoc</span><span class='dot token'>.</span><span class='new identifier id'>new</span>
+    <span class='rdoc identifier id'>rdoc</span><span class='dot token'>.</span><span class='document identifier id'>document</span><span class='lparen token'>(</span><span class='argv identifier id'>argv</span><span class='rparen token'>)</span>
+    <span class='comment val'>#end</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1130,9 +1089,9 @@ TODO: Use RDoc programmatically rather than via shell.
 </div>
     
     <div id="footer">
-  Generated on Sun May 29 22:49:05 2011 by 
+  Generated on Sun May 29 23:02:26 2011 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.7.1 (ruby-1.9.2).
+  0.6.7 (ruby-1.8.7).
 </div>
 
   </body>

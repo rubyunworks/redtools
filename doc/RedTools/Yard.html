@@ -2,27 +2,17 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>
-  Class: RedTools::Yard
-  
-    &mdash; Redtools
-  
-</title>
-
-  <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
-
-  <link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>Class: RedTools::Yard</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
   relpath = '..';
   if (relpath != '') relpath += '/';
 </script>
-
-  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
-
-  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
-
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
 
   </head>
   <body>
@@ -43,14 +33,11 @@
 </div>
 
       <div id="search">
-  
-    <a id="class_list_link" href="#">Class List</a>
-  
-    <a id="method_list_link" href="#">Method List</a>
-  
-    <a id="file_list_link" href="#">File List</a>
-  
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
 </div>
+
       <div class="clear"></div>
     </div>
     
@@ -96,17 +83,14 @@
 
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
-    <p>
-Yard documentation plugin generates docs for your project.
-</p>
-<p>
-By default it generates the yard documentaiton at site/yard, unless an
-&#8216;yard&#8217; directory exists in the project&#8217;s root directory,
-in which case the documentation will be stored there.
-</p>
-<p>
-NOTE: This tool currently shells out to the command line.
-</p>
+    
+<p>Yard documentation plugin generates docs for your project.</p>
+
+<p>By default it generates the yard documentaiton at site/yard, unless an
+‘yard’ directory exists in the project’s root directory, in which
+case the documentation will be stored there.</p>
+
+<p>NOTE: This tool currently shells out to the command line.</p>
 
 
   </div>
@@ -121,9 +105,8 @@ NOTE: This tool currently shells out to the command line.
         <dt id="DEFAULT_OUTPUT-constant" class="">DEFAULT_OUTPUT =
           <div class="docstring">
   <div class="discussion">
-    <p>
-Default location to store yard documentation files.
-</p>
+    
+<p>Default location to store yard documentation files.</p>
 
 
   </div>
@@ -132,15 +115,15 @@ Default location to store yard documentation files.
   
 </div>
         </dt>
-        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>doc</span><span class='tstring_end'>&quot;</span></span></pre></dd>
+        <dd><pre class="code"><span class='string val'>&quot;doc&quot;</span>
+</pre></dd>
       
         <dt id="DEFAULT_OUTPUT_MATCH-constant" class="">DEFAULT_OUTPUT_MATCH =
           <div class="docstring">
   <div class="discussion">
-    <p>
-Locations to check for existance in deciding where to store yard
-documentation.
-</p>
+    
+<p>Locations to check for existance in deciding where to store yard
+documentation.</p>
 
 
   </div>
@@ -149,14 +132,14 @@ documentation.
   
 </div>
         </dt>
-        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>{yard,site/yard,doc/yard,doc}</span><span class='tstring_end'>&quot;</span></span></pre></dd>
+        <dd><pre class="code"><span class='string val'>&quot;{yard,site/yard,doc/yard,doc}&quot;</span>
+</pre></dd>
       
         <dt id="DEFAULT_README-constant" class="">DEFAULT_README =
           <div class="docstring">
   <div class="discussion">
-    <p>
-Default main file.
-</p>
+    
+<p>Default main file.</p>
 
 
   </div>
@@ -165,14 +148,14 @@ Default main file.
   
 </div>
         </dt>
-        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>README</span><span class='tstring_end'>&quot;</span></span></pre></dd>
+        <dd><pre class="code"><span class='string val'>&quot;README&quot;</span>
+</pre></dd>
       
         <dt id="DEFAULT_TEMPLATE-constant" class="">DEFAULT_TEMPLATE =
           <div class="docstring">
   <div class="discussion">
-    <p>
-Default template to use.
-</p>
+    
+<p>Default template to use.</p>
 
 
   </div>
@@ -181,14 +164,14 @@ Default template to use.
   
 </div>
         </dt>
-        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>default</span><span class='tstring_end'>&quot;</span></span></pre></dd>
+        <dd><pre class="code"><span class='string val'>&quot;default&quot;</span>
+</pre></dd>
       
         <dt id="DEFAULT_EXTRA-constant" class="">DEFAULT_EXTRA =
           <div class="docstring">
   <div class="discussion">
-    <p>
-Deafult extra options to add to yardoc call.
-</p>
+    
+<p>Deafult extra options to add to yardoc call.</p>
 
 
   </div>
@@ -197,7 +180,8 @@ Deafult extra options to add to yardoc call.
   
 </div>
         </dt>
-        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span></pre></dd>
+        <dd><pre class="code"><span class='string val'>''</span>
+</pre></dd>
       
     </dl>
   
@@ -241,9 +225,8 @@ Deafult extra options to add to yardoc call.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Paths to specifically exclude.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Paths to specifically exclude.</p>
 </div></span>
   
 </li>
@@ -268,9 +251,8 @@ Paths to specifically exclude.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Additional options passed to the yardoc command.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Additional options passed to the yardoc command.</p>
 </div></span>
   
 </li>
@@ -295,9 +277,8 @@ Additional options passed to the yardoc command.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Which library files to document.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Which library files to document.</p>
 </div></span>
   
 </li>
@@ -322,9 +303,8 @@ Which library files to document.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Where to save yard files (doc/yard).
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Where to save yard files (doc/yard).</p>
 </div></span>
   
 </li>
@@ -349,9 +329,8 @@ Where to save yard files (doc/yard).
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Main file.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Main file.</p>
 </div></span>
   
 </li>
@@ -376,10 +355,8 @@ Main file.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Template to use (defaults to ENV[&#8216;RDOC_TEMPLATE&#8217;] or
-&#8216;html&#8217;).
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Template to use (defaults to ENV[‘RDOC_TEMPLATE’] or ‘html’).</p>
 </div></span>
   
 </li>
@@ -404,9 +381,8 @@ Template to use (defaults to ENV[&#8216;RDOC_TEMPLATE&#8217;] or
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Title of documents.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Title of documents.</p>
 </div></span>
   
 </li>
@@ -431,9 +407,8 @@ Title of documents.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Which project top-files to document.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Which project top-files to document.</p>
 </div></span>
   
 </li>
@@ -458,34 +433,14 @@ Which project top-files to document.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-If set to true, use `.yardopts` file and ignore other settings.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>If set to true, use `.yardopts` file and ignore other settings.</p>
 </div></span>
   
 </li>
 
     
   </ul>
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <h3 class="inherited">Attributes included from <span class='object_link'><a href="ShellUtils.html" title="RedTools::ShellUtils (module)">ShellUtils</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="ShellUtils.html#debug%3D-instance_method" title="RedTools::ShellUtils#debug= (method)">debug</a></span>, <span class='object_link'><a href="ShellUtils.html#force%3D-instance_method" title="RedTools::ShellUtils#force= (method)">force</a></span>, <span class='object_link'><a href="ShellUtils.html#quiet%3D-instance_method" title="RedTools::ShellUtils#quiet= (method)">quiet</a></span>, <span class='object_link'><a href="ShellUtils.html#stderr-instance_method" title="RedTools::ShellUtils#stderr (method)">stderr</a></span>, <span class='object_link'><a href="ShellUtils.html#stdin-instance_method" title="RedTools::ShellUtils#stdin (method)">stdin</a></span>, <span class='object_link'><a href="ShellUtils.html#stdout-instance_method" title="RedTools::ShellUtils#stdout (method)">stdout</a></span>, <span class='object_link'><a href="ShellUtils.html#trace-instance_method" title="RedTools::ShellUtils#trace (method)">trace</a></span>, <span class='object_link'><a href="ShellUtils.html#trial%3D-instance_method" title="RedTools::ShellUtils#trial= (method)">trial</a></span>, <span class='object_link'><a href="ShellUtils.html#verbose%3D-instance_method" title="RedTools::ShellUtils#verbose= (method)">verbose</a></span></p>
 
 
   
@@ -512,9 +467,8 @@ If set to true, use `.yardopts` file and ignore other settings.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-TODO: remove .yardoc ?.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>TODO: remove .yardoc ?.</p>
 </div></span>
   
 </li>
@@ -536,9 +490,8 @@ TODO: remove .yardoc ?.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Generate Rdoc documentation.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Generate Rdoc documentation.</p>
 </div></span>
   
 </li>
@@ -581,9 +534,8 @@ Generate Rdoc documentation.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Require yard library.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Require yard library.</p>
 </div></span>
   
 </li>
@@ -605,9 +557,8 @@ Require yard library.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Remove yardoc output directory.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Remove yardoc output directory.</p>
 </div></span>
   
 </li>
@@ -629,9 +580,8 @@ Remove yardoc output directory.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Mark the output directory as out of date.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Mark the output directory as out of date.</p>
 </div></span>
   
 </li>
@@ -653,9 +603,8 @@ Mark the output directory as out of date.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Generate yardocs for input targets.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Generate yardocs for input targets.</p>
 </div></span>
   
 </li>
@@ -726,9 +675,8 @@ Generate yardocs for input targets.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Paths to specifically exclude.
-</p>
+    
+<p>Paths to specifically exclude.</p>
 
 
   </div>
@@ -748,9 +696,10 @@ Paths to specifically exclude.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/yard.rb', line 77</span>
 
-<span class='kw'>def</span> <span class='id exclude'>exclude</span>
-  <span class='ivar'>@exclude</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='exclude identifier id'>exclude</span>
+  <span class='@exclude ivar id'>@exclude</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -768,9 +717,8 @@ Paths to specifically exclude.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Additional options passed to the yardoc command.
-</p>
+    
+<p>Additional options passed to the yardoc command.</p>
 
 
   </div>
@@ -790,9 +738,10 @@ Additional options passed to the yardoc command.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/yard.rb', line 80</span>
 
-<span class='kw'>def</span> <span class='id extra'>extra</span>
-  <span class='ivar'>@extra</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='extra identifier id'>extra</span>
+  <span class='@extra ivar id'>@extra</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -810,9 +759,8 @@ Additional options passed to the yardoc command.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Which library files to document.
-</p>
+    
+<p>Which library files to document.</p>
 
 
   </div>
@@ -832,9 +780,10 @@ Which library files to document.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/yard.rb', line 68</span>
 
-<span class='kw'>def</span> <span class='id files'>files</span>
-  <span class='ivar'>@files</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='files identifier id'>files</span>
+  <span class='@files ivar id'>@files</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -852,9 +801,8 @@ Which library files to document.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Where to save yard files (doc/yard).
-</p>
+    
+<p>Where to save yard files (doc/yard).</p>
 
 
   </div>
@@ -874,9 +822,10 @@ Where to save yard files (doc/yard).
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/yard.rb', line 59</span>
 
-<span class='kw'>def</span> <span class='id output'>output</span>
-  <span class='ivar'>@output</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='output identifier id'>output</span>
+  <span class='@output ivar id'>@output</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -894,9 +843,8 @@ Where to save yard files (doc/yard).
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Main file.  This can be file pattern. (READMERedTools::Yard.,,.txt)
-</p>
+    
+<p>Main file.  This can be file pattern. (READMERedTools::Yard.,,.txt)</p>
 
 
   </div>
@@ -916,9 +864,10 @@ Main file.  This can be file pattern. (READMERedTools::Yard.,,.txt)
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/yard.rb', line 65</span>
 
-<span class='kw'>def</span> <span class='id readme'>readme</span>
-  <span class='ivar'>@readme</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='readme identifier id'>readme</span>
+  <span class='@readme ivar id'>@readme</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -936,10 +885,8 @@ Main file.  This can be file pattern. (READMERedTools::Yard.,,.txt)
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Template to use (defaults to ENV[&#8216;RDOC_TEMPLATE&#8217;] or
-&#8216;html&#8217;)
-</p>
+    
+<p>Template to use (defaults to ENV[‘RDOC_TEMPLATE’] or ‘html’)</p>
 
 
   </div>
@@ -959,9 +906,10 @@ Template to use (defaults to ENV[&#8216;RDOC_TEMPLATE&#8217;] or
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/yard.rb', line 62</span>
 
-<span class='kw'>def</span> <span class='id template'>template</span>
-  <span class='ivar'>@template</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='template identifier id'>template</span>
+  <span class='@template ivar id'>@template</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -979,9 +927,8 @@ Template to use (defaults to ENV[&#8216;RDOC_TEMPLATE&#8217;] or
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Title of documents. Defaults to general metadata title field.
-</p>
+    
+<p>Title of documents. Defaults to general metadata title field.</p>
 
 
   </div>
@@ -1001,9 +948,10 @@ Title of documents. Defaults to general metadata title field.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/yard.rb', line 56</span>
 
-<span class='kw'>def</span> <span class='id title'>title</span>
-  <span class='ivar'>@title</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='title identifier id'>title</span>
+  <span class='@title ivar id'>@title</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1021,9 +969,8 @@ Title of documents. Defaults to general metadata title field.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Which project top-files to document.
-</p>
+    
+<p>Which project top-files to document.</p>
 
 
   </div>
@@ -1043,9 +990,10 @@ Which project top-files to document.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/yard.rb', line 74</span>
 
-<span class='kw'>def</span> <span class='id topfiles'>topfiles</span>
-  <span class='ivar'>@topfiles</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='topfiles identifier id'>topfiles</span>
+  <span class='@topfiles ivar id'>@topfiles</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1063,9 +1011,8 @@ Which project top-files to document.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-If set to true, use `.yardopts` file and ignore other settings.
-</p>
+    
+<p>If set to true, use `.yardopts` file and ignore other settings.</p>
 
 
   </div>
@@ -1085,9 +1032,10 @@ If set to true, use `.yardopts` file and ignore other settings.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/yard.rb', line 53</span>
 
-<span class='kw'>def</span> <span class='id yardopts'>yardopts</span>
-  <span class='ivar'>@yardopts</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='yardopts identifier id'>yardopts</span>
+  <span class='@yardopts ivar id'>@yardopts</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1109,9 +1057,8 @@ If set to true, use `.yardopts` file and ignore other settings.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-TODO: remove .yardoc ?
-</p>
+    
+<p>TODO: remove .yardoc ?</p>
 
 
   </div>
@@ -1130,8 +1077,9 @@ TODO: remove .yardoc ?
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/yard.rb', line 166</span>
 
-<span class='kw'>def</span> <span class='id clean'>clean</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='clean identifier id'>clean</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1146,11 +1094,10 @@ TODO: remove .yardoc ?
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Generate Rdoc documentation. Settings are the same as the yardoc
-command&#8217;s option, with two exceptions: <tt>inline</tt> for
-<tt>inline-source</tt> and <tt>output</tt> for <tt>op</tt>.
-</p>
+    
+<p>Generate Rdoc documentation. Settings are the same as the yardoc
+command’s option, with two exceptions: <tt>inline</tt> for
+<tt>inline-source</tt> and <tt>output</tt> for <tt>op</tt>.</p>
 
 
   </div>
@@ -1237,76 +1184,77 @@ command&#8217;s option, with two exceptions: <tt>inline</tt> for
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/yard.rb', line 86</span>
 
-<span class='kw'>def</span> <span class='id document'>document</span>
-  <span class='id title'>title</span>    <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id title'>title</span>
-  <span class='id output'>output</span>   <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id output'>output</span>
-  <span class='id readme'>readme</span>   <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id readme'>readme</span>
-  <span class='id template'>template</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id template'>template</span>
-  <span class='id files'>files</span>    <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id files'>files</span>
-  <span class='id exclude'>exclude</span>  <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id exclude'>exclude</span>
-  <span class='id extra'>extra</span>    <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id extra'>extra</span>
+<span class='def def kw'>def</span> <span class='document identifier id'>document</span>
+  <span class='title identifier id'>title</span>    <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='title identifier id'>title</span>
+  <span class='output identifier id'>output</span>   <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='output identifier id'>output</span>
+  <span class='readme identifier id'>readme</span>   <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='readme identifier id'>readme</span>
+  <span class='template identifier id'>template</span> <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='template identifier id'>template</span>
+  <span class='files identifier id'>files</span>    <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='files identifier id'>files</span>
+  <span class='exclude identifier id'>exclude</span>  <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='exclude identifier id'>exclude</span>
+  <span class='extra identifier id'>extra</span>    <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='extra identifier id'>extra</span>
 
-  <span class='id readme'>readme</span> <span class='op'>=</span> <span class='const'>Dir</span><span class='period'>.</span><span class='id glob'>glob</span><span class='lparen'>(</span><span class='id readme'>readme</span><span class='comma'>,</span> <span class='const'>File</span><span class='op'>::</span><span class='const'>FNM_CASEFOLD</span><span class='rparen'>)</span><span class='period'>.</span><span class='id first'>first</span>
+  <span class='readme identifier id'>readme</span> <span class='assign token'>=</span> <span class='Dir constant id'>Dir</span><span class='dot token'>.</span><span class='glob identifier id'>glob</span><span class='lparen token'>(</span><span class='readme identifier id'>readme</span><span class='comma token'>,</span> <span class='File constant id'>File</span><span class='colon2 op'>::</span><span class='FNM_CASEFOLD constant id'>FNM_CASEFOLD</span><span class='rparen token'>)</span><span class='dot token'>.</span><span class='first identifier id'>first</span>
 
-  <span class='comment'># TODO: Is this true?
-</span>  <span class='comment'># YARD SUCKS --THIS DOESN'T WORK ON YARD LINE, WE MUST DO IT OURSELVES!!!
-</span>  <span class='id exclude'>exclude</span> <span class='op'>=</span> <span class='id exclude'>exclude</span><span class='period'>.</span><span class='id to_list'>to_list</span>
-  <span class='id exclude'>exclude</span> <span class='op'>=</span> <span class='id exclude'>exclude</span><span class='period'>.</span><span class='id collect'>collect</span><span class='lbrace'>{</span> <span class='op'>|</span><span class='id g'>g</span><span class='op'>|</span> <span class='const'>Dir</span><span class='period'>.</span><span class='id glob'>glob</span><span class='lparen'>(</span><span class='const'>File</span><span class='period'>.</span><span class='id join'>join</span><span class='lparen'>(</span><span class='id g'>g</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>**/*</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span><span class='rparen'>)</span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id flatten'>flatten</span>
+  <span class='comment val'># TODO: Is this true?</span>
+  <span class='comment val'># YARD SUCKS --THIS DOESN'T WORK ON YARD LINE, WE MUST DO IT OURSELVES!!!</span>
+  <span class='exclude identifier id'>exclude</span> <span class='assign token'>=</span> <span class='exclude identifier id'>exclude</span><span class='dot token'>.</span><span class='to_list identifier id'>to_list</span>
+  <span class='exclude identifier id'>exclude</span> <span class='assign token'>=</span> <span class='exclude identifier id'>exclude</span><span class='dot token'>.</span><span class='collect identifier id'>collect</span><span class='lbrace token'>{</span> <span class='bitor op'>|</span><span class='g identifier id'>g</span><span class='bitor op'>|</span> <span class='Dir constant id'>Dir</span><span class='dot token'>.</span><span class='glob identifier id'>glob</span><span class='lparen token'>(</span><span class='File constant id'>File</span><span class='dot token'>.</span><span class='join identifier id'>join</span><span class='lparen token'>(</span><span class='g identifier id'>g</span><span class='comma token'>,</span> <span class='string val'>'**/*'</span><span class='rparen token'>)</span><span class='rparen token'>)</span> <span class='rbrace token'>}</span><span class='dot token'>.</span><span class='flatten identifier id'>flatten</span>
 
-  <span class='id topfiles'>topfiles</span> <span class='op'>=</span> <span class='id topfiles'>topfiles</span><span class='period'>.</span><span class='id to_list'>to_list</span>
-  <span class='id topfiles'>topfiles</span> <span class='op'>=</span> <span class='id topfiles'>topfiles</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span> <span class='op'>|</span><span class='id g'>g</span><span class='op'>|</span> <span class='const'>Dir</span><span class='period'>.</span><span class='id glob'>glob</span><span class='lparen'>(</span><span class='id g'>g</span><span class='rparen'>)</span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id flatten'>flatten</span>
-  <span class='id topfiles'>topfiles</span> <span class='op'>=</span> <span class='id topfiles'>topfiles</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span> <span class='op'>|</span><span class='id f'>f</span><span class='op'>|</span> <span class='const'>File</span><span class='period'>.</span><span class='id directory?'>directory?</span><span class='lparen'>(</span><span class='id f'>f</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='const'>File</span><span class='period'>.</span><span class='id join'>join</span><span class='lparen'>(</span><span class='id f'>f</span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>**</span><span class='tstring_end'>'</span></span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>*</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span> <span class='op'>:</span> <span class='id f'>f</span> <span class='rbrace'>}</span>
-  <span class='id topfiles'>topfiles</span> <span class='op'>=</span> <span class='id topfiles'>topfiles</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span> <span class='op'>|</span><span class='id g'>g</span><span class='op'>|</span> <span class='const'>Dir</span><span class='period'>.</span><span class='id glob'>glob</span><span class='lparen'>(</span><span class='id g'>g</span><span class='rparen'>)</span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id flatten'>flatten</span>  <span class='comment'># need this to remove unwanted toplevel files
-</span>  <span class='id topfiles'>topfiles</span> <span class='op'>=</span> <span class='id topfiles'>topfiles</span><span class='period'>.</span><span class='id reject'>reject</span><span class='lbrace'>{</span> <span class='op'>|</span><span class='id f'>f</span><span class='op'>|</span> <span class='const'>File</span><span class='period'>.</span><span class='id directory?'>directory?</span><span class='lparen'>(</span><span class='id f'>f</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
-  <span class='id topfiles'>topfiles</span> <span class='op'>=</span> <span class='id topfiles'>topfiles</span> <span class='op'>-</span> <span class='const'>Dir</span><span class='period'>.</span><span class='id glob'>glob</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>rakefile{,.rb}</span><span class='tstring_end'>'</span></span><span class='comma'>,</span> <span class='const'>File</span><span class='op'>::</span><span class='const'>FNM_CASEFOLD</span><span class='rparen'>)</span>
+  <span class='topfiles identifier id'>topfiles</span> <span class='assign token'>=</span> <span class='topfiles identifier id'>topfiles</span><span class='dot token'>.</span><span class='to_list identifier id'>to_list</span>
+  <span class='topfiles identifier id'>topfiles</span> <span class='assign token'>=</span> <span class='topfiles identifier id'>topfiles</span><span class='dot token'>.</span><span class='map identifier id'>map</span><span class='lbrace token'>{</span> <span class='bitor op'>|</span><span class='g identifier id'>g</span><span class='bitor op'>|</span> <span class='Dir constant id'>Dir</span><span class='dot token'>.</span><span class='glob identifier id'>glob</span><span class='lparen token'>(</span><span class='g identifier id'>g</span><span class='rparen token'>)</span> <span class='rbrace token'>}</span><span class='dot token'>.</span><span class='flatten identifier id'>flatten</span>
+  <span class='topfiles identifier id'>topfiles</span> <span class='assign token'>=</span> <span class='topfiles identifier id'>topfiles</span><span class='dot token'>.</span><span class='map identifier id'>map</span><span class='lbrace token'>{</span> <span class='bitor op'>|</span><span class='f identifier id'>f</span><span class='bitor op'>|</span> <span class='File constant id'>File</span><span class='dot token'>.</span><span class='directory? fid id'>directory?</span><span class='lparen token'>(</span><span class='f identifier id'>f</span><span class='rparen token'>)</span> <span class='question op'>?</span> <span class='File constant id'>File</span><span class='dot token'>.</span><span class='join identifier id'>join</span><span class='lparen token'>(</span><span class='f identifier id'>f</span><span class='comma token'>,</span><span class='string val'>'**'</span><span class='comma token'>,</span><span class='string val'>'*'</span><span class='rparen token'>)</span> <span class='colon op'>:</span> <span class='f identifier id'>f</span> <span class='rbrace token'>}</span>
+  <span class='topfiles identifier id'>topfiles</span> <span class='assign token'>=</span> <span class='topfiles identifier id'>topfiles</span><span class='dot token'>.</span><span class='map identifier id'>map</span><span class='lbrace token'>{</span> <span class='bitor op'>|</span><span class='g identifier id'>g</span><span class='bitor op'>|</span> <span class='Dir constant id'>Dir</span><span class='dot token'>.</span><span class='glob identifier id'>glob</span><span class='lparen token'>(</span><span class='g identifier id'>g</span><span class='rparen token'>)</span> <span class='rbrace token'>}</span><span class='dot token'>.</span><span class='flatten identifier id'>flatten</span>  <span class='comment val'># need this to remove unwanted toplevel files</span>
+  <span class='topfiles identifier id'>topfiles</span> <span class='assign token'>=</span> <span class='topfiles identifier id'>topfiles</span><span class='dot token'>.</span><span class='reject identifier id'>reject</span><span class='lbrace token'>{</span> <span class='bitor op'>|</span><span class='f identifier id'>f</span><span class='bitor op'>|</span> <span class='File constant id'>File</span><span class='dot token'>.</span><span class='directory? fid id'>directory?</span><span class='lparen token'>(</span><span class='f identifier id'>f</span><span class='rparen token'>)</span> <span class='rbrace token'>}</span>
+  <span class='topfiles identifier id'>topfiles</span> <span class='assign token'>=</span> <span class='topfiles identifier id'>topfiles</span> <span class='minus op'>-</span> <span class='Dir constant id'>Dir</span><span class='dot token'>.</span><span class='glob identifier id'>glob</span><span class='lparen token'>(</span><span class='string val'>'rakefile{,.rb}'</span><span class='comma token'>,</span> <span class='File constant id'>File</span><span class='colon2 op'>::</span><span class='FNM_CASEFOLD constant id'>FNM_CASEFOLD</span><span class='rparen token'>)</span>
 
-  <span class='id files'>files</span> <span class='op'>=</span> <span class='id files'>files</span><span class='period'>.</span><span class='id to_list'>to_list</span>
-  <span class='id files'>files</span> <span class='op'>=</span> <span class='id files'>files</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span> <span class='op'>|</span><span class='id g'>g</span><span class='op'>|</span> <span class='const'>Dir</span><span class='period'>.</span><span class='id glob'>glob</span><span class='lparen'>(</span><span class='id g'>g</span><span class='rparen'>)</span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id flatten'>flatten</span>
-  <span class='id files'>files</span> <span class='op'>=</span> <span class='id files'>files</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span> <span class='op'>|</span><span class='id f'>f</span><span class='op'>|</span> <span class='const'>File</span><span class='period'>.</span><span class='id directory?'>directory?</span><span class='lparen'>(</span><span class='id f'>f</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='const'>File</span><span class='period'>.</span><span class='id join'>join</span><span class='lparen'>(</span><span class='id f'>f</span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>**</span><span class='tstring_end'>'</span></span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>*</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span> <span class='op'>:</span> <span class='id f'>f</span> <span class='rbrace'>}</span>
-  <span class='id files'>files</span> <span class='op'>=</span> <span class='id files'>files</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span> <span class='op'>|</span><span class='id g'>g</span><span class='op'>|</span> <span class='const'>Dir</span><span class='period'>.</span><span class='id glob'>glob</span><span class='lparen'>(</span><span class='id g'>g</span><span class='rparen'>)</span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id flatten'>flatten</span>  <span class='comment'># need this to remove unwanted toplevel files
-</span>  <span class='id files'>files</span> <span class='op'>=</span> <span class='id files'>files</span><span class='period'>.</span><span class='id reject'>reject</span><span class='lbrace'>{</span> <span class='op'>|</span><span class='id f'>f</span><span class='op'>|</span> <span class='const'>File</span><span class='period'>.</span><span class='id directory?'>directory?</span><span class='lparen'>(</span><span class='id f'>f</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
+  <span class='files identifier id'>files</span> <span class='assign token'>=</span> <span class='files identifier id'>files</span><span class='dot token'>.</span><span class='to_list identifier id'>to_list</span>
+  <span class='files identifier id'>files</span> <span class='assign token'>=</span> <span class='files identifier id'>files</span><span class='dot token'>.</span><span class='map identifier id'>map</span><span class='lbrace token'>{</span> <span class='bitor op'>|</span><span class='g identifier id'>g</span><span class='bitor op'>|</span> <span class='Dir constant id'>Dir</span><span class='dot token'>.</span><span class='glob identifier id'>glob</span><span class='lparen token'>(</span><span class='g identifier id'>g</span><span class='rparen token'>)</span> <span class='rbrace token'>}</span><span class='dot token'>.</span><span class='flatten identifier id'>flatten</span>
+  <span class='files identifier id'>files</span> <span class='assign token'>=</span> <span class='files identifier id'>files</span><span class='dot token'>.</span><span class='map identifier id'>map</span><span class='lbrace token'>{</span> <span class='bitor op'>|</span><span class='f identifier id'>f</span><span class='bitor op'>|</span> <span class='File constant id'>File</span><span class='dot token'>.</span><span class='directory? fid id'>directory?</span><span class='lparen token'>(</span><span class='f identifier id'>f</span><span class='rparen token'>)</span> <span class='question op'>?</span> <span class='File constant id'>File</span><span class='dot token'>.</span><span class='join identifier id'>join</span><span class='lparen token'>(</span><span class='f identifier id'>f</span><span class='comma token'>,</span><span class='string val'>'**'</span><span class='comma token'>,</span><span class='string val'>'*'</span><span class='rparen token'>)</span> <span class='colon op'>:</span> <span class='f identifier id'>f</span> <span class='rbrace token'>}</span>
+  <span class='files identifier id'>files</span> <span class='assign token'>=</span> <span class='files identifier id'>files</span><span class='dot token'>.</span><span class='map identifier id'>map</span><span class='lbrace token'>{</span> <span class='bitor op'>|</span><span class='g identifier id'>g</span><span class='bitor op'>|</span> <span class='Dir constant id'>Dir</span><span class='dot token'>.</span><span class='glob identifier id'>glob</span><span class='lparen token'>(</span><span class='g identifier id'>g</span><span class='rparen token'>)</span> <span class='rbrace token'>}</span><span class='dot token'>.</span><span class='flatten identifier id'>flatten</span>  <span class='comment val'># need this to remove unwanted toplevel files</span>
+  <span class='files identifier id'>files</span> <span class='assign token'>=</span> <span class='files identifier id'>files</span><span class='dot token'>.</span><span class='reject identifier id'>reject</span><span class='lbrace token'>{</span> <span class='bitor op'>|</span><span class='f identifier id'>f</span><span class='bitor op'>|</span> <span class='File constant id'>File</span><span class='dot token'>.</span><span class='directory? fid id'>directory?</span><span class='lparen token'>(</span><span class='f identifier id'>f</span><span class='rparen token'>)</span> <span class='rbrace token'>}</span>
 
-  <span class='id mfile'>mfile</span> <span class='op'>=</span> <span class='id project'>project</span><span class='period'>.</span><span class='id manifest'>manifest</span><span class='period'>.</span><span class='id file'>file</span>
-  <span class='id mfile'>mfile</span> <span class='op'>=</span> <span class='id project'>project</span><span class='period'>.</span><span class='id manifest'>manifest</span><span class='period'>.</span><span class='id file'>file</span><span class='period'>.</span><span class='id basename'>basename</span> <span class='kw'>if</span> <span class='id mfile'>mfile</span>
+  <span class='mfile identifier id'>mfile</span> <span class='assign token'>=</span> <span class='project identifier id'>project</span><span class='dot token'>.</span><span class='manifest identifier id'>manifest</span><span class='dot token'>.</span><span class='file identifier id'>file</span>
+  <span class='mfile identifier id'>mfile</span> <span class='assign token'>=</span> <span class='project identifier id'>project</span><span class='dot token'>.</span><span class='manifest identifier id'>manifest</span><span class='dot token'>.</span><span class='file identifier id'>file</span><span class='dot token'>.</span><span class='basename identifier id'>basename</span> <span class='if if_mod kw'>if</span> <span class='mfile identifier id'>mfile</span>
 
-  <span class='id exclude'>exclude</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id exclude'>exclude</span> <span class='op'>+</span> <span class='lbracket'>[</span><span class='id mfile'>mfile</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id compact'>compact</span><span class='rparen'>)</span><span class='period'>.</span><span class='id uniq'>uniq</span>
+  <span class='exclude identifier id'>exclude</span> <span class='assign token'>=</span> <span class='lparen token'>(</span><span class='exclude identifier id'>exclude</span> <span class='plus op'>+</span> <span class='lbrack token'>[</span><span class='mfile identifier id'>mfile</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='compact identifier id'>compact</span><span class='rparen token'>)</span><span class='dot token'>.</span><span class='uniq identifier id'>uniq</span>
 
-  <span class='id files'>files</span> <span class='op'>=</span> <span class='id files'>files</span> <span class='op'>-</span> <span class='lbracket'>[</span><span class='id mfile'>mfile</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id compact'>compact</span>
-  <span class='id files'>files</span> <span class='op'>=</span> <span class='id files'>files</span> <span class='op'>-</span> <span class='id exclude'>exclude</span>
+  <span class='files identifier id'>files</span> <span class='assign token'>=</span> <span class='files identifier id'>files</span> <span class='minus op'>-</span> <span class='lbrack token'>[</span><span class='mfile identifier id'>mfile</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='compact identifier id'>compact</span>
+  <span class='files identifier id'>files</span> <span class='assign token'>=</span> <span class='files identifier id'>files</span> <span class='minus op'>-</span> <span class='exclude identifier id'>exclude</span>
 
-  <span class='id input'>input</span> <span class='op'>=</span> <span class='id files'>files</span><span class='period'>.</span><span class='id uniq'>uniq</span>
+  <span class='input identifier id'>input</span> <span class='assign token'>=</span> <span class='files identifier id'>files</span><span class='dot token'>.</span><span class='uniq identifier id'>uniq</span>
 
-  <span class='kw'>if</span> <span class='id outofdate?'>outofdate?</span><span class='lparen'>(</span><span class='id output'>output</span><span class='comma'>,</span> <span class='op'>*</span><span class='id input'>input</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id force?'>force?</span>
-    <span class='id status'>status</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Generating </span><span class='embexpr_beg'>#{</span><span class='id output'>output</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='if if kw'>if</span> <span class='outofdate? fid id'>outofdate?</span><span class='lparen token'>(</span><span class='output identifier id'>output</span><span class='comma token'>,</span> <span class='mult op'>*</span><span class='input identifier id'>input</span><span class='rparen token'>)</span> <span class='or or kw'>or</span> <span class='force? fid id'>force?</span>
+    <span class='status identifier id'>status</span> <span class='dstring node'>&quot;Generating #{output}&quot;</span>
 
-    <span class='comment'>#target_main = Dir.glob(target['main'].to_s, File::FNM_CASEFOLD).first
-</span>    <span class='comment'>#target_main   = File.expand_path(target_main) if target_main
-</span>    <span class='comment'>#target_output = File.expand_path(File.join(output, subdir))
-</span>    <span class='comment'>#target_output = File.join(output, subdir)
-</span>
-    <span class='kw'>if</span> <span class='id yardopts'>yardopts</span>
-      <span class='id argv'>argv</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
-    <span class='kw'>else</span>
-      <span class='id argv'>argv</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
-      <span class='id argv'>argv</span><span class='period'>.</span><span class='id concat'>concat</span><span class='lparen'>(</span><span class='const'>String</span> <span class='op'>===</span> <span class='id extra'>extra</span> <span class='op'>?</span> <span class='id extra'>extra</span><span class='period'>.</span><span class='id split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\s+</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='op'>:</span> <span class='id extra'>extra</span><span class='rparen'>)</span>
-      <span class='id argv'>argv</span><span class='period'>.</span><span class='id concat'>concat</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>--output-dir</span><span class='tstring_end'>'</span></span><span class='comma'>,</span> <span class='id output'>output</span><span class='rbracket'>]</span> <span class='kw'>if</span> <span class='id output'>output</span>
-      <span class='id argv'>argv</span><span class='period'>.</span><span class='id concat'>concat</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>--readme</span><span class='tstring_end'>'</span></span><span class='comma'>,</span> <span class='id readme'>readme</span><span class='rbracket'>]</span> <span class='kw'>if</span> <span class='id readme'>readme</span>
-      <span class='id argv'>argv</span><span class='period'>.</span><span class='id concat'>concat</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>--template</span><span class='tstring_end'>'</span></span><span class='comma'>,</span> <span class='id template'>template</span><span class='rbracket'>]</span> <span class='kw'>if</span> <span class='id template'>template</span>
-      <span class='id argv'>argv</span><span class='period'>.</span><span class='id concat'>concat</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>--title</span><span class='tstring_end'>'</span></span><span class='comma'>,</span> <span class='id title'>title</span><span class='rbracket'>]</span> <span class='kw'>if</span> <span class='id title'>title</span>
-      <span class='comment'>#argv.concat ['--exclude', exclude]
-</span>      <span class='id argv'>argv</span><span class='period'>.</span><span class='id concat'>concat</span> <span class='id input'>input</span>
-      <span class='id argv'>argv</span><span class='period'>.</span><span class='id concat'>concat</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>--</span><span class='tstring_end'>'</span></span><span class='comma'>,</span> <span class='op'>*</span><span class='id topfiles'>topfiles</span><span class='rbracket'>]</span>
-    <span class='kw'>end</span>
+    <span class='comment val'>#target_main = Dir.glob(target['main'].to_s, File::FNM_CASEFOLD).first</span>
+    <span class='comment val'>#target_main   = File.expand_path(target_main) if target_main</span>
+    <span class='comment val'>#target_output = File.expand_path(File.join(output, subdir))</span>
+    <span class='comment val'>#target_output = File.join(output, subdir)</span>
 
-    <span class='id yard_target'>yard_target</span><span class='lparen'>(</span><span class='id output'>output</span><span class='comma'>,</span> <span class='id argv'>argv</span><span class='rparen'>)</span>
+    <span class='if if kw'>if</span> <span class='yardopts identifier id'>yardopts</span>
+      <span class='argv identifier id'>argv</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span>
+    <span class='else else kw'>else</span>
+      <span class='argv identifier id'>argv</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span>
+      <span class='argv identifier id'>argv</span><span class='dot token'>.</span><span class='concat identifier id'>concat</span><span class='lparen token'>(</span><span class='String constant id'>String</span> <span class='eqq op'>===</span> <span class='extra identifier id'>extra</span> <span class='integer val'>? </span><span class='extra identifier id'>extra</span><span class='dot token'>.</span><span class='split identifier id'>split</span><span class='lparen token'>(</span><span class='regexp val'>/\s+/</span><span class='rparen token'>)</span> <span class='colon op'>:</span> <span class='extra identifier id'>extra</span><span class='rparen token'>)</span>
+      <span class='argv identifier id'>argv</span><span class='dot token'>.</span><span class='concat identifier id'>concat</span> <span class='lbrack token'>[</span><span class='string val'>'--output-dir'</span><span class='comma token'>,</span> <span class='output identifier id'>output</span><span class='rbrack token'>]</span> <span class='if if_mod kw'>if</span> <span class='output identifier id'>output</span>
+      <span class='argv identifier id'>argv</span><span class='dot token'>.</span><span class='concat identifier id'>concat</span> <span class='lbrack token'>[</span><span class='string val'>'--readme'</span><span class='comma token'>,</span> <span class='readme identifier id'>readme</span><span class='rbrack token'>]</span> <span class='if if_mod kw'>if</span> <span class='readme identifier id'>readme</span>
+      <span class='argv identifier id'>argv</span><span class='dot token'>.</span><span class='concat identifier id'>concat</span> <span class='lbrack token'>[</span><span class='string val'>'--template'</span><span class='comma token'>,</span> <span class='template identifier id'>template</span><span class='rbrack token'>]</span> <span class='if if_mod kw'>if</span> <span class='template identifier id'>template</span>
+      <span class='argv identifier id'>argv</span><span class='dot token'>.</span><span class='concat identifier id'>concat</span> <span class='lbrack token'>[</span><span class='string val'>'--title'</span><span class='comma token'>,</span> <span class='title identifier id'>title</span><span class='rbrack token'>]</span> <span class='if if_mod kw'>if</span> <span class='title identifier id'>title</span>
+      <span class='comment val'>#argv.concat ['--exclude', exclude]</span>
+      <span class='argv identifier id'>argv</span><span class='dot token'>.</span><span class='concat identifier id'>concat</span> <span class='input identifier id'>input</span>
+      <span class='argv identifier id'>argv</span><span class='dot token'>.</span><span class='concat identifier id'>concat</span> <span class='lbrack token'>[</span><span class='string val'>'--'</span><span class='comma token'>,</span> <span class='mult op'>*</span><span class='topfiles identifier id'>topfiles</span><span class='rbrack token'>]</span>
+    <span class='end end kw'>end</span>
 
-    <span class='comment'>#insert_ads(output, adfile)
-</span>
-    <span class='id touch'>touch</span><span class='lparen'>(</span><span class='id output'>output</span><span class='rparen'>)</span>
-  <span class='kw'>else</span>
-    <span class='id status'>status</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>YARD docs are current (</span><span class='embexpr_beg'>#{</span><span class='id output'>output</span><span class='rbrace'>}</span><span class='tstring_content'>).</span><span class='tstring_end'>&quot;</span></span>
-  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+    <span class='yard_target identifier id'>yard_target</span><span class='lparen token'>(</span><span class='output identifier id'>output</span><span class='comma token'>,</span> <span class='argv identifier id'>argv</span><span class='rparen token'>)</span>
+
+    <span class='comment val'>#insert_ads(output, adfile)</span>
+
+    <span class='touch identifier id'>touch</span><span class='lparen token'>(</span><span class='output identifier id'>output</span><span class='rparen token'>)</span>
+  <span class='else else kw'>else</span>
+    <span class='status identifier id'>status</span> <span class='dstring node'>&quot;YARD docs are current (#{output}).&quot;</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1339,16 +1287,17 @@ command&#8217;s option, with two exceptions: <tt>inline</tt> for
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/yard.rb', line 39</span>
 
-<span class='kw'>def</span> <span class='id initialize_defaults'>initialize_defaults</span>
-  <span class='ivar'>@title</span>    <span class='op'>=</span> <span class='id metadata'>metadata</span><span class='period'>.</span><span class='id title'>title</span>
-  <span class='ivar'>@files</span>    <span class='op'>=</span> <span class='id metadata'>metadata</span><span class='period'>.</span><span class='id loadpath'>loadpath</span> <span class='op'>+</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>bin</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span> <span class='comment'># DEFAULT_FILES
-</span>  <span class='ivar'>@topfiles</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>[A-Z]*</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span>
+<span class='def def kw'>def</span> <span class='initialize_defaults identifier id'>initialize_defaults</span>
+  <span class='@title ivar id'>@title</span>    <span class='assign token'>=</span> <span class='metadata identifier id'>metadata</span><span class='dot token'>.</span><span class='title identifier id'>title</span>
+  <span class='@files ivar id'>@files</span>    <span class='assign token'>=</span> <span class='metadata identifier id'>metadata</span><span class='dot token'>.</span><span class='loadpath identifier id'>loadpath</span> <span class='plus op'>+</span> <span class='lbrack token'>[</span><span class='string val'>'bin'</span><span class='rbrack token'>]</span> <span class='comment val'># DEFAULT_FILES</span>
+  <span class='@topfiles ivar id'>@topfiles</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='string val'>'[A-Z]*'</span><span class='rbrack token'>]</span>
 
-  <span class='ivar'>@output</span>   <span class='op'>=</span> <span class='const'>Dir</span><span class='lbracket'>[</span><span class='const'>DEFAULT_OUTPUT_MATCH</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id first'>first</span> <span class='op'>||</span> <span class='const'>DEFAULT_OUTPUT</span>
-  <span class='ivar'>@readme</span>   <span class='op'>=</span> <span class='const'>DEFAULT_README</span>
-  <span class='ivar'>@extra</span>    <span class='op'>=</span> <span class='const'>DEFAULT_EXTRA</span>
-  <span class='ivar'>@template</span> <span class='op'>=</span> <span class='const'>ENV</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>YARD_TEMPLATE</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='const'>DEFAULT_TEMPLATE</span>
-<span class='kw'>end</span></pre>
+  <span class='@output ivar id'>@output</span>   <span class='assign token'>=</span> <span class='Dir constant id'>Dir</span><span class='lbrack token'>[</span><span class='DEFAULT_OUTPUT_MATCH constant id'>DEFAULT_OUTPUT_MATCH</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='first identifier id'>first</span> <span class='orop op'>||</span> <span class='DEFAULT_OUTPUT constant id'>DEFAULT_OUTPUT</span>
+  <span class='@readme ivar id'>@readme</span>   <span class='assign token'>=</span> <span class='DEFAULT_README constant id'>DEFAULT_README</span>
+  <span class='@extra ivar id'>@extra</span>    <span class='assign token'>=</span> <span class='DEFAULT_EXTRA constant id'>DEFAULT_EXTRA</span>
+  <span class='@template ivar id'>@template</span> <span class='assign token'>=</span> <span class='ENV constant id'>ENV</span><span class='lbrack token'>[</span><span class='string val'>'YARD_TEMPLATE'</span><span class='rbrack token'>]</span> <span class='orop op'>||</span> <span class='DEFAULT_TEMPLATE constant id'>DEFAULT_TEMPLATE</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1363,9 +1312,8 @@ command&#8217;s option, with two exceptions: <tt>inline</tt> for
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Require yard library.
-</p>
+    
+<p>Require yard library.</p>
 
 
   </div>
@@ -1385,9 +1333,10 @@ Require yard library.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/yard.rb', line 201</span>
 
-<span class='kw'>def</span> <span class='id initialize_requires'>initialize_requires</span>
-  <span class='id require'>require</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>yard</span><span class='tstring_end'>'</span></span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='initialize_requires identifier id'>initialize_requires</span>
+  <span class='require identifier id'>require</span> <span class='string val'>'yard'</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1402,9 +1351,8 @@ Require yard library.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Remove yardoc output directory.
-</p>
+    
+<p>Remove yardoc output directory.</p>
 
 
   </div>
@@ -1427,12 +1375,13 @@ Remove yardoc output directory.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/yard.rb', line 170</span>
 
-<span class='kw'>def</span> <span class='id purge'>purge</span>
-  <span class='kw'>if</span> <span class='id directory?'>directory?</span><span class='lparen'>(</span><span class='id output'>output</span><span class='rparen'>)</span>
-    <span class='id rm_r'>rm_r</span><span class='lparen'>(</span><span class='id output'>output</span><span class='rparen'>)</span>
-    <span class='id status'>status</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Removed </span><span class='embexpr_beg'>#{</span><span class='id output'>output</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id trial?'>trial?</span>
-  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='purge identifier id'>purge</span>
+  <span class='if if kw'>if</span> <span class='directory? fid id'>directory?</span><span class='lparen token'>(</span><span class='output identifier id'>output</span><span class='rparen token'>)</span>
+    <span class='rm_r identifier id'>rm_r</span><span class='lparen token'>(</span><span class='output identifier id'>output</span><span class='rparen token'>)</span>
+    <span class='status identifier id'>status</span> <span class='dstring node'>&quot;Removed #{output}&quot;</span> <span class='unless unless_mod kw'>unless</span> <span class='trial? fid id'>trial?</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1447,9 +1396,8 @@ Remove yardoc output directory.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Mark the output directory as out of date.
-</p>
+    
+<p>Mark the output directory as out of date.</p>
 
 
   </div>
@@ -1472,12 +1420,13 @@ Mark the output directory as out of date.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/yard.rb', line 158</span>
 
-<span class='kw'>def</span> <span class='id reset'>reset</span>
-  <span class='kw'>if</span> <span class='id directory?'>directory?</span><span class='lparen'>(</span><span class='id output'>output</span><span class='rparen'>)</span>
-    <span class='id utime'>utime</span><span class='lparen'>(</span><span class='int'>0</span><span class='comma'>,</span> <span class='int'>0</span><span class='comma'>,</span> <span class='id output'>output</span><span class='rparen'>)</span>
-    <span class='id report'>report</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Reset </span><span class='embexpr_beg'>#{</span><span class='id output'>output</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span> <span class='comment'>#unless trial?
-</span>  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='reset identifier id'>reset</span>
+  <span class='if if kw'>if</span> <span class='directory? fid id'>directory?</span><span class='lparen token'>(</span><span class='output identifier id'>output</span><span class='rparen token'>)</span>
+    <span class='utime identifier id'>utime</span><span class='lparen token'>(</span><span class='integer val'>0</span><span class='comma token'>,</span> <span class='integer val'>0</span><span class='comma token'>,</span> <span class='output identifier id'>output</span><span class='rparen token'>)</span>
+    <span class='report identifier id'>report</span> <span class='dstring node'>&quot;Reset #{output}&quot;</span> <span class='comment val'>#unless trial?</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1492,9 +1441,8 @@ Mark the output directory as out of date.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Generate yardocs for input targets.
-</p>
+    
+<p>Generate yardocs for input targets.</p>
 
 
   </div>
@@ -1530,25 +1478,26 @@ Generate yardocs for input targets.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/yard.rb', line 180</span>
 
-<span class='kw'>def</span> <span class='id yard_target'>yard_target</span><span class='lparen'>(</span><span class='id output'>output</span><span class='comma'>,</span> <span class='id argv'>argv</span><span class='op'>=</span><span class='lbracket'>[</span><span class='rbracket'>]</span><span class='rparen'>)</span>
-  <span class='comment'># remove old yardocs
-</span>  <span class='comment'>#rm_r(output) if exist?(output) and safe?(output)
-</span>  <span class='comment'>#options['output-dir'] = output
-</span>  <span class='comment'>#args = &quot;#{extra} &quot; + [input, options].to_console
-</span>  <span class='comment'>#argv = args.split(/\s+/)
-</span>
-  <span class='id args'>args</span> <span class='op'>=</span> <span class='id argv'>argv</span><span class='period'>.</span><span class='id join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'> </span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
-  <span class='id cmd'>cmd</span>  <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>yardoc </span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id args'>args</span>
+<span class='def def kw'>def</span> <span class='yard_target identifier id'>yard_target</span><span class='lparen token'>(</span><span class='output identifier id'>output</span><span class='comma token'>,</span> <span class='argv identifier id'>argv</span><span class='assign token'>=</span><span class='lbrack token'>[</span><span class='rbrack token'>]</span><span class='rparen token'>)</span>
+  <span class='comment val'># remove old yardocs</span>
+  <span class='comment val'>#rm_r(output) if exist?(output) and safe?(output)</span>
+  <span class='comment val'>#options['output-dir'] = output</span>
+  <span class='comment val'>#args = &quot;#{extra} &quot; + [input, options].to_console</span>
+  <span class='comment val'>#argv = args.split(/\s+/)</span>
 
-  <span class='kw'>if</span> <span class='id trial?'>trial?</span>
-    <span class='id puts'>puts</span> <span class='id cmd'>cmd</span>
-  <span class='kw'>else</span>
-    <span class='kw'>if</span> <span class='id verbose?'>verbose?</span>
-      <span class='id puts'>puts</span> <span class='id cmd'>cmd</span>
-    <span class='kw'>end</span>
-    <span class='const'>YARD</span><span class='op'>::</span><span class='const'>CLI</span><span class='op'>::</span><span class='const'>Yardoc</span><span class='period'>.</span><span class='id run'>run</span><span class='lparen'>(</span><span class='op'>*</span><span class='id argv'>argv</span><span class='rparen'>)</span>
-  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+  <span class='args identifier id'>args</span> <span class='assign token'>=</span> <span class='argv identifier id'>argv</span><span class='dot token'>.</span><span class='join identifier id'>join</span><span class='lparen token'>(</span><span class='string val'>' '</span><span class='rparen token'>)</span>
+  <span class='cmd identifier id'>cmd</span>  <span class='assign token'>=</span> <span class='string val'>&quot;yardoc &quot;</span> <span class='plus op'>+</span> <span class='args identifier id'>args</span>
+
+  <span class='if if kw'>if</span> <span class='trial? fid id'>trial?</span>
+    <span class='puts identifier id'>puts</span> <span class='cmd identifier id'>cmd</span>
+  <span class='else else kw'>else</span>
+    <span class='if if kw'>if</span> <span class='verbose? fid id'>verbose?</span>
+      <span class='puts identifier id'>puts</span> <span class='cmd identifier id'>cmd</span>
+    <span class='end end kw'>end</span>
+    <span class='YARD constant id'>YARD</span><span class='colon2 op'>::</span><span class='CLI constant id'>CLI</span><span class='colon2 op'>::</span><span class='Yardoc constant id'>Yardoc</span><span class='dot token'>.</span><span class='run identifier id'>run</span><span class='lparen token'>(</span><span class='mult op'>*</span><span class='argv identifier id'>argv</span><span class='rparen token'>)</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1559,9 +1508,9 @@ Generate yardocs for input targets.
 </div>
     
     <div id="footer">
-  Generated on Sun May 29 22:49:06 2011 by 
+  Generated on Sun May 29 23:02:19 2011 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.7.1 (ruby-1.9.2).
+  0.6.7 (ruby-1.8.7).
 </div>
 
   </body>

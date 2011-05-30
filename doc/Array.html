@@ -2,27 +2,17 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>
-  Class: Array
-  
-    &mdash; Redtools
-  
-</title>
-
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
-
-  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>Class: Array</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
   relpath = '';
   if (relpath != '') relpath += '/';
 </script>
-
-  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
-
-  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
-
+<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
 
   </head>
   <body>
@@ -43,14 +33,11 @@
 </div>
 
       <div id="search">
-  
-    <a id="class_list_link" href="#">Class List</a>
-  
-    <a id="method_list_link" href="#">Method List</a>
-  
-    <a id="file_list_link" href="#">File List</a>
-  
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
 </div>
+
       <div class="clear"></div>
     </div>
     
@@ -93,19 +80,6 @@
   
 </dl>
 <div class="clear"></div>
-
-<h2>Overview</h2><div class="docstring">
-  <div class="discussion">
-    <p>
-:nodoc:
-</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-</div>
 
 
 
@@ -157,9 +131,8 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Convert an array into commandline parameters.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Convert an array into commandline parameters.</p>
 </div></span>
   
 </li>
@@ -217,11 +190,12 @@ Convert an array into commandline parameters.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/core_ext/to_console.rb', line 21</span>
 
-<span class='kw'>def</span> <span class='id to_argv'>to_argv</span>
-  <span class='id flags'>flags</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='const'>Hash</span><span class='op'>===</span><span class='id last'>last</span> <span class='op'>?</span> <span class='id pop'>pop</span> <span class='op'>:</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
-  <span class='id flags'>flags</span> <span class='op'>=</span> <span class='id flags'>flags</span><span class='period'>.</span><span class='id to_argv'>to_argv</span>
-  <span class='id flags'>flags</span> <span class='op'>+</span> <span class='kw'>self</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='to_argv identifier id'>to_argv</span>
+  <span class='flags identifier id'>flags</span> <span class='assign token'>=</span> <span class='lparen token'>(</span><span class='Hash constant id'>Hash</span><span class='eqq op'>===</span><span class='last identifier id'>last</span> <span class='integer val'>? </span><span class='pop identifier id'>pop</span> <span class='colon op'>:</span> <span class='lbrace token'>{</span><span class='rbrace token'>}</span><span class='rparen token'>)</span>
+  <span class='flags identifier id'>flags</span> <span class='assign token'>=</span> <span class='flags identifier id'>flags</span><span class='dot token'>.</span><span class='to_argv identifier id'>to_argv</span>
+  <span class='flags identifier id'>flags</span> <span class='plus op'>+</span> <span class='self self kw'>self</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -240,10 +214,9 @@ Convert an array into commandline parameters.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Convert an array into commandline parameters. The array is accepted in the
-format of Ruby method arguments --ie. [arg1, arg2, &#8230;, hash]
-</p>
+    
+<p>Convert an array into commandline parameters. The array is accepted in the
+format of Ruby method arguments –ie. [arg1, arg2, …, hash]</p>
 
 
   </div>
@@ -266,12 +239,13 @@ format of Ruby method arguments --ie. [arg1, arg2, &#8230;, hash]
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/core_ext/to_console.rb', line 10</span>
 
-<span class='kw'>def</span> <span class='id to_console'>to_console</span>
-  <span class='comment'>#flags = (Hash===last ? pop : {})
-</span>  <span class='comment'>#flags = flags.to_console
-</span>  <span class='comment'>#flags + ' ' + join(&quot; &quot;)
-</span>  <span class='id to_argv'>to_argv</span><span class='period'>.</span><span class='id join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'> </span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='to_console identifier id'>to_console</span>
+  <span class='comment val'>#flags = (Hash===last ? pop : {})</span>
+  <span class='comment val'>#flags = flags.to_console</span>
+  <span class='comment val'>#flags + ' ' + join(&quot; &quot;)</span>
+  <span class='to_argv identifier id'>to_argv</span><span class='dot token'>.</span><span class='join identifier id'>join</span><span class='lparen token'>(</span><span class='string val'>' '</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -297,9 +271,10 @@ format of Ruby method arguments --ie. [arg1, arg2, &#8230;, hash]
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/core_ext/to_list.rb', line 3</span>
 
-<span class='kw'>def</span> <span class='id to_list'>to_list</span>
-  <span class='kw'>self</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='to_list identifier id'>to_list</span>
+  <span class='self self kw'>self</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -310,9 +285,9 @@ format of Ruby method arguments --ie. [arg1, arg2, &#8230;, hash]
 </div>
     
     <div id="footer">
-  Generated on Sun May 29 22:49:08 2011 by 
+  Generated on Sun May 29 23:02:17 2011 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.7.1 (ruby-1.9.2).
+  0.6.7 (ruby-1.8.7).
 </div>
 
   </body>

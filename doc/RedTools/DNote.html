@@ -2,27 +2,17 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>
-  Class: RedTools::DNote
-  
-    &mdash; Redtools
-  
-</title>
-
-  <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
-
-  <link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>Class: RedTools::DNote</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
   relpath = '..';
   if (relpath != '') relpath += '/';
 </script>
-
-  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
-
-  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
-
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
 
   </head>
   <body>
@@ -43,14 +33,11 @@
 </div>
 
       <div id="search">
-  
-    <a id="class_list_link" href="#">Class List</a>
-  
-    <a id="method_list_link" href="#">Method List</a>
-  
-    <a id="file_list_link" href="#">File List</a>
-  
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
 </div>
+
       <div class="clear"></div>
     </div>
     
@@ -96,20 +83,16 @@
 
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
-    <p>
-The Developmer&#8217;s Notes tool goes through you source files and
-compiles a list of any labeled comments. Labels are single word prefixes to
-a comment ending in a colon. For example, you might note somewhere in your
-code:
-</p>
-<p>
-By default this label supports the TODO, FIXME, OPTIMIZE and DEPRECATE.
-</p>
-<p>
-Output is a set of files in HTML, XML and RDoc&#8217;s simple markup
-format. This plugin can run automatically if there is a <tt>notes/</tt>
-directory in the project&#8217;s log directory.
-</p>
+    
+<p>The Developmer’s Notes tool goes through you source files and compiles a
+list of any labeled comments. Labels are single word prefixes to a comment
+ending in a colon. For example, you might note somewhere in your code:</p>
+
+<p>By default this label supports the TODO, FIXME, OPTIMIZE and DEPRECATE.</p>
+
+<p>Output is a set of files in HTML, XML and RDoc’s simple markup format.
+This plugin can run automatically if there is a <tt>notes/</tt> directory
+in the project’s log directory.</p>
 
 
   </div>
@@ -124,9 +107,8 @@ directory in the project&#8217;s log directory.
         <dt id="DEFAULT_LABELS-constant" class="">DEFAULT_LABELS =
           <div class="docstring">
   <div class="discussion">
-    <p>
-Default note labels to looked for in source code.
-</p>
+    
+<p>Default note labels to looked for in source code.</p>
 
 
   </div>
@@ -135,7 +117,8 @@ Default note labels to looked for in source code.
   
 </div>
         </dt>
-        <dd><pre class="code"><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>TODO</span><span class='tstring_end'>'</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>FIXME</span><span class='tstring_end'>'</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>OPTIMIZE</span><span class='tstring_end'>'</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>DEPRECATE</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span></pre></dd>
+        <dd><pre class="code"><span class='lbrack token'>[</span><span class='string val'>'TODO'</span><span class='comma token'>,</span> <span class='string val'>'FIXME'</span><span class='comma token'>,</span> <span class='string val'>'OPTIMIZE'</span><span class='comma token'>,</span> <span class='string val'>'DEPRECATE'</span><span class='rbrack token'>]</span>
+</pre></dd>
       
     </dl>
   
@@ -179,9 +162,8 @@ Default note labels to looked for in source code.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Exclude paths.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Exclude paths.</p>
 </div></span>
   
 </li>
@@ -206,9 +188,8 @@ Exclude paths.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-File paths to search.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>File paths to search.</p>
 </div></span>
   
 </li>
@@ -233,9 +214,8 @@ File paths to search.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Formats (xml, html, rdoc).
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Formats (xml, html, rdoc).</p>
 </div></span>
   
 </li>
@@ -260,9 +240,8 @@ Formats (xml, html, rdoc).
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Ignore paths based on any part of pathname.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Ignore paths based on any part of pathname.</p>
 </div></span>
   
 </li>
@@ -287,9 +266,8 @@ Ignore paths based on any part of pathname.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Labels to document.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Labels to document.</p>
 </div></span>
   
 </li>
@@ -314,9 +292,8 @@ Labels to document.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Number of context lines to display.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Number of context lines to display.</p>
 </div></span>
   
 </li>
@@ -341,9 +318,8 @@ Number of context lines to display.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Output directory to save notes file.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Output directory to save notes file.</p>
 </div></span>
   
 </li>
@@ -368,34 +344,14 @@ Output directory to save notes file.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Title to use if temaplte can use it.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Title to use if temaplte can use it.</p>
 </div></span>
   
 </li>
 
     
   </ul>
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <h3 class="inherited">Attributes included from <span class='object_link'><a href="ShellUtils.html" title="RedTools::ShellUtils (module)">ShellUtils</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="ShellUtils.html#debug%3D-instance_method" title="RedTools::ShellUtils#debug= (method)">debug</a></span>, <span class='object_link'><a href="ShellUtils.html#force%3D-instance_method" title="RedTools::ShellUtils#force= (method)">force</a></span>, <span class='object_link'><a href="ShellUtils.html#quiet%3D-instance_method" title="RedTools::ShellUtils#quiet= (method)">quiet</a></span>, <span class='object_link'><a href="ShellUtils.html#stderr-instance_method" title="RedTools::ShellUtils#stderr (method)">stderr</a></span>, <span class='object_link'><a href="ShellUtils.html#stdin-instance_method" title="RedTools::ShellUtils#stdin (method)">stdin</a></span>, <span class='object_link'><a href="ShellUtils.html#stdout-instance_method" title="RedTools::ShellUtils#stdout (method)">stdout</a></span>, <span class='object_link'><a href="ShellUtils.html#trace-instance_method" title="RedTools::ShellUtils#trace (method)">trace</a></span>, <span class='object_link'><a href="ShellUtils.html#trial%3D-instance_method" title="RedTools::ShellUtils#trial= (method)">trial</a></span>, <span class='object_link'><a href="ShellUtils.html#verbose%3D-instance_method" title="RedTools::ShellUtils#verbose= (method)">verbose</a></span></p>
 
 
   
@@ -422,9 +378,8 @@ Title to use if temaplte can use it.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Generate notes documents.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Generate notes documents.</p>
 </div></span>
   
 </li>
@@ -488,9 +443,8 @@ Generate notes documents.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Remove output files.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Remove output files.</p>
 </div></span>
   
 </li>
@@ -512,9 +466,8 @@ Remove output files.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Reset output directory, marking it as out-of-date.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Reset output directory, marking it as out-of-date.</p>
 </div></span>
   
 </li>
@@ -585,9 +538,8 @@ Reset output directory, marking it as out-of-date.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Exclude paths.
-</p>
+    
+<p>Exclude paths.</p>
 
 
   </div>
@@ -607,9 +559,10 @@ Exclude paths.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/dnote.rb', line 43</span>
 
-<span class='kw'>def</span> <span class='id exclude'>exclude</span>
-  <span class='ivar'>@exclude</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='exclude identifier id'>exclude</span>
+  <span class='@exclude ivar id'>@exclude</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -627,9 +580,8 @@ Exclude paths.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-File paths to search.
-</p>
+    
+<p>File paths to search.</p>
 
 
   </div>
@@ -649,9 +601,10 @@ File paths to search.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/dnote.rb', line 37</span>
 
-<span class='kw'>def</span> <span class='id files'>files</span>
-  <span class='ivar'>@files</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='files identifier id'>files</span>
+  <span class='@files ivar id'>@files</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -669,9 +622,8 @@ File paths to search.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Formats (xml, html, rdoc).
-</p>
+    
+<p>Formats (xml, html, rdoc).</p>
 
 
   </div>
@@ -691,9 +643,10 @@ Formats (xml, html, rdoc).
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/dnote.rb', line 53</span>
 
-<span class='kw'>def</span> <span class='id formats'>formats</span>
-  <span class='ivar'>@formats</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='formats identifier id'>formats</span>
+  <span class='@formats ivar id'>@formats</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -711,9 +664,8 @@ Formats (xml, html, rdoc).
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Ignore paths based on any part of pathname.
-</p>
+    
+<p>Ignore paths based on any part of pathname.</p>
 
 
   </div>
@@ -733,9 +685,10 @@ Ignore paths based on any part of pathname.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/dnote.rb', line 46</span>
 
-<span class='kw'>def</span> <span class='id ignore'>ignore</span>
-  <span class='ivar'>@ignore</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='ignore identifier id'>ignore</span>
+  <span class='@ignore ivar id'>@ignore</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -753,9 +706,8 @@ Ignore paths based on any part of pathname.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Labels to document. Defaults are: TODO, FIXME, OPTIMIZE and DEPRECATE.
-</p>
+    
+<p>Labels to document. Defaults are: TODO, FIXME, OPTIMIZE and DEPRECATE.</p>
 
 
   </div>
@@ -775,9 +727,10 @@ Labels to document. Defaults are: TODO, FIXME, OPTIMIZE and DEPRECATE.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/dnote.rb', line 40</span>
 
-<span class='kw'>def</span> <span class='id labels'>labels</span>
-  <span class='ivar'>@labels</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='labels identifier id'>labels</span>
+  <span class='@labels ivar id'>@labels</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -795,9 +748,8 @@ Labels to document. Defaults are: TODO, FIXME, OPTIMIZE and DEPRECATE.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Number of context lines to display.
-</p>
+    
+<p>Number of context lines to display.</p>
 
 
   </div>
@@ -817,9 +769,10 @@ Number of context lines to display.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/dnote.rb', line 59</span>
 
-<span class='kw'>def</span> <span class='id lines'>lines</span>
-  <span class='ivar'>@lines</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='lines identifier id'>lines</span>
+  <span class='@lines ivar id'>@lines</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -837,10 +790,9 @@ Number of context lines to display.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Output directory to save notes file. Defaults to <tt>dnote/</tt> under the
-project log directory (eg. <tt>log/dnote/</tt>).
-</p>
+    
+<p>Output directory to save notes file. Defaults to <tt>dnote/</tt> under the
+project log directory (eg. <tt>log/dnote/</tt>).</p>
 
 
   </div>
@@ -860,9 +812,10 @@ project log directory (eg. <tt>log/dnote/</tt>).
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/dnote.rb', line 50</span>
 
-<span class='kw'>def</span> <span class='id output'>output</span>
-  <span class='ivar'>@output</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='output identifier id'>output</span>
+  <span class='@output ivar id'>@output</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -880,9 +833,8 @@ project log directory (eg. <tt>log/dnote/</tt>).
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Title to use if temaplte can use it.
-</p>
+    
+<p>Title to use if temaplte can use it.</p>
 
 
   </div>
@@ -902,9 +854,10 @@ Title to use if temaplte can use it.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/dnote.rb', line 56</span>
 
-<span class='kw'>def</span> <span class='id title'>title</span>
-  <span class='ivar'>@title</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='title identifier id'>title</span>
+  <span class='@title ivar id'>@title</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -926,9 +879,8 @@ Title to use if temaplte can use it.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Generate notes documents. &#8212; TODO: Is #trial? correct? ++
-</p>
+    
+<p>Generate notes documents. – TODO: Is #trial? correct? ++</p>
 
 
   </div>
@@ -982,43 +934,44 @@ Generate notes documents. &#8212; TODO: Is #trial? correct? ++
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/dnote.rb', line 75</span>
 
-<span class='kw'>def</span> <span class='id document'>document</span>
-  <span class='id mkdir_p'>mkdir_p</span><span class='lparen'>(</span><span class='id output'>output</span><span class='rparen'>)</span>
+<span class='def def kw'>def</span> <span class='document identifier id'>document</span>
+  <span class='mkdir_p identifier id'>mkdir_p</span><span class='lparen token'>(</span><span class='output identifier id'>output</span><span class='rparen token'>)</span>
 
-  <span class='id session'>session</span> <span class='op'>=</span> <span class='op'>::</span><span class='const'>DNote</span><span class='op'>::</span><span class='const'>Session</span><span class='period'>.</span><span class='id new'>new</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id s'>s</span><span class='op'>|</span>
-    <span class='id s'>s</span><span class='period'>.</span><span class='id paths'>paths</span>   <span class='op'>=</span> <span class='id files'>files</span>
-    <span class='id s'>s</span><span class='period'>.</span><span class='id exclude'>exclude</span> <span class='op'>=</span> <span class='id exclude'>exclude</span>
-    <span class='id s'>s</span><span class='period'>.</span><span class='id ignore'>ignore</span>  <span class='op'>=</span> <span class='id ignore'>ignore</span>
-    <span class='id s'>s</span><span class='period'>.</span><span class='id labels'>labels</span>  <span class='op'>=</span> <span class='id labels'>labels</span> <span class='comment'>#|| DEFAULT_LABELS   
-</span>    <span class='id s'>s</span><span class='period'>.</span><span class='id title'>title</span>   <span class='op'>=</span> <span class='id title'>title</span>
-    <span class='id s'>s</span><span class='period'>.</span><span class='id context'>context</span> <span class='op'>=</span> <span class='id lines'>lines</span>
-    <span class='id s'>s</span><span class='period'>.</span><span class='id output'>output</span>  <span class='op'>=</span> <span class='id output'>output</span>
-    <span class='id s'>s</span><span class='period'>.</span><span class='id dryrun'>dryrun</span>  <span class='op'>=</span> <span class='id trial?'>trial?</span>
-  <span class='kw'>end</span>
+  <span class='session identifier id'>session</span> <span class='assign token'>=</span> <span class='colon3 op'>::</span><span class='DNote constant id'>DNote</span><span class='colon2 op'>::</span><span class='Session constant id'>Session</span><span class='dot token'>.</span><span class='new identifier id'>new</span> <span class='do do kw'>do</span> <span class='bitor op'>|</span><span class='s identifier id'>s</span><span class='bitor op'>|</span>
+    <span class='s identifier id'>s</span><span class='dot token'>.</span><span class='paths identifier id'>paths</span>   <span class='assign token'>=</span> <span class='files identifier id'>files</span>
+    <span class='s identifier id'>s</span><span class='dot token'>.</span><span class='exclude identifier id'>exclude</span> <span class='assign token'>=</span> <span class='exclude identifier id'>exclude</span>
+    <span class='s identifier id'>s</span><span class='dot token'>.</span><span class='ignore identifier id'>ignore</span>  <span class='assign token'>=</span> <span class='ignore identifier id'>ignore</span>
+    <span class='s identifier id'>s</span><span class='dot token'>.</span><span class='labels identifier id'>labels</span>  <span class='assign token'>=</span> <span class='labels identifier id'>labels</span> <span class='comment val'>#|| DEFAULT_LABELS   </span>
+    <span class='s identifier id'>s</span><span class='dot token'>.</span><span class='title identifier id'>title</span>   <span class='assign token'>=</span> <span class='title identifier id'>title</span>
+    <span class='s identifier id'>s</span><span class='dot token'>.</span><span class='context identifier id'>context</span> <span class='assign token'>=</span> <span class='lines identifier id'>lines</span>
+    <span class='s identifier id'>s</span><span class='dot token'>.</span><span class='output identifier id'>output</span>  <span class='assign token'>=</span> <span class='output identifier id'>output</span>
+    <span class='s identifier id'>s</span><span class='dot token'>.</span><span class='dryrun identifier id'>dryrun</span>  <span class='assign token'>=</span> <span class='trial? fid id'>trial?</span>
+  <span class='end end kw'>end</span>
 
-  <span class='id formats'>formats</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id format'>format</span><span class='op'>|</span>
-    <span class='kw'>if</span> <span class='id format'>format</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>index</span><span class='tstring_end'>'</span></span>
-      <span class='id session'>session</span><span class='period'>.</span><span class='id format'>format</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>html</span><span class='tstring_end'>'</span></span>
-      <span class='id session'>session</span><span class='period'>.</span><span class='id output'>output</span> <span class='op'>=</span> <span class='const'>File</span><span class='period'>.</span><span class='id join'>join</span><span class='lparen'>(</span><span class='kw'>self</span><span class='period'>.</span><span class='id output'>output</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>index.html</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
-    <span class='kw'>else</span>
-      <span class='id session'>session</span><span class='period'>.</span><span class='id format'>format</span> <span class='op'>=</span> <span class='id format'>format</span>
-    <span class='kw'>end</span>
-    <span class='id session'>session</span><span class='period'>.</span><span class='id run'>run</span>
-    <span class='id report'>report</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Updated </span><span class='embexpr_beg'>#{</span><span class='id output'>output</span><span class='period'>.</span><span class='id to_s'>to_s</span><span class='period'>.</span><span class='id sub'>sub</span><span class='lparen'>(</span><span class='const'>Dir</span><span class='period'>.</span><span class='id pwd'>pwd</span><span class='op'>+</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>/</span><span class='tstring_end'>'</span></span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id trial?'>trial?</span>
-  <span class='kw'>end</span>
+  <span class='formats identifier id'>formats</span><span class='dot token'>.</span><span class='each identifier id'>each</span> <span class='do do kw'>do</span> <span class='bitor op'>|</span><span class='format identifier id'>format</span><span class='bitor op'>|</span>
+    <span class='if if kw'>if</span> <span class='format identifier id'>format</span> <span class='eq op'>==</span> <span class='string val'>'index'</span>
+      <span class='session identifier id'>session</span><span class='dot token'>.</span><span class='format identifier id'>format</span> <span class='assign token'>=</span> <span class='string val'>'html'</span>
+      <span class='session identifier id'>session</span><span class='dot token'>.</span><span class='output identifier id'>output</span> <span class='assign token'>=</span> <span class='File constant id'>File</span><span class='dot token'>.</span><span class='join identifier id'>join</span><span class='lparen token'>(</span><span class='self self kw'>self</span><span class='dot token'>.</span><span class='output identifier id'>output</span><span class='comma token'>,</span> <span class='string val'>'index.html'</span><span class='rparen token'>)</span>
+    <span class='else else kw'>else</span>
+      <span class='session identifier id'>session</span><span class='dot token'>.</span><span class='format identifier id'>format</span> <span class='assign token'>=</span> <span class='format identifier id'>format</span>
+    <span class='end end kw'>end</span>
+    <span class='session identifier id'>session</span><span class='dot token'>.</span><span class='run identifier id'>run</span>
+    <span class='report identifier id'>report</span> <span class='dstring node'>&quot;Updated #{output.to_s.sub(Dir.pwd+'/','')}&quot;</span> <span class='unless unless_mod kw'>unless</span> <span class='trial? fid id'>trial?</span>
+  <span class='end end kw'>end</span>
 
-  <span class='comment'>#files = files.map{ |f| Dir[f] }.flatten
-</span>  <span class='comment'>#notes = ::DNote::Notes.new(files, :labels=&gt;labels)
-</span>  <span class='comment'>#[formats].flatten.each do |format|
-</span>  <span class='comment'>#  if format == 'index'
-</span>  <span class='comment'>#    format = 'html'
-</span>  <span class='comment'>#    output = File.join(self.output, 'index.html')
-</span>  <span class='comment'>#  end
-</span>  <span class='comment'>#  format = ::DNote::Format.new(notes, :format=&gt;format, :output=&gt;output.to_s, :title=&gt;title, :dryrun=&gt;trial?)
-</span>  <span class='comment'>#  format.render
-</span>  <span class='comment'>#  report &quot;Updated #{output.to_s.sub(Dir.pwd+'/','')}&quot; unless trial?
-</span>  <span class='comment'>#end
-</span><span class='kw'>end</span></pre>
+  <span class='comment val'>#files = files.map{ |f| Dir[f] }.flatten</span>
+  <span class='comment val'>#notes = ::DNote::Notes.new(files, :labels=&gt;labels)</span>
+  <span class='comment val'>#[formats].flatten.each do |format|</span>
+  <span class='comment val'>#  if format == 'index'</span>
+  <span class='comment val'>#    format = 'html'</span>
+  <span class='comment val'>#    output = File.join(self.output, 'index.html')</span>
+  <span class='comment val'>#  end</span>
+  <span class='comment val'>#  format = ::DNote::Format.new(notes, :format=&gt;format, :output=&gt;output.to_s, :title=&gt;title, :dryrun=&gt;trial?)</span>
+  <span class='comment val'>#  format.render</span>
+  <span class='comment val'>#  report &quot;Updated #{output.to_s.sub(Dir.pwd+'/','')}&quot; unless trial?</span>
+  <span class='comment val'>#end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1047,12 +1000,13 @@ Generate notes documents. &#8212; TODO: Is #trial? correct? ++
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/dnote.rb', line 149</span>
 
-<span class='kw'>def</span> <span class='id initialize_defaults'>initialize_defaults</span>
-  <span class='ivar'>@files</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>**/*.rb</span><span class='tstring_end'>&quot;</span></span>
-  <span class='ivar'>@output</span>  <span class='op'>=</span> <span class='id project'>project</span><span class='period'>.</span><span class='id log'>log</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>dnote</span><span class='tstring_end'>'</span></span>
-  <span class='ivar'>@formats</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>index</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span>
-  <span class='ivar'>@labels</span>  <span class='op'>=</span> <span class='kw'>nil</span> <span class='comment'>#DEFAULT_LABELS
-</span><span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='initialize_defaults identifier id'>initialize_defaults</span>
+  <span class='@files ivar id'>@files</span>   <span class='assign token'>=</span> <span class='string val'>&quot;**/*.rb&quot;</span>
+  <span class='@output ivar id'>@output</span>  <span class='assign token'>=</span> <span class='project identifier id'>project</span><span class='dot token'>.</span><span class='log identifier id'>log</span> <span class='plus op'>+</span> <span class='string val'>'dnote'</span>
+  <span class='@formats ivar id'>@formats</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='string val'>'index'</span><span class='rbrack token'>]</span>
+  <span class='@labels ivar id'>@labels</span>  <span class='assign token'>=</span> <span class='nil nil kw'>nil</span> <span class='comment val'>#DEFAULT_LABELS</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1079,10 +1033,11 @@ Generate notes documents. &#8212; TODO: Is #trial? correct? ++
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/dnote.rb', line 143</span>
 
-<span class='kw'>def</span> <span class='id initialize_requires'>initialize_requires</span>
-  <span class='id require'>require</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>dnote</span><span class='tstring_end'>'</span></span>
-  <span class='id require'>require</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>dnote/format</span><span class='tstring_end'>'</span></span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='initialize_requires identifier id'>initialize_requires</span>
+  <span class='require identifier id'>require</span> <span class='string val'>'dnote'</span>
+  <span class='require identifier id'>require</span> <span class='string val'>'dnote/format'</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1097,9 +1052,8 @@ Generate notes documents. &#8212; TODO: Is #trial? correct? ++
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Remove output files.
-</p>
+    
+<p>Remove output files.</p>
 
 
   </div>
@@ -1133,23 +1087,24 @@ Remove output files.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/dnote.rb', line 122</span>
 
-<span class='kw'>def</span> <span class='id purge'>purge</span>
-  <span class='kw'>if</span> <span class='const'>File</span><span class='period'>.</span><span class='id directory?'>directory?</span><span class='lparen'>(</span><span class='id output'>output</span><span class='rparen'>)</span>
-    <span class='id rm_r'>rm_r</span><span class='lparen'>(</span><span class='id output'>output</span><span class='rparen'>)</span>
-    <span class='id report'>report</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Removed </span><span class='embexpr_beg'>#{</span><span class='id output'>output</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
-  <span class='kw'>end</span>
+<span class='def def kw'>def</span> <span class='purge identifier id'>purge</span>
+  <span class='if if kw'>if</span> <span class='File constant id'>File</span><span class='dot token'>.</span><span class='directory? fid id'>directory?</span><span class='lparen token'>(</span><span class='output identifier id'>output</span><span class='rparen token'>)</span>
+    <span class='rm_r identifier id'>rm_r</span><span class='lparen token'>(</span><span class='output identifier id'>output</span><span class='rparen token'>)</span>
+    <span class='report identifier id'>report</span> <span class='dstring node'>&quot;Removed #{output}&quot;</span>
+  <span class='end end kw'>end</span>
 
-  <span class='comment'>#if File.directory?(output)
-</span>  <span class='comment'>#  formats.each do |format|
-</span>  <span class='comment'>#    ext = ::DNote::Format::EXTENSIONS[format] || format
-</span>  <span class='comment'>#    file = (output + &quot;notes.#{ext}&quot;).to_s
-</span>  <span class='comment'>#    rm(file) if File.exist?(file)
-</span>  <span class='comment'>#  end
-</span>  <span class='comment'>#  file = (output + &quot;index.html&quot;).to_s
-</span>  <span class='comment'>#  rm(file) if File.exist?(file)
-</span>  <span class='comment'>#  puts &quot;Removed #{output}&quot;
-</span>  <span class='comment'>#end
-</span><span class='kw'>end</span></pre>
+  <span class='comment val'>#if File.directory?(output)</span>
+  <span class='comment val'>#  formats.each do |format|</span>
+  <span class='comment val'>#    ext = ::DNote::Format::EXTENSIONS[format] || format</span>
+  <span class='comment val'>#    file = (output + &quot;notes.#{ext}&quot;).to_s</span>
+  <span class='comment val'>#    rm(file) if File.exist?(file)</span>
+  <span class='comment val'>#  end</span>
+  <span class='comment val'>#  file = (output + &quot;index.html&quot;).to_s</span>
+  <span class='comment val'>#  rm(file) if File.exist?(file)</span>
+  <span class='comment val'>#  puts &quot;Removed #{output}&quot;</span>
+  <span class='comment val'>#end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1164,9 +1119,8 @@ Remove output files.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Reset output directory, marking it as out-of-date.
-</p>
+    
+<p>Reset output directory, marking it as out-of-date.</p>
 
 
   </div>
@@ -1189,12 +1143,13 @@ Reset output directory, marking it as out-of-date.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/dnote.rb', line 114</span>
 
-<span class='kw'>def</span> <span class='id reset'>reset</span>
-  <span class='kw'>if</span> <span class='id directory?'>directory?</span><span class='lparen'>(</span><span class='id output'>output</span><span class='rparen'>)</span>
-    <span class='id utime'>utime</span><span class='lparen'>(</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='id output'>output</span><span class='rparen'>)</span>
-    <span class='id report'>report</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Marked </span><span class='embexpr_beg'>#{</span><span class='id output'>output</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
-  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='reset identifier id'>reset</span>
+  <span class='if if kw'>if</span> <span class='directory? fid id'>directory?</span><span class='lparen token'>(</span><span class='output identifier id'>output</span><span class='rparen token'>)</span>
+    <span class='utime identifier id'>utime</span><span class='lparen token'>(</span><span class='integer val'>0</span><span class='comma token'>,</span><span class='integer val'>0</span><span class='comma token'>,</span><span class='output identifier id'>output</span><span class='rparen token'>)</span>
+    <span class='report identifier id'>report</span> <span class='dstring node'>&quot;Marked #{output}&quot;</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1205,9 +1160,9 @@ Reset output directory, marking it as out-of-date.
 </div>
     
     <div id="footer">
-  Generated on Sun May 29 22:49:07 2011 by 
+  Generated on Sun May 29 23:02:21 2011 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.7.1 (ruby-1.9.2).
+  0.6.7 (ruby-1.8.7).
 </div>
 
   </body>

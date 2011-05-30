@@ -2,27 +2,17 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>
-  Class: RedTools::Testrb
-  
-    &mdash; Redtools
-  
-</title>
-
-  <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
-
-  <link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>Class: RedTools::Testrb</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
   relpath = '..';
   if (relpath != '') relpath += '/';
 </script>
-
-  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
-
-  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
-
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
 
   </head>
   <body>
@@ -43,14 +33,11 @@
 </div>
 
       <div id="search">
-  
-    <a id="class_list_link" href="#">Class List</a>
-  
-    <a id="method_list_link" href="#">Method List</a>
-  
-    <a id="file_list_link" href="#">File List</a>
-  
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
 </div>
+
       <div class="clear"></div>
     </div>
     
@@ -96,12 +83,10 @@
 
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
-    <p>
-The Testrb tool runs your TestUnit or MiniTest tests.
-</p>
-<p>
-TODO: IMPORTANT! How do we retrun test success?
-</p>
+    
+<p>The Testrb tool runs your TestUnit or MiniTest tests.</p>
+
+<p>TODO: IMPORTANT! How do we retrun test success?</p>
 
 
   </div>
@@ -116,9 +101,8 @@ TODO: IMPORTANT! How do we retrun test success?
         <dt id="DEFAULT_TESTS-constant" class="">DEFAULT_TESTS =
           <div class="docstring">
   <div class="discussion">
-    <p>
-Default test file patterns.
-</p>
+    
+<p>Default test file patterns.</p>
 
 
   </div>
@@ -127,14 +111,14 @@ Default test file patterns.
   
 </div>
         </dt>
-        <dd><pre class="code"><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>test/**/test_*.rb</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>test/**/*_test.rb</span><span class='tstring_end'>&quot;</span></span> <span class='rbracket'>]</span></pre></dd>
+        <dd><pre class="code"><span class='lbrack token'>[</span><span class='string val'>&quot;test/**/test_*.rb&quot;</span><span class='comma token'>,</span> <span class='string val'>&quot;test/**/*_test.rb&quot;</span> <span class='rbrack token'>]</span>
+</pre></dd>
       
         <dt id="DEFAULT_LOGFILE-constant" class="">DEFAULT_LOGFILE =
           <div class="docstring">
   <div class="discussion">
-    <p>
-Default log file name.
-</p>
+    
+<p>Default log file name.</p>
 
 
   </div>
@@ -143,7 +127,8 @@ Default log file name.
   
 </div>
         </dt>
-        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>testrb.txt</span><span class='tstring_end'>&quot;</span></span></pre></dd>
+        <dd><pre class="code"><span class='string val'>&quot;testrb.txt&quot;</span>
+</pre></dd>
       
     </dl>
   
@@ -187,9 +172,8 @@ Default log file name.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Test file patterns to specially exclude.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Test file patterns to specially exclude.</p>
 </div></span>
   
 </li>
@@ -214,9 +198,8 @@ Test file patterns to specially exclude.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Test against live install (i.e. Don&#8217;t use loadpath option).
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Test against live install (i.e. Don’t use loadpath option).</p>
 </div></span>
   
 </li>
@@ -241,9 +224,8 @@ Test against live install (i.e. Don&#8217;t use loadpath option).
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Add these folders to the $LOAD_PATH.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Add these folders to the $LOAD_PATH.</p>
 </div></span>
   
 </li>
@@ -268,9 +250,8 @@ Add these folders to the $LOAD_PATH.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Log file or <tt>true</tt> for default log file.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Log file or <tt>true</tt> for default log file.</p>
 </div></span>
   
 </li>
@@ -295,9 +276,8 @@ Log file or <tt>true</tt> for default log file.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Libs to require when running tests.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Libs to require when running tests.</p>
 </div></span>
   
 </li>
@@ -322,9 +302,8 @@ Libs to require when running tests.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Ruby executable, defaults to &#8216;ruby&#8217;.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Ruby executable, defaults to ‘ruby’.</p>
 </div></span>
   
 </li>
@@ -349,34 +328,14 @@ Ruby executable, defaults to &#8216;ruby&#8217;.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-File glob pattern of tests to run.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>File glob pattern of tests to run.</p>
 </div></span>
   
 </li>
 
     
   </ul>
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <h3 class="inherited">Attributes included from <span class='object_link'><a href="ShellUtils.html" title="RedTools::ShellUtils (module)">ShellUtils</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="ShellUtils.html#debug%3D-instance_method" title="RedTools::ShellUtils#debug= (method)">debug</a></span>, <span class='object_link'><a href="ShellUtils.html#force%3D-instance_method" title="RedTools::ShellUtils#force= (method)">force</a></span>, <span class='object_link'><a href="ShellUtils.html#quiet%3D-instance_method" title="RedTools::ShellUtils#quiet= (method)">quiet</a></span>, <span class='object_link'><a href="ShellUtils.html#stderr-instance_method" title="RedTools::ShellUtils#stderr (method)">stderr</a></span>, <span class='object_link'><a href="ShellUtils.html#stdin-instance_method" title="RedTools::ShellUtils#stdin (method)">stdin</a></span>, <span class='object_link'><a href="ShellUtils.html#stdout-instance_method" title="RedTools::ShellUtils#stdout (method)">stdout</a></span>, <span class='object_link'><a href="ShellUtils.html#trace-instance_method" title="RedTools::ShellUtils#trace (method)">trace</a></span>, <span class='object_link'><a href="ShellUtils.html#trial%3D-instance_method" title="RedTools::ShellUtils#trial= (method)">trial</a></span>, <span class='object_link'><a href="ShellUtils.html#verbose%3D-instance_method" title="RedTools::ShellUtils#verbose= (method)">verbose</a></span></p>
 
 
   
@@ -403,9 +362,8 @@ File glob pattern of tests to run.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Setup default attribute values.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Setup default attribute values.</p>
 </div></span>
   
 </li>
@@ -427,9 +385,8 @@ Setup default attribute values.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Returns [String] file name of log file.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Returns [String] file name of log file.</p>
 </div></span>
   
 </li>
@@ -453,9 +410,8 @@ Returns [String] file name of log file.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Run unit tests.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Run unit tests.</p>
 </div></span>
   
 </li>
@@ -477,9 +433,8 @@ Run unit tests.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Run unit tests.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Run unit tests.</p>
 </div></span>
   
 </li>
@@ -550,9 +505,8 @@ Run unit tests.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Test file patterns to specially exclude.
-</p>
+    
+<p>Test file patterns to specially exclude.</p>
 
 
   </div>
@@ -572,9 +526,10 @@ Test file patterns to specially exclude.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/testrb.rb', line 23</span>
 
-<span class='kw'>def</span> <span class='id exclude'>exclude</span>
-  <span class='ivar'>@exclude</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='exclude identifier id'>exclude</span>
+  <span class='@exclude ivar id'>@exclude</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -592,9 +547,8 @@ Test file patterns to specially exclude.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Test against live install (i.e. Don&#8217;t use loadpath option).
-</p>
+    
+<p>Test against live install (i.e. Don’t use loadpath option).</p>
 
 
   </div>
@@ -614,9 +568,10 @@ Test against live install (i.e. Don&#8217;t use loadpath option).
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/testrb.rb', line 35</span>
 
-<span class='kw'>def</span> <span class='id live'>live</span>
-  <span class='ivar'>@live</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='live identifier id'>live</span>
+  <span class='@live ivar id'>@live</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -634,9 +589,8 @@ Test against live install (i.e. Don&#8217;t use loadpath option).
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Add these folders to the $LOAD_PATH.
-</p>
+    
+<p>Add these folders to the $LOAD_PATH.</p>
 
 
   </div>
@@ -656,9 +610,10 @@ Add these folders to the $LOAD_PATH.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/testrb.rb', line 26</span>
 
-<span class='kw'>def</span> <span class='id loadpath'>loadpath</span>
-  <span class='ivar'>@loadpath</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='loadpath identifier id'>loadpath</span>
+  <span class='@loadpath ivar id'>@loadpath</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -676,9 +631,8 @@ Add these folders to the $LOAD_PATH.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Log file or <tt>true</tt> for default log file.
-</p>
+    
+<p>Log file or <tt>true</tt> for default log file.</p>
 
 
   </div>
@@ -698,9 +652,10 @@ Log file or <tt>true</tt> for default log file.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/testrb.rb', line 32</span>
 
-<span class='kw'>def</span> <span class='id log'>log</span>
-  <span class='ivar'>@log</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='log identifier id'>log</span>
+  <span class='@log ivar id'>@log</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -718,9 +673,8 @@ Log file or <tt>true</tt> for default log file.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Libs to require when running tests.
-</p>
+    
+<p>Libs to require when running tests.</p>
 
 
   </div>
@@ -740,9 +694,10 @@ Libs to require when running tests.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/testrb.rb', line 29</span>
 
-<span class='kw'>def</span> <span class='id requires'>requires</span>
-  <span class='ivar'>@requires</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='requires identifier id'>requires</span>
+  <span class='@requires ivar id'>@requires</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -760,9 +715,8 @@ Libs to require when running tests.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Ruby executable, defaults to &#8216;ruby&#8217;.
-</p>
+    
+<p>Ruby executable, defaults to ‘ruby’.</p>
 
 
   </div>
@@ -782,9 +736,10 @@ Ruby executable, defaults to &#8216;ruby&#8217;.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/testrb.rb', line 38</span>
 
-<span class='kw'>def</span> <span class='id ruby'>ruby</span>
-  <span class='ivar'>@ruby</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='ruby identifier id'>ruby</span>
+  <span class='@ruby ivar id'>@ruby</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -802,9 +757,8 @@ Ruby executable, defaults to &#8216;ruby&#8217;.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-File glob pattern of tests to run.
-</p>
+    
+<p>File glob pattern of tests to run.</p>
 
 
   </div>
@@ -824,9 +778,10 @@ File glob pattern of tests to run.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/testrb.rb', line 20</span>
 
-<span class='kw'>def</span> <span class='id tests'>tests</span>
-  <span class='ivar'>@tests</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='tests identifier id'>tests</span>
+  <span class='@tests ivar id'>@tests</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -848,9 +803,8 @@ File glob pattern of tests to run.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Setup default attribute values.
-</p>
+    
+<p>Setup default attribute values.</p>
 
 
   </div>
@@ -875,14 +829,15 @@ Setup default attribute values.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/testrb.rb', line 145</span>
 
-<span class='kw'>def</span> <span class='id initialize_defaults'>initialize_defaults</span>
-  <span class='ivar'>@ruby</span>     <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ruby</span><span class='tstring_end'>&quot;</span></span>
-  <span class='ivar'>@loadpath</span> <span class='op'>=</span> <span class='id metadata'>metadata</span><span class='period'>.</span><span class='id loadpath'>loadpath</span>
-  <span class='ivar'>@tests</span>    <span class='op'>=</span> <span class='const'>DEFAULT_TESTS</span>
-  <span class='ivar'>@exclude</span>  <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
-  <span class='ivar'>@requires</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
-  <span class='ivar'>@live</span>     <span class='op'>=</span> <span class='kw'>false</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='initialize_defaults identifier id'>initialize_defaults</span>
+  <span class='@ruby ivar id'>@ruby</span>     <span class='assign token'>=</span> <span class='string val'>&quot;ruby&quot;</span>
+  <span class='@loadpath ivar id'>@loadpath</span> <span class='assign token'>=</span> <span class='metadata identifier id'>metadata</span><span class='dot token'>.</span><span class='loadpath identifier id'>loadpath</span>
+  <span class='@tests ivar id'>@tests</span>    <span class='assign token'>=</span> <span class='DEFAULT_TESTS constant id'>DEFAULT_TESTS</span>
+  <span class='@exclude ivar id'>@exclude</span>  <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span>
+  <span class='@requires ivar id'>@requires</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span>
+  <span class='@live ivar id'>@live</span>     <span class='assign token'>=</span> <span class='false false kw'>false</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -897,13 +852,11 @@ Setup default attribute values.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Returns [String] file name of log file. &#8212; TODO: Should we use a
-subdirectory for testrb log?
-</p>
-<p>
-TODO: apply_naming_policy(&#8216;test&#8217;, &#8216;log&#8217;) ? ++
-</p>
+    
+<p>Returns [String] file name of log file. – TODO: Should we use a
+subdirectory for testrb log?</p>
+
+<p>TODO: apply_naming_policy(‘test’, ‘log’) ? ++</p>
 
 
   </div>
@@ -928,14 +881,15 @@ TODO: apply_naming_policy(&#8216;test&#8217;, &#8216;log&#8217;) ? ++
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/testrb.rb', line 72</span>
 
-<span class='kw'>def</span> <span class='id logfile'>logfile</span>
-  <span class='kw'>case</span> <span class='id log'>log</span>
-  <span class='kw'>when</span> <span class='const'>String</span>
-    <span class='const'>Pathname</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='id log'>log</span><span class='rparen'>)</span>
-  <span class='kw'>else</span>
-    <span class='id project'>project</span><span class='period'>.</span><span class='id log'>log</span> <span class='op'>+</span> <span class='const'>DEFAULT_LOGFILE</span>
-  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='logfile identifier id'>logfile</span>
+  <span class='case case kw'>case</span> <span class='log identifier id'>log</span>
+  <span class='when when kw'>when</span> <span class='String constant id'>String</span>
+    <span class='Pathname constant id'>Pathname</span><span class='dot token'>.</span><span class='new identifier id'>new</span><span class='lparen token'>(</span><span class='log identifier id'>log</span><span class='rparen token'>)</span>
+  <span class='else else kw'>else</span>
+    <span class='project identifier id'>project</span><span class='dot token'>.</span><span class='log identifier id'>log</span> <span class='plus op'>+</span> <span class='DEFAULT_LOGFILE constant id'>DEFAULT_LOGFILE</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -954,9 +908,8 @@ TODO: apply_naming_policy(&#8216;test&#8217;, &#8216;log&#8217;) ? ++
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Run unit tests.
-</p>
+    
+<p>Run unit tests.</p>
 
 
   </div>
@@ -976,9 +929,10 @@ Run unit tests.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/testrb.rb', line 59</span>
 
-<span class='kw'>def</span> <span class='id run'>run</span>
-  <span class='id run_tests'>run_tests</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='run identifier id'>run</span>
+  <span class='run_tests identifier id'>run_tests</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -993,14 +947,12 @@ Run unit tests.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Run unit tests. Unlike test-solo and test-cross this loads all tests and
-runs them together in a single process.
-</p>
-<p>
-Note that this shells out to <tt>ruby</tt>. &#8212; TODO: Do not use `tee`
-to log. Perhaps popen can help? ++
-</p>
+    
+<p>Run unit tests. Unlike test-solo and test-cross this loads all tests and
+runs them together in a single process.</p>
+
+<p>Note that this shells out to <tt>ruby</tt>. – TODO: Do not use `tee` to
+log. Perhaps popen can help? ++</p>
 
 
   </div>
@@ -1070,59 +1022,60 @@ to log. Perhaps popen can help? ++
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/testrb.rb', line 90</span>
 
-<span class='kw'>def</span> <span class='id run_tests'>run_tests</span>
-  <span class='id tests'>tests</span>    <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id tests'>tests</span>
-  <span class='id loadpath'>loadpath</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id loadpath'>loadpath</span>
-  <span class='id requires'>requires</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id requires'>requires</span>
-  <span class='id live'>live</span>     <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id live'>live</span>
-  <span class='id exclude'>exclude</span>  <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id exclude'>exclude</span>
+<span class='def def kw'>def</span> <span class='run_tests identifier id'>run_tests</span>
+  <span class='tests identifier id'>tests</span>    <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='tests identifier id'>tests</span>
+  <span class='loadpath identifier id'>loadpath</span> <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='loadpath identifier id'>loadpath</span>
+  <span class='requires identifier id'>requires</span> <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='requires identifier id'>requires</span>
+  <span class='live identifier id'>live</span>     <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='live identifier id'>live</span>
+  <span class='exclude identifier id'>exclude</span>  <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='exclude identifier id'>exclude</span>
 
-  <span class='comment'># what about arguments for selecting specific tests?
-</span>  <span class='comment'>#tests = EVN['TESTS'] if ENV['TESTS']
-</span>
-  <span class='kw'>if</span> <span class='const'>File</span><span class='period'>.</span><span class='id exist?'>exist?</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>test/suite.rb</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
-    <span class='id files'>files</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>test/suite.rb</span><span class='tstring_end'>'</span></span>
-  <span class='kw'>else</span>
-    <span class='id files'>files</span> <span class='op'>=</span> <span class='id multiglob_r'>multiglob_r</span><span class='lparen'>(</span><span class='op'>*</span><span class='id tests'>tests</span><span class='rparen'>)</span>
-  <span class='kw'>end</span>
+  <span class='comment val'># what about arguments for selecting specific tests?</span>
+  <span class='comment val'>#tests = EVN['TESTS'] if ENV['TESTS']</span>
 
-  <span class='kw'>if</span> <span class='id files'>files</span><span class='period'>.</span><span class='id empty?'>empty?</span>
-    <span class='id status'>status</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>WARNING: NO TESTS DEFINED!</span><span class='tstring_end'>&quot;</span></span>
-    <span class='kw'>return</span>
-  <span class='kw'>end</span>
+  <span class='if if kw'>if</span> <span class='File constant id'>File</span><span class='dot token'>.</span><span class='exist? fid id'>exist?</span><span class='lparen token'>(</span><span class='string val'>'test/suite.rb'</span><span class='rparen token'>)</span>
+    <span class='files identifier id'>files</span> <span class='assign token'>=</span> <span class='string val'>'test/suite.rb'</span>
+  <span class='else else kw'>else</span>
+    <span class='files identifier id'>files</span> <span class='assign token'>=</span> <span class='multiglob_r identifier id'>multiglob_r</span><span class='lparen token'>(</span><span class='mult op'>*</span><span class='tests identifier id'>tests</span><span class='rparen token'>)</span>
+  <span class='end end kw'>end</span>
 
-  <span class='id filelist'>filelist</span> <span class='op'>=</span> <span class='id files'>files</span><span class='period'>.</span><span class='id select'>select</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id file'>file</span><span class='op'>|</span> <span class='op'>!</span><span class='const'>File</span><span class='period'>.</span><span class='id directory?'>directory?</span><span class='lparen'>(</span><span class='id file'>file</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
+  <span class='if if kw'>if</span> <span class='files identifier id'>files</span><span class='dot token'>.</span><span class='empty? fid id'>empty?</span>
+    <span class='status identifier id'>status</span> <span class='string val'>&quot;WARNING: NO TESTS DEFINED!&quot;</span>
+    <span class='return return kw'>return</span>
+  <span class='end end kw'>end</span>
 
-  <span class='id command'>command</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id ruby'>ruby</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
-  <span class='id command'>command</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> -w</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>if</span> <span class='id verbose?'>verbose?</span>
-  <span class='id command'>command</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> -I</span><span class='embexpr_beg'>#{</span><span class='id loadpath'>loadpath</span><span class='period'>.</span><span class='id join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>:</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>if</span> <span class='op'>!</span><span class='id live'>live</span>
+  <span class='filelist identifier id'>filelist</span> <span class='assign token'>=</span> <span class='files identifier id'>files</span><span class='dot token'>.</span><span class='select identifier id'>select</span><span class='lbrace token'>{</span><span class='bitor op'>|</span><span class='file identifier id'>file</span><span class='bitor op'>|</span> <span class='notop op'>!</span><span class='File constant id'>File</span><span class='dot token'>.</span><span class='directory? fid id'>directory?</span><span class='lparen token'>(</span><span class='file identifier id'>file</span><span class='rparen token'>)</span> <span class='rbrace token'>}</span>
 
-  <span class='id requires'>requires</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id r'>r</span><span class='op'>|</span>
-    <span class='id command'>command</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> -r'</span><span class='embexpr_beg'>#{</span><span class='id r'>r</span><span class='rbrace'>}</span><span class='tstring_content'>'</span><span class='tstring_end'>&quot;</span></span>
-  <span class='kw'>end</span>
+  <span class='command identifier id'>command</span> <span class='assign token'>=</span> <span class='dstring node'>&quot;#{ruby}&quot;</span>
+  <span class='command identifier id'>command</span> <span class='lshft op'>&lt;&lt;</span> <span class='string val'>&quot; -w&quot;</span> <span class='if if_mod kw'>if</span> <span class='verbose? fid id'>verbose?</span>
+  <span class='command identifier id'>command</span> <span class='lshft op'>&lt;&lt;</span> <span class='dstring node'>&quot; -I#{loadpath.join(':')}&quot;</span> <span class='if if_mod kw'>if</span> <span class='notop op'>!</span><span class='live identifier id'>live</span>
 
-  <span class='id filelist'>filelist</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id r'>r</span><span class='op'>|</span>
-    <span class='id command'>command</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> -r'</span><span class='embexpr_beg'>#{</span><span class='id r'>r</span><span class='rbrace'>}</span><span class='tstring_content'>'</span><span class='tstring_end'>&quot;</span></span>
-  <span class='kw'>end</span>
+  <span class='requires identifier id'>requires</span><span class='dot token'>.</span><span class='each identifier id'>each</span> <span class='do do kw'>do</span> <span class='bitor op'>|</span><span class='r identifier id'>r</span><span class='bitor op'>|</span>
+    <span class='command identifier id'>command</span> <span class='lshft op'>&lt;&lt;</span> <span class='dstring node'>&quot; -r'#{r}'&quot;</span>
+  <span class='end end kw'>end</span>
 
-  <span class='id command'>command</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> -e ''</span><span class='tstring_end'>&quot;</span></span>
+  <span class='filelist identifier id'>filelist</span><span class='dot token'>.</span><span class='each identifier id'>each</span> <span class='do do kw'>do</span> <span class='bitor op'>|</span><span class='r identifier id'>r</span><span class='bitor op'>|</span>
+    <span class='command identifier id'>command</span> <span class='lshft op'>&lt;&lt;</span> <span class='dstring node'>&quot; -r'#{r}'&quot;</span>
+  <span class='end end kw'>end</span>
 
-  <span class='comment'># TODO: Does tee work on Windows?
-</span>  <span class='kw'>if</span> <span class='id log'>log</span>
-    <span class='id mkdir_p'>mkdir_p</span><span class='lparen'>(</span><span class='id logfile'>logfile</span><span class='period'>.</span><span class='id parent'>parent</span><span class='rparen'>)</span>
-    <span class='id command'>command</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> 2&gt;&amp;1 | tee -a </span><span class='embexpr_beg'>#{</span><span class='id logfile'>logfile</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
-  <span class='kw'>end</span>
+  <span class='command identifier id'>command</span> <span class='lshft op'>&lt;&lt;</span> <span class='string val'>&quot; -e ''&quot;</span>
 
-  <span class='id puts'>puts</span> <span class='id command'>command</span>
+  <span class='comment val'># TODO: Does tee work on Windows?</span>
+  <span class='if if kw'>if</span> <span class='log identifier id'>log</span>
+    <span class='mkdir_p identifier id'>mkdir_p</span><span class='lparen token'>(</span><span class='logfile identifier id'>logfile</span><span class='dot token'>.</span><span class='parent identifier id'>parent</span><span class='rparen token'>)</span>
+    <span class='command identifier id'>command</span> <span class='lshft op'>&lt;&lt;</span> <span class='dstring node'>&quot; 2&gt;&amp;1 | tee -a #{logfile}&quot;</span>
+  <span class='end end kw'>end</span>
 
-  <span class='id success'>success</span> <span class='op'>=</span> <span class='id sh'>sh</span><span class='lparen'>(</span><span class='id command'>command</span><span class='rparen'>)</span> <span class='comment'>#, :show=&gt;true) #show?
-</span>
-  <span class='comment'>#if log &amp;&amp; !trial?
-</span>  <span class='comment'>#  command = %[testrb -I#{loadpath} #{filelist} &gt; #{logfile} 2&gt;&amp;1]  # /dev/null 2&gt;&amp;1
-</span>  <span class='comment'>#  system command
-</span>  <span class='comment'>#  puts &quot;Updated #{logfile}&quot;
-</span>  <span class='comment'>#end
-</span><span class='kw'>end</span></pre>
+  <span class='puts identifier id'>puts</span> <span class='command identifier id'>command</span>
+
+  <span class='success identifier id'>success</span> <span class='assign token'>=</span> <span class='sh identifier id'>sh</span><span class='lparen token'>(</span><span class='command identifier id'>command</span><span class='rparen token'>)</span> <span class='comment val'>#, :show=&gt;true) #show?</span>
+
+  <span class='comment val'>#if log &amp;&amp; !trial?</span>
+  <span class='comment val'>#  command = %[testrb -I#{loadpath} #{filelist} &gt; #{logfile} 2&gt;&amp;1]  # /dev/null 2&gt;&amp;1</span>
+  <span class='comment val'>#  system command</span>
+  <span class='comment val'>#  puts &quot;Updated #{logfile}&quot;</span>
+  <span class='comment val'>#end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1133,9 +1086,9 @@ to log. Perhaps popen can help? ++
 </div>
     
     <div id="footer">
-  Generated on Sun May 29 22:49:07 2011 by 
+  Generated on Sun May 29 23:02:17 2011 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.7.1 (ruby-1.9.2).
+  0.6.7 (ruby-1.8.7).
 </div>
 
   </body>

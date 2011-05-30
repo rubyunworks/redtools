@@ -2,27 +2,17 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>
-  Module: RedTools::ProjectUtils
-  
-    &mdash; Redtools
-  
-</title>
-
-  <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
-
-  <link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>Module: RedTools::ProjectUtils</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
   relpath = '..';
   if (relpath != '') relpath += '/';
 </script>
-
-  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
-
-  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
-
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
 
   </head>
   <body>
@@ -43,14 +33,11 @@
 </div>
 
       <div id="search">
-  
-    <a id="class_list_link" href="#">Class List</a>
-  
-    <a id="method_list_link" href="#">Method List</a>
-  
-    <a id="file_list_link" href="#">File List</a>
-  
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
 </div>
+
       <div class="clear"></div>
     </div>
     
@@ -84,8 +71,6 @@
 
 
 
-
-
   
     <h2>
       Class Method Summary
@@ -110,9 +95,8 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Common access to project.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Common access to project.</p>
 </div></span>
   
 </li>
@@ -185,9 +169,8 @@ Common access to project.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Set project manutally.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Set project manutally.</p>
 </div></span>
   
 </li>
@@ -232,9 +215,8 @@ Set project manutally.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Common access to project.
-</p>
+    
+<p>Common access to project.</p>
 
 
   </div>
@@ -259,14 +241,15 @@ Common access to project.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/project_utils.rb', line 9</span>
 
-<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id project'>project</span><span class='lparen'>(</span><span class='id path'>path</span><span class='op'>=</span><span class='const'>Dir</span><span class='period'>.</span><span class='id pwd'>pwd</span><span class='rparen'>)</span>
-  <span class='kw'>if</span> <span class='id root'>root</span> <span class='op'>=</span> <span class='op'>::</span><span class='const'>POM</span><span class='op'>::</span><span class='const'>Project</span><span class='period'>.</span><span class='id root'>root</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>
-    <span class='cvar'>@@projects</span> <span class='op'>||=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
-    <span class='cvar'>@@projects</span><span class='lbracket'>[</span><span class='id root'>root</span><span class='rbracket'>]</span> <span class='op'>||=</span> <span class='op'>::</span><span class='const'>POM</span><span class='op'>::</span><span class='const'>Project</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='id root'>root</span><span class='rparen'>)</span>
-  <span class='kw'>else</span>
-    <span class='kw'>nil</span> <span class='comment'># ?
-</span>  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='project identifier id'>project</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='assign token'>=</span><span class='Dir constant id'>Dir</span><span class='dot token'>.</span><span class='pwd identifier id'>pwd</span><span class='rparen token'>)</span>
+  <span class='if if kw'>if</span> <span class='root identifier id'>root</span> <span class='assign token'>=</span> <span class='colon3 op'>::</span><span class='POM constant id'>POM</span><span class='colon2 op'>::</span><span class='Project constant id'>Project</span><span class='dot token'>.</span><span class='root identifier id'>root</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>
+    <span class='@@projects ivar id'>@@projects</span> <span class='opasgn op'>||=</span> <span class='lbrace token'>{</span><span class='rbrace token'>}</span>
+    <span class='@@projects ivar id'>@@projects</span><span class='lbrack token'>[</span><span class='root identifier id'>root</span><span class='rbrack token'>]</span> <span class='opasgn op'>||=</span> <span class='colon3 op'>::</span><span class='POM constant id'>POM</span><span class='colon2 op'>::</span><span class='Project constant id'>Project</span><span class='dot token'>.</span><span class='new identifier id'>new</span><span class='lparen token'>(</span><span class='root identifier id'>root</span><span class='rparen token'>)</span>
+  <span class='else else kw'>else</span>
+    <span class='nil nil kw'>nil</span> <span class='comment val'># ?</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -298,9 +281,10 @@ Common access to project.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/project_utils.rb', line 29</span>
 
-<span class='kw'>def</span> <span class='id metadata'>metadata</span>
-  <span class='id project'>project</span><span class='period'>.</span><span class='id metadata'>metadata</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='metadata identifier id'>metadata</span>
+  <span class='project identifier id'>project</span><span class='dot token'>.</span><span class='metadata identifier id'>metadata</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -326,9 +310,10 @@ Common access to project.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/project_utils.rb', line 19</span>
 
-<span class='kw'>def</span> <span class='id project'>project</span><span class='lparen'>(</span><span class='id path'>path</span><span class='op'>=</span><span class='const'>Dir</span><span class='period'>.</span><span class='id pwd'>pwd</span><span class='rparen'>)</span>
-  <span class='ivar'>@project</span> <span class='op'>||=</span> <span class='const'>ProjectUtils</span><span class='period'>.</span><span class='id project'>project</span><span class='lparen'>(</span><span class='id path'>path</span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='project identifier id'>project</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='assign token'>=</span><span class='Dir constant id'>Dir</span><span class='dot token'>.</span><span class='pwd identifier id'>pwd</span><span class='rparen token'>)</span>
+  <span class='@project ivar id'>@project</span> <span class='opasgn op'>||=</span> <span class='ProjectUtils constant id'>ProjectUtils</span><span class='dot token'>.</span><span class='project identifier id'>project</span><span class='lparen token'>(</span><span class='path identifier id'>path</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -343,9 +328,8 @@ Common access to project.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Set project manutally.
-</p>
+    
+<p>Set project manutally.</p>
 
 
   </div>
@@ -365,9 +349,10 @@ Set project manutally.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/project_utils.rb', line 24</span>
 
-<span class='kw'>def</span> <span class='id project='>project=</span><span class='lparen'>(</span><span class='id proj'>proj</span><span class='rparen'>)</span>
-  <span class='ivar'>@project</span> <span class='op'>=</span> <span class='id proj'>proj</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='project= identifier id'>project=</span><span class='lparen token'>(</span><span class='proj identifier id'>proj</span><span class='rparen token'>)</span>
+  <span class='@project ivar id'>@project</span> <span class='assign token'>=</span> <span class='proj identifier id'>proj</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -393,9 +378,10 @@ Set project manutally.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/utils/project_utils.rb', line 34</span>
 
-<span class='kw'>def</span> <span class='id root'>root</span>
-  <span class='id project'>project</span><span class='period'>.</span><span class='id root'>root</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='root identifier id'>root</span>
+  <span class='project identifier id'>project</span><span class='dot token'>.</span><span class='root identifier id'>root</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -406,9 +392,9 @@ Set project manutally.
 </div>
     
     <div id="footer">
-  Generated on Sun May 29 22:49:09 2011 by 
+  Generated on Sun May 29 23:02:25 2011 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.7.1 (ruby-1.9.2).
+  0.6.7 (ruby-1.8.7).
 </div>
 
   </body>

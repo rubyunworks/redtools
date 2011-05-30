@@ -2,27 +2,17 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>
-  Class: RedTools::Syntax
-  
-    &mdash; Redtools
-  
-</title>
-
-  <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
-
-  <link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>Class: RedTools::Syntax</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
   relpath = '..';
   if (relpath != '') relpath += '/';
 </script>
-
-  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
-
-  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
-
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
 
   </head>
   <body>
@@ -43,14 +33,11 @@
 </div>
 
       <div id="search">
-  
-    <a id="class_list_link" href="#">Class List</a>
-  
-    <a id="method_list_link" href="#">Method List</a>
-  
-    <a id="file_list_link" href="#">File List</a>
-  
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
 </div>
+
       <div class="clear"></div>
     </div>
     
@@ -96,13 +83,11 @@
 
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
-    <p>
-The Syntax tool simply checks all Ruby code for syntax errors. It is a
-rather trivial tool, and is here mainly for example sake.
-</p>
-<p>
-NOTE: This method shells out to the command line using `ruby -c`.
-</p>
+    
+<p>The Syntax tool simply checks all Ruby code for syntax errors. It is a
+rather trivial tool, and is here mainly for example sake.</p>
+
+<p>NOTE: This method shells out to the command line using `ruby -c`.</p>
 
 
   </div>
@@ -128,25 +113,6 @@ NOTE: This method shells out to the command line using `ruby -c`.
   
   
 
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <h2>Instance Attribute Summary</h2>
-  
-  <h3 class="inherited">Attributes included from <span class='object_link'><a href="ShellUtils.html" title="RedTools::ShellUtils (module)">ShellUtils</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="ShellUtils.html#debug%3D-instance_method" title="RedTools::ShellUtils#debug= (method)">debug</a></span>, <span class='object_link'><a href="ShellUtils.html#force%3D-instance_method" title="RedTools::ShellUtils#force= (method)">force</a></span>, <span class='object_link'><a href="ShellUtils.html#quiet%3D-instance_method" title="RedTools::ShellUtils#quiet= (method)">quiet</a></span>, <span class='object_link'><a href="ShellUtils.html#stderr-instance_method" title="RedTools::ShellUtils#stderr (method)">stderr</a></span>, <span class='object_link'><a href="ShellUtils.html#stdin-instance_method" title="RedTools::ShellUtils#stdin (method)">stdin</a></span>, <span class='object_link'><a href="ShellUtils.html#stdout-instance_method" title="RedTools::ShellUtils#stdout (method)">stdout</a></span>, <span class='object_link'><a href="ShellUtils.html#trace-instance_method" title="RedTools::ShellUtils#trace (method)">trace</a></span>, <span class='object_link'><a href="ShellUtils.html#trial%3D-instance_method" title="RedTools::ShellUtils#trial= (method)">trial</a></span>, <span class='object_link'><a href="ShellUtils.html#verbose%3D-instance_method" title="RedTools::ShellUtils#verbose= (method)">verbose</a></span></p>
-
-
   
     <h2>
       Instance Method Summary
@@ -171,9 +137,8 @@ NOTE: This method shells out to the command line using `ruby -c`.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Verify syntax of ruby scripts.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Verify syntax of ruby scripts.</p>
 </div></span>
   
 </li>
@@ -195,9 +160,8 @@ Verify syntax of ruby scripts.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Lib files to exclude.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Lib files to exclude.</p>
 </div></span>
   
 </li>
@@ -282,9 +246,8 @@ Lib files to exclude.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Add these folders to the $LOAD_PATH.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Add these folders to the $LOAD_PATH.</p>
 </div></span>
   
 </li>
@@ -327,9 +290,8 @@ Add these folders to the $LOAD_PATH.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Log syntax errors?.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Log syntax errors?.</p>
 </div></span>
   
 </li>
@@ -351,10 +313,9 @@ Log syntax errors?.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-File name of log file or <tt>true</tt> to use default `log/syntax.rdoc`
-file.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>File name of log file or <tt>true</tt> to use default `log/syntax.rdoc`
+file.</p>
 </div></span>
   
 </li>
@@ -376,9 +337,8 @@ file.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Create syntax log.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Create syntax log.</p>
 </div></span>
   
 </li>
@@ -490,9 +450,8 @@ Create syntax log.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Verify syntax of ruby scripts.
-</p>
+    
+<p>Verify syntax of ruby scripts.</p>
 
 
   </div>
@@ -541,38 +500,39 @@ Verify syntax of ruby scripts.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/syntax.rb', line 55</span>
 
-<span class='kw'>def</span> <span class='id check'>check</span>
-  <span class='comment'>#loadpath = options['loadpath'] || loadpath()
-</span>  <span class='comment'>#exclude  = options['exclude']  || exclude()
-</span>
-  <span class='id loadpath'>loadpath</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id loadpath'>loadpath</span><span class='period'>.</span><span class='id to_list'>to_list</span>
-  <span class='id exclude'>exclude</span>  <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id exclude'>exclude</span><span class='period'>.</span><span class='id to_list'>to_list</span>
+<span class='def def kw'>def</span> <span class='check identifier id'>check</span>
+  <span class='comment val'>#loadpath = options['loadpath'] || loadpath()</span>
+  <span class='comment val'>#exclude  = options['exclude']  || exclude()</span>
 
-  <span class='id files'>files</span>   <span class='op'>=</span> <span class='id multiglob_r'>multiglob_r</span><span class='lparen'>(</span><span class='op'>*</span><span class='id loadpath'>loadpath</span><span class='rparen'>)</span> <span class='op'>-</span> <span class='id multiglob_r'>multiglob_r</span><span class='lparen'>(</span><span class='id exclude'>exclude</span><span class='rparen'>)</span>
-  <span class='id files'>files</span>   <span class='op'>=</span> <span class='id files'>files</span><span class='period'>.</span><span class='id select'>select</span><span class='lbrace'>{</span> <span class='op'>|</span><span class='id f'>f</span><span class='op'>|</span> <span class='const'>File</span><span class='period'>.</span><span class='id extname'>extname</span><span class='lparen'>(</span><span class='id f'>f</span><span class='rparen'>)</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>.rb</span><span class='tstring_end'>'</span></span> <span class='rbrace'>}</span>
-  <span class='id max'>max</span>     <span class='op'>=</span> <span class='id files'>files</span><span class='period'>.</span><span class='id collect'>collect</span><span class='lbrace'>{</span> <span class='op'>|</span><span class='id f'>f</span><span class='op'>|</span> <span class='id f'>f</span><span class='period'>.</span><span class='id size'>size</span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id max'>max</span>
-  <span class='id list'>list</span>    <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='loadpath identifier id'>loadpath</span> <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='loadpath identifier id'>loadpath</span><span class='dot token'>.</span><span class='to_list identifier id'>to_list</span>
+  <span class='exclude identifier id'>exclude</span>  <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='exclude identifier id'>exclude</span><span class='dot token'>.</span><span class='to_list identifier id'>to_list</span>
 
-  <span class='kw'>if</span> <span class='id logfile'>logfile</span><span class='period'>.</span><span class='id outofdate?'>outofdate?</span><span class='lparen'>(</span><span class='op'>*</span><span class='id files'>files</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id force?'>force?</span>
-    <span class='id puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Started</span><span class='tstring_end'>&quot;</span></span>
+  <span class='files identifier id'>files</span>   <span class='assign token'>=</span> <span class='multiglob_r identifier id'>multiglob_r</span><span class='lparen token'>(</span><span class='mult op'>*</span><span class='loadpath identifier id'>loadpath</span><span class='rparen token'>)</span> <span class='minus op'>-</span> <span class='multiglob_r identifier id'>multiglob_r</span><span class='lparen token'>(</span><span class='exclude identifier id'>exclude</span><span class='rparen token'>)</span>
+  <span class='files identifier id'>files</span>   <span class='assign token'>=</span> <span class='files identifier id'>files</span><span class='dot token'>.</span><span class='select identifier id'>select</span><span class='lbrace token'>{</span> <span class='bitor op'>|</span><span class='f identifier id'>f</span><span class='bitor op'>|</span> <span class='File constant id'>File</span><span class='dot token'>.</span><span class='extname identifier id'>extname</span><span class='lparen token'>(</span><span class='f identifier id'>f</span><span class='rparen token'>)</span> <span class='eq op'>==</span> <span class='string val'>'.rb'</span> <span class='rbrace token'>}</span>
+  <span class='max identifier id'>max</span>     <span class='assign token'>=</span> <span class='files identifier id'>files</span><span class='dot token'>.</span><span class='collect identifier id'>collect</span><span class='lbrace token'>{</span> <span class='bitor op'>|</span><span class='f identifier id'>f</span><span class='bitor op'>|</span> <span class='f identifier id'>f</span><span class='dot token'>.</span><span class='size identifier id'>size</span> <span class='rbrace token'>}</span><span class='dot token'>.</span><span class='max identifier id'>max</span>
+  <span class='list identifier id'>list</span>    <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span>
 
-    <span class='id start'>start</span> <span class='op'>=</span> <span class='const'>Time</span><span class='period'>.</span><span class='id now'>now</span>
+  <span class='if if kw'>if</span> <span class='logfile identifier id'>logfile</span><span class='dot token'>.</span><span class='outofdate? fid id'>outofdate?</span><span class='lparen token'>(</span><span class='mult op'>*</span><span class='files identifier id'>files</span><span class='rparen token'>)</span> <span class='or or kw'>or</span> <span class='force? fid id'>force?</span>
+    <span class='puts identifier id'>puts</span> <span class='string val'>&quot;Started&quot;</span>
 
-    <span class='id files'>files</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id file'>file</span><span class='op'>|</span>
-      <span class='id pass'>pass</span> <span class='op'>=</span> <span class='id syntax_check_file'>syntax_check_file</span><span class='lparen'>(</span><span class='id file'>file</span><span class='comma'>,</span> <span class='id max'>max</span><span class='rparen'>)</span>
-      <span class='id list'>list</span> <span class='op'>&lt;&lt;</span> <span class='id file'>file</span> <span class='kw'>if</span> <span class='op'>!</span><span class='id pass'>pass</span>
-    <span class='kw'>end</span>
+    <span class='start identifier id'>start</span> <span class='assign token'>=</span> <span class='Time constant id'>Time</span><span class='dot token'>.</span><span class='now identifier id'>now</span>
 
-    <span class='id puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nFinished in %.6f seconds.</span><span class='tstring_end'>&quot;</span></span> <span class='op'>%</span> <span class='lbracket'>[</span><span class='const'>Time</span><span class='period'>.</span><span class='id now'>now</span> <span class='op'>-</span> <span class='id start'>start</span><span class='rbracket'>]</span>
-    <span class='id puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\n</span><span class='embexpr_beg'>#{</span><span class='id list'>list</span><span class='period'>.</span><span class='id size'>size</span><span class='rbrace'>}</span><span class='tstring_content'> Syntax Errors</span><span class='tstring_end'>&quot;</span></span>
+    <span class='files identifier id'>files</span><span class='dot token'>.</span><span class='each identifier id'>each</span> <span class='do do kw'>do</span> <span class='bitor op'>|</span><span class='file identifier id'>file</span><span class='bitor op'>|</span>
+      <span class='pass identifier id'>pass</span> <span class='assign token'>=</span> <span class='syntax_check_file identifier id'>syntax_check_file</span><span class='lparen token'>(</span><span class='file identifier id'>file</span><span class='comma token'>,</span> <span class='max identifier id'>max</span><span class='rparen token'>)</span>
+      <span class='list identifier id'>list</span> <span class='lshft op'>&lt;&lt;</span> <span class='file identifier id'>file</span> <span class='if if_mod kw'>if</span> <span class='notop op'>!</span><span class='pass identifier id'>pass</span>
+    <span class='end end kw'>end</span>
 
-    <span class='id log_syntax_errors'>log_syntax_errors</span><span class='lparen'>(</span><span class='id list'>list</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id log'>log</span>
+    <span class='puts identifier id'>puts</span> <span class='string val'>&quot;\nFinished in %.6f seconds.&quot;</span> <span class='mod op'>%</span> <span class='lbrack token'>[</span><span class='Time constant id'>Time</span><span class='dot token'>.</span><span class='now identifier id'>now</span> <span class='minus op'>-</span> <span class='start identifier id'>start</span><span class='rbrack token'>]</span>
+    <span class='puts identifier id'>puts</span> <span class='dstring node'>&quot;\n#{list.size} Syntax Errors&quot;</span>
 
-    <span class='id list'>list</span><span class='period'>.</span><span class='id size'>size</span> <span class='op'>==</span> <span class='int'>0</span> <span class='op'>?</span> <span class='kw'>true</span> <span class='op'>:</span> <span class='kw'>false</span>
-  <span class='kw'>else</span>
-    <span class='id puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Syntax check is up to date.</span><span class='tstring_end'>&quot;</span></span>
-  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+    <span class='log_syntax_errors identifier id'>log_syntax_errors</span><span class='lparen token'>(</span><span class='list identifier id'>list</span><span class='rparen token'>)</span> <span class='if if_mod kw'>if</span> <span class='log identifier id'>log</span>
+
+    <span class='list identifier id'>list</span><span class='dot token'>.</span><span class='size identifier id'>size</span> <span class='eq op'>==</span> <span class='integer val'>0</span> <span class='question op'>?</span> <span class='true true kw'>true</span> <span class='colon op'>:</span> <span class='false false kw'>false</span>
+  <span class='else else kw'>else</span>
+    <span class='puts identifier id'>puts</span> <span class='string val'>&quot;Syntax check is up to date.&quot;</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -587,9 +547,8 @@ Verify syntax of ruby scripts.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Lib files to exclude.
-</p>
+    
+<p>Lib files to exclude.</p>
 
 
   </div>
@@ -609,9 +568,10 @@ Lib files to exclude.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/syntax.rb', line 25</span>
 
-<span class='kw'>def</span> <span class='id exclude'>exclude</span>
-  <span class='ivar'>@exclude</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='exclude identifier id'>exclude</span>
+  <span class='@exclude ivar id'>@exclude</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -637,9 +597,10 @@ Lib files to exclude.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/syntax.rb', line 30</span>
 
-<span class='kw'>def</span> <span class='id exclude='>exclude=</span><span class='lparen'>(</span><span class='id x'>x</span><span class='rparen'>)</span>
-  <span class='ivar'>@exclude</span> <span class='op'>=</span> <span class='id x'>x</span><span class='period'>.</span><span class='id to_list'>to_list</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='exclude= identifier id'>exclude=</span><span class='lparen token'>(</span><span class='x identifier id'>x</span><span class='rparen token'>)</span>
+  <span class='@exclude ivar id'>@exclude</span> <span class='assign token'>=</span> <span class='x identifier id'>x</span><span class='dot token'>.</span><span class='to_list identifier id'>to_list</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -666,10 +627,11 @@ Lib files to exclude.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/syntax.rb', line 145</span>
 
-<span class='kw'>def</span> <span class='id initialize_defaults'>initialize_defaults</span>
-  <span class='ivar'>@loadpath</span> <span class='op'>=</span> <span class='id metadata'>metadata</span><span class='period'>.</span><span class='id loadpath'>loadpath</span>
-  <span class='ivar'>@exclude</span>  <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='initialize_defaults identifier id'>initialize_defaults</span>
+  <span class='@loadpath ivar id'>@loadpath</span> <span class='assign token'>=</span> <span class='metadata identifier id'>metadata</span><span class='dot token'>.</span><span class='loadpath identifier id'>loadpath</span>
+  <span class='@exclude ivar id'>@exclude</span>  <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -695,9 +657,10 @@ Lib files to exclude.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/syntax.rb', line 140</span>
 
-<span class='kw'>def</span> <span class='id libsI'>libsI</span>
-  <span class='id loadpath'>loadpath</span><span class='period'>.</span><span class='id join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>;</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='libsI identifier id'>libsI</span>
+  <span class='loadpath identifier id'>loadpath</span><span class='dot token'>.</span><span class='join identifier id'>join</span><span class='lparen token'>(</span><span class='string val'>';'</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -712,9 +675,8 @@ Lib files to exclude.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Add these folders to the $LOAD_PATH.
-</p>
+    
+<p>Add these folders to the $LOAD_PATH.</p>
 
 
   </div>
@@ -734,9 +696,10 @@ Add these folders to the $LOAD_PATH.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/syntax.rb', line 15</span>
 
-<span class='kw'>def</span> <span class='id loadpath'>loadpath</span>
-  <span class='ivar'>@loadpath</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='loadpath identifier id'>loadpath</span>
+  <span class='@loadpath ivar id'>@loadpath</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -762,9 +725,10 @@ Add these folders to the $LOAD_PATH.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/syntax.rb', line 20</span>
 
-<span class='kw'>def</span> <span class='id loadpath='>loadpath=</span><span class='lparen'>(</span><span class='id x'>x</span><span class='rparen'>)</span>
-  <span class='ivar'>@loadpath</span> <span class='op'>=</span> <span class='id x'>x</span><span class='period'>.</span><span class='id to_list'>to_list</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='loadpath= identifier id'>loadpath=</span><span class='lparen token'>(</span><span class='x identifier id'>x</span><span class='rparen token'>)</span>
+  <span class='@loadpath ivar id'>@loadpath</span> <span class='assign token'>=</span> <span class='x identifier id'>x</span><span class='dot token'>.</span><span class='to_list identifier id'>to_list</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -779,9 +743,8 @@ Add these folders to the $LOAD_PATH.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Log syntax errors?
-</p>
+    
+<p>Log syntax errors?</p>
 
 
   </div>
@@ -801,9 +764,10 @@ Log syntax errors?
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/syntax.rb', line 40</span>
 
-<span class='kw'>def</span> <span class='id log'>log</span>
-  <span class='ivar'>@log</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='log identifier id'>log</span>
+  <span class='@log ivar id'>@log</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -818,10 +782,9 @@ Log syntax errors?
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-File name of log file or <tt>true</tt> to use default `log/syntax.rdoc`
-file.
-</p>
+    
+<p>File name of log file or <tt>true</tt> to use default `log/syntax.rdoc`
+file.</p>
 
 
   </div>
@@ -841,9 +804,10 @@ file.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/syntax.rb', line 35</span>
 
-<span class='kw'>def</span> <span class='id log='>log=</span><span class='lparen'>(</span><span class='id file_or_bool'>file_or_bool</span><span class='rparen'>)</span>
-  <span class='ivar'>@log</span> <span class='op'>=</span> <span class='id file_or_bool'>file_or_bool</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='log= identifier id'>log=</span><span class='lparen token'>(</span><span class='file_or_bool identifier id'>file_or_bool</span><span class='rparen token'>)</span>
+  <span class='@log ivar id'>@log</span> <span class='assign token'>=</span> <span class='file_or_bool identifier id'>file_or_bool</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -858,9 +822,8 @@ file.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-Create syntax log.
-</p>
+    
+<p>Create syntax log.</p>
 
 
   </div>
@@ -897,26 +860,27 @@ Create syntax log.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/syntax.rb', line 116</span>
 
-<span class='kw'>def</span> <span class='id log_syntax_errors'>log_syntax_errors</span><span class='lparen'>(</span><span class='id list'>list</span><span class='rparen'>)</span>
-  <span class='comment'>#logfile = project.log + 'syntax.log'
-</span>  <span class='kw'>if</span> <span class='id list'>list</span><span class='period'>.</span><span class='id empty?'>empty?</span>
-    <span class='id mkdir_p'>mkdir_p</span><span class='lparen'>(</span><span class='id logfile'>logfile</span><span class='period'>.</span><span class='id parent'>parent</span><span class='rparen'>)</span>
-    <span class='comment'>#logfile.write('') #logfile.clear
-</span>    <span class='const'>File</span><span class='period'>.</span><span class='id open'>open</span><span class='lparen'>(</span><span class='id logfile'>logfile</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>w</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span><span class='lbrace'>{</span> <span class='op'>|</span><span class='id f'>f</span><span class='op'>|</span> <span class='id f'>f</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span> <span class='rbrace'>}</span>
-  <span class='kw'>else</span>
-    <span class='id puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\n-- Syntax Errors --\n</span><span class='tstring_end'>&quot;</span></span>
-    <span class='id list'>list</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id file'>file</span><span class='op'>|</span>
-      <span class='id print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>* </span><span class='embexpr_beg'>#{</span><span class='id file'>file</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
-      <span class='id err'>err</span> <span class='op'>=</span> <span class='backtick'>`</span><span class='tstring_content'>ruby -c -I</span><span class='embexpr_beg'>#{</span><span class='id libsI'>libsI</span><span class='rbrace'>}</span><span class='tstring_content'> </span><span class='embexpr_beg'>#{</span><span class='id file'>file</span><span class='rbrace'>}</span><span class='tstring_content'> 2&gt;&amp;1</span><span class='tstring_end'>`</span></span>
-      <span class='id puts'>puts</span><span class='lparen'>(</span><span class='id err'>err</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id verbose?'>verbose?</span>
-      <span class='id mkdir_p'>mkdir_p</span><span class='lparen'>(</span><span class='id logfile'>logfile</span><span class='period'>.</span><span class='id parent'>parent</span><span class='rparen'>)</span>
-      <span class='comment'># logfile.write(&quot;=== #{file}\n#{err}\n\n&quot;)
-</span>      <span class='const'>File</span><span class='period'>.</span><span class='id open'>open</span><span class='lparen'>(</span><span class='id logfile'>logfile</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>w</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id f'>f</span><span class='op'>|</span>
-        <span class='id f'>f</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>=== </span><span class='embexpr_beg'>#{</span><span class='id file'>file</span><span class='rbrace'>}</span><span class='tstring_content'>\n</span><span class='embexpr_beg'>#{</span><span class='id err'>err</span><span class='rbrace'>}</span><span class='tstring_content'>\n\n</span><span class='tstring_end'>&quot;</span></span>
-      <span class='kw'>end</span>
-    <span class='kw'>end</span>
-  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='log_syntax_errors identifier id'>log_syntax_errors</span><span class='lparen token'>(</span><span class='list identifier id'>list</span><span class='rparen token'>)</span>
+  <span class='comment val'>#logfile = project.log + 'syntax.log'</span>
+  <span class='if if kw'>if</span> <span class='list identifier id'>list</span><span class='dot token'>.</span><span class='empty? fid id'>empty?</span>
+    <span class='mkdir_p identifier id'>mkdir_p</span><span class='lparen token'>(</span><span class='logfile identifier id'>logfile</span><span class='dot token'>.</span><span class='parent identifier id'>parent</span><span class='rparen token'>)</span>
+    <span class='comment val'>#logfile.write('') #logfile.clear</span>
+    <span class='File constant id'>File</span><span class='dot token'>.</span><span class='open identifier id'>open</span><span class='lparen token'>(</span><span class='logfile identifier id'>logfile</span><span class='comma token'>,</span> <span class='string val'>'w'</span><span class='rparen token'>)</span><span class='lbrace token'>{</span> <span class='bitor op'>|</span><span class='f identifier id'>f</span><span class='bitor op'>|</span> <span class='f identifier id'>f</span> <span class='lshft op'>&lt;&lt;</span> <span class='string val'>''</span> <span class='rbrace token'>}</span>
+  <span class='else else kw'>else</span>
+    <span class='puts identifier id'>puts</span> <span class='string val'>&quot;\n-- Syntax Errors --\n&quot;</span>
+    <span class='list identifier id'>list</span><span class='dot token'>.</span><span class='each identifier id'>each</span> <span class='do do kw'>do</span> <span class='bitor op'>|</span><span class='file identifier id'>file</span><span class='bitor op'>|</span>
+      <span class='print identifier id'>print</span> <span class='dstring node'>&quot;* #{file}&quot;</span>
+      <span class='err identifier id'>err</span> <span class='assign token'>=</span> <span class='dxstring node'>`ruby -c -I#{libsI} #{file} 2&gt;&amp;1`</span>
+      <span class='puts identifier id'>puts</span><span class='lparen token'>(</span><span class='err identifier id'>err</span><span class='rparen token'>)</span> <span class='if if_mod kw'>if</span> <span class='verbose? fid id'>verbose?</span>
+      <span class='mkdir_p identifier id'>mkdir_p</span><span class='lparen token'>(</span><span class='logfile identifier id'>logfile</span><span class='dot token'>.</span><span class='parent identifier id'>parent</span><span class='rparen token'>)</span>
+      <span class='comment val'># logfile.write(&quot;=== #{file}\n#{err}\n\n&quot;)</span>
+      <span class='File constant id'>File</span><span class='dot token'>.</span><span class='open identifier id'>open</span><span class='lparen token'>(</span><span class='logfile identifier id'>logfile</span><span class='comma token'>,</span> <span class='string val'>'w'</span><span class='rparen token'>)</span> <span class='do do kw'>do</span> <span class='bitor op'>|</span><span class='f identifier id'>f</span><span class='bitor op'>|</span>
+        <span class='f identifier id'>f</span> <span class='lshft op'>&lt;&lt;</span> <span class='dstring node'>&quot;=== #{file}\n#{err}\n\n&quot;</span>
+      <span class='end end kw'>end</span>
+    <span class='end end kw'>end</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -947,14 +911,15 @@ Create syntax log.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/syntax.rb', line 45</span>
 
-<span class='kw'>def</span> <span class='id logfile'>logfile</span>
-  <span class='kw'>case</span> <span class='id log'>log</span>
-  <span class='kw'>when</span> <span class='const'>String</span>
-    <span class='const'>Pathname</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='id log'>log</span><span class='rparen'>)</span>
-  <span class='kw'>else</span>
-    <span class='id project'>project</span><span class='period'>.</span><span class='id log'>log</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>syntax.rdoc</span><span class='tstring_end'>'</span></span>
-  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='logfile identifier id'>logfile</span>
+  <span class='case case kw'>case</span> <span class='log identifier id'>log</span>
+  <span class='when when kw'>when</span> <span class='String constant id'>String</span>
+    <span class='Pathname constant id'>Pathname</span><span class='dot token'>.</span><span class='new identifier id'>new</span><span class='lparen token'>(</span><span class='log identifier id'>log</span><span class='rparen token'>)</span>
+  <span class='else else kw'>else</span>
+    <span class='project identifier id'>project</span><span class='dot token'>.</span><span class='log identifier id'>log</span> <span class='plus op'>+</span> <span class='string val'>'syntax.rdoc'</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1000,29 +965,30 @@ Create syntax log.
     <td>
       <pre class="code"><span class="info file"># File 'lib/redtools/syntax.rb', line 91</span>
 
-<span class='kw'>def</span> <span class='id syntax_check_file'>syntax_check_file</span><span class='lparen'>(</span><span class='id file'>file</span><span class='comma'>,</span> <span class='id max'>max</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
-  <span class='kw'>return</span> <span class='kw'>unless</span> <span class='const'>File</span><span class='period'>.</span><span class='id file?'>file?</span><span class='lparen'>(</span><span class='id file'>file</span><span class='rparen'>)</span>
-  <span class='id max'>max</span>  <span class='op'>=</span> <span class='id max'>max</span> <span class='op'>||</span> <span class='id file'>file</span><span class='period'>.</span><span class='id size'>size</span> <span class='op'>+</span> <span class='int'>2</span>
-  <span class='comment'>#libs = loadpath.join(';')
-</span>  <span class='comment'>#r = system &quot;ruby -c -Ibin:lib:test #{s} &amp;&gt; /dev/null&quot;
-</span>  <span class='id r'>r</span> <span class='op'>=</span> <span class='id system'>system</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ruby -c -I</span><span class='embexpr_beg'>#{</span><span class='id libsI'>libsI</span><span class='rbrace'>}</span><span class='tstring_content'> </span><span class='embexpr_beg'>#{</span><span class='id file'>file</span><span class='rbrace'>}</span><span class='tstring_content'> &gt; /dev/null 2&gt;&amp;1</span><span class='tstring_end'>&quot;</span></span>
-  <span class='kw'>if</span> <span class='id r'>r</span>
-    <span class='kw'>if</span> <span class='id verbose?'>verbose?</span>
-      <span class='id printline'>printline</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>%-</span><span class='embexpr_beg'>#{</span><span class='id max'>max</span><span class='rbrace'>}</span><span class='tstring_content'>s</span><span class='tstring_end'>&quot;</span></span> <span class='op'>%</span> <span class='id file'>file</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>[PASS]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
-    <span class='kw'>else</span>
-      <span class='id print'>print</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>.</span><span class='tstring_end'>'</span></span>
-    <span class='kw'>end</span>
-    <span class='kw'>true</span>
-  <span class='kw'>else</span>
-    <span class='kw'>if</span> <span class='id verbose?'>verbose?</span>
-      <span class='id printline'>printline</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>%-</span><span class='embexpr_beg'>#{</span><span class='id max'>max</span><span class='rbrace'>}</span><span class='tstring_content'>s</span><span class='tstring_end'>&quot;</span></span> <span class='op'>%</span> <span class='id file'>file</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>[FAIL]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
-      <span class='comment'>#puts(&quot;%-#{max}s  [FAIL]&quot; % [s])
-</span>    <span class='kw'>else</span>
-      <span class='id print'>print</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>E</span><span class='tstring_end'>'</span></span>
-    <span class='kw'>end</span>
-    <span class='kw'>false</span>
-  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
+<span class='def def kw'>def</span> <span class='syntax_check_file identifier id'>syntax_check_file</span><span class='lparen token'>(</span><span class='file identifier id'>file</span><span class='comma token'>,</span> <span class='max identifier id'>max</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='rparen token'>)</span>
+  <span class='return return kw'>return</span> <span class='unless unless_mod kw'>unless</span> <span class='File constant id'>File</span><span class='dot token'>.</span><span class='file? fid id'>file?</span><span class='lparen token'>(</span><span class='file identifier id'>file</span><span class='rparen token'>)</span>
+  <span class='max identifier id'>max</span>  <span class='assign token'>=</span> <span class='max identifier id'>max</span> <span class='orop op'>||</span> <span class='file identifier id'>file</span><span class='dot token'>.</span><span class='size identifier id'>size</span> <span class='plus op'>+</span> <span class='integer val'>2</span>
+  <span class='comment val'>#libs = loadpath.join(';')</span>
+  <span class='comment val'>#r = system &quot;ruby -c -Ibin:lib:test #{s} &amp;&gt; /dev/null&quot;</span>
+  <span class='r identifier id'>r</span> <span class='assign token'>=</span> <span class='system identifier id'>system</span> <span class='dstring node'>&quot;ruby -c -I#{libsI} #{file} &gt; /dev/null 2&gt;&amp;1&quot;</span>
+  <span class='if if kw'>if</span> <span class='r identifier id'>r</span>
+    <span class='if if kw'>if</span> <span class='verbose? fid id'>verbose?</span>
+      <span class='printline identifier id'>printline</span><span class='lparen token'>(</span><span class='dstring node'>&quot;%-#{max}s&quot;</span> <span class='mod op'>%</span> <span class='file identifier id'>file</span><span class='comma token'>,</span> <span class='string val'>&quot;[PASS]&quot;</span><span class='rparen token'>)</span>
+    <span class='else else kw'>else</span>
+      <span class='print identifier id'>print</span> <span class='string val'>'.'</span>
+    <span class='end end kw'>end</span>
+    <span class='true true kw'>true</span>
+  <span class='else else kw'>else</span>
+    <span class='if if kw'>if</span> <span class='verbose? fid id'>verbose?</span>
+      <span class='printline identifier id'>printline</span><span class='lparen token'>(</span><span class='dstring node'>&quot;%-#{max}s&quot;</span> <span class='mod op'>%</span> <span class='file identifier id'>file</span><span class='comma token'>,</span> <span class='string val'>&quot;[FAIL]&quot;</span><span class='rparen token'>)</span>
+      <span class='comment val'>#puts(&quot;%-#{max}s  [FAIL]&quot; % [s])</span>
+    <span class='else else kw'>else</span>
+      <span class='print identifier id'>print</span> <span class='string val'>'E'</span>
+    <span class='end end kw'>end</span>
+    <span class='false false kw'>false</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
     </td>
   </tr>
 </table>
@@ -1033,9 +999,9 @@ Create syntax log.
 </div>
     
     <div id="footer">
-  Generated on Sun May 29 22:49:07 2011 by 
+  Generated on Sun May 29 23:02:15 2011 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.7.1 (ruby-1.9.2).
+  0.6.7 (ruby-1.8.7).
 </div>
 
   </body>
